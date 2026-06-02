@@ -352,7 +352,7 @@ img,svg,video,iframe{max-width:100%}
 .tdp-s3{background:var(--gold);border-top-color:rgba(255,255,255,.15)}
 .tdp-s3 .tdp-sec-h{color:#fff}
 .tdp-s3 .tdp-sec-h em{color:rgba(255,255,255,.62)}
-.tdp-s3 .tdp-sec-p{color:rgba(255,255,255,.85)}
+.tdp-s3 .tdp-sec-p{color:rgba(255,255,255,.85)}.tdp-sec-p.tdp-prov-lead{font-size:22px;line-height:1.5;font-family:var(--serif);font-style:italic;margin-top:18px;max-width:600px}.tdp-s3 .tdp-sec-p.tdp-prov-lead{color:#fff}@media(max-width:600px){.tdp-sec-p.tdp-prov-lead{font-size:18px}}
 .tdp-feats{gap:24px;background:transparent;padding:0 32px 56px}
 .tdp-feat{border:1px solid var(--border)}
 .tdp-feat-img{aspect-ratio:1/1}
@@ -447,7 +447,8 @@ img,svg,video,iframe{max-width:100%}
 
   <!-- S3: PROVENANCE — TEXT left, IMAGE right (always on) -->
   <div class="tdp-sec tdp-s3"><div class="tdp-s3-inner">
-    <div><h2 class="tdp-sec-h">{{ section.settings.prov_h | default: 'Built to specification.' }} <em>{{ section.settings.prov_hem | default: 'Nothing approximated.' }}</em></h2><p class="tdp-sec-p">{{ section.settings.prov_p | default: 'Every model is built from the original technical drawings. Where drawings and photographs disagree, we side with the drawings. No embellishment, no artistic license.' }}</p></div>
+    <div><h2 class="tdp-sec-h">{{ section.settings.prov_h | default: 'Built to specification.' }} <em>{{ section.settings.prov_hem | default: 'Nothing approximated.' }}</em></h2>{%- assign prov_raw = section.settings.prov_p | default: 'Every model is built from the original technical drawings. Where drawings and photographs disagree, we side with the drawings. No embellishment, no artistic license.' -%}{%- assign prov_parts = prov_raw | split: '
+' -%}{%- assign prov_kept = '' -%}{%- for p in prov_parts -%}{%- assign pt = p | strip -%}{%- if pt != blank -%}{%- if prov_kept == '' -%}{%- assign prov_kept = pt -%}{%- else -%}{%- assign prov_kept = prov_kept | append: '|~|' | append: pt -%}{%- endif -%}{%- endif -%}{%- endfor -%}{%- assign prov_arr = prov_kept | split: '|~|' -%}{%- for p in prov_arr -%}{%- if forloop.last and prov_arr.size > 1 -%}<p class="tdp-sec-p tdp-prov-lead">{{ p }}</p>{%- else -%}<p class="tdp-sec-p">{{ p }}</p>{%- endif -%}{%- endfor -%}</div>
     <div>{%- if section.settings.s3_image != blank -%}<div class="tdp-s3-img"><img src="{{ section.settings.s3_image | image_url: width: 700 }}" alt="{{ product.title | escape }}" loading="lazy"></div>{%- elsif product.images[1] -%}<div class="tdp-s3-img"><img src="{{ product.images[1] | image_url: width: 700 }}" alt="{{ product.title }}" loading="lazy"></div>{%- elsif product.featured_image -%}<div class="tdp-s3-img"><img src="{{ product.featured_image | image_url: width: 700 }}" alt="{{ product.title }}" loading="lazy"></div>{%- else -%}<div class="tdp-s3-img"><svg width="52" height="40" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.18)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg></div>{%- endif -%}</div>
   </div></div>
 
