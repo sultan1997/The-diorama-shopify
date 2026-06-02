@@ -1,0 +1,2190 @@
+{% comment %}The Diorama — 3D Design File Product Page · blueprint/technical layout{% endcomment %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+<style>
+  .dfp{
+    --bg:#F6F6F7; --paper:#FFFFFF; --ink:#2B2B2E; --ink-2:#5C5C66; --ink-3:#9C9CA3;
+    --rule:#E5E5E5; --rule-2:#D6D6DA; --hairline:#ECECEE;
+    --blueprint:#3A13FF; --blueprint-deep:#2A0FBE; --blueprint-bg:#EFEBFF; --warn:#B05A3E;
+    --display:"Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    --sans:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:14.5px; line-height:1.55;
+  }
+  .dfp *{box-sizing:border-box;}
+  .dfp a{color:inherit;text-decoration:none;}
+  .dfp button{font-family:inherit;cursor:pointer;}
+  .dfp img{display:block;max-width:100%;}
+  .dfp .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);}
+  .dfp .display{font-family:var(--display);font-weight:500;letter-spacing:-.02em;}
+  .dfp .container{max-width:1320px;margin:0 auto;padding:0 32px;}
+
+  /* announce */
+  .dfp .announce{background:var(--ink);color:#D7DAE0;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;text-align:center;padding:9px 0;}
+  .dfp .announce .dot{color:var(--blueprint);margin:0 14px;}
+
+  /* breadcrumb */
+  .dfp .crumbs{padding:20px 0 6px;font-size:12px;color:var(--ink-3);display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+  .dfp .crumbs .sep{color:var(--rule-2);}
+  .dfp .crumbs .here{color:var(--ink);}
+
+  /* hero */
+  .dfp .hero{padding:14px 0 64px;}
+  .dfp .hero-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:48px;align-items:start;}
+
+  /* viewer */
+  .dfp .viewer{background:var(--paper);border:1px solid var(--rule);border-radius:10px;position:relative;overflow:hidden;aspect-ratio:4/3;}
+  .dfp .viewer .grid-bg{position:absolute;inset:0;background:linear-gradient(var(--hairline) 1px,transparent 1px) 0 0/24px 24px,linear-gradient(90deg,var(--hairline) 1px,transparent 1px) 0 0/24px 24px,radial-gradient(ellipse 60% 50% at 50% 55%,#F2F2F3 0%,#F6F6F7 70%);}
+  .dfp .viewer .stage{position:absolute;inset:0;display:grid;place-items:center;padding:40px;}
+  .dfp .viewer .stage img{width:100%;height:100%;object-fit:contain;}
+  .dfp .viewer .ph{color:var(--rule-2);}
+  .dfp .viewer-toolbar{position:absolute;top:14px;left:14px;display:flex;gap:6px;background:rgba(255,255,255,.95);border:1px solid var(--rule);border-radius:8px;padding:4px;z-index:2;}
+  .dfp .vt-btn{background:transparent;border:0;padding:7px 10px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);border-radius:5px;}
+  .dfp .vt-btn[data-active="true"]{background:var(--ink);color:var(--bg);}
+  .dfp .vt-btn:hover:not([data-active="true"]){background:var(--hairline);}
+  .dfp .viewer-info{position:absolute;top:14px;right:14px;background:rgba(255,255,255,.95);border:1px solid var(--rule);border-radius:8px;padding:8px 12px;font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);display:flex;gap:14px;align-items:center;z-index:2;}
+  .dfp .viewer-info .live{display:inline-flex;align-items:center;gap:6px;}
+  .dfp .viewer-info .live::before{content:"";width:6px;height:6px;border-radius:999px;background:var(--blueprint);}
+  .dfp .viewer-controls{position:absolute;bottom:14px;left:14px;right:14px;display:flex;justify-content:space-between;align-items:center;z-index:2;}
+  .dfp .vc-axes{display:flex;gap:4px;background:rgba(255,255,255,.95);border:1px solid var(--rule);border-radius:8px;padding:4px;}
+  .dfp .vc-axes button{min-width:42px;height:32px;padding:0 6px;background:transparent;border:0;font-family:var(--mono);font-size:10px;color:var(--ink-2);border-radius:4px;}
+  .dfp .vc-axes button[data-active="true"]{background:var(--blueprint-bg);color:var(--blueprint-deep);}
+  .dfp .vc-axes button:hover:not([data-active="true"]){background:var(--hairline);}
+  .dfp .vc-actions{display:flex;gap:6px;}
+  .dfp .vc-actions button{background:rgba(255,255,255,.95);border:1px solid var(--rule);border-radius:8px;padding:8px;color:var(--ink-2);display:grid;place-items:center;}
+  .dfp .vc-actions button:hover{color:var(--ink);border-color:var(--ink-2);}
+
+  /* thumb rail */
+  .dfp .thumb-rail{display:grid;grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:10px;margin-top:12px;}
+  .dfp .vt{background:var(--paper);border:1px solid var(--rule);border-radius:6px;aspect-ratio:1;position:relative;overflow:hidden;padding:0;}
+  .dfp .vt[data-active="true"]{border-color:var(--ink);}
+  .dfp .vt:hover{border-color:var(--ink-2);}
+  .dfp .vt .vt-bg{position:absolute;inset:0;background:linear-gradient(var(--hairline) 1px,transparent 1px) 0 0/12px 12px,linear-gradient(90deg,var(--hairline) 1px,transparent 1px) 0 0/12px 12px,#F6F6F7;}
+  .dfp .vt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .dfp .vt .vt-label{position:absolute;left:6px;bottom:6px;font-family:var(--mono);font-size:9px;letter-spacing:.1em;color:var(--ink-3);text-transform:uppercase;z-index:2;}
+
+  /* buy box */
+  .dfp .designer-row{display:flex;align-items:center;gap:12px;font-size:13px;color:var(--ink-2);flex-wrap:wrap;}
+  .dfp .designer-row .ava{width:28px;height:28px;border-radius:999px;background:var(--blueprint-bg);color:var(--blueprint-deep);display:grid;place-items:center;font-family:var(--display);font-weight:600;font-size:13px;}
+  .dfp .designer-row .verified{font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--blueprint-deep);background:var(--blueprint-bg);padding:3px 7px;border-radius:4px;text-transform:uppercase;}
+  .dfp h1.title{font-family:var(--display);font-weight:600;font-size:44px;line-height:1.04;letter-spacing:-.02em;margin:12px 0 6px;}
+  .dfp .subtitle{color:var(--ink-2);font-size:15px;max-width:48ch;}
+  .dfp .stat-row{display:flex;gap:24px;margin-top:16px;align-items:center;flex-wrap:wrap;}
+  .dfp .stat-row .stars-inner{letter-spacing:1px;color:var(--blueprint);font-size:13px;}
+  .dfp .stat-row .sep{width:1px;height:14px;background:var(--rule);}
+  .dfp .stat-row .stat{font-family:var(--mono);font-size:11px;color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase;}
+  .dfp .stat-row .stat strong{color:var(--ink);font-weight:500;}
+  .dfp .usp-badges{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:22px;}
+  .dfp .usp-badge{background:var(--blueprint-bg);border:1px solid #DCD3FF;border-radius:8px;padding:12px 12px 12px 14px;display:flex;align-items:flex-start;gap:10px;}
+  .dfp .usp-badge .ico{color:var(--blueprint-deep);flex:0 0 auto;margin-top:1px;}
+  .dfp .usp-badge .ttl{font-family:var(--display);font-weight:600;font-size:13px;color:var(--ink);letter-spacing:-.005em;}
+  .dfp .usp-badge .sub{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--blueprint-deep);text-transform:uppercase;margin-top:2px;}
+  .dfp .field{margin-top:24px;}
+  .dfp .field-label{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;color:var(--ink-3);font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;gap:12px;}
+  .dfp .field-label .pick{color:var(--ink);font-family:var(--display);font-weight:500;font-size:16px;text-transform:none;letter-spacing:-.01em;}
+  .dfp .usage-note{font-size:13px;color:var(--ink-2);line-height:1.55;max-width:52ch;}
+  .dfp .formats{display:flex;flex-wrap:wrap;gap:6px;}
+  .dfp .fmt{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);border:1px solid var(--rule);padding:4px 8px;border-radius:4px;background:var(--paper);}
+  .dfp .fmt.printable{border-color:#D8D0F4;color:var(--blueprint-deep);background:var(--blueprint-bg);}
+  .dfp .fmt.laser{border-color:#DDE4D2;color:#3F5C1C;background:#EFF4E2;}
+  .dfp .fmt.cnc{border-color:#E6D8C4;color:#6E4A14;background:#F6EEDD;}
+  .dfp .fmt.source{border-color:var(--rule);color:var(--ink-2);}
+  .dfp .price-row{display:flex;align-items:baseline;gap:10px;margin-top:22px;}
+  .dfp .price{font-family:var(--display);font-weight:600;font-size:30px;letter-spacing:-.02em;color:var(--ink);}
+  .dfp .price-compare{font-size:17px;color:var(--ink-3);text-decoration:line-through;}
+  .dfp .cta-row{display:grid;grid-template-columns:1fr;gap:8px;margin-top:16px;}
+  .dfp .cta{height:50px;border-radius:8px;border:0;background:var(--ink);color:#fff;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;display:inline-flex;align-items:center;justify-content:center;gap:10px;transition:background .15s ease;width:100%;}
+  .dfp .cta:hover{background:#000;}
+  .dfp .cta.blueprint{background:var(--blueprint);}
+  .dfp .cta.blueprint:hover{background:var(--blueprint-deep);}
+  .dfp .cta[disabled]{background:var(--ink-3);cursor:not-allowed;}
+  .dfp .meta-line{font-size:12px;color:var(--ink-3);margin-top:10px;}
+  .dfp .quickfacts{margin-top:24px;border-top:1px solid var(--hairline);}
+  .dfp .qf{display:grid;grid-template-columns:140px 1fr;padding:10px 0;border-bottom:1px solid var(--hairline);font-size:13px;}
+  .dfp .qf .k{color:var(--ink-3);font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding-top:2px;}
+  .dfp .qf .v{color:var(--ink);}
+
+  /* section */
+  .dfp .section{padding:96px 0;border-top:1px solid var(--rule);}
+  .dfp .sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:56px;align-items:end;margin-bottom:48px;}
+  .dfp .sec-head h2{font-family:var(--display);font-weight:600;font-size:52px;line-height:1;letter-spacing:-.025em;margin:12px 0 0;}
+  .dfp .sec-head .lede{color:var(--ink-2);font-size:17px;max-width:58ch;}
+
+  /* usp showcase */
+  .dfp .usp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .dfp .usp{background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:28px;display:flex;flex-direction:column;min-height:380px;}
+  .dfp .usp .num{font-family:var(--mono);font-size:11px;color:var(--ink-3);letter-spacing:.12em;}
+  .dfp .usp .ico-wrap{width:48px;height:48px;border-radius:8px;display:grid;place-items:center;margin:18px 0 22px;background:var(--blueprint-bg);color:var(--blueprint-deep);}
+  .dfp .usp.laser .ico-wrap{background:#EFF4E2;color:#3F5C1C;}
+  .dfp .usp.cnc .ico-wrap{background:#F6EEDD;color:#6E4A14;}
+  .dfp .usp h3{font-family:var(--display);font-weight:600;font-size:26px;line-height:1.1;letter-spacing:-.015em;margin:0 0 10px;}
+  .dfp .usp p{color:var(--ink-2);font-size:14px;margin:0 0 22px;}
+  .dfp .usp .check-list{list-style:none;padding:18px 0 0;margin:auto 0 0;display:grid;gap:8px;border-top:1px solid var(--hairline);}
+  .dfp .usp .check-list li{display:grid;grid-template-columns:16px 1fr;gap:10px;align-items:baseline;font-size:13px;color:var(--ink);}
+  .dfp .usp .check-list .c{color:var(--blueprint);margin-top:1px;}
+
+  /* geometry stats */
+  .dfp .geom-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+  .dfp .geom-cell{padding:32px;border-right:1px solid var(--rule);}
+  .dfp .geom-cell:nth-child(4n){border-right:0;}
+  .dfp .geom-cell .k{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);}
+  .dfp .geom-cell .v{font-family:var(--display);font-weight:600;font-size:40px;letter-spacing:-.02em;margin-top:10px;line-height:1;}
+  .dfp .geom-cell .s{font-size:12px;color:var(--ink-3);margin-top:6px;}
+
+  /* manifest */
+  .dfp .manifest{background:var(--paper);border:1px solid var(--rule);border-radius:10px;overflow:hidden;}
+  .dfp .manifest-head,.dfp .manifest-row{display:grid;grid-template-columns:80px 1fr 100px 120px 140px;padding:14px 22px;align-items:center;}
+  .dfp .manifest-head{background:#F1F1F0;border-bottom:1px solid var(--rule);font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--ink-3);text-transform:uppercase;}
+  .dfp .manifest-row{border-bottom:1px solid var(--hairline);font-size:13px;}
+  .dfp .manifest-row:last-child{border-bottom:0;}
+  .dfp .manifest-row .ext{font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:4px 8px;border-radius:4px;display:inline-block;font-weight:500;}
+  .dfp .ext.printable{background:var(--blueprint-bg);color:var(--blueprint-deep);}
+  .dfp .ext.laser{background:#EFF4E2;color:#3F5C1C;}
+  .dfp .ext.cnc{background:#F6EEDD;color:#6E4A14;}
+  .dfp .ext.source{background:var(--hairline);color:var(--ink);}
+  .dfp .ext.doc{background:#F2EAF7;color:#5A2E7A;}
+  .dfp .manifest-row .nm{font-family:var(--mono);font-size:13px;color:var(--ink);}
+  .dfp .manifest-row .size,.dfp .manifest-row .ct{color:var(--ink-2);font-family:var(--mono);font-size:12px;}
+  .dfp .manifest-row .purpose{color:var(--ink-2);font-size:12px;}
+  .dfp .manifest-foot{padding:14px 22px;background:#FAFAFA;border-top:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);flex-wrap:wrap;}
+
+  /* benefits */
+  .dfp .benefit-time{display:grid;grid-template-columns:1fr auto 1fr;align-items:stretch;border:1px solid var(--rule);border-radius:10px;overflow:hidden;margin-bottom:28px;}
+  .dfp .bt-cell{padding:32px 36px;background:var(--paper);}
+  .dfp .bt-cell.highlight{background:var(--blueprint-bg);border-left:1px solid #DCD3FF;}
+  .dfp .bt-cell .k{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);}
+  .dfp .bt-cell.highlight .k{color:var(--blueprint-deep);}
+  .dfp .bt-cell .v{font-family:var(--display);font-weight:600;font-size:48px;line-height:1;letter-spacing:-.025em;margin:12px 0;}
+  .dfp .bt-cell.highlight .v{color:var(--blueprint-deep);}
+  .dfp .bt-cell .s{font-size:14px;color:var(--ink-2);max-width:36ch;}
+  .dfp .bt-arrow{display:grid;place-items:center;padding:0 18px;color:var(--ink-3);background:var(--paper);}
+  .dfp .benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .dfp .benefit{background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:28px;}
+  .dfp .benefit .ico-wrap{width:48px;height:48px;border-radius:8px;display:grid;place-items:center;background:var(--blueprint-bg);color:var(--blueprint-deep);margin-bottom:20px;}
+  .dfp .benefit h3{font-family:var(--display);font-weight:600;font-size:24px;line-height:1.1;letter-spacing:-.015em;margin:0 0 10px;}
+  .dfp .benefit p{color:var(--ink-2);font-size:14px;margin:0;}
+
+  /* compat */
+  .dfp .compat-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;}
+  .dfp .compat{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:20px 16px;text-align:center;}
+  .dfp .compat .glyph-box{width:40px;height:40px;margin:0 auto;display:grid;place-items:center;border-radius:8px;background:var(--hairline);color:var(--ink);font-family:var(--display);font-weight:600;font-size:16px;}
+  .dfp .compat .app{font-family:var(--display);font-weight:500;font-size:15px;margin-top:12px;letter-spacing:-.005em;}
+  .dfp .compat .ver{font-family:var(--mono);font-size:10px;color:var(--ink-3);letter-spacing:.06em;margin-top:4px;text-transform:uppercase;}
+
+  /* faq */
+  .dfp .faq{border-top:1px solid var(--rule);}
+  .dfp .faq-item{border-bottom:1px solid var(--rule);}
+  .dfp .faq-q{width:100%;text-align:left;background:transparent;border:0;padding:26px 0;display:grid;grid-template-columns:60px 1fr 32px;gap:18px;align-items:baseline;color:var(--ink);}
+  .dfp .faq-q .ix{font-family:var(--mono);font-size:11px;color:var(--ink-3);letter-spacing:.1em;padding-top:6px;}
+  .dfp .faq-q .q{font-family:var(--display);font-weight:600;font-size:22px;line-height:1.25;letter-spacing:-.01em;}
+  .dfp .faq-q .toggle{font-family:var(--display);font-weight:500;font-size:22px;color:var(--ink-2);text-align:right;}
+  .dfp .faq-a{display:none;grid-template-columns:60px 1fr 32px;gap:18px;padding:0 0 26px;}
+  .dfp .faq-item.open .faq-a{display:grid;}
+  .dfp .faq-a .ans{color:var(--ink-2);font-size:15px;max-width:64ch;grid-column:2;white-space:pre-line;}
+
+  /* reviews */
+  .dfp .reviews{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2fr);gap:56px;}
+  .dfp .review-sum .big{font-family:var(--display);font-weight:600;font-size:88px;line-height:1;letter-spacing:-.03em;}
+  .dfp .review-sum .of{color:var(--ink-3);font-size:13px;margin-top:6px;}
+  .dfp .bars{margin-top:22px;display:grid;gap:8px;}
+  .dfp .bar{display:grid;grid-template-columns:22px 1fr 32px;gap:10px;align-items:center;}
+  .dfp .bar .lab{font-family:var(--mono);font-size:11px;color:var(--ink-3);}
+  .dfp .bar .track{height:4px;background:var(--rule);border-radius:999px;overflow:hidden;}
+  .dfp .bar .fill{height:100%;background:var(--blueprint);}
+  .dfp .bar .ct{font-family:var(--mono);font-size:11px;color:var(--ink-3);text-align:right;}
+  .dfp .review-list{display:grid;gap:16px;}
+  .dfp .review{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:24px;}
+  .dfp .review .head{display:flex;justify-content:space-between;align-items:center;gap:12px;}
+  .dfp .review .who{display:flex;align-items:center;gap:12px;}
+  .dfp .review .ava{width:36px;height:36px;border-radius:999px;background:var(--blueprint-bg);color:var(--blueprint-deep);display:grid;place-items:center;font-family:var(--display);font-weight:600;font-size:14px;}
+  .dfp .review .name{font-size:14px;font-weight:500;}
+  .dfp .review .when{font-family:var(--mono);font-size:10px;color:var(--ink-3);letter-spacing:.08em;text-transform:uppercase;}
+  .dfp .review .stars-inner{letter-spacing:1px;color:var(--blueprint);font-size:13px;}
+  .dfp .review .ttl{font-family:var(--display);font-weight:600;font-size:18px;margin:14px 0 6px;letter-spacing:-.005em;}
+  .dfp .review .body{color:var(--ink-2);font-size:14px;}
+  .dfp .review .tags{display:flex;gap:6px;margin-top:14px;flex-wrap:wrap;}
+  .dfp .review .tag{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);border:1px solid var(--rule-2);padding:3px 8px;border-radius:999px;}
+
+  /* related */
+  .dfp .related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  .dfp .card{background:var(--paper);border:1px solid var(--rule);border-radius:8px;overflow:hidden;transition:transform .2s ease,border-color .15s ease;display:block;}
+  .dfp .card:hover{border-color:var(--ink-2);transform:translateY(-2px);}
+  .dfp .card .frame{aspect-ratio:4/3;border-bottom:1px solid var(--rule);position:relative;overflow:hidden;background:var(--bg);}
+  .dfp .card .frame .bg{position:absolute;inset:0;background:linear-gradient(var(--hairline) 1px,transparent 1px) 0 0/16px 16px,linear-gradient(90deg,var(--hairline) 1px,transparent 1px) 0 0/16px 16px,var(--bg);}
+  .dfp .card .frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .dfp .card .body{padding:18px;}
+  .dfp .card .nm{font-family:var(--display);font-weight:600;font-size:17px;line-height:1.2;letter-spacing:-.005em;}
+  .dfp .card .mt{font-family:var(--mono);font-size:10px;color:var(--ink-3);letter-spacing:.08em;text-transform:uppercase;margin-top:6px;}
+  .dfp .card .pr-row{display:flex;justify-content:space-between;align-items:center;margin-top:14px;}
+  .dfp .card .pr{font-family:var(--display);font-weight:600;font-size:15px;}
+
+  @media (max-width:1080px){
+    .dfp .compat-grid{grid-template-columns:repeat(3,1fr);}
+    .dfp .geom-grid{grid-template-columns:repeat(2,1fr);}
+    .dfp .geom-cell:nth-child(2){border-right:0;}
+    .dfp .geom-cell:nth-child(1),.dfp .geom-cell:nth-child(2){border-bottom:1px solid var(--rule);}
+  }
+  @media (max-width:980px){
+    .dfp .hero-grid,.dfp .sec-head,.dfp .reviews{grid-template-columns:1fr;gap:32px;}
+    .dfp .usp-grid,.dfp .related-grid{grid-template-columns:1fr 1fr;}
+    .dfp .benefit-grid,.dfp .benefit-time{grid-template-columns:1fr;}
+    .dfp .bt-cell.highlight{border-left:0;border-top:1px solid #DCD3FF;}
+    .dfp .bt-arrow{transform:rotate(90deg);padding:14px 0;}
+    .dfp h1.title{font-size:36px;}
+    .dfp .sec-head h2{font-size:40px;}
+    .dfp .manifest-head,.dfp .manifest-row{grid-template-columns:64px 1fr 80px 92px;}
+    .dfp .manifest-head .purpose-col,.dfp .manifest-row .purpose{display:none;}
+    .dfp .section{padding:64px 0;}
+  }
+  @media (max-width:600px){
+    .dfp .container{padding:0 18px;}
+    .dfp .usp-grid,.dfp .related-grid,.dfp .compat-grid{grid-template-columns:1fr 1fr;}
+    .dfp .thumb-rail{grid-template-columns:repeat(3,1fr);}
+    .dfp .sec-head h2{font-size:32px;}
+    .dfp h1.title{font-size:30px;}
+    .dfp .usp-badges{grid-template-columns:1fr;}
+    .dfp .review-sum .big{font-size:64px;}
+  }
+  /* === PAGE ADJUSTMENTS === */
+  /* Remove the decorative viewer controls from the main product image */
+  .dfp .viewer-toolbar,
+  .dfp .viewer-info,
+  .dfp .viewer-controls { display: none !important; }
+
+  /* Clean, borderless Usage + Included-formats blocks */
+  .dfp .field { border: 0 !important; background: transparent !important; padding: 0 !important; }
+  .dfp .usage-note { border: 0 !important; background: transparent !important; }
+  /* === ADJUSTMENTS · ROUND 2 === */
+  /* Product image fills its frame — no white space, no border */
+  .dfp .viewer{ aspect-ratio:auto !important; border:0 !important; }
+  .dfp .viewer .stage{ position:relative !important; padding:0 !important; }
+  .dfp .viewer .stage img{ width:100% !important; height:auto !important; }
+
+  /* Remove the seller row at the top of the buy box */
+  .dfp .designer-row{ display:none !important; }
+
+  /* Fix the boxed border on Usage / Included formats (theme .field collision) */
+  .dfp .field{ display:block !important; border:0 !important; box-shadow:none !important; background:transparent !important; padding:0 !important; }
+  .dfp .field::before,
+  .dfp .field::after{ content:none !important; display:none !important; }
+  /* === ADJUSTMENTS · ROUND 3 === */
+  /* Colour the remaining format chips — and any future format */
+  .dfp .fmt.source{ border-color:#CFE4E2 !important; color:#1F5F5A !important; background:#E3F1EF !important; }
+  /* Breadcrumb link hover */
+  .dfp .crumbs a:hover{ text-decoration:underline; }
+  /* === ADJUSTMENTS · ROUND 4 === */
+  /* Hide the format sub-lines on the 3 capability badges */
+  .dfp .usp-badge .sub{ display:none !important; }
+
+  /* Make the usage note larger / more readable */
+  .dfp .usage-note{ font-size:15px !important; line-height:1.6 !important; max-width:60ch !important; }
+  /* 3D model viewer */
+  .dfp .viewer model-viewer{width:100%;height:100%;--poster-color:transparent;background:transparent;}
+  .dfp .vt .vt-3d{position:absolute;top:5px;right:5px;font-family:var(--mono);font-size:9px;letter-spacing:.06em;background:var(--blueprint);color:#fff;padding:2px 5px;border-radius:4px;z-index:3;}
+  /* Force the 3D viewer to fill the stage so it can't collapse */
+  .dfp .viewer .stage{ position:relative !important; min-height:480px; }
+  .dfp .viewer .stage model-viewer{ position:absolute !important; inset:0 !important; width:100% !important; height:100% !important; display:block !important; }
+  .dfp .viewer .stage model-viewer.dfp-hide{ display:none !important; }
+  .dfp .viewer .stage img.dfp-swap{ position:absolute !important; inset:0 !important; width:100% !important; height:100% !important; object-fit:contain; }
+</style>
+
+{%- liquid
+  assign sub_fallback = product.description | strip_html | truncate: 180
+  assign cur = product.selected_or_first_available_variant
+-%}
+<div class="dfp">
+
+  {%- if section.settings.show_announce -%}
+  <div class="announce">
+    <span>{{ section.settings.ann1 }}</span>{%- if section.settings.ann2 != blank -%}<span class="dot">•</span><span>{{ section.settings.ann2 }}</span>{%- endif -%}{%- if section.settings.ann3 != blank -%}<span class="dot">•</span><span>{{ section.settings.ann3 }}</span>{%- endif -%}
+  </div>
+  {%- endif -%}
+
+  {%- if section.settings.show_crumbs -%}
+  <div class="container crumbs">
+    <a href="{{ routes.root_url }}">Home</a><span class="sep">/</span>
+    {%- assign bc_collection = collection | default: product.collections.first -%}
+    {%- if bc_collection -%}<a href="{{ bc_collection.url }}">{{ bc_collection.title }}</a><span class="sep">/</span>{%- endif -%}
+    <span class="here">{{ product.title }}</span>
+  </div>
+  {%- endif -%}
+
+  <main class="hero">
+    <div class="container hero-grid">
+
+      <!-- VIEWER (real product gallery, blueprint styling) -->
+      <div>
+        <div class="viewer">
+          <div class="grid-bg"></div>
+          <div class="viewer-toolbar">
+            <button type="button" class="vt-btn" data-active="true" onclick="dfpMode(this)">{{ section.settings.view_mode1 | default: 'Solid' }}</button>
+            <button type="button" class="vt-btn" data-active="false" onclick="dfpMode(this)">{{ section.settings.view_mode2 | default: 'Wireframe' }}</button>
+            <button type="button" class="vt-btn" data-active="false" onclick="dfpMode(this)">{{ section.settings.view_mode3 | default: 'X-ray' }}</button>
+          </div>
+          <div class="viewer-info">
+            <span class="live">{{ section.settings.view_info1 | default: '3D MODEL · 24,812 polys' }}</span>
+            {%- if section.settings.view_info2 != blank -%}<span>{{ section.settings.view_info2 }}</span>{%- endif -%}
+          </div>
+          <div class="stage" id="dfpStage">
+            {%- assign themodel = nil -%}
+            {%- for m in product.media -%}
+              {%- if m.media_type == 'model' -%}{%- assign themodel = m -%}{%- break -%}{%- endif -%}
+            {%- endfor -%}
+            {%- if themodel -%}
+              {%- assign glb_src = '' -%}
+              {%- for s in themodel.sources -%}
+                {%- if s.format == 'glb' -%}{%- assign glb_src = s.url -%}{%- break -%}{%- endif -%}
+              {%- endfor -%}
+              <model-viewer class="dfp-hide" data-glb="{{ glb_src }}" camera-controls auto-rotate ar ar-modes="webxr scene-viewer quick-look" shadow-intensity="1" reveal="auto" poster="{{ themodel.preview_image | image_url: width: 1100 }}" alt="{{ product.title | escape }}" style="width:100%;height:100%;"></model-viewer>
+            {%- endif -%}
+            {%- if product.media.size > 0 -%}
+              {%- assign fm = product.media.first -%}
+              <img class="dfp-swap" src="{{ fm.preview_image | image_url: width: 1100 }}" alt="{{ fm.alt | escape | default: product.title | escape }}">
+            {%- elsif themodel == nil -%}
+              <svg class="ph" width="220" height="170" viewBox="0 0 220 170" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="20" y="60" width="180" height="70" rx="3"/><path d="M40 60 L70 30 L150 30 L180 60"/><path d="M70 30 L70 130 M150 30 L150 130" stroke-dasharray="3 4" stroke-width="0.8"/></svg>
+            {%- endif -%}
+          </div>
+          <div class="viewer-controls">
+            <div class="vc-axes">
+              <button type="button" data-active="true" onclick="dfpAxis(this)">{{ section.settings.axis1 | default: '3/4' }}</button>
+              <button type="button" data-active="false" onclick="dfpAxis(this)">{{ section.settings.axis2 | default: 'FRONT' }}</button>
+              <button type="button" data-active="false" onclick="dfpAxis(this)">{{ section.settings.axis3 | default: 'SIDE' }}</button>
+              <button type="button" data-active="false" onclick="dfpAxis(this)">{{ section.settings.axis4 | default: 'TOP' }}</button>
+            </div>
+            <div class="vc-actions">
+              <button type="button" aria-label="Rotate"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8M21 3v5h-5"/></svg></button>
+              <button type="button" aria-label="Measure"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 17 3l4 4L7 21 3 17Z"/><path d="m7 13 2 2M10 10l2 2M13 7l2 2"/></svg></button>
+              <button type="button" aria-label="Fullscreen"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9V3h6M21 9V3h-6M3 15v6h6M21 15v6h-6"/></svg></button>
+            </div>
+          </div>
+        </div>
+        {%- if product.media.size > 1 -%}
+        <div class="thumb-rail">
+          {%- for media in product.media -%}
+            <button type="button" class="vt" data-active="{% if forloop.first %}true{% else %}false{% endif %}" data-media-type="{{ media.media_type }}" data-media-id="{{ media.id }}" onclick="dfpSwap(this,'{{ media.preview_image | image_url: width: 1100 }}')">
+              <span class="vt-bg"></span>
+              <img src="{{ media.preview_image | image_url: width: 220 }}" alt="{{ media.alt | escape }}">
+              {%- if media.media_type == 'model' -%}<span class="vt-3d">3D</span>{%- endif -%}
+              <span class="vt-label">{{ forloop.index }}</span>
+            </button>
+          {%- endfor -%}
+        </div>
+        {%- endif -%}
+      </div>
+
+      <!-- BUY BOX -->
+      <div>
+        <div class="designer-row">
+          <span class="ava">{{ section.settings.designer_ava | default: 'SK' }}</span>
+          <span><strong style="color:var(--ink)">{{ section.settings.designer_name | default: 'Studio Kanso' }}</strong>{%- if section.settings.designer_files != blank -%} · {{ section.settings.designer_files }}{%- endif -%}</span>
+          {%- if section.settings.verified_label != blank -%}<span class="verified">{{ section.settings.verified_label }}</span>{%- endif -%}
+        </div>
+
+        <h1 class="title">{{ section.settings.title_override | default: product.title }}</h1>
+        <p class="subtitle">{{ section.settings.subtitle | default: sub_fallback }}</p>
+
+        <div class="stat-row">
+          <span style="display:inline-flex;gap:8px;align-items:center">
+            <span class="stars-inner">★★★★★</span>
+            <span class="mono">{{ section.settings.stat_rating | default: '4.9' }} · <strong>{{ section.settings.stat_reviews | default: '328 reviews' }}</strong></span>
+          </span>
+          {%- if section.settings.stat_downloads != blank -%}<span class="sep"></span><span class="mono">↓ <strong>{{ section.settings.stat_downloads }}</strong></span>{%- endif -%}
+          {%- if section.settings.stat_version != blank -%}<span class="sep"></span><span class="mono">{{ section.settings.stat_version }}</span>{%- endif -%}
+        </div>
+
+        <div class="usp-badges">
+          <div class="usp-badge"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-2M6 14h12v7H6z"/></svg></span><div><div class="ttl">{{ section.settings.badge1_ttl | default: '3D Printable' }}</div><div class="sub">{{ section.settings.badge1_sub | default: 'STL · 3MF · OBJ' }}</div></div></div>
+          <div class="usp-badge"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h6m12 0h-6M12 3v6m0 12v-6"/><circle cx="12" cy="12" r="2.5"/></svg></span><div><div class="ttl">{{ section.settings.badge2_ttl | default: 'Laser Cuttable' }}</div><div class="sub">{{ section.settings.badge2_sub | default: 'DXF · SVG · AI' }}</div></div></div>
+          <div class="usp-badge"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v8H4z"/><path d="M8 12v6M16 12v6M6 20h12"/></svg></span><div><div class="ttl">{{ section.settings.badge3_ttl | default: 'Manufacturing' }}</div><div class="sub">{{ section.settings.badge3_sub | default: 'STEP · IGES' }}</div></div></div>
+        </div>
+
+        {%- if section.settings.usage_note != blank or section.settings.usage_pick != blank -%}
+        <div class="field">
+          <div class="field-label"><span>{{ section.settings.usage_label | default: 'Usage' }}</span>{%- if section.settings.usage_pick != blank -%}<span class="pick">{{ section.settings.usage_pick }}</span>{%- endif -%}</div>
+          {%- if section.settings.usage_note != blank -%}<div class="usage-note">{{ section.settings.usage_note }}</div>{%- endif -%}
+        </div>
+        {%- endif -%}
+
+        {%- assign fmt_metas = product.metafields.shopify["file-format-type"].value -%}
+        {%- if fmt_metas != blank and fmt_metas.size > 0 -%}
+        <div class="field">
+          <div class="field-label"><span>{{ section.settings.formats_label | default: 'Included formats' }}</span>{%- if section.settings.formats_count != blank -%}<span class="mono" style="color:var(--ink-2)">{{ section.settings.formats_count }}</span>{%- endif -%}</div>
+          <div class="formats">
+            {%- assign t_print = 'STL,3MF,OBJ' | split: ',' -%}
+            {%- assign t_laser = 'DXF,SVG,AI' | split: ',' -%}
+            {%- assign t_cnc = 'STEP,IGES' | split: ',' -%}
+            {%- for mo in fmt_metas -%}
+              {%- assign lbl = mo.label | default: mo.system.handle | upcase -%}
+              {%- assign tag = 'source' -%}
+              {%- if t_print contains lbl -%}{%- assign tag = 'printable' -%}{%- elsif t_laser contains lbl -%}{%- assign tag = 'laser' -%}{%- elsif t_cnc contains lbl -%}{%- assign tag = 'cnc' -%}{%- endif -%}
+              <span class="fmt {{ tag }}">{{ lbl }}</span>
+            {%- endfor -%}
+          </div>
+        </div>
+        {%- endif -%}
+
+        <div class="price-row">
+          <span class="price">{{ product.price | money }}</span>
+          {%- if product.compare_at_price > product.price -%}<span class="price-compare">{{ product.compare_at_price | money }}</span>{%- endif -%}
+        </div>
+
+        {%- form 'product', product, id: 'dfp-form' -%}
+          <input type="hidden" name="id" value="{{ cur.id }}">
+          {%- if product.variants.size > 1 -%}
+          <div class="field" style="margin-top:14px">
+            <div class="field-label"><span>{{ section.settings.variant_label | default: 'License' }}</span></div>
+            <select name="id" class="usage-note" style="width:100%;padding:12px 14px;border:1px solid var(--rule-2);border-radius:8px;background:var(--paper);font-family:var(--sans);font-size:14px;color:var(--ink)">
+              {%- for v in product.variants -%}<option value="{{ v.id }}"{% unless v.available %} disabled{% endunless %}>{{ v.title }} — {{ v.price | money }}</option>{%- endfor -%}
+            </select>
+          </div>
+          {%- endif -%}
+          <div class="cta-row">
+            <button type="submit" class="cta blueprint"{% unless product.available %} disabled{% endunless %}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
+              {%- if product.available -%}{{ section.settings.cta_label | default: 'Buy & download' }}{%- else -%}{{ section.settings.cta_sold | default: 'Sold out' }}{%- endif -%}
+            </button>
+          </div>
+        {%- endform -%}
+        {%- if section.settings.cta_meta != blank -%}<div class="meta-line">{{ section.settings.cta_meta }}</div>{%- endif -%}
+
+        <div class="quickfacts">
+          {%- if section.settings.qf1_k != blank -%}<div class="qf"><span class="k">{{ section.settings.qf1_k }}</span><span class="v">{{ section.settings.qf1_v }}</span></div>{%- endif -%}
+          {%- if section.settings.qf2_k != blank -%}<div class="qf"><span class="k">{{ section.settings.qf2_k }}</span><span class="v">{{ section.settings.qf2_v }}</span></div>{%- endif -%}
+          {%- if section.settings.qf3_k != blank -%}<div class="qf"><span class="k">{{ section.settings.qf3_k }}</span><span class="v">{{ section.settings.qf3_v }}</span></div>{%- endif -%}
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  {%- if section.settings.show_benefits -%}
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div><h2>{{ section.settings.benefits_h | default: 'Made for your own projects.' }}</h2></div>
+        <div class="lede">{{ section.settings.benefits_lede }}</div>
+      </div>
+      <div class="benefit-time">
+        <div class="bt-cell"><div class="k">{{ section.settings.bt1_k | default: 'The designer spent' }}</div><div class="v">{{ section.settings.bt1_v | default: '18 hours' }}</div><div class="s">{{ section.settings.bt1_s }}</div></div>
+        <div class="bt-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></div>
+        <div class="bt-cell highlight"><div class="k">{{ section.settings.bt2_k | default: 'You get it in' }}</div><div class="v">{{ section.settings.bt2_v | default: 'under 1 minute' }}</div><div class="s">{{ section.settings.bt2_s }}</div></div>
+      </div>
+      <div class="benefit-grid">
+        <div class="benefit"><div class="ico-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 17 3l4 4L7 21 3 17Z"/><path d="m7 13 2 2M10 10l2 2M13 7l2 2"/></svg></div><h3>{{ section.settings.ben1_h | default: 'Designers' }}</h3><p>{{ section.settings.ben1_p }}</p></div>
+        <div class="benefit"><div class="ico-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v8H4z"/><path d="M8 12v6M16 12v6M6 20h12"/></svg></div><h3>{{ section.settings.ben2_h | default: 'Architects' }}</h3><p>{{ section.settings.ben2_p }}</p></div>
+        <div class="benefit"><div class="ico-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-2M6 14h12v7H6z"/></svg></div><h3>{{ section.settings.ben3_h | default: 'Hobbyists' }}</h3><p>{{ section.settings.ben3_p }}</p></div>
+      </div>
+    </div>
+  </section>
+  {%- endif -%}
+
+  {%- if section.settings.show_usp -%}
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div><h2>{{ section.settings.usp_h | default: 'One file pack, three ways to fabricate.' }}</h2></div>
+        <div class="lede">{{ section.settings.usp_lede }}</div>
+      </div>
+      <div class="usp-grid">
+        <div class="usp printable">
+          <span class="num">{{ section.settings.uspc1_num | default: 'USP-01' }}</span>
+          <div class="ico-wrap"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-2M6 14h12v7H6z"/></svg></div>
+          <h3>{{ section.settings.uspc1_h | default: '3D-printable, end to end.' }}</h3>
+          <p>{{ section.settings.uspc1_p }}</p>
+          <ul class="check-list">
+            {%- if section.settings.uspc1_c1 != blank -%}<li><span class="c">✓</span><span>{{ section.settings.uspc1_c1 }}</span></li>{%- endif -%}
+            {%- if section.settings.uspc1_c2 != blank -%}<li><span class="c">✓</span><span>{{ section.settings.uspc1_c2 }}</span></li>{%- endif -%}
+            {%- if section.settings.uspc1_c3 != blank -%}<li><span class="c">✓</span><span>{{ section.settings.uspc1_c3 }}</span></li>{%- endif -%}
+            {%- if section.settings.uspc1_c4 != blank -%}<li><span class="c">✓</span><span>{{ section.settings.uspc1_c4 }}</span></li>{%- endif -%}
+          </ul>
+        </div>
+        <div class="usp laser">
+          <span class="num">{{ section.settings.uspc2_num | default: 'USP-02' }}</span>
+          <div class="ico-wrap"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h6m12 0h-6M12 3v6m0 12v-6"/><circle cx="12" cy="12" r="2.5"/></svg></div>
+          <h3>{{ section.settings.uspc2_h | default: 'Laser-cut, kerf-compensated.' }}</h3>
+          <p>{{ section.settings.uspc2_p }}</p>
+          <ul class="check-list">
+            {%- if section.settings.uspc2_c1 != blank -%}<li><span class="c">✓</span><span>{{ section.settings.uspc2_c1 }}</span></li>{%- endif -%}
+            {%- if section.settings.uspc2_c2 != blank -%}<li><span class="c">✓</span><span>{{ section.settings.uspc2_c2 }}</span></li>{%- endif -%}
+            {%- if section.settings.uspc2_c3 != blank -%}<li><span class="c">✓</span><span>{{ section.settings.uspc2_c3 }}</span></li>{%- endif -%}
+            {%- if section.settings.uspc2_c4 != blank -%}<li><span class="c">✓</span><span>{{ section.settings.uspc2_c4 }}</span></li>{%- endif -%}
+          </ul>
+        </div>
+        <div class="usp cnc">
+          <span class="num">{{ section.settings.uspc3_num | default: 'USP-03' }}</span>
+          <div class="ico-wrap"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v8H4z"/><path d="M8 12v6M16 12v6M6 20h12"/></svg></div>
+          <h3>{{ section.settings.uspc3_h | default: 'Manufacturing-grade output.' }}</h3>
+          <p>{{ section.settings.uspc3_p }}</p>
+          <ul class="check-list">
+            {%- if section.settings.uspc3_c1 != blank -%}<li><span class="c">✓</span><span>{{ section.settings.uspc3_c1 }}</span></li>{%- endif -%}
+            {%- if section.settings.uspc3_c2 != blank -%}<li><span class="c">✓</span><span>{{ section.settings.uspc3_c2 }}</span></li>{%- endif -%}
+            {%- if section.settings.uspc3_c3 != blank -%}<li><span class="c">✓</span><span>{{ section.settings.uspc3_c3 }}</span></li>{%- endif -%}
+            {%- if section.settings.uspc3_c4 != blank -%}<li><span class="c">✓</span><span>{{ section.settings.uspc3_c4 }}</span></li>{%- endif -%}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  {%- endif -%}
+
+  {%- if section.settings.show_geom -%}
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div><h2>{{ section.settings.geom_h | default: 'The numbers, without the marketing.' }}</h2></div>
+        <div class="lede">{{ section.settings.geom_lede }}</div>
+      </div>
+      <div class="geom-grid">
+        {%- if section.settings.geom1_k != blank -%}<div class="geom-cell"><div class="k">{{ section.settings.geom1_k }}</div><div class="v">{{ section.settings.geom1_v }}</div><div class="s">{{ section.settings.geom1_s }}</div></div>{%- endif -%}
+        {%- if section.settings.geom2_k != blank -%}<div class="geom-cell"><div class="k">{{ section.settings.geom2_k }}</div><div class="v">{{ section.settings.geom2_v }}</div><div class="s">{{ section.settings.geom2_s }}</div></div>{%- endif -%}
+        {%- if section.settings.geom3_k != blank -%}<div class="geom-cell"><div class="k">{{ section.settings.geom3_k }}</div><div class="v">{{ section.settings.geom3_v }}</div><div class="s">{{ section.settings.geom3_s }}</div></div>{%- endif -%}
+        {%- if section.settings.geom4_k != blank -%}<div class="geom-cell"><div class="k">{{ section.settings.geom4_k }}</div><div class="v">{{ section.settings.geom4_v }}</div><div class="s">{{ section.settings.geom4_s }}</div></div>{%- endif -%}
+        {%- if section.settings.geom5_k != blank -%}<div class="geom-cell"><div class="k">{{ section.settings.geom5_k }}</div><div class="v">{{ section.settings.geom5_v }}</div><div class="s">{{ section.settings.geom5_s }}</div></div>{%- endif -%}
+        {%- if section.settings.geom6_k != blank -%}<div class="geom-cell"><div class="k">{{ section.settings.geom6_k }}</div><div class="v">{{ section.settings.geom6_v }}</div><div class="s">{{ section.settings.geom6_s }}</div></div>{%- endif -%}
+      </div>
+    </div>
+  </section>
+  {%- endif -%}
+
+  {%- assign man_blocks = section.blocks | where: 'type', 'manifest_row' -%}
+  {%- if section.settings.show_manifest and man_blocks.size > 0 -%}
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div><h2>{{ section.settings.manifest_h | default: 'Every file, nothing hidden.' }}</h2></div>
+        <div class="lede">{{ section.settings.manifest_lede }}</div>
+      </div>
+      <div class="manifest">
+        <div class="manifest-head">
+          <span>{{ section.settings.man_col1 | default: 'Format' }}</span>
+          <span>{{ section.settings.man_col2 | default: 'Filename' }}</span>
+          <span>{{ section.settings.man_col3 | default: 'Size' }}</span>
+          <span>{{ section.settings.man_col4 | default: 'Category' }}</span>
+          <span class="purpose-col">{{ section.settings.man_col5 | default: 'Purpose' }}</span>
+        </div>
+        {%- for b in man_blocks -%}
+        <div class="manifest-row" {{ b.shopify_attributes }}>
+          <span><span class="ext {{ b.settings.tag }}">{{ b.settings.ext }}</span></span>
+          <span class="nm">{{ b.settings.nm }}</span>
+          <span class="size">{{ b.settings.size }}</span>
+          <span class="ct">{{ b.settings.category }}</span>
+          <span class="purpose">{{ b.settings.purpose }}</span>
+        </div>
+        {%- endfor -%}
+        {%- if section.settings.manifest_foot_l != blank or section.settings.manifest_foot_r != blank -%}
+        <div class="manifest-foot"><span>{{ section.settings.manifest_foot_l }}</span><span>{{ section.settings.manifest_foot_r }}</span></div>
+        {%- endif -%}
+      </div>
+    </div>
+  </section>
+  {%- endif -%}
+
+  {%- assign compat_blocks = section.blocks | where: 'type', 'compat_app' -%}
+  {%- if section.settings.show_compat and compat_blocks.size > 0 -%}
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div><h2>{{ section.settings.compat_h | default: 'Opens in your software.' }}</h2></div>
+        <div class="lede">{{ section.settings.compat_lede }}</div>
+      </div>
+      <div class="compat-grid">
+        {%- for b in compat_blocks -%}
+        <div class="compat" {{ b.shopify_attributes }}><div class="glyph-box">{{ b.settings.glyph }}</div><div class="app">{{ b.settings.app }}</div>{%- if b.settings.ver != blank -%}<div class="ver">{{ b.settings.ver }}</div>{%- endif -%}</div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </section>
+  {%- endif -%}
+
+  {%- assign faq_blocks = section.blocks | where: 'type', 'faq' -%}
+  {%- if section.settings.show_faq and faq_blocks.size > 0 -%}
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div><h2>{{ section.settings.faq_h | default: 'Most-asked.' }}</h2></div>
+        <div class="lede">{{ section.settings.faq_lede }}</div>
+      </div>
+      <div class="faq">
+        {%- for b in faq_blocks -%}
+        <div class="faq-item{% if forloop.first %} open{% endif %}" {{ b.shopify_attributes }}>
+          <button type="button" class="faq-q" onclick="dfpFaq(this.parentElement)"><span class="ix">Q.0{{ forloop.index }}</span><span class="q">{{ b.settings.q }}</span><span class="toggle">+</span></button>
+          <div class="faq-a"><div class="ans">{{ b.settings.a }}</div></div>
+        </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </section>
+  {%- endif -%}
+
+  {%- assign rev_blocks = section.blocks | where: 'type', 'review' -%}
+  {%- if section.settings.show_reviews -%}
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div><h2>{{ section.settings.reviews_h | default: 'From the workshop floor.' }}</h2></div>
+        <div class="lede">{{ section.settings.reviews_lede }}</div>
+      </div>
+      <div class="reviews">
+        <div class="review-sum">
+          <div class="big">{{ section.settings.rev_big | default: '4.9' }}</div>
+          <div class="of">{{ section.settings.rev_of | default: 'out of 5 · 328 verified reviews' }}</div>
+          <div class="bars">
+            <div class="bar"><span class="lab">5★</span><span class="track"><span class="fill" style="width:{{ section.settings.rev_p5 | default: '93' }}%"></span></span><span class="ct">{{ section.settings.rev_c5 | default: '305' }}</span></div>
+            <div class="bar"><span class="lab">4★</span><span class="track"><span class="fill" style="width:{{ section.settings.rev_p4 | default: '5' }}%"></span></span><span class="ct">{{ section.settings.rev_c4 | default: '16' }}</span></div>
+            <div class="bar"><span class="lab">3★</span><span class="track"><span class="fill" style="width:{{ section.settings.rev_p3 | default: '2' }}%"></span></span><span class="ct">{{ section.settings.rev_c3 | default: '5' }}</span></div>
+            <div class="bar"><span class="lab">2★</span><span class="track"><span class="fill" style="width:{{ section.settings.rev_p2 | default: '1' }}%"></span></span><span class="ct">{{ section.settings.rev_c2 | default: '1' }}</span></div>
+            <div class="bar"><span class="lab">1★</span><span class="track"><span class="fill" style="width:{{ section.settings.rev_p1 | default: '1' }}%"></span></span><span class="ct">{{ section.settings.rev_c1 | default: '1' }}</span></div>
+          </div>
+        </div>
+        <div class="review-list">
+          {%- for b in rev_blocks -%}
+          <div class="review" {{ b.shopify_attributes }}>
+            <div class="head"><div class="who"><div class="ava">{{ b.settings.name | slice: 0 | upcase }}</div><div><div class="name">{{ b.settings.name }}</div><div class="when">{{ b.settings.when }}</div></div></div><div class="stars-inner">★★★★★</div></div>
+            <div class="ttl">{{ b.settings.ttl }}</div>
+            <div class="body">{{ b.settings.body }}</div>
+            {%- if b.settings.tags != blank -%}<div class="tags">{%- assign tg = b.settings.tags | split: ',' -%}{%- for t in tg -%}<span class="tag">{{ t | strip }}</span>{%- endfor -%}</div>{%- endif -%}
+          </div>
+          {%- else -%}
+          <div class="review"><div class="ttl">{{ section.settings.reviews_empty | default: 'No reviews yet.' }}</div></div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </section>
+  {%- endif -%}
+
+  {%- if section.settings.show_related and product.collections.first -%}
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div><h2>{{ section.settings.related_h | default: 'More fabricable files.' }}</h2></div>
+        <div class="lede">{{ section.settings.related_lede }}</div>
+      </div>
+      <div class="related-grid">
+        {%- assign shown = 0 -%}
+        {%- for rp in product.collections.first.products limit: 8 -%}
+          {%- unless rp.id == product.id -%}{%- if shown < 4 -%}
+          <a class="card" href="{{ rp.url }}">
+            <div class="frame"><div class="bg"></div>{%- if rp.featured_image -%}<img src="{{ rp.featured_image | image_url: width: 600 }}" alt="{{ rp.featured_image.alt | escape }}">{%- endif -%}</div>
+            <div class="body"><div class="nm">{{ rp.title }}</div><div class="mt">{{ rp.type | default: '3D DESIGN FILE' }}</div><div class="pr-row"><span class="pr">{{ rp.price | money }}</span></div></div>
+          </a>
+          {%- assign shown = shown | plus: 1 -%}{%- endif -%}{%- endunless -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </section>
+  {%- endif -%}
+
+</div>
+
+<script>
+(function(){
+  function grp(el){ return el.closest('.viewer-toolbar, .vc-axes'); }
+  window.dfpMode=function(b){ var g=grp(b); if(!g)return; g.querySelectorAll('button').forEach(function(x){x.setAttribute('data-active','false');}); b.setAttribute('data-active','true'); };
+  window.dfpAxis=function(b){ var g=grp(b); if(!g)return; g.querySelectorAll('button').forEach(function(x){x.setAttribute('data-active','false');}); b.setAttribute('data-active','true'); };
+  window.dfpSwap=function(b,src){ var st=document.getElementById('dfpStage'); if(!st)return; var mv=st.querySelector('model-viewer'); var img=st.querySelector('img.dfp-swap'); var isModel=b.getAttribute('data-media-type')==='model'; if(isModel){ if(mv){ if(!mv.getAttribute('src') && mv.dataset.glb){ mv.setAttribute('src', mv.dataset.glb); } mv.classList.remove('dfp-hide'); } if(img){img.style.display='none';} } else { if(mv)mv.classList.add('dfp-hide'); if(img){ img.src=src; img.style.display='block'; img.style.zIndex='2'; } } document.querySelectorAll('.dfp .thumb-rail .vt').forEach(function(x){x.setAttribute('data-active','false');}); b.setAttribute('data-active','true'); };
+  window.dfpFaq=function(item){ var open=item.classList.contains('open'); item.parentElement.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open'); var t=i.querySelector('.toggle'); if(t)t.textContent='+';}); if(!open){ item.classList.add('open'); var t=item.querySelector('.toggle'); if(t)t.textContent='–'; } };
+})();
+</script>
+
+{% schema %}
+{
+  "name": "3D Design File Page",
+  "tag": "section",
+  "class": "dfp-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section visibility"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_announce",
+      "label": "Show announcement strip",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_crumbs",
+      "label": "Show breadcrumb",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_benefits",
+      "label": "Show 'Benefits' section",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_usp",
+      "label": "Show 'Three ways to fabricate' section",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_geom",
+      "label": "Show 'Geometry stats' section",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_manifest",
+      "label": "Show 'File manifest' section",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_compat",
+      "label": "Show 'Software compatibility' section",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_faq",
+      "label": "Show 'FAQ' section",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_reviews",
+      "label": "Show 'Reviews' section",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_related",
+      "label": "Show 'Related files' section",
+      "default": true
+    },
+    {
+      "type": "paragraph",
+      "content": "Toggle any section off for products that don't have content for it. Manifest, Compatibility and FAQ also auto-hide when they have no blocks."
+    },
+    {
+      "type": "header",
+      "content": "Announcement strip"
+    },
+    {
+      "type": "text",
+      "id": "ann1",
+      "label": "Item 1",
+      "default": "After sales support"
+    },
+    {
+      "type": "text",
+      "id": "ann2",
+      "label": "Item 2",
+      "default": "For personal projects only"
+    },
+    {
+      "type": "text",
+      "id": "ann3",
+      "label": "Item 3",
+      "default": "Used by 18,400+ makers"
+    },
+    {
+      "type": "header",
+      "content": "Breadcrumb"
+    },
+    {
+      "type": "text",
+      "id": "crumb1",
+      "label": "Crumb 1",
+      "default": "All files"
+    },
+    {
+      "type": "text",
+      "id": "crumb2",
+      "label": "Crumb 2",
+      "default": "Lighting"
+    },
+    {
+      "type": "text",
+      "id": "crumb3",
+      "label": "Crumb 3",
+      "default": "Pendant lamps"
+    },
+    {
+      "type": "paragraph",
+      "content": "The product title is shown automatically as the final crumb."
+    },
+    {
+      "type": "header",
+      "content": "Viewer (uses the product's own images)"
+    },
+    {
+      "type": "text",
+      "id": "view_mode1",
+      "label": "Toolbar button 1",
+      "default": "Solid"
+    },
+    {
+      "type": "text",
+      "id": "view_mode2",
+      "label": "Toolbar button 2",
+      "default": "Wireframe"
+    },
+    {
+      "type": "text",
+      "id": "view_mode3",
+      "label": "Toolbar button 3",
+      "default": "X-ray"
+    },
+    {
+      "type": "text",
+      "id": "view_info1",
+      "label": "Info readout (left)",
+      "default": "3D MODEL · 24,812 polys"
+    },
+    {
+      "type": "text",
+      "id": "view_info2",
+      "label": "Info readout (right)",
+      "default": "22 PARTS"
+    },
+    {
+      "type": "text",
+      "id": "axis1",
+      "label": "Axis button 1",
+      "default": "3/4"
+    },
+    {
+      "type": "text",
+      "id": "axis2",
+      "label": "Axis button 2",
+      "default": "FRONT"
+    },
+    {
+      "type": "text",
+      "id": "axis3",
+      "label": "Axis button 3",
+      "default": "SIDE"
+    },
+    {
+      "type": "text",
+      "id": "axis4",
+      "label": "Axis button 4",
+      "default": "TOP"
+    },
+    {
+      "type": "header",
+      "content": "Buy box — seller & title"
+    },
+    {
+      "type": "text",
+      "id": "designer_ava",
+      "label": "Seller avatar initials",
+      "default": "SK"
+    },
+    {
+      "type": "text",
+      "id": "designer_name",
+      "label": "Seller name",
+      "default": "Studio Kanso"
+    },
+    {
+      "type": "text",
+      "id": "designer_files",
+      "label": "Seller note (after ·)",
+      "default": "248 files"
+    },
+    {
+      "type": "text",
+      "id": "verified_label",
+      "label": "Verified badge",
+      "default": "Verified seller"
+    },
+    {
+      "type": "text",
+      "id": "title_override",
+      "label": "Title override",
+      "info": "Leave blank to use the product title."
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "A parametric designer pendant in 22 parts: 3D-printable petals, laser-cut acrylic diffuser rings, and a CNC-ready aluminum hub. One file pack, three ways to make it."
+    },
+    {
+      "type": "header",
+      "content": "Buy box — stats row"
+    },
+    {
+      "type": "text",
+      "id": "stat_rating",
+      "label": "Rating number",
+      "default": "4.9"
+    },
+    {
+      "type": "text",
+      "id": "stat_reviews",
+      "label": "Reviews label",
+      "default": "328 reviews"
+    },
+    {
+      "type": "text",
+      "id": "stat_downloads",
+      "label": "Downloads label",
+      "default": "5,712 downloads"
+    },
+    {
+      "type": "text",
+      "id": "stat_version",
+      "label": "Version label",
+      "default": "v 2.3.0 · 4 days ago"
+    },
+    {
+      "type": "header",
+      "content": "Buy box — capability badges"
+    },
+    {
+      "type": "text",
+      "id": "badge1_ttl",
+      "label": "Badge 1 title",
+      "default": "3D Printable"
+    },
+    {
+      "type": "text",
+      "id": "badge1_sub",
+      "label": "Badge 1 formats",
+      "default": "STL · 3MF · OBJ"
+    },
+    {
+      "type": "text",
+      "id": "badge2_ttl",
+      "label": "Badge 2 title",
+      "default": "Laser Cuttable"
+    },
+    {
+      "type": "text",
+      "id": "badge2_sub",
+      "label": "Badge 2 formats",
+      "default": "DXF · SVG · AI"
+    },
+    {
+      "type": "text",
+      "id": "badge3_ttl",
+      "label": "Badge 3 title",
+      "default": "Manufacturing"
+    },
+    {
+      "type": "text",
+      "id": "badge3_sub",
+      "label": "Badge 3 formats",
+      "default": "STEP · IGES"
+    },
+    {
+      "type": "header",
+      "content": "Buy box — usage & formats"
+    },
+    {
+      "type": "text",
+      "id": "usage_label",
+      "label": "Usage label",
+      "default": "Usage"
+    },
+    {
+      "type": "text",
+      "id": "usage_pick",
+      "label": "Usage value",
+      "default": "Personal projects only"
+    },
+    {
+      "type": "textarea",
+      "id": "usage_note",
+      "label": "Usage note",
+      "default": "These files are licensed for your own personal projects only — print, cut, and machine this design for yourself, your home, or as a gift. Not for resale or commercial production."
+    },
+    {
+      "type": "text",
+      "id": "formats_label",
+      "label": "Formats label",
+      "default": "Included formats"
+    },
+    {
+      "type": "text",
+      "id": "formats_count",
+      "label": "Formats count note",
+      "default": "11 files · 70 MB total"
+    },
+    {
+      "type": "header",
+      "content": "Buy box — buy button"
+    },
+    {
+      "type": "text",
+      "id": "variant_label",
+      "label": "Variant picker label",
+      "default": "License"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Buy button text",
+      "default": "Buy & download"
+    },
+    {
+      "type": "text",
+      "id": "cta_sold",
+      "label": "Sold-out button text",
+      "default": "Sold out"
+    },
+    {
+      "type": "text",
+      "id": "cta_meta",
+      "label": "Note under button",
+      "default": "Instant download · secure checkout"
+    },
+    {
+      "type": "text",
+      "id": "qf1_k",
+      "label": "Quick fact 1 label",
+      "default": "Designer"
+    },
+    {
+      "type": "text",
+      "id": "qf1_v",
+      "label": "Quick fact 1 value",
+      "default": "Studio Kanso · Kyoto, JP"
+    },
+    {
+      "type": "text",
+      "id": "qf2_k",
+      "label": "Quick fact 2 label",
+      "default": "Compatibility"
+    },
+    {
+      "type": "text",
+      "id": "qf2_v",
+      "label": "Quick fact 2 value",
+      "default": "Fusion 360, Blender, Rhino, PrusaSlicer, Bambu Studio (+12 more)"
+    },
+    {
+      "type": "text",
+      "id": "qf3_k",
+      "label": "Quick fact 3 label",
+    },
+    {
+      "type": "text",
+      "id": "qf3_v",
+      "label": "Quick fact 3 value",
+    },
+    {
+      "type": "header",
+      "content": "Benefits section"
+    },
+    {
+      "type": "text",
+      "id": "benefits_h",
+      "label": "Heading",
+      "default": "Made for your own projects."
+    },
+    {
+      "type": "textarea",
+      "id": "benefits_lede",
+      "label": "Lede",
+      "default": "Whether you design for a living, build for clients, or make things for the love of it, this pack drops straight into your workflow — yours to print, cut, and machine for any personal project."
+    },
+    {
+      "type": "text",
+      "id": "bt1_k",
+      "label": "Timeline left label",
+      "default": "The designer spent"
+    },
+    {
+      "type": "text",
+      "id": "bt1_v",
+      "label": "Timeline left value",
+      "default": "18 hours"
+    },
+    {
+      "type": "textarea",
+      "id": "bt1_s",
+      "label": "Timeline left note",
+      "default": "modeling this in parametric CAD — every petal, ring, and tolerance hand-tuned."
+    },
+    {
+      "type": "text",
+      "id": "bt2_k",
+      "label": "Timeline right label",
+      "default": "You get it in"
+    },
+    {
+      "type": "text",
+      "id": "bt2_v",
+      "label": "Timeline right value",
+      "default": "under 1 minute"
+    },
+    {
+      "type": "textarea",
+      "id": "bt2_s",
+      "label": "Timeline right note",
+      "default": "Buy, download the pack, and open it in your software. The hard part is already done."
+    },
+    {
+      "type": "text",
+      "id": "ben1_h",
+      "label": "Card 1 title",
+      "default": "Designers"
+    },
+    {
+      "type": "textarea",
+      "id": "ben1_p",
+      "label": "Card 1 text",
+      "default": "Skip the blank canvas. Drop a finished, editable parametric model into your concepts and renders — then dial the parameters to fit your own projects."
+    },
+    {
+      "type": "text",
+      "id": "ben2_h",
+      "label": "Card 2 title",
+      "default": "Architects"
+    },
+    {
+      "type": "textarea",
+      "id": "ben2_p",
+      "label": "Card 2 text",
+      "default": "A real, fabricable fixture for your visualizations and study models. Use it to dress a scene, test scale, or 3D-print a maquette for your own work."
+    },
+    {
+      "type": "text",
+      "id": "ben3_h",
+      "label": "Card 3 title",
+      "default": "Hobbyists"
+    },
+    {
+      "type": "textarea",
+      "id": "ben3_p",
+      "label": "Card 3 text",
+      "default": "Everything you need to make a beautiful piece at home — slicer-ready meshes, kerf-compensated cut files, and an illustrated guide. No CAD experience required."
+    },
+    {
+      "type": "header",
+      "content": "Three ways to fabricate"
+    },
+    {
+      "type": "text",
+      "id": "usp_h",
+      "label": "Heading",
+      "default": "One file pack, three ways to fabricate."
+    },
+    {
+      "type": "textarea",
+      "id": "usp_lede",
+      "label": "Lede",
+      "default": "Every listing ships with the files needed to actually make the thing — not just the renderable mesh. Print it on a desktop machine, cut it on a laser, or hand the STEP to a CNC shop."
+    },
+    {
+      "type": "text",
+      "id": "uspc1_num",
+      "label": "USP-01 number",
+      "default": "USP-01"
+    },
+    {
+      "type": "text",
+      "id": "uspc1_h",
+      "label": "USP-01 title",
+      "default": "3D-printable, end to end."
+    },
+    {
+      "type": "textarea",
+      "id": "uspc1_p",
+      "label": "USP-01 text",
+      "default": "Every visible part prints on a 220 mm bed. Solid manifold meshes, watertight, support-free where possible, with a printability check on every release."
+    },
+    {
+      "type": "text",
+      "id": "uspc1_c1",
+      "label": "USP-01 check 1",
+      "default": "STL, 3MF, OBJ — slicer-ready"
+    },
+    {
+      "type": "text",
+      "id": "uspc1_c2",
+      "label": "USP-01 check 2",
+      "default": "Tested on Prusa MK4, Bambu X1C, Ender 3"
+    },
+    {
+      "type": "text",
+      "id": "uspc1_c3",
+      "label": "USP-01 check 3",
+      "default": "Recommended profiles ship in the bundle"
+    },
+    {
+      "type": "text",
+      "id": "uspc1_c4",
+      "label": "USP-01 check 4",
+      "default": "Watertight, manifold, support-aware"
+    },
+    {
+      "type": "text",
+      "id": "uspc2_num",
+      "label": "USP-02 number",
+      "default": "USP-02"
+    },
+    {
+      "type": "text",
+      "id": "uspc2_h",
+      "label": "USP-02 title",
+      "default": "Laser-cut, kerf-compensated."
+    },
+    {
+      "type": "textarea",
+      "id": "uspc2_p",
+      "label": "USP-02 text",
+      "default": "Flat parts ship as DXF and SVG with a 0.18 mm kerf offset already applied. Open and send — no re-drawing, no compensation math."
+    },
+    {
+      "type": "text",
+      "id": "uspc2_c1",
+      "label": "USP-02 check 1",
+      "default": "DXF, SVG, AI — vector-perfect"
+    },
+    {
+      "type": "text",
+      "id": "uspc2_c2",
+      "label": "USP-02 check 2",
+      "default": "Glowforge, xTool, LightBurn ready"
+    },
+    {
+      "type": "text",
+      "id": "uspc2_c3",
+      "label": "USP-02 check 3",
+      "default": "Kerf offset editable in the source file"
+    },
+    {
+      "type": "text",
+      "id": "uspc2_c4",
+      "label": "USP-02 check 4",
+      "default": "Material thickness called out per file"
+    },
+    {
+      "type": "text",
+      "id": "uspc3_num",
+      "label": "USP-03 number",
+      "default": "USP-03"
+    },
+    {
+      "type": "text",
+      "id": "uspc3_h",
+      "label": "USP-03 title",
+      "default": "Manufacturing-grade output."
+    },
+    {
+      "type": "textarea",
+      "id": "uspc3_p",
+      "label": "USP-03 text",
+      "default": "When you're ready to scale beyond the desk, the same pack ships parametric STEP and IGES — geometry your CNC shop or vendor can quote against today."
+    },
+    {
+      "type": "text",
+      "id": "uspc3_c1",
+      "label": "USP-03 check 1",
+      "default": "STEP, IGES, F3D — named bodies"
+    },
+    {
+      "type": "text",
+      "id": "uspc3_c2",
+      "label": "USP-03 check 2",
+      "default": "Tolerance callouts on critical features"
+    },
+    {
+      "type": "text",
+      "id": "uspc3_c3",
+      "label": "USP-03 check 3",
+      "default": "Material recommendations per part"
+    },
+    {
+      "type": "text",
+      "id": "uspc3_c4",
+      "label": "USP-03 check 4",
+      "default": "BOM with vendor links included"
+    },
+    {
+      "type": "header",
+      "content": "Geometry stats"
+    },
+    {
+      "type": "text",
+      "id": "geom_h",
+      "label": "Heading",
+      "default": "The numbers, without the marketing."
+    },
+    {
+      "type": "textarea",
+      "id": "geom_lede",
+      "label": "Lede",
+      "default": "Topology stats, mesh integrity, file sizes. Everything you'd want to know before you hit slice or send to the cutter."
+    },
+    {
+      "type": "text",
+      "id": "geom1_k",
+      "label": "Cell 1 label",
+      "default": "Polygons"
+    },
+    {
+      "type": "text",
+      "id": "geom1_v",
+      "label": "Cell 1 value",
+      "default": "24,812"
+    },
+    {
+      "type": "text",
+      "id": "geom1_s",
+      "label": "Cell 1 note",
+      "default": "Quad-dominant, sub-D ready"
+    },
+    {
+      "type": "text",
+      "id": "geom2_k",
+      "label": "Cell 2 label",
+      "default": "Vertices"
+    },
+    {
+      "type": "text",
+      "id": "geom2_v",
+      "label": "Cell 2 value",
+      "default": "26,440"
+    },
+    {
+      "type": "text",
+      "id": "geom2_s",
+      "label": "Cell 2 note",
+      "default": "Watertight · 0 non-manifold"
+    },
+    {
+      "type": "text",
+      "id": "geom3_k",
+      "label": "Cell 3 label",
+      "default": "Materials"
+    },
+    {
+      "type": "text",
+      "id": "geom3_v",
+      "label": "Cell 3 value",
+      "default": "5"
+    },
+    {
+      "type": "text",
+      "id": "geom3_s",
+      "label": "Cell 3 note",
+      "default": "PBR maps · 2K textures"
+    },
+    {
+      "type": "text",
+      "id": "geom4_k",
+      "label": "Cell 4 label",
+      "default": "UV mapping"
+    },
+    {
+      "type": "text",
+      "id": "geom4_v",
+      "label": "Cell 4 value",
+      "default": "Yes"
+    },
+    {
+      "type": "text",
+      "id": "geom4_s",
+      "label": "Cell 4 note",
+      "default": "Non-overlapping, 0.92 efficiency"
+    },
+    {
+      "type": "text",
+      "id": "geom5_k",
+      "label": "Cell 5 label",
+      "default": "Parts (assembly)"
+    },
+    {
+      "type": "text",
+      "id": "geom5_v",
+      "label": "Cell 5 value",
+      "default": "22"
+    },
+    {
+      "type": "text",
+      "id": "geom5_s",
+      "label": "Cell 5 note",
+      "default": "Named bodies in STEP / F3D"
+    },
+    {
+      "type": "text",
+      "id": "geom6_k",
+      "label": "Cell 6 label",
+      "default": "Dimensions"
+    },
+    {
+      "type": "text",
+      "id": "geom6_v",
+      "label": "Cell 6 value",
+      "default": "Ø420 × 340"
+    },
+    {
+      "type": "text",
+      "id": "geom6_s",
+      "label": "Cell 6 note",
+      "default": "Millimeters · parametric"
+    },
+    {
+      "type": "header",
+      "content": "File manifest (rows are blocks)"
+    },
+    {
+      "type": "text",
+      "id": "manifest_h",
+      "label": "Heading",
+      "default": "Every file, nothing hidden."
+    },
+    {
+      "type": "textarea",
+      "id": "manifest_lede",
+      "label": "Lede",
+      "default": "The full manifest of what lands in the zip when you download. Every file is named, sized, and explained — and tagged by what it's for."
+    },
+    {
+      "type": "text",
+      "id": "man_col1",
+      "label": "Column 1",
+      "default": "Format"
+    },
+    {
+      "type": "text",
+      "id": "man_col2",
+      "label": "Column 2",
+      "default": "Filename"
+    },
+    {
+      "type": "text",
+      "id": "man_col3",
+      "label": "Column 3",
+      "default": "Size"
+    },
+    {
+      "type": "text",
+      "id": "man_col4",
+      "label": "Column 4",
+      "default": "Category"
+    },
+    {
+      "type": "text",
+      "id": "man_col5",
+      "label": "Column 5",
+      "default": "Purpose"
+    },
+    {
+      "type": "text",
+      "id": "manifest_foot_l",
+      "label": "Footer left",
+      "default": "12 files · 70 MB total"
+    },
+    {
+      "type": "text",
+      "id": "manifest_foot_r",
+      "label": "Footer right",
+      "default": "3 printable · 3 laser · 2 CNC · 2 source · 2 docs"
+    },
+    {
+      "type": "header",
+      "content": "Software compatibility (cells are blocks)"
+    },
+    {
+      "type": "text",
+      "id": "compat_h",
+      "label": "Heading",
+      "default": "Opens in your software."
+    },
+    {
+      "type": "textarea",
+      "id": "compat_lede",
+      "label": "Lede",
+      "default": "Tested against the most common CAD, slicer, and laser apps. If you're on something else, the pack still includes neutral STEP, OBJ, DXF, and SVG."
+    },
+    {
+      "type": "header",
+      "content": "FAQ (questions are blocks)"
+    },
+    {
+      "type": "text",
+      "id": "faq_h",
+      "label": "Heading",
+      "default": "Most-asked."
+    },
+    {
+      "type": "textarea",
+      "id": "faq_lede",
+      "label": "Lede",
+      "default": "If yours isn't here, write to us. Real makers answer real questions, usually within four hours during the working week."
+    },
+    {
+      "type": "header",
+      "content": "Reviews (reviews are blocks)"
+    },
+    {
+      "type": "text",
+      "id": "reviews_h",
+      "label": "Heading",
+      "default": "From the workshop floor."
+    },
+    {
+      "type": "textarea",
+      "id": "reviews_lede",
+      "label": "Lede",
+      "default": "All reviews are from verified buyers. We surface the ones that mention build experience first."
+    },
+    {
+      "type": "text",
+      "id": "rev_big",
+      "label": "Big score",
+      "default": "4.9"
+    },
+    {
+      "type": "text",
+      "id": "rev_of",
+      "label": "Score note",
+      "default": "out of 5 · 328 verified reviews"
+    },
+    {
+      "type": "text",
+      "id": "rev_p5",
+      "label": "5-star bar width %",
+      "default": "93"
+    },
+    {
+      "type": "text",
+      "id": "rev_c5",
+      "label": "5-star count",
+      "default": "305"
+    },
+    {
+      "type": "text",
+      "id": "rev_p4",
+      "label": "4-star bar width %",
+      "default": "5"
+    },
+    {
+      "type": "text",
+      "id": "rev_c4",
+      "label": "4-star count",
+      "default": "16"
+    },
+    {
+      "type": "text",
+      "id": "rev_p3",
+      "label": "3-star bar width %",
+      "default": "2"
+    },
+    {
+      "type": "text",
+      "id": "rev_c3",
+      "label": "3-star count",
+      "default": "5"
+    },
+    {
+      "type": "text",
+      "id": "rev_p2",
+      "label": "2-star bar width %",
+      "default": "1"
+    },
+    {
+      "type": "text",
+      "id": "rev_c2",
+      "label": "2-star count",
+      "default": "1"
+    },
+    {
+      "type": "text",
+      "id": "rev_p1",
+      "label": "1-star bar width %",
+      "default": "1"
+    },
+    {
+      "type": "text",
+      "id": "rev_c1",
+      "label": "1-star count",
+      "default": "1"
+    },
+    {
+      "type": "text",
+      "id": "reviews_empty",
+      "label": "Empty state text",
+      "default": "No reviews yet."
+    },
+    {
+      "type": "header",
+      "content": "Related files"
+    },
+    {
+      "type": "text",
+      "id": "related_h",
+      "label": "Heading",
+      "default": "More fabricable files."
+    },
+    {
+      "type": "textarea",
+      "id": "related_lede",
+      "label": "Lede",
+      "default": "More pieces from the same collection — pulled in automatically from this product's collection."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "format",
+      "name": "Format chip",
+      "settings": [
+        {
+          "type": "text",
+          "id": "ext",
+          "label": "Extension",
+          "default": "STL"
+        },
+        {
+          "type": "select",
+          "id": "tag",
+          "label": "Colour tag",
+          "default": "printable",
+          "options": [
+            {
+              "value": "printable",
+              "label": "PRINTABLE"
+            },
+            {
+              "value": "laser",
+              "label": "LASER"
+            },
+            {
+              "value": "cnc",
+              "label": "CNC"
+            },
+            {
+              "value": "source",
+              "label": "SOURCE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "manifest_row",
+      "name": "Manifest file",
+      "settings": [
+        {
+          "type": "text",
+          "id": "ext",
+          "label": "Format",
+          "default": "STL"
+        },
+        {
+          "type": "select",
+          "id": "tag",
+          "label": "Colour tag",
+          "default": "printable",
+          "options": [
+            {
+              "value": "printable",
+              "label": "PRINTABLE"
+            },
+            {
+              "value": "laser",
+              "label": "LASER"
+            },
+            {
+              "value": "cnc",
+              "label": "CNC"
+            },
+            {
+              "value": "source",
+              "label": "SOURCE"
+            },
+            {
+              "value": "doc",
+              "label": "DOC"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "nm",
+          "label": "Filename",
+          "default": "file.stl"
+        },
+        {
+          "type": "text",
+          "id": "size",
+          "label": "Size",
+          "default": "1.0 MB"
+        },
+        {
+          "type": "text",
+          "id": "category",
+          "label": "Category",
+          "default": "3D Print"
+        },
+        {
+          "type": "text",
+          "id": "purpose",
+          "label": "Purpose",
+          "default": "What it's for"
+        }
+      ]
+    },
+    {
+      "type": "compat_app",
+      "name": "Software app",
+      "settings": [
+        {
+          "type": "text",
+          "id": "glyph",
+          "label": "Glyph (1 letter)",
+          "default": "F"
+        },
+        {
+          "type": "text",
+          "id": "app",
+          "label": "App name",
+          "default": "Fusion 360"
+        },
+        {
+          "type": "text",
+          "id": "ver",
+          "label": "Version",
+          "default": "v2+"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "name": "FAQ question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "q",
+          "label": "Question",
+          "default": "Your question?"
+        },
+        {
+          "type": "textarea",
+          "id": "a",
+          "label": "Answer",
+          "default": "Your answer."
+        }
+      ]
+    },
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "default": "Daniela R."
+        },
+        {
+          "type": "text",
+          "id": "when",
+          "label": "Date",
+          "default": "APR 2026"
+        },
+        {
+          "type": "text",
+          "id": "ttl",
+          "label": "Review title",
+          "default": "Great files"
+        },
+        {
+          "type": "textarea",
+          "id": "body",
+          "label": "Review body",
+          "default": "Clean, well organized files."
+        },
+        {
+          "type": "text",
+          "id": "tags",
+          "label": "Tags (comma-separated)",
+          "default": "Verified buyer, Personal license"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 50,
+  "presets": [
+    {
+      "name": "3D Design File Page",
+      "blocks": [
+        {
+          "type": "format",
+          "settings": {
+            "ext": "STL",
+            "tag": "printable"
+          }
+        },
+        {
+          "type": "format",
+          "settings": {
+            "ext": "3MF",
+            "tag": "printable"
+          }
+        },
+        {
+          "type": "format",
+          "settings": {
+            "ext": "OBJ",
+            "tag": "printable"
+          }
+        },
+        {
+          "type": "format",
+          "settings": {
+            "ext": "DXF",
+            "tag": "laser"
+          }
+        },
+        {
+          "type": "format",
+          "settings": {
+            "ext": "SVG",
+            "tag": "laser"
+          }
+        },
+        {
+          "type": "format",
+          "settings": {
+            "ext": "AI",
+            "tag": "laser"
+          }
+        },
+        {
+          "type": "format",
+          "settings": {
+            "ext": "STEP",
+            "tag": "cnc"
+          }
+        },
+        {
+          "type": "format",
+          "settings": {
+            "ext": "IGES",
+            "tag": "cnc"
+          }
+        },
+        {
+          "type": "format",
+          "settings": {
+            "ext": "F3D",
+            "tag": "source"
+          }
+        },
+        {
+          "type": "format",
+          "settings": {
+            "ext": "BLEND",
+            "tag": "source"
+          }
+        },
+        {
+          "type": "format",
+          "settings": {
+            "ext": "PDF",
+            "tag": "source"
+          }
+        },
+        {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "STL",
+            "tag": "printable",
+            "nm": "aperture_petal_x12.stl",
+            "size": "3.4 MB",
+            "category": "3D Print",
+            "purpose": "FDM / SLA print, repeat 12×"
+          }
+        },
+        {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "3MF",
+            "tag": "printable",
+            "nm": "aperture_hub_assembly.3mf",
+            "size": "1.8 MB",
+            "category": "3D Print",
+            "purpose": "Bambu / Prusa, multi-color"
+          }
+        },
+        {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "STL",
+            "tag": "printable",
+            "nm": "aperture_socket_mount.stl",
+            "size": "0.6 MB",
+            "category": "3D Print",
+            "purpose": "E26 / E27 socket housing"
+          }
+        },
+        {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "DXF",
+            "tag": "laser",
+            "nm": "diffuser_rings_3mm.dxf",
+            "size": "120 KB",
+            "category": "Laser cut",
+            "purpose": "3 mm cast acrylic, 3 rings"
+          }
+        },
+        {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "SVG",
+            "tag": "laser",
+            "nm": "diffuser_rings_3mm.svg",
+            "size": "98 KB",
+            "category": "Laser cut",
+            "purpose": "Glowforge / xTool ready"
+          }
+        },
+        {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "DXF",
+            "tag": "laser",
+            "nm": "base_template_6mm_ply.dxf",
+            "size": "84 KB",
+            "category": "Laser cut",
+            "purpose": "Optional 6 mm plywood base"
+          }
+        },
+        {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "STEP",
+            "tag": "cnc",
+            "nm": "aluminum_hub_machined.step",
+            "size": "2.1 MB",
+            "category": "CNC / Mfg",
+            "purpose": "3-axis CNC, 6061 aluminum"
+          }
+        },
+        {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "IGES",
+            "tag": "cnc",
+            "nm": "aluminum_hub_machined.iges",
+            "size": "2.4 MB",
+            "category": "CNC / Mfg",
+            "purpose": "Universal CAD interchange"
+          }
+        },
+        {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "F3D",
+            "tag": "source",
+            "nm": "aperture_parametric.f3d",
+            "size": "8.6 MB",
+            "category": "Source",
+            "purpose": "Fusion 360 source — editable"
+          }
+        },
+        {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "BLEND",
+            "tag": "source",
+            "nm": "aperture_render_scene.blend",
+            "size": "44 MB",
+            "category": "Source",
+            "purpose": "Blender 4.x · Cycles render"
+          }
+        },
+        {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "PDF",
+            "tag": "doc",
+            "nm": "assembly_guide_en.pdf",
+            "size": "6.2 MB",
+            "category": "Document",
+            "purpose": "24-page illustrated build guide"
+          }
+        },
+        {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "PDF",
+            "tag": "doc",
+            "nm": "bill_of_materials.pdf",
+            "size": "180 KB",
+            "category": "Document",
+            "purpose": "Hardware BOM with vendor links"
+          }
+        },
+        {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "F",
+            "app": "Fusion 360",
+            "ver": "v2.0.18+"
+          }
+        },
+        {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "B",
+            "app": "Blender",
+            "ver": "v3.6 — 4.x"
+          }
+        },
+        {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "R",
+            "app": "Rhino",
+            "ver": "v7+"
+          }
+        },
+        {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "S",
+            "app": "SolidWorks",
+            "ver": "2022+"
+          }
+        },
+        {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "C",
+            "app": "Cinema 4D",
+            "ver": "R23+"
+          }
+        },
+        {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "P",
+            "app": "PrusaSlicer",
+            "ver": "v2.7+"
+          }
+        },
+        {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "B",
+            "app": "Bambu Studio",
+            "ver": "v1.9+"
+          }
+        },
+        {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "C",
+            "app": "Cura",
+            "ver": "v5+"
+          }
+        },
+        {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "G",
+            "app": "Glowforge",
+            "ver": "—"
+          }
+        },
+        {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "X",
+            "app": "xTool",
+            "ver": "—"
+          }
+        },
+        {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "L",
+            "app": "LightBurn",
+            "ver": "v1.5+"
+          }
+        },
+        {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "F",
+            "app": "Fabrica",
+            "ver": "v3+"
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "q": "Will these files print on a standard FDM machine?",
+            "a": "Yes. Every printable part fits inside a 220 × 220 × 250 mm build volume — tested on a Prusa MK4, a Bambu X1C, and an Ender 3. The hub and socket are designed without supports; the petals print flat with a single brim. Recommended profile and slicer notes ship inside the PDF guide."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "q": "What thickness of acrylic do the laser-cut rings need?",
+            "a": "Three millimetre cast acrylic, clear or frosted. The DXF and SVG are kerf-compensated at 0.18 mm by default; if your laser cuts wider, edit the offset in the included source and re-export. Plywood and MDF templates for the optional base are 6 mm."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "q": "Can I use this design for my own projects?",
+            "a": "Yes. These files are licensed for your personal projects — make it for yourself, your home, a study model, or a gift. Print it, cut it, machine it, remix the parametric source however you like. The license is for personal, non-commercial use, so it isn't intended for reselling finished units or the file pack itself."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "q": "How does the parametric source file work?",
+            "a": "The source file exposes nine driving parameters — height, diameter, petal count, ring spacing, socket diameter, kerf offset, wall thickness, fillet radius, and base thickness. Change any of them and the model and the export sheets update together. After-sales support is included if you get stuck."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "q": "What's included if I just want to 3D print this, nothing else?",
+            "a": "Plenty. You get every STL and 3MF, the assembly guide, and the bill of materials. Skip the STEP, DXF, and BLEND files — they're there if you grow into them, not required to make the piece."
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "name": "Daniela R.",
+            "when": "APR 2026",
+            "ttl": "Printed it twice, both came out perfect",
+            "body": "I run a small studio doing one-off lighting. The parametric source alone is worth it — I rebuilt this at 60 cm diameter, regenerated the cut files, and the laser-cut rings dropped right onto the printed petals without sanding.",
+            "tags": "Verified buyer, Commercial license, Bambu X1C"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "name": "Marcus W.",
+            "when": "MAR 2026",
+            "ttl": "Files are clean. That is rare.",
+            "body": "Twenty years as a machinist; most STEP files I download are a mess. This one opens, names every body, organizes them in folders, and the tolerances are realistic. Cut the hub on a Tormach in 90 minutes flat.",
+            "tags": "Verified buyer, Extended license, CNC / aluminum"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "name": "Priya S.",
+            "when": "FEB 2026",
+            "ttl": "Lovely result; guide could be a touch longer",
+            "body": "Loved the design and the result. As a first-time builder I wanted a few more close-ups in the wiring section — got there with a tutorial. Support replied within a day when I asked about an E14 socket.",
+            "tags": "Verified buyer, Personal license, Ender 3"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

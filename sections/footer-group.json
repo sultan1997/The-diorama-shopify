@@ -1,0 +1,18 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "diorama_footer": {
+      "type": "diorama-footer",
+      "settings": {
+        "col1_u1": "/collections/sales-gallery-models",
+        "col1_u2": "/collections/ship-marine-models",
+        "col1_u3": "/collections/awards-trophies",
+        "col1_u4": "/collections/collectables-art"
+      }
+    }
+  },
+  "order": [
+    "diorama_footer"
+  ]
+}

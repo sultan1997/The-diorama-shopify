@@ -1,0 +1,124 @@
+{% comment %}The Diorama — Footer{% endcomment %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  .df{--ink:#E7E7EA;--ink-2:#9C9CA3;--ink-3:#6E6E76;--rule:rgba(255,255,255,.12);--indigo:#3A13FF;--indigo-deep:#2A0FBE;--dark:#1C1C20;--display:"Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;--sans:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;background:var(--dark);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.6;}
+  .df *{box-sizing:border-box;}
+  .df a{color:inherit;text-decoration:none;}
+  .df img{display:block;max-width:100%;}
+  .df .wrap{max-width:1280px;margin:0 auto;padding:64px 32px 32px;}
+  .df .top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.4fr;gap:40px;}
+  .df .brand-row{display:flex;align-items:center;gap:12px;}
+  .df .brand-logo{width:34px;height:34px;border-radius:8px;object-fit:cover;}
+  .df .brand-mark{width:34px;height:34px;border-radius:8px;background:var(--indigo);display:grid;place-items:center;color:#fff;font-family:var(--display);font-weight:700;font-size:18px;}
+  .df .brand-name{font-family:var(--display);font-weight:700;font-size:20px;color:#fff;letter-spacing:-.01em;}
+  .df .blurb{color:var(--ink-2);margin-top:18px;max-width:38ch;}
+  .df .col-h{font-family:var(--mono,var(--sans));font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-bottom:18px;}
+  .df .col ul{list-style:none;margin:0;padding:0;display:grid;gap:12px;}
+  .df .col a:hover{color:#fff;}
+  .df .news p{color:var(--ink-2);margin:0 0 16px;}
+  .df .news form{display:grid;gap:10px;}
+  .df .news input{height:48px;border-radius:999px;border:1px solid var(--rule);background:rgba(255,255,255,.04);color:#fff;padding:0 20px;font-family:var(--sans);font-size:14px;}
+  .df .news input::placeholder{color:var(--ink-3);}
+  .df .news button{height:48px;border-radius:999px;border:0;background:var(--indigo);color:#fff;font-family:var(--display);font-weight:600;font-size:15px;cursor:pointer;transition:background .15s;}
+  .df .news button:hover{background:var(--indigo-deep);}
+  .df .bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;border-top:1px solid var(--rule);margin-top:48px;padding-top:24px;color:var(--ink-3);font-size:13px;}
+  @media(max-width:900px){ .df .top{grid-template-columns:1fr 1fr;gap:32px;} .df .news{grid-column:span 2;} }
+  @media(max-width:600px){ .df .wrap{padding:48px 20px 28px;} .df .top{grid-template-columns:1fr;} .df .news{grid-column:span 1;} .df .bottom{flex-direction:column;align-items:flex-start;} }
+</style>
+
+<footer class="df">
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">
+        <div class="brand-row">
+          {%- if section.settings.logo != blank -%}<img class="brand-logo" src="{{ section.settings.logo | image_url: width: 80 }}" alt="{{ section.settings.brand_name }}">{%- else -%}<span class="brand-mark">{{ section.settings.brand_name | slice: 0 }}</span>{%- endif -%}
+          <span class="brand-name">{{ section.settings.brand_name }}</span>
+        </div>
+        <p class="blurb">{{ section.settings.blurb }}</p>
+      </div>
+
+      <div class="col">
+        <div class="col-h">{{ section.settings.col1_h }}</div>
+        <ul>
+          {%- for i in (1..5) -%}
+            {%- assign lk = 'col1_l' | append: i -%}{%- assign uk = 'col1_u' | append: i -%}
+            {%- assign lbl = section.settings[lk] -%}{%- assign url = section.settings[uk] -%}
+            {%- if lbl != blank -%}<li><a href="{{ url }}">{{ lbl }}</a></li>{%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </div>
+
+      <div class="col">
+        <div class="col-h">{{ section.settings.col2_h }}</div>
+        <ul>
+          {%- for i in (1..5) -%}
+            {%- assign lk = 'col2_l' | append: i -%}{%- assign uk = 'col2_u' | append: i -%}
+            {%- assign lbl = section.settings[lk] -%}{%- assign url = section.settings[uk] -%}
+            {%- if lbl != blank -%}<li><a href="{{ url }}">{{ lbl }}</a></li>{%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </div>
+
+      <div class="news">
+        <div class="col-h">{{ section.settings.news_h }}</div>
+        <p>{{ section.settings.news_sub }}</p>
+        {%- form 'customer' -%}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <input type="email" name="contact[email]" placeholder="{{ section.settings.news_placeholder }}" required>
+          <button type="submit">{{ section.settings.news_btn }}</button>
+        {%- endform -%}
+      </div>
+    </div>
+
+    <div class="bottom">
+      <span>{{ section.settings.copyright }}</span>
+      <span>{{ section.settings.tagline }}</span>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Diorama Footer",
+  "settings": [
+    { "type": "header", "content": "Brand" },
+    { "type": "image_picker", "id": "logo", "label": "Logo (optional)" },
+    { "type": "text", "id": "brand_name", "label": "Brand name", "default": "The Diorama" },
+    { "type": "textarea", "id": "blurb", "label": "Blurb", "default": "Miniature art for collectors and enthusiasts — designed, 3D-printed and finished by hand in our studio." },
+    { "type": "header", "content": "Column 1" },
+    { "type": "text", "id": "col1_h", "label": "Heading", "default": "Shop" },
+    { "type": "text", "id": "col1_l1", "label": "Link 1 label", "default": "Sales Gallery Models" },
+    { "type": "url", "id": "col1_u1", "label": "Link 1 URL" },
+    { "type": "text", "id": "col1_l2", "label": "Link 2 label", "default": "Ship & Marine Models" },
+    { "type": "url", "id": "col1_u2", "label": "Link 2 URL" },
+    { "type": "text", "id": "col1_l3", "label": "Link 3 label", "default": "Awards & Trophies" },
+    { "type": "url", "id": "col1_u3", "label": "Link 3 URL" },
+    { "type": "text", "id": "col1_l4", "label": "Link 4 label", "default": "Collectable Art" },
+    { "type": "url", "id": "col1_u4", "label": "Link 4 URL" },
+    { "type": "text", "id": "col1_l5", "label": "Link 5 label" },
+    { "type": "url", "id": "col1_u5", "label": "Link 5 URL" },
+    { "type": "header", "content": "Column 2" },
+    { "type": "text", "id": "col2_h", "label": "Heading", "default": "Studio" },
+    { "type": "text", "id": "col2_l1", "label": "Link 1 label", "default": "About us" },
+    { "type": "url", "id": "col2_u1", "label": "Link 1 URL" },
+    { "type": "text", "id": "col2_l2", "label": "Link 2 label", "default": "Commission a model" },
+    { "type": "url", "id": "col2_u2", "label": "Link 2 URL" },
+    { "type": "text", "id": "col2_l3", "label": "Link 3 label", "default": "Contact" },
+    { "type": "url", "id": "col2_u3", "label": "Link 3 URL" },
+    { "type": "text", "id": "col2_l4", "label": "Link 4 label", "default": "Privacy policy" },
+    { "type": "url", "id": "col2_u4", "label": "Link 4 URL" },
+    { "type": "text", "id": "col2_l5", "label": "Link 5 label" },
+    { "type": "url", "id": "col2_u5", "label": "Link 5 URL" },
+    { "type": "header", "content": "Newsletter" },
+    { "type": "text", "id": "news_h", "label": "Heading", "default": "Get Inspiration" },
+    { "type": "textarea", "id": "news_sub", "label": "Subtext", "default": "New models and studio stories, straight to your inbox." },
+    { "type": "text", "id": "news_placeholder", "label": "Input placeholder", "default": "you@example.com" },
+    { "type": "text", "id": "news_btn", "label": "Button label", "default": "Subscribe" },
+    { "type": "header", "content": "Bottom bar" },
+    { "type": "text", "id": "copyright", "label": "Copyright", "default": "© 2026 The Diorama. All rights reserved." },
+    { "type": "text", "id": "tagline", "label": "Tagline", "default": "Designed & fabricated in-house · Dubai, UAE" }
+  ],
+  "presets": [ { "name": "Diorama Footer" } ]
+}
+{% endschema %}

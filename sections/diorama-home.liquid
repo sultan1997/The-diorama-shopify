@@ -1,0 +1,462 @@
+{% comment %}The Diorama — Homepage{% endcomment %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  .dh{--bg:#F6F6F7;--paper:#fff;--ink:#2B2B2E;--ink-2:#5C5C66;--ink-3:#9C9CA3;--rule:#E5E5E5;--hairline:#ECECEE;--indigo:#3A13FF;--indigo-deep:#2A0FBE;--indigo-bg:#EFEBFF;--dark:#1C1C20;--display:"Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;--sans:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6;}
+  .dh *{box-sizing:border-box;}
+  .dh a{color:inherit;text-decoration:none;}
+  .dh img{display:block;max-width:100%;}
+  .dh .wrap{max-width:1280px;margin:0 auto;padding:0 32px;}
+  .dh .eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--indigo);font-weight:500;}
+  .dh .sec-h{font-family:var(--display);font-weight:700;font-size:52px;letter-spacing:-.025em;line-height:1;margin:10px 0 0;}
+  .dh .sec-sub{color:var(--ink-2);font-size:16px;max-width:52ch;margin-top:16px;}
+  .dh .btn{display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 28px;border-radius:10px;font-family:var(--display);font-weight:600;font-size:15px;border:0;cursor:pointer;transition:background .15s,color .15s;}
+  .dh .btn-primary{background:var(--indigo);color:#fff;}
+  .dh .btn-primary:hover{background:var(--indigo-deep);}
+  .dh .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5);}
+  .dh .btn-ghost:hover{border-color:#fff;}
+  .dh .btn-white{background:#fff;color:var(--indigo-deep);}
+  .dh .link-arrow{display:inline-flex;align-items:center;gap:7px;color:var(--indigo);font-weight:600;font-size:14px;white-space:nowrap;}
+  .dh .link-arrow:hover{gap:11px;}
+  .dh .announce{background:var(--indigo);color:#E7E3FF;text-align:center;font-size:12.5px;letter-spacing:.04em;padding:11px 16px;}
+  .dh .announce .d{opacity:.5;margin:0 14px;}
+  .dh .hero{background:var(--dark);color:#fff;overflow:hidden;}
+  .dh .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;min-height:600px;}
+  .dh .hero-copy{padding:72px 56px 72px 0;display:flex;flex-direction:column;justify-content:center;}
+  .dh .hero-pill{display:inline-flex;align-items:center;gap:9px;align-self:flex-start;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:8px 16px;font-size:13px;font-weight:500;margin-bottom:28px;}
+  .dh .hero-pill::before{content:"";width:8px;height:8px;border-radius:999px;background:var(--indigo);}
+  .dh .hero h1{font-family:var(--display);font-weight:800;font-size:74px;line-height:.98;letter-spacing:-.03em;margin:0;}
+  .dh .hero p{color:rgba(255,255,255,.72);font-size:18px;max-width:46ch;margin:24px 0 0;}
+  .dh .hero-btns{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap;}
+  .dh .hero-media{position:relative;height:600px;}
+  .dh .hero-media .m{position:relative;overflow:hidden;background:#2A2A30;min-height:200px;}
+  .dh .hero-media .m img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .dh .hero-track{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+  .dh .hero-track::-webkit-scrollbar{display:none;}
+  .dh .hero-track .m{flex:0 0 100%;width:100%;height:100%;scroll-snap-align:center;}
+  .dh .hero-dots{position:absolute;left:0;right:0;bottom:16px;display:flex;justify-content:center;gap:8px;z-index:3;}
+  .dh .hero-dots button{width:8px;height:8px;border-radius:999px;border:0;background:rgba(255,255,255,.45);padding:0;cursor:pointer;transition:background .15s,width .15s;}
+  .dh .hero-dots button[aria-current="true"]{background:#fff;width:22px;}
+  .dh .hero-arr{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:40px;height:40px;border-radius:999px;border:0;background:rgba(0,0,0,.4);color:#fff;display:grid;place-items:center;cursor:pointer;transition:background .15s;}
+  .dh .hero-arr:hover{background:rgba(0,0,0,.65);}
+  .dh .hero-prev{left:14px;}
+  .dh .hero-next{right:14px;}
+  .dh .hero-ph{position:absolute;inset:0;display:grid;place-items:center;color:rgba(255,255,255,.16);}
+  .dh .stats{background:#202024;color:#fff;}
+  .dh .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);}
+  .dh .stat{padding:34px 0;display:flex;align-items:center;gap:16px;border-right:1px solid rgba(255,255,255,.08);}
+  .dh .stat:last-child{border-right:0;}
+  .dh .stat .v{font-family:var(--display);font-weight:700;font-size:46px;letter-spacing:-.02em;line-height:1;}
+  .dh .stat .v .plus{color:var(--indigo);}
+  .dh .stat .l{color:rgba(255,255,255,.6);font-size:14px;line-height:1.3;}
+  .dh .block{padding:96px 0;}
+  .dh .block-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:44px;flex-wrap:wrap;}
+  .dh .col-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:1fr;gap:18px;}
+  .dh .cc{position:relative;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;color:#fff;}
+  .dh .cc-top{position:relative;aspect-ratio:1/1;background:#f3f3f5;overflow:hidden;}
+  .dh .cc-top img{width:100%;height:100%;object-fit:cover;display:block;}
+  .dh .cc-body{padding:24px;display:flex;flex-direction:column;flex:1 1 auto;}
+  .dh .cc-dark{background:#1C1C20;}
+  .dh .cc-indigo{background:var(--indigo);}
+  .dh .cc-light{background:var(--indigo-bg);}
+  .dh .cc-dark .cc-body,.dh .cc-dark h3,.dh .cc-dark p,.dh .cc-dark .cc-link,.dh .cc-indigo .cc-body,.dh .cc-indigo h3,.dh .cc-indigo p,.dh .cc-indigo .cc-link{color:#fff;}
+  .dh .cc-light .cc-body,.dh .cc-light h3,.dh .cc-light p,.dh .cc-light .cc-link{color:var(--ink);}
+  .dh .cc .dots{position:absolute;inset:0;background-image:radial-gradient(rgba(58,19,255,.12) 1px,transparent 1px);background-size:22px 22px;}
+  .dh .cc h3{font-family:var(--display);font-weight:700;font-size:22px;letter-spacing:-.01em;margin:0 0 8px;}
+  .dh .cc p{font-size:14px;opacity:.85;margin:0 0 16px;max-width:34ch;}
+  .dh .cc .cc-link{display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:13px;margin-top:auto;}
+  .dh .prod-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  .dh .prod-grid.q4{grid-template-columns:repeat(4,1fr);}
+  .dh .pc{background:var(--paper);border:1px solid var(--rule);border-radius:14px;overflow:hidden;transition:transform .2s,border-color .15s;}
+  .dh .pc:hover{transform:translateY(-3px);border-color:var(--ink-2);}
+  .dh .pc .pc-img{position:relative;aspect-ratio:1;background:var(--bg);overflow:hidden;}
+  .dh .pc .pc-img img{width:100%;height:100%;object-fit:cover;}
+  .dh .pc .feat{position:absolute;top:14px;left:14px;background:var(--indigo);color:#fff;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:999px;}
+  .dh .pc .pc-body{padding:18px 20px 20px;}
+  .dh .pc .pc-cat{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);}
+  .dh .pc .pc-t{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:-.01em;margin:8px 0 6px;color:var(--ink);}
+  .dh .pc .pc-stars{color:var(--indigo);font-size:13px;letter-spacing:1px;}
+  .dh .pc .pc-foot{display:flex;justify-content:space-between;align-items:center;margin-top:14px;}
+  .dh .pc .pc-price{font-family:var(--display);font-weight:600;font-size:17px;color:var(--ink);}
+  .dh .pc .pc-add{width:40px;height:40px;border-radius:999px;background:var(--indigo-bg);color:var(--indigo-deep);display:grid;place-items:center;flex:0 0 auto;}
+  .dh .pc-small .pc-img{aspect-ratio:4/3;}
+  .dh .pc-small .pc-t{font-size:15px;}
+  .dh .spotlight{margin-top:64px;}
+  .dh .how{background:var(--paper);}
+  .dh .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .dh .step{border:1px solid var(--rule);border-radius:14px;padding:32px;background:var(--bg);}
+  .dh .step .n{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.14em;color:var(--indigo);}
+  .dh .step h3{font-family:var(--display);font-weight:700;font-size:22px;letter-spacing:-.01em;margin:18px 0 10px;}
+  .dh .step p{color:var(--ink-2);font-size:14.5px;margin:0;}
+  .dh .rev-rating{font-size:14px;color:var(--ink-2);}
+  .dh .rev-rating .s{color:var(--indigo);letter-spacing:1px;}
+  .dh .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .dh .rev{border:1px solid var(--rule);border-radius:14px;padding:28px;background:var(--paper);display:flex;flex-direction:column;}
+  .dh .rev .s{color:var(--indigo);font-size:14px;letter-spacing:1px;}
+  .dh .rev .q{font-size:15px;color:var(--ink);margin:16px 0 22px;flex:1;}
+  .dh .rev .who{display:flex;align-items:center;gap:12px;border-top:1px solid var(--hairline);padding-top:18px;}
+  .dh .rev .av{width:42px;height:42px;border-radius:999px;background:var(--indigo);color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:700;}
+  .dh .rev .nm{font-weight:600;font-size:14px;color:var(--ink);}
+  .dh .rev .ro{font-size:12.5px;color:var(--ink-3);}
+  .dh .cta-band{background:var(--indigo);border-radius:24px;color:#fff;padding:64px;display:grid;grid-template-columns:1.3fr 1fr;align-items:center;gap:40px;position:relative;overflow:hidden;}
+  .dh .cta-band .dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.12) 1px,transparent 1px);background-size:24px 24px;}
+  .dh .cta-band .e{position:relative;color:rgba(255,255,255,.7);font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;}
+  .dh .cta-band h2{position:relative;font-family:var(--display);font-weight:800;font-size:46px;letter-spacing:-.02em;line-height:1.05;margin:16px 0 0;color:#fff;}
+  .dh .cta-band p{position:relative;color:rgba(255,255,255,.8);font-size:16px;margin:16px 0 0;max-width:42ch;}
+  .dh .cta-band .cta-note{position:relative;color:rgba(255,255,255,.7);font-size:13px;margin-top:14px;}
+  @media(max-width:1024px){
+    .dh .hero h1{font-size:56px;}
+    .dh .col-grid{grid-template-columns:repeat(2,1fr);}
+    .dh .cc.wide{grid-column:span 1;}
+    .dh .prod-grid.q4{grid-template-columns:repeat(2,1fr);}
+  }
+  @media(max-width:768px){
+    .dh .wrap{padding:0 20px;}
+    .dh .hero-grid{grid-template-columns:1fr;}
+    .dh .hero-copy{padding:56px 0;}
+    .dh .hero-media{height:340px;}
+    .dh .hero-arr{display:none;}
+    .dh .hero h1{font-size:44px;}
+    .dh .stats-grid{grid-template-columns:1fr;}
+    .dh .stat{border-right:0;border-bottom:1px solid rgba(255,255,255,.08);}
+    .dh .sec-h{font-size:34px;}
+    .dh .col-grid,.dh .prod-grid,.dh .prod-grid.q4,.dh .steps,.dh .rev-grid{grid-template-columns:1fr;}
+    .dh .block{padding:64px 0;}
+    .dh .cta-band{grid-template-columns:1fr;padding:40px;}
+    .dh .cta-band h2{font-size:34px;}
+  }
+  /* === HOME ADJUSTMENTS === */
+  .dh .hero h1{color:#fff !important;}
+  /* Smaller featured product cards */
+  .dh .prod-grid{grid-template-columns:repeat(4,1fr);}
+  .dh .prod-grid .pc-img{aspect-ratio:4/3;}
+  @media(max-width:1024px){ .dh .prod-grid{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:768px){ .dh .prod-grid{grid-template-columns:1fr;} }
+</style>
+
+{%- liquid
+  assign feat = section.settings.feat_collection
+  unless feat != blank
+    assign feat = collections['frontpage']
+  endunless
+  assign spot = section.settings.spot_collection
+  unless spot != blank
+    assign spot = collections['sales-gallery-models']
+  endunless
+-%}
+<div class="dh">
+
+  {%- if section.settings.show_announce -%}
+  <div class="announce">
+    <span>{{ section.settings.ann1 }}</span>{%- if section.settings.ann2 != blank -%}<span class="d">•</span><span>{{ section.settings.ann2 }}</span>{%- endif -%}{%- if section.settings.ann3 != blank -%}<span class="d">•</span><span>{{ section.settings.ann3 }}</span>{%- endif -%}
+  </div>
+  {%- endif -%}
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        {%- if section.settings.hero_eyebrow != blank -%}<span class="hero-pill">{{ section.settings.hero_eyebrow }}</span>{%- endif -%}
+        <h1>{{ section.settings.hero_h }}</h1>
+        <p>{{ section.settings.hero_sub }}</p>
+        <div class="hero-btns">
+          {%- if section.settings.hero_btn1 != blank -%}<a class="btn btn-primary" href="{{ section.settings.hero_btn1_link }}">{{ section.settings.hero_btn1 }}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>{%- endif -%}
+          {%- if section.settings.hero_btn2 != blank -%}<a class="btn btn-ghost" href="{{ section.settings.hero_btn2_link }}">{{ section.settings.hero_btn2 }}</a>{%- endif -%}
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="hero-track">
+          <div class="m m1">{%- if section.settings.hero_img1 != blank -%}<img src="{{ section.settings.hero_img1 | image_url: width: 900 }}" alt="">{%- else -%}<span class="hero-ph"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m3 15 5-5 4 4 3-3 6 6"/></svg></span>{%- endif -%}</div>
+          <div class="m m2">{%- if section.settings.hero_img2 != blank -%}<img src="{{ section.settings.hero_img2 | image_url: width: 900 }}" alt="">{%- else -%}<span class="hero-ph"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg></span>{%- endif -%}</div>
+          <div class="m m3">{%- if section.settings.hero_img3 != blank -%}<img src="{{ section.settings.hero_img3 | image_url: width: 900 }}" alt="">{%- else -%}<span class="hero-ph"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg></span>{%- endif -%}</div>
+        </div>
+        <button type="button" class="hero-arr hero-prev" aria-label="Previous image"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button type="button" class="hero-arr hero-next" aria-label="Next image"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+        <div class="hero-dots">
+          <button type="button" aria-current="true" aria-label="Show image 1"></button>
+          <button type="button" aria-current="false" aria-label="Show image 2"></button>
+          <button type="button" aria-current="false" aria-label="Show image 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="wrap stats-grid">
+      <div class="stat"><span class="v"><span class="plus">+</span>{{ section.settings.stat1_v }}</span><span class="l">{{ section.settings.stat1_l }}</span></div>
+      <div class="stat"><span class="v"><span class="plus">+</span>{{ section.settings.stat2_v }}</span><span class="l">{{ section.settings.stat2_l }}</span></div>
+      <div class="stat"><span class="v">{{ section.settings.stat3_v }}</span><span class="l">{{ section.settings.stat3_l }}</span></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="block-head">
+        <div><span class="eyebrow">{{ section.settings.col_eyebrow }}</span><h2 class="sec-h">{{ section.settings.col_h }}</h2><p class="sec-sub">{{ section.settings.col_sub }}</p></div>
+        <a class="link-arrow" href="{{ section.settings.col_viewall_link }}">{{ section.settings.col_viewall_label }}<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="col-grid">
+        {%- for i in (1..6) -%}
+          {%- liquid
+            assign base = 'card' | append: i
+            assign k_h = base | append: '_h'
+            assign k_desc = base | append: '_desc'
+            assign k_link = base | append: '_link'
+            assign k_style = base | append: '_style'
+            assign k_col = base | append: '_collection'
+            assign h = section.settings[k_h]
+            assign desc = section.settings[k_desc]
+            assign lnk = section.settings[k_link]
+            assign sty = section.settings[k_style]
+            assign col = section.settings[k_col]
+            if col == blank
+              case i
+                when 1
+                  assign col = collections['sales-gallery-models']
+                when 2
+                  assign col = collections['ship-marine-models']
+                when 3
+                  assign col = collections['awards-trophies']
+                when 4
+                  assign col = collections['miniature-gifts']
+                when 5
+                  assign col = collections['collectables-art']
+                when 6
+                  assign col = collections['wall-art-sculptures']
+              endcase
+            endif
+          -%}
+          {%- if col != blank -%}{%- assign lnk = col.url -%}{%- endif -%}
+          {%- if h != blank -%}
+          <a class="cc cc-{{ sty }}{% if col != blank and col.image %} has-img{% endif %}" href="{{ lnk }}">
+            <div class="cc-top">{%- if col != blank and col.image -%}<img src="{{ col.image | image_url: width: 800 }}" alt="">{%- else -%}<div class="dots"></div>{%- endif -%}</div>
+            <div class="cc-body">
+              <h3>{{ h }}</h3>
+              <p>{{ desc }}</p>
+              <span class="cc-link">{{ section.settings.card_cta }}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </div>
+          </a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap">
+      <div class="block-head">
+        <div><span class="eyebrow">{{ section.settings.feat_eyebrow }}</span><h2 class="sec-h">{{ section.settings.feat_h }}</h2></div>
+        <a class="link-arrow" href="{{ section.settings.feat_shopall_link }}">{{ section.settings.feat_shopall_label }}<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      {%- if feat != blank and feat.products.size > 0 -%}
+      <div class="prod-grid">
+        {%- for product in feat.products limit: 2 -%}
+        <a class="pc" href="{{ product.url }}">
+          <div class="pc-img">{%- if product.featured_image -%}<img src="{{ product.featured_image | image_url: width: 800 }}" alt="{{ product.featured_image.alt | escape }}">{%- endif -%}<span class="feat">Featured</span></div>
+          <div class="pc-body"><div class="pc-cat">{{ product.type | default: 'The Diorama' }}</div><div class="pc-t">{{ product.title }}</div><div class="pc-stars">★★★★★</div><div class="pc-foot"><span class="pc-price">{{ product.price | money }}</span><span class="pc-add"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></div></div>
+        </a>
+        {%- endfor -%}
+      </div>
+      {%- endif -%}
+
+      {%- if spot != blank and spot.products.size > 0 -%}
+      <div class="spotlight">
+        <div class="block-head">
+          <div><span class="eyebrow">{{ section.settings.spot_eyebrow }}</span><h2 class="sec-h">{{ section.settings.spot_h | default: spot.title }}</h2></div>
+          <a class="link-arrow" href="{{ spot.url }}">{{ section.settings.spot_viewcol_label }}<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="prod-grid q4">
+          {%- for product in spot.products limit: 4 -%}
+          <a class="pc pc-small" href="{{ product.url }}">
+            <div class="pc-img">{%- if product.featured_image -%}<img src="{{ product.featured_image | image_url: width: 500 }}" alt="{{ product.featured_image.alt | escape }}">{%- endif -%}</div>
+            <div class="pc-body"><div class="pc-cat">{{ spot.title }}</div><div class="pc-t">{{ product.title }}</div><div class="pc-foot"><span class="pc-price">{{ product.price | money }}</span></div></div>
+          </a>
+          {%- endfor -%}
+        </div>
+      </div>
+      {%- endif -%}
+    </div>
+  </section>
+
+  <section class="block how">
+    <div class="wrap">
+      <div class="block-head"><div><span class="eyebrow">{{ section.settings.how_eyebrow }}</span><h2 class="sec-h">{{ section.settings.how_h }}</h2><p class="sec-sub">{{ section.settings.how_sub }}</p></div></div>
+      <div class="steps">
+        <div class="step"><span class="n">{{ section.settings.step1_n }}</span><h3>{{ section.settings.step1_t }}</h3><p>{{ section.settings.step1_d }}</p></div>
+        <div class="step"><span class="n">{{ section.settings.step2_n }}</span><h3>{{ section.settings.step2_t }}</h3><p>{{ section.settings.step2_d }}</p></div>
+        <div class="step"><span class="n">{{ section.settings.step3_n }}</span><h3>{{ section.settings.step3_t }}</h3><p>{{ section.settings.step3_d }}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="block-head"><div><span class="eyebrow">{{ section.settings.rev_eyebrow }}</span><h2 class="sec-h">{{ section.settings.rev_h }}</h2></div><span class="rev-rating"><span class="s">★★★★★</span> {{ section.settings.rev_rating }}</span></div>
+      <div class="rev-grid">
+        <div class="rev"><span class="s">★★★★★</span><p class="q">{{ section.settings.rev1_q }}</p><div class="who"><span class="av">{{ section.settings.rev1_n | slice: 0 | upcase }}</span><div><div class="nm">{{ section.settings.rev1_n }}</div><div class="ro">{{ section.settings.rev1_r }}</div></div></div></div>
+        <div class="rev"><span class="s">★★★★★</span><p class="q">{{ section.settings.rev2_q }}</p><div class="who"><span class="av">{{ section.settings.rev2_n | slice: 0 | upcase }}</span><div><div class="nm">{{ section.settings.rev2_n }}</div><div class="ro">{{ section.settings.rev2_r }}</div></div></div></div>
+        <div class="rev"><span class="s">★★★★★</span><p class="q">{{ section.settings.rev3_q }}</p><div class="who"><span class="av">{{ section.settings.rev3_n | slice: 0 | upcase }}</span><div><div class="nm">{{ section.settings.rev3_n }}</div><div class="ro">{{ section.settings.rev3_r }}</div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-band">
+        <div class="dots"></div>
+        <div><span class="e">{{ section.settings.cta_eyebrow }}</span><h2>{{ section.settings.cta_h }}</h2><p>{{ section.settings.cta_sub }}</p></div>
+        <div class="cta-r"><a class="btn btn-white" href="{{ section.settings.cta_btn_link }}">{{ section.settings.cta_btn }}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><div class="cta-note">{{ section.settings.cta_note }}</div></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+(function(){
+  function init(hero){
+    var track = hero.querySelector('.hero-track');
+    var dots = hero.querySelector('.hero-dots');
+    if(!track || !dots) return;
+    var btns = dots.querySelectorAll('button');
+    if(!btns.length) return;
+    function to(idx){ idx = Math.max(0, Math.min(btns.length - 1, idx)); track.scrollTo({ left: idx * track.clientWidth, behavior: 'smooth' }); }
+    function current(){ return Math.round(track.scrollLeft / track.clientWidth); }
+    btns.forEach(function(b,i){ b.addEventListener('click', function(){ to(i); }); });
+    var prev = hero.querySelector('.hero-prev'), next = hero.querySelector('.hero-next');
+    if(prev) prev.addEventListener('click', function(){ var i = current() - 1; if(i < 0) i = btns.length - 1; to(i); });
+    if(next) next.addEventListener('click', function(){ var i = current() + 1; if(i > btns.length - 1) i = 0; to(i); });
+    var raf;
+    track.addEventListener('scroll', function(){
+      if(raf) cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(function(){
+        var idx = Math.max(0, Math.min(btns.length - 1, current()));
+        btns.forEach(function(b,i){ b.setAttribute('aria-current', i === idx ? 'true' : 'false'); });
+      });
+    }, { passive: true });
+  }
+  function boot(){ document.querySelectorAll('.dh .hero').forEach(init); }
+  if(document.readyState !== 'loading'){ boot(); } else { document.addEventListener('DOMContentLoaded', boot); }
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Diorama Homepage",
+  "tag": "section",
+  "class": "dh-section",
+  "settings": [
+    { "type": "header", "content": "Announcement bar" },
+    { "type": "checkbox", "id": "show_announce", "label": "Show announcement bar", "default": true },
+    { "type": "text", "id": "ann1", "label": "Item 1", "default": "Custom-made miniatures & dioramas" },
+    { "type": "text", "id": "ann2", "label": "Item 2", "default": "Designed & fabricated in-house" },
+    { "type": "text", "id": "ann3", "label": "Item 3", "default": "Worldwide shipping" },
+    { "type": "header", "content": "Hero" },
+    { "type": "text", "id": "hero_eyebrow", "label": "Eyebrow pill", "default": "Handcrafted scale models & dioramas" },
+    { "type": "text", "id": "hero_h", "label": "Heading", "default": "Miniature Art for Collectors & Enthusiasts" },
+    { "type": "textarea", "id": "hero_sub", "label": "Subtext", "default": "From ship models to architectural sales galleries, awards and collectables — designed, 3D-printed and finished by hand in our studio." },
+    { "type": "text", "id": "hero_btn1", "label": "Button 1 label", "default": "Get Inspiration" },
+    { "type": "url", "id": "hero_btn1_link", "label": "Button 1 link" },
+    { "type": "text", "id": "hero_btn2", "label": "Button 2 label", "default": "Commission a model" },
+    { "type": "url", "id": "hero_btn2_link", "label": "Button 2 link" },
+    { "type": "image_picker", "id": "hero_img1", "label": "Hero image (large left)" },
+    { "type": "image_picker", "id": "hero_img2", "label": "Hero image (top right)" },
+    { "type": "image_picker", "id": "hero_img3", "label": "Hero image (bottom right)" },
+    { "type": "header", "content": "Stats bar" },
+    { "type": "text", "id": "stat1_v", "label": "Stat 1 value", "default": "300" },
+    { "type": "text", "id": "stat1_l", "label": "Stat 1 label", "default": "Scaled models delivered" },
+    { "type": "text", "id": "stat2_v", "label": "Stat 2 value", "default": "20" },
+    { "type": "text", "id": "stat2_l", "label": "Stat 2 label", "default": "Fabrication machines in-house" },
+    { "type": "text", "id": "stat3_v", "label": "Stat 3 value", "default": "In-House" },
+    { "type": "text", "id": "stat3_l", "label": "Stat 3 label", "default": "Design & production under one roof" },
+    { "type": "header", "content": "Collections" },
+    { "type": "text", "id": "col_eyebrow", "label": "Eyebrow", "default": "Browse the studio" },
+    { "type": "text", "id": "col_h", "label": "Heading", "default": "Collections" },
+    { "type": "textarea", "id": "col_sub", "label": "Subtext", "default": "Six worlds of miniature craft — pick a category, or commission something entirely your own." },
+    { "type": "text", "id": "col_viewall_label", "label": "View-all label", "default": "View all collections" },
+    { "type": "url", "id": "col_viewall_link", "label": "View-all link" },
+    { "type": "text", "id": "card_cta", "label": "Card link label", "default": "Explore" },
+    { "type": "header", "content": "Collection card 1" },
+    { "type": "text", "id": "card1_h", "label": "Title", "default": "Sales Gallery Models" },
+    { "type": "textarea", "id": "card1_desc", "label": "Description", "default": "Architecture & industrial presentation models for showrooms and sales galleries." },
+    { "type": "url", "id": "card1_link", "label": "Link" },
+    { "type": "select", "id": "card1_style", "label": "Style", "default": "dark", "options": [ { "value": "dark", "label": "Dark" }, { "value": "indigo", "label": "Indigo" }, { "value": "light", "label": "Light" } ] },
+    { "type": "collection", "id": "card1_collection", "label": "Collection (for image)" },
+    { "type": "header", "content": "Collection card 2" },
+    { "type": "text", "id": "card2_h", "label": "Title", "default": "Ship & Marine Models" },
+    { "type": "textarea", "id": "card2_desc", "label": "Description", "default": "Detailed vessels, offshore rigs and marine display pieces." },
+    { "type": "url", "id": "card2_link", "label": "Link"},
+    { "type": "select", "id": "card2_style", "label": "Style", "default": "dark", "options": [ { "value": "dark", "label": "Dark" }, { "value": "indigo", "label": "Indigo" }, { "value": "light", "label": "Light" } ] },
+    { "type": "collection", "id": "card2_collection", "label": "Collection (for image)" },
+    { "type": "header", "content": "Collection card 3" },
+    { "type": "text", "id": "card3_h", "label": "Title", "default": "Awards & Trophies" },
+    { "type": "textarea", "id": "card3_desc", "label": "Description", "default": "Bespoke award designs manufactured for events and recognition." },
+    { "type": "url", "id": "card3_link", "label": "Link" },
+    { "type": "select", "id": "card3_style", "label": "Style", "default": "indigo", "options": [ { "value": "dark", "label": "Dark" }, { "value": "indigo", "label": "Indigo" }, { "value": "light", "label": "Light" } ] },
+    { "type": "collection", "id": "card3_collection", "label": "Collection (for image)" },
+    { "type": "header", "content": "Collection card 4" },
+    { "type": "text", "id": "card4_h", "label": "Title", "default": "Miniature Gifts" },
+    { "type": "textarea", "id": "card4_desc", "label": "Description", "default": "Pocket-sized models that make memorable, personal presents." },
+    { "type": "url", "id": "card4_link", "label": "Link" },
+    { "type": "select", "id": "card4_style", "label": "Style", "default": "light", "options": [ { "value": "dark", "label": "Dark" }, { "value": "indigo", "label": "Indigo" }, { "value": "light", "label": "Light" } ] },
+    { "type": "collection", "id": "card4_collection", "label": "Collection (for image)" },
+    { "type": "header", "content": "Collection card 5" },
+    { "type": "text", "id": "card5_h", "label": "Title", "default": "Collectable Art" },
+    { "type": "textarea", "id": "card5_desc", "label": "Description", "default": "Unique limited pieces for the serious miniature collector." },
+    { "type": "url", "id": "card5_link", "label": "Link"},
+    { "type": "select", "id": "card5_style", "label": "Style", "default": "indigo", "options": [ { "value": "dark", "label": "Dark" }, { "value": "indigo", "label": "Indigo" }, { "value": "light", "label": "Light" } ] },
+    { "type": "collection", "id": "card5_collection", "label": "Collection (for image)" },
+    { "type": "header", "content": "Collection card 6" },
+    { "type": "text", "id": "card6_h", "label": "Title", "default": "Wall Art & Sculptures" },
+    { "type": "textarea", "id": "card6_desc", "label": "Description", "default": "Statement wall pieces and sculptural forms, made to scale." },
+    { "type": "url", "id": "card6_link", "label": "Link" },
+    { "type": "select", "id": "card6_style", "label": "Style", "default": "dark", "options": [ { "value": "dark", "label": "Dark" }, { "value": "indigo", "label": "Indigo" }, { "value": "light", "label": "Light" } ] },
+    { "type": "collection", "id": "card6_collection", "label": "Collection (for image)" },
+    { "type": "header", "content": "Featured products" },
+    { "type": "text", "id": "feat_eyebrow", "label": "Eyebrow", "default": "Fresh from the workshop" },
+    { "type": "text", "id": "feat_h", "label": "Heading", "default": "Featured products" },
+    { "type": "text", "id": "feat_shopall_label", "label": "Shop-all label", "default": "Shop all" },
+    { "type": "url", "id": "feat_shopall_link", "label": "Shop-all link"},
+    { "type": "collection", "id": "feat_collection", "label": "Featured products collection" },
+    { "type": "header", "content": "Collection spotlight row" },
+    { "type": "text", "id": "spot_eyebrow", "label": "Eyebrow", "default": "Architecture & industry" },
+    { "type": "text", "id": "spot_h", "label": "Heading", "default": "Sales Gallery Models" },
+    { "type": "text", "id": "spot_viewcol_label", "label": "View-collection label", "default": "View collection" },
+    { "type": "collection", "id": "spot_collection", "label": "Spotlight collection" },
+    { "type": "header", "content": "How it works" },
+    { "type": "text", "id": "how_eyebrow", "label": "Eyebrow", "default": "How it works" },
+    { "type": "text", "id": "how_h", "label": "Heading", "default": "From idea to display piece" },
+    { "type": "textarea", "id": "how_sub", "label": "Subtext", "default": "A simple, hands-on process — we stay in touch at every step until it's on your shelf." },
+    { "type": "text", "id": "step1_n", "label": "Step 1 number", "default": "Step 01" },
+    { "type": "text", "id": "step1_t", "label": "Step 1 title", "default": "Share your idea" },
+    { "type": "textarea", "id": "step1_d", "label": "Step 1 text", "default": "Send us a sketch, photo, drawing or CAD file — and the scale you have in mind." },
+    { "type": "text", "id": "step2_n", "label": "Step 2 number", "default": "Step 02" },
+    { "type": "text", "id": "step2_t", "label": "Step 2 title", "default": "We design & fabricate" },
+    { "type": "textarea", "id": "step2_d", "label": "Step 2 text", "default": "Our team models, 3D-prints and finishes every detail in-house, with updates as we go." },
+    { "type": "text", "id": "step3_n", "label": "Step 3 number", "default": "Step 03" },
+    { "type": "text", "id": "step3_t", "label": "Step 3 title", "default": "Delivered to you" },
+    { "type": "textarea", "id": "step3_d", "label": "Step 3 text", "default": "Carefully packed and shipped worldwide, with after-sales support if you ever need it." },
+    { "type": "header", "content": "Reviews" },
+    { "type": "text", "id": "rev_eyebrow", "label": "Eyebrow", "default": "Loved by makers & brands" },
+    { "type": "text", "id": "rev_h", "label": "Heading", "default": "Reviews" },
+    { "type": "text", "id": "rev_rating", "label": "Rating note", "default": "Rated 5.0 by our clients" },
+    { "type": "textarea", "id": "rev1_q", "label": "Review 1 quote", "default": "Best quality of 3D printing — all intricate details are included. Definitely recommended." },
+    { "type": "text", "id": "rev1_n", "label": "Review 1 name", "default": "Vincent Shantha Kumar" },
+    { "type": "text", "id": "rev1_r", "label": "Review 1 role", "default": "Professor at BITS Dubai" },
+    { "type": "textarea", "id": "rev2_q", "label": "Review 2 quote", "default": "Super quick with timely updates throughout, and the quality of their work is really nice. They handle any issue raised along the way — always helpful and easy to work with. Highly recommended!" },
+    { "type": "text", "id": "rev2_n", "label": "Review 2 name", "default": "Kajal Mishra" },
+    { "type": "text", "id": "rev2_r", "label": "Review 2 role", "default": "Marketing Manager, Priya Blue" },
+    { "type": "textarea", "id": "rev3_q", "label": "Review 3 quote", "default": "A pleasure to work with — very hands-on and accommodating. They help us with exactly what we need, and their after-service guarantees show real dedication to long-term support." },
+    { "type": "text", "id": "rev3_n", "label": "Review 3 name", "default": "Maritess Marcelino" },
+    { "type": "text", "id": "rev3_r", "label": "Review 3 role", "default": "Designer at Byrne Equipment" },
+    { "type": "header", "content": "Commission CTA band" },
+    { "type": "text", "id": "cta_eyebrow", "label": "Eyebrow", "default": "Looking for something unique?" },
+    { "type": "text", "id": "cta_h", "label": "Heading", "default": "Let's make a display model for you" },
+    { "type": "textarea", "id": "cta_sub", "label": "Subtext", "default": "Submit your project details and we'll custom-make a model just for you — any scale, any subject." },
+    { "type": "text", "id": "cta_btn", "label": "Button label", "default": "Commission a Model" },
+    { "type": "url", "id": "cta_btn_link", "label": "Button link" },
+    { "type": "text", "id": "cta_note", "label": "Note under button", "default": "Free design consultation · No obligation" }
+  ],
+  "presets": [ { "name": "Diorama Homepage" } ]
+}
+{% endschema %}
