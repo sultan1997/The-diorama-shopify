@@ -135,7 +135,7 @@
 .tdp-s4-h em{font-style:normal;color:rgba(255,255,255,.38)}
 .tdp-s4-sub{font-size:13px;color:rgba(255,255,255,.42);line-height:1.8;max-width:400px}
 .tdp-s4-frame{background:#1A1A1A;overflow:hidden}
-.tdp-s4-frame iframe,.tdp-s4-frame video{width:100%;aspect-ratio:16/9;display:block;border:none}
+.tdp-s4-frame iframe,.tdp-s4-frame video{width:100%;aspect-ratio:16/9;display:block;border:none}@media(max-width:600px){.tdp-s4-portrait{max-width:320px;margin-left:auto;margin-right:auto}.tdp-s4-portrait iframe,.tdp-s4-portrait video{aspect-ratio:9/16}}
 .tdp-s4-placeholder{width:100%;aspect-ratio:16/9;background:#1A1A1A;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px}
 .tdp-s4-play{width:60px;height:60px;border:1px solid rgba(255,255,255,.25);border-radius:50%;display:flex;align-items:center;justify-content:center}
 .tdp-s4-play::after{content:'';border-style:solid;border-width:9px 0 9px 18px;border-color:transparent transparent transparent #fff;margin-left:4px}
@@ -457,7 +457,7 @@ img,svg,video,iframe{max-width:100%}
   {%- if section.settings.video_url != blank or ch_blocks.size > 0 -%}
   <div class="tdp-s4"><div class="tdp-s4-inner">
     <div class="tdp-s4-header"><div><h2 class="tdp-s4-h">{{ section.settings.vid_h | default: 'Eighty-four hours,' }}<br><em>{{ section.settings.vid_hem | default: 'in nine minutes.' }}</em></h2></div><div><p class="tdp-s4-sub">{{ section.settings.vid_sub | default: 'A short film from the workshop floor. Casting the brass, planting the hull, raising the mainmast. The whole build, from raw material to finished piece.' }}</p></div></div>
-    <div class="tdp-s4-frame">{%- if section.settings.video_url != blank -%}{%- assign vurl = section.settings.video_url -%}{%- if vurl contains 'youtube' or vurl contains 'youtu.be' -%}{%- assign ytid = vurl | split: 'v=' | last | split: '&' | first -%}{%- if vurl contains 'youtu.be' -%}{%- assign ytid = vurl | split: '/' | last | split: '?' | first -%}{%- endif -%}<iframe src="https://www.youtube.com/embed/{{ ytid }}" allow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>{%- elsif vurl contains 'vimeo' -%}{%- assign vmid = vurl | split: '/' | last -%}<iframe src="https://player.vimeo.com/video/{{ vmid }}" allow="autoplay;fullscreen" allowfullscreen></iframe>{%- else -%}<video src="{{ vurl }}" controls></video>{%- endif -%}{%- else -%}<div class="tdp-s4-placeholder"><div class="tdp-s4-play"></div><div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.22);">Add YouTube or Vimeo URL in section settings</div></div>{%- endif -%}</div>
+    <div class="tdp-s4-frame{% if section.settings.vid_portrait %} tdp-s4-portrait{% endif %}">{%- if section.settings.video_url != blank -%}{%- assign vurl = section.settings.video_url -%}{%- if vurl contains 'youtube' or vurl contains 'youtu.be' -%}{%- assign ytid = vurl | split: 'v=' | last | split: '&' | first -%}{%- if vurl contains 'youtu.be' -%}{%- assign ytid = vurl | split: '/' | last | split: '?' | first -%}{%- endif -%}<iframe src="https://www.youtube.com/embed/{{ ytid }}" allow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>{%- elsif vurl contains 'vimeo' -%}{%- assign vmid = vurl | split: '/' | last -%}<iframe src="https://player.vimeo.com/video/{{ vmid }}" allow="autoplay;fullscreen" allowfullscreen></iframe>{%- else -%}<video src="{{ vurl }}" controls></video>{%- endif -%}{%- else -%}<div class="tdp-s4-placeholder"><div class="tdp-s4-play"></div><div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.22);">Add YouTube or Vimeo URL in section settings</div></div>{%- endif -%}</div>
     <div class="tdp-s4-meta"><div class="tdp-s4-title">{{ section.settings.vid_meta | default: 'Build Film' }} &mdash; {{ product.title }}</div>{%- if section.settings.vid_dur != blank -%}<div class="tdp-s4-dur">{{ section.settings.vid_dur }}</div>{%- endif -%}</div>
     {%- if ch_blocks.size > 0 -%}<div class="tdp-chapters">{%- for ch in ch_blocks -%}<div class="tdp-ch"><div class="tdp-ch-time">{{ ch.settings.time }}</div><div class="tdp-ch-title">{{ ch.settings.title }}</div></div>{%- endfor -%}</div>{%- endif -%}
   </div></div>
@@ -557,7 +557,7 @@ document.getElementById('tdp-mform').addEventListener('submit',function(e){e.pre
     {"type":"text","id":"prov_hem","label":"Heading italic","default":"Nothing approximated."},
     {"type":"textarea","id":"prov_p","label":"Body","default":"The model is built from the original technical drawings. No embellishment, no artistic license."},
     {"type":"header","content":"S04 Video"},
-    {"type":"url","id":"video_url","label":"Video URL (YouTube or Vimeo)"},
+    {"type":"url","id":"video_url","label":"Video URL (YouTube or Vimeo)"},{"type":"checkbox","id":"vid_portrait","label":"Portrait video (vertical / Shorts) on mobile","default":false},
     {"type":"text","id":"vid_h","label":"Heading","default":"Eighty-four hours,"},
     {"type":"text","id":"vid_hem","label":"Heading italic part","default":"in nine minutes."},
     {"type":"textarea","id":"vid_sub","label":"Subtitle","default":"A short film from the workshop floor. Casting the brass, planting the hull, raising the mainmast. The whole build."},
