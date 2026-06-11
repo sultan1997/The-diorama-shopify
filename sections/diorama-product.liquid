@@ -41,6 +41,11 @@
 .tdp-img-badge{position:absolute;top:14px;right:14px;font-size:8px;letter-spacing:.15em;font-weight:700;color:var(--ink);border:1px solid var(--ink);padding:5px 11px;background:rgba(250,250,250,.95);text-transform:uppercase}
 .tdp-img-view{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-light);border:1px solid var(--border-warm);padding:4px 12px;background:rgba(250,250,250,.92);white-space:nowrap}
 .tdp-img-count{position:absolute;bottom:14px;left:14px;font-size:9px;letter-spacing:.06em;color:var(--ink-faint)}
+.tdp-nav{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:rgba(250,250,250,.92);border:1px solid rgba(0,0,0,.08);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:6;box-shadow:0 1px 7px rgba(0,0,0,.13);transition:background .15s,box-shadow .15s}
+.tdp-nav:hover{background:#fff;box-shadow:0 3px 12px rgba(0,0,0,.2)}
+.tdp-nav svg{width:17px;height:17px;stroke:var(--ink);stroke-width:1.8;fill:none}
+.tdp-nav-prev{left:12px}.tdp-nav-next{right:12px}
+@media(max-width:600px){.tdp-nav{width:36px;height:36px}.tdp-nav svg{width:15px;height:15px}}
 .tdp-eyebrow{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:8px}
 .tdp-eyebrow::before{content:'';width:14px;height:1px;background:var(--gold);display:inline-block}
 .tdp-title{font-family:var(--serif);font-size:38px;font-weight:400;line-height:1.04;color:var(--ink);margin-bottom:6px}
@@ -409,6 +414,7 @@ img,svg,video,iframe{max-width:100%}
         <div class="tdp-img-badge">{{ section.settings.edition_label | default: 'EDITION &middot; OPEN' }}</div>
         
         <div class="tdp-img-count" id="tdpCount">{%- if product.media.size > 0 -%}IMAGE 1 / {{ product.media.size }}{%- endif -%}</div>
+        {%- if product.media.size > 1 -%}<button type="button" class="tdp-nav tdp-nav-prev" aria-label="Previous image" onclick="tdpNav(-1)"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button><button type="button" class="tdp-nav tdp-nav-next" aria-label="Next image" onclick="tdpNav(1)"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>{%- endif -%}
       </div>
     </div>
     <div>
@@ -495,6 +501,7 @@ img,svg,video,iframe{max-width:100%}
 var tdpMedia=[{%- for m in product.media -%}{type:'{{ m.media_type }}',{%- if m.media_type=='image' -%}src:'{{ m | image_url: width: 960 }}',{%- elsif m.media_type=='video' -%}src:{{ m.sources | json }},poster:'{{ m.preview_image | image_url: width: 960 }}',{%- elsif m.media_type=='external_video' -%}eid:'{{ m.external_id }}',host:'{{ m.host }}',{%- endif -%}alt:'{{ m.alt | escape }}'}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}];
 function tdpGall(el,i){document.querySelectorAll('.tdp-thumb').forEach(function(t){t.classList.remove('on');});el.classList.add('on');var m=tdpMedia[i],w=document.getElementById('tdpMain');if(!m)return;if(m.type==='image'){w.innerHTML='<img src="'+m.src+'" alt="'+m.alt+'" style="width:100%;height:auto;display:block;">';}else if(m.type==='video'){var h='<video poster="'+(m.poster||'')+'" autoplay muted loop playsinline preload="auto" style="width:100%;display:block;">';if(Array.isArray(m.src))m.src.forEach(function(s){h+='<source src="'+s.url+'" type="'+s.mime_type+'">';});h+='</video>';w.innerHTML=h;var v=w.querySelector('video');if(v){v.load();v.play().catch(function(){v.muted=true;v.play();});}}else if(m.type==='external_video'){var src=m.host==='youtube'?'https://www.youtube.com/embed/'+m.eid+'?autoplay=1&mute=1':'https://player.vimeo.com/video/'+m.eid+'?autoplay=1&muted=1';w.innerHTML='<iframe src="'+src+'" allow="autoplay;encrypted-media;fullscreen" allowfullscreen style="width:100%;aspect-ratio:4/3;border:none;display:block;"></iframe>';}
 document.getElementById('tdpViewLbl').textContent=m.alt?m.alt.toUpperCase():'VIEW '+(i+1);document.getElementById('tdpCount').textContent='IMAGE '+(i+1)+' / '+tdpMedia.length;}
+function tdpNav(d){var th=document.querySelectorAll(".tdp-thumb");if(!th.length)return;var cur=0;for(var i=0;i<th.length;i++){if(th[i].classList.contains("on")){cur=i;break;}}var n=(cur+d+th.length)%th.length;tdpGall(th[n],n);}
 function tdpVariant(el,vid,price){document.querySelectorAll('.tdp-variant').forEach(function(v){v.classList.remove('on');});el.classList.add('on');document.getElementById('tdp-vid').value=vid;}
 function tdpQty(d){var el=document.getElementById('tdp-qty-val');if(!el)return;var n=parseInt(el.value,10);if(isNaN(n)||n<1)n=1;n=n+d;if(n<1)n=1;el.value=n;}
 function tdpTab(el,pid){var wrap=document.getElementById('tdp-s5');wrap.querySelectorAll('.tdp-tab').forEach(function(t){t.classList.remove('on');});wrap.querySelectorAll('.tdp-panel').forEach(function(p){p.classList.remove('on');});el.classList.add('on');var p=document.getElementById(pid);if(p)p.classList.add('on');}
@@ -601,4 +608,3 @@ document.getElementById('tdp-mform').addEventListener('submit',function(e){e.pre
   "presets":[{"name":"Diorama Product Page","blocks":[{"type":"feature","settings":{"caption":"Macro \u00b7 Hull","num":"F-01","detail":"DETAIL","title":"Hand-finished hull","desc":"Every plank line, port and fitting is built to the original drawings and finished by hand."}},{"type":"feature","settings":{"caption":"Macro \u00b7 Fittings","num":"F-02","detail":"DETAIL","title":"Solid brass fittings","desc":"Individually cast metal components, never moulded plastic, at true scale."}},{"type":"feature","settings":{"caption":"Macro \u00b7 Base","num":"F-03","detail":"DETAIL","title":"Engraved display base","desc":"Solid timber base with an engraved nameplate and protective acrylic case."}}]}]
 }
 {% endschema %}
-{% comment %}sync 1781171912{% endcomment %}
