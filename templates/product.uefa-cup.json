@@ -144,7 +144,7 @@
         "usp2_label": "Handcrafted",
         "usp3_label": "Customized Text",
         "perso_enable": true,
-        "perso_label": "Personalised Text",
+        "perso_label": "Personalization text",
         "perso_placeholder": "e.g. your team name",
         "perso_required": false,
         "desc_title": "Does your heart belong",
