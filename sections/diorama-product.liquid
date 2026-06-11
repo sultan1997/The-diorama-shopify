@@ -27,11 +27,8 @@
 .tdp-bc-i a{color:var(--ink-light);text-decoration:none}.tdp-bc-i a:hover{color:var(--gold)}
 .tdp-bc-sep{opacity:.4}.tdp-bc-i .cur{color:var(--ink)}
 .tdp-main{max-width:1200px;margin:0 auto;padding:44px 32px 52px;display:grid;grid-template-columns:1fr .88fr;gap:56px;align-items:start}
-.tdp-gallery{display:flex;flex-direction:column;gap:10px}
-.tdp-gallery .tdp-thumbs{flex-direction:row;flex-wrap:wrap;order:2}
-.tdp-gallery .tdp-main-img{order:1}
-.tdp-thumb{width:64px;min-height:64px;height:64px}
-.tdp-thumbs{display:flex;flex-direction:column;gap:5px}
+.tdp-gallery{display:grid;grid-template-columns:64px 1fr;gap:10px}
+.tdp-thumbs{display:flex;flex-direction:column;gap:5px;max-height:540px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--border-warm) transparent}
 .tdp-thumb{width:64px;min-height:64px;height:64px;border:1.5px solid var(--border);background:var(--bg-warm);cursor:pointer;overflow:hidden;flex-shrink:0;transition:border-color .2s}
 .tdp-thumb:hover{border-color:var(--ink-light)}.tdp-thumb.on{border-color:var(--ink)}
 .tdp-thumb img{width:100%;height:100%;object-fit:cover;display:block}
@@ -41,12 +38,6 @@
 .tdp-img-badge{position:absolute;top:14px;right:14px;font-size:8px;letter-spacing:.15em;font-weight:700;color:var(--ink);border:1px solid var(--ink);padding:5px 11px;background:rgba(250,250,250,.95);text-transform:uppercase}
 .tdp-img-view{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-light);border:1px solid var(--border-warm);padding:4px 12px;background:rgba(250,250,250,.92);white-space:nowrap}
 .tdp-img-count{position:absolute;bottom:14px;left:14px;font-size:9px;letter-spacing:.06em;color:var(--ink-faint)}
-.tdp-img-count{display:none}
-.tdp-nav{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:rgba(250,250,250,.92);border:1px solid rgba(0,0,0,.08);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:6;box-shadow:0 1px 7px rgba(0,0,0,.13);transition:background .15s,box-shadow .15s}
-.tdp-nav:hover{background:#fff;box-shadow:0 3px 12px rgba(0,0,0,.2)}
-.tdp-nav svg{width:17px;height:17px;stroke:var(--ink);stroke-width:1.8;fill:none}
-.tdp-nav-prev{left:12px}.tdp-nav-next{right:12px}
-@media(max-width:600px){.tdp-nav{width:36px;height:36px}.tdp-nav svg{width:15px;height:15px}}
 .tdp-eyebrow{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:8px}
 .tdp-eyebrow::before{content:'';width:14px;height:1px;background:var(--gold);display:inline-block}
 .tdp-title{font-family:var(--serif);font-size:38px;font-weight:400;line-height:1.04;color:var(--ink);margin-bottom:6px}
@@ -76,16 +67,6 @@
 .tdp-trust{display:grid;grid-template-columns:1fr 1fr;gap:7px 16px;margin-bottom:22px}
 .tdp-trust-item{display:flex;align-items:flex-start;gap:7px;font-size:11px;color:var(--ink-mid);line-height:1.4}
 .tdp-trust-dot{width:4px;height:4px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px}
-.tdp-hero-desc{font-size:13px;line-height:1.7;color:var(--ink-mid);margin-bottom:16px;max-width:92%}
-.tdp-usp{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:16px 0}
-.tdp-usp-item{display:flex;flex-direction:column;align-items:center;text-align:center;gap:7px}
-.tdp-usp-ic{width:26px;height:26px;color:var(--gold)}
-.tdp-usp-lbl{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-mid);line-height:1.3}
-.tdp-perso{margin-bottom:14px}
-.tdp-perso-lbl{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-light);margin-bottom:6px;display:block}
-.tdp-perso-opt{font-weight:400;text-transform:none;letter-spacing:0;color:var(--ink-faint)}
-.tdp-perso-input{width:100%;background:var(--white);border:1.5px solid var(--border);color:var(--ink);padding:11px 13px;font-size:13px;font-family:var(--sans);outline:none;transition:border-color .2s}
-.tdp-perso-input:focus{border-color:var(--ink)}
 .tdp-table{border-top:1px solid var(--border)}
 .tdp-trow{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)}
 .tdp-tk{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
@@ -102,7 +83,7 @@
 .tdp-s1-top{padding:56px 0 0}
 .tdp-feats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:36px}
 .tdp-feat{background:var(--white);overflow:hidden}
-.tdp-feat-img{aspect-ratio:1/1;background:var(--bg-warm);overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center}
+.tdp-feat-img{height:200px;background:var(--bg-warm);overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center}
 .tdp-feat-img img{width:100%;height:100%;object-fit:cover;display:block}
 .tdp-feat-img-lbl{position:absolute;bottom:10px;left:13px;font-size:7px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-light);background:rgba(250,248,244,.93);padding:3px 8px}
 .tdp-feat-body{padding:22px 22px 26px}
@@ -113,7 +94,7 @@
 /* S2: WORKSHOP — IMAGE left, TEXT right */
 .tdp-s2{background:var(--bg-warm)}
 .tdp-s2-inner{padding:60px 32px;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.tdp-s2-img{aspect-ratio:1/1;overflow:hidden;position:relative;background:var(--bg-stone)}
+.tdp-s2-img{height:380px;overflow:hidden;position:relative;background:var(--bg-stone)}
 .tdp-s2-img img{width:100%;height:100%;object-fit:cover;display:block}
 .tdp-s2-img-lbl{position:absolute;bottom:12px;left:12px;font-size:7px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-light);background:rgba(250,248,244,.92);padding:3px 9px}
 .tdp-quote{border-left:2.5px solid var(--gold);padding:13px 16px;background:rgba(184,146,42,.04);margin:20px 0}
@@ -126,8 +107,8 @@
 /* S3: PROVENANCE — TEXT left, IMAGE right */
 .tdp-s3{background:var(--white)}
 .tdp-s3-inner{padding:60px 32px;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-.tdp-s3-img{aspect-ratio:1/1;background:var(--bg-warm);overflow:hidden;display:flex;align-items:center;justify-content:center}
-.tdp-s3-img img{width:100%;height:100%;object-fit:cover;display:block}.tdp-s3-credit{font-size:10px;line-height:1.45;color:rgba(255,255,255,.55);margin-top:8px;letter-spacing:.02em}
+.tdp-s3-img{height:300px;background:var(--bg-warm);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.tdp-s3-img img{width:100%;height:100%;object-fit:cover;display:block}
 .tdp-prov-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:30px}
 .tdp-prov-stat{background:var(--white);padding:18px 14px}
 .tdp-prov-stat-n{font-family:var(--serif);font-size:30px;font-weight:400;color:var(--gold);display:block;line-height:1}
@@ -141,7 +122,7 @@
 .tdp-s4-h em{font-style:normal;color:rgba(255,255,255,.38)}
 .tdp-s4-sub{font-size:13px;color:rgba(255,255,255,.42);line-height:1.8;max-width:400px}
 .tdp-s4-frame{background:#1A1A1A;overflow:hidden}
-.tdp-s4-frame iframe,.tdp-s4-frame video{width:100%;aspect-ratio:16/9;display:block;border:none}@media(max-width:600px){.tdp-s4-portrait{max-width:320px;margin-left:auto;margin-right:auto}.tdp-s4-portrait iframe,.tdp-s4-portrait video{aspect-ratio:9/16}}
+.tdp-s4-frame iframe,.tdp-s4-frame video{width:100%;aspect-ratio:16/9;display:block;border:none}
 .tdp-s4-placeholder{width:100%;aspect-ratio:16/9;background:#1A1A1A;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px}
 .tdp-s4-play{width:60px;height:60px;border:1px solid rgba(255,255,255,.25);border-radius:50%;display:flex;align-items:center;justify-content:center}
 .tdp-s4-play::after{content:'';border-style:solid;border-width:9px 0 9px 18px;border-color:transparent transparent transparent #fff;margin-left:4px}
@@ -200,8 +181,8 @@
 .tdp-rev-ct{font-size:10px;color:var(--ink-light);margin-top:5px;text-align:center}
 .tdp-bar-row{display:flex;align-items:center;gap:10px;margin-bottom:6px}
 .tdp-bar-lbl{font-size:10px;color:var(--ink-light);width:14px;text-align:right;flex-shrink:0}
-.tdp-bar-track{flex:1;height:6px;background:var(--border);border-radius:3px;overflow:hidden}
-.tdp-bar-track .tdp-bar-fill{height:100%;background:var(--ink);display:block;transition:width 1.1s cubic-bezier(.22,1,.36,1)}.tdp-s7.tdp-animate .tdp-bar-row:nth-child(1) .tdp-bar-fill{transition-delay:.05s}.tdp-s7.tdp-animate .tdp-bar-row:nth-child(2) .tdp-bar-fill{transition-delay:.18s}.tdp-s7.tdp-animate .tdp-bar-row:nth-child(3) .tdp-bar-fill{transition-delay:.31s}.tdp-s7.tdp-animate .tdp-bar-row:nth-child(4) .tdp-bar-fill{transition-delay:.44s}.tdp-s7.tdp-animate .tdp-bar-row:nth-child(5) .tdp-bar-fill{transition-delay:.57s}@media (prefers-reduced-motion:reduce){.tdp-bar-fill{transition:none}}
+.tdp-bar-track{flex:1;height:3px;background:var(--border)}
+.tdp-bar-fill{height:100%;background:var(--ink)}
 .tdp-bar-ct{font-size:9px;color:var(--ink-faint);width:22px;flex-shrink:0}
 .tdp-reviews{display:flex;flex-direction:column;gap:30px}
 .tdp-review{padding-bottom:30px;border-bottom:1px solid var(--border)}
@@ -226,7 +207,7 @@
 .tdp-rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border-warm)}
 .tdp-rel{background:var(--white);text-decoration:none;display:block;transition:box-shadow .25s}
 .tdp-rel:hover{box-shadow:0 4px 20px rgba(0,0,0,.09)}
-.tdp-rel-img{aspect-ratio:1/1;background:var(--bg-warm);overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center}
+.tdp-rel-img{height:160px;background:var(--bg-warm);overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center}
 .tdp-rel-img img{width:100%;height:100%;object-fit:cover;display:block}
 .tdp-rel-info{padding:14px 15px;border-top:1px solid var(--border)}
 .tdp-rel-cat{font-size:8px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
@@ -283,9 +264,8 @@
 }
 @media(max-width:600px){
 .tdp-gallery{display:flex;flex-direction:column}
-.tdp-gallery .tdp-thumbs{flex-direction:row;flex-wrap:wrap;overflow:visible;max-height:none;order:2}
-.tdp-gallery .tdp-main-img{order:1}
-.tdp-thumb{width:56px;height:56px;min-height:56px}
+.tdp-thumbs{flex-direction:row;overflow-x:auto;overflow-y:hidden;max-height:none}
+.tdp-thumb{min-width:52px}
 .tdp-trust{grid-template-columns:1fr}
 .tdp-feats{grid-template-columns:1fr}
 .tdp-rel-grid{grid-template-columns:1fr}
@@ -295,81 +275,6 @@
 .tdp-si{padding:0 20px}.tdp-bc-i{padding:0 20px}
 .tdp-main{padding:24px 20px 36px}
 .tdp-chapters{grid-template-columns:repeat(2,1fr)}
-}
-/* MOBILE HARDENING — hero overflow fix */
-@media(max-width:600px){
-.tdp{overflow-x:hidden}
-.tdp-main{grid-template-columns:1fr;padding:20px 16px 34px;gap:24px}
-.tdp-main>div{min-width:0;max-width:100%}
-.tdp-title{font-size:27px;line-height:1.08}
-.tdp-price{font-size:27px}
-.tdp-price-row{flex-wrap:wrap}
-.tdp-hero-desc{max-width:100%}
-.tdp-usp{gap:6px}
-.tdp-usp-ic{width:22px;height:22px}
-.tdp-usp-lbl{font-size:7.5px;letter-spacing:.04em}
-.tdp-table{width:100%}
-.tdp-tv{font-size:11px;text-align:right}
-.tdp-variant{grid-template-columns:1fr auto}
-.tdp-btn-cart,.tdp-btn-inq{font-size:9px;letter-spacing:.1em;padding:14px 8px}
-.tdp-eyebrow{flex-wrap:wrap}
-img,svg,video,iframe{max-width:100%}
-}
-.tdp-hspec{border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-bottom:22px}
-.tdp-hspec-head{display:flex;justify-content:space-between;align-items:center;padding:13px 0;cursor:pointer;user-select:none}
-.tdp-hspec-lbl{font-size:9px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:var(--ink)}
-.tdp-hspec-ic{font-size:17px;color:var(--ink-light);transition:transform .22s;line-height:1;font-weight:300}
-.tdp-hspec.open .tdp-hspec-ic{transform:rotate(45deg)}
-.tdp-hspec-body{display:none;padding-bottom:6px}
-.tdp-hspec.open .tdp-hspec-body{display:block}
-.tdp-hspec-body .tdp-trow:last-child{border-bottom:none}
-.tdp-qty{display:flex;align-items:center;margin-bottom:14px}
-.tdp-qty-lbl{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-light);margin-right:14px}
-.tdp-qty-box{display:inline-flex;align-items:center;border:1.5px solid var(--border);height:40px}
-.tdp-qty-btn{width:36px;height:100%;background:none;border:none;font-size:16px;line-height:1;cursor:pointer;color:var(--ink);font-family:var(--sans)}
-.tdp-qty-btn:hover{background:var(--bg-warm)}
-.tdp-qty-val{width:44px;text-align:center;border:none;border-left:1px solid var(--border);border-right:1px solid var(--border);font-size:13px;font-weight:600;font-family:var(--sans);color:var(--ink);outline:none;height:100%;-moz-appearance:textfield}
-.tdp-qty-val::-webkit-outer-spin-button,.tdp-qty-val::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
-
-/* ===== THE DIORAMA — BRAND PALETTE (added; overrides the gold theme) ===== */
-:root{
-  --ink:#2B2B2E;
-  --ink-mid:#5C5C66;
-  --ink-light:#9C9CA3;
-  --ink-faint:#C9C9CE;
-  --gold:#3A13FF;
-  --gold-bg:#EFEBFF;
-  --bg:#FFFFFF;
-  --bg-warm:#F2F2F3;
-  --bg-stone:#EAEAEA;
-  --border:#E5E5E5;
-  --border-warm:#D6D6DA;
-}
-.tdp-quote{background:rgba(58,19,255,.05)}
-.tdp-btn-cart{background:var(--gold)}
-.tdp-btn-cart:hover{background:#2A0FBE}
-.tdp-cta{background:var(--gold)}
-.tdp-cta-eyebrow{color:rgba(255,255,255,.75)}
-.tdp-cta-h em{color:rgba(255,255,255,.62)}
-.tdp-cta-btn1{background:#fff;color:var(--gold)}
-.tdp-cta-btn1:hover{background:#EFEBFF}
-.tdp-cta-btn2{border-color:rgba(255,255,255,.4);color:rgba(255,255,255,.85)}
-.tdp-cta-btn2:hover{border-color:#fff;color:#fff}
-.tdp-s3{background:var(--gold);border-top-color:rgba(255,255,255,.15)}
-.tdp-s3 .tdp-sec-h{color:#fff}
-.tdp-s3 .tdp-sec-h em{color:rgba(255,255,255,.62)}
-.tdp-s3 .tdp-sec-p{color:rgba(255,255,255,.85)}.tdp-sec-p.tdp-prov-lead{font-size:22px;line-height:1.5;font-family:var(--serif);font-style:italic;margin-top:18px;max-width:600px}.tdp-s3 .tdp-sec-p.tdp-prov-lead{color:#fff}@media(max-width:600px){.tdp-sec-p.tdp-prov-lead{font-size:18px}}
-.tdp-feats{gap:24px;background:transparent;padding:0 32px 56px}
-.tdp-feat{border:1px solid var(--border)}
-.tdp-feat-img{aspect-ratio:1/1}
-@media(max-width:600px){.tdp-feats{padding:0 20px 40px}}
-.tdp-s1-top{padding:56px 80px 0}
-@media(max-width:600px){.tdp-s1-top{padding:40px 20px 0}}
-.tdp-sec-h{font-size:46px}
-.tdp-sec-p{font-size:15px;line-height:1.9;max-width:600px}
-@media(max-width:600px){
-  .tdp-sec-h{font-size:32px}
-  .tdp-sec-p{font-size:14px}
 }
 </style>
 
@@ -410,80 +315,105 @@ img,svg,video,iframe{max-width:100%}
       </div>
       <div class="tdp-main-img">
         <div id="tdpMain">
-          {%- if product.media.size > 0 -%}{%- assign fm = product.media.first -%}{%- if fm.media_type == 'image' -%}<img src="{{ fm | image_url: width: 960 }}" alt="{{ fm.alt | escape }}" loading="eager">{%- elsif fm.media_type == 'video' -%}<video poster="{{ fm.preview_image | image_url: width: 960 }}" autoplay muted loop playsinline preload="auto" style="width:100%;display:block;">{%- for s in fm.sources -%}<source src="{{ s.url }}" type="{{ s.mime_type }}">{%- endfor -%}</video>{%- elsif fm.media_type == 'external_video' -%}{%- if fm.host == 'youtube' -%}<iframe src="https://www.youtube.com/embed/{{ fm.external_id }}?autoplay=1&mute=1" allow="autoplay;encrypted-media" allowfullscreen style="width:100%;aspect-ratio:4/3;border:none;display:block;"></iframe>{%- endif -%}{%- endif -%}{%- else -%}<div style="height:400px;display:flex;align-items:center;justify-content:center;"><svg width="56" height="42" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.25)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg></div>{%- endif -%}
+          {%- if product.media.size > 0 -%}{%- assign fm = product.media.first -%}{%- if fm.media_type == 'image' -%}<img src="{{ fm | image_url: width: 960 }}" alt="{{ fm.alt | escape }}" loading="eager">{%- elsif fm.media_type == 'video' -%}<video controls muted loop playsinline style="width:100%;display:block;">{%- for s in fm.sources -%}<source src="{{ s.url }}" type="{{ s.mime_type }}">{%- endfor -%}</video>{%- elsif fm.media_type == 'external_video' -%}{%- if fm.host == 'youtube' -%}<iframe src="https://www.youtube.com/embed/{{ fm.external_id }}?autoplay=1&mute=1" allow="autoplay;encrypted-media" allowfullscreen style="width:100%;aspect-ratio:4/3;border:none;display:block;"></iframe>{%- endif -%}{%- endif -%}{%- else -%}<div style="height:400px;display:flex;align-items:center;justify-content:center;"><svg width="56" height="42" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.25)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg></div>{%- endif -%}
         </div>
         <div class="tdp-img-badge">{{ section.settings.edition_label | default: 'EDITION &middot; OPEN' }}</div>
-        
+        <div class="tdp-img-view" id="tdpViewLbl">{%- if product.media.first.alt != blank -%}{{ product.media.first.alt | upcase }}{%- else -%}PORT QUARTER VIEW{%- endif -%}</div>
         <div class="tdp-img-count" id="tdpCount">{%- if product.media.size > 0 -%}IMAGE 1 / {{ product.media.size }}{%- endif -%}</div>
-        {%- if product.media.size > 1 -%}<button type="button" class="tdp-nav tdp-nav-prev" aria-label="Previous image" onclick="tdpNav(-1)"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button><button type="button" class="tdp-nav tdp-nav-next" aria-label="Next image" onclick="tdpNav(1)"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>{%- endif -%}
       </div>
     </div>
     <div>
       <div class="tdp-eyebrow">{{ product.type | upcase | default: 'SCALE MODEL' }}{%- if section.settings.year_lbl != blank -%} &middot; {{ section.settings.year_lbl }}{%- endif -%}</div>
       <h1 class="tdp-title">{{ product.title }}</h1>
+      {%- if desc_title != blank -%}<div class="tdp-subtitle">{{ desc_title }}{%- if desc_title_em != blank -%} &mdash; {{ desc_title_em }}{%- endif -%}</div>{%- endif -%}
       <div class="tdp-stars"><span class="tdp-star-row">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="tdp-rating">{{ section.settings.rev_score | default: '5.0' }}</span><span style="color:var(--ink-faint)">&middot;</span><a href="#tdp-reviews" class="tdp-rev-link">{{ section.settings.rev_count | default: '12' }} reviews</a></div>
       <div class="tdp-price-row"><span class="tdp-price">{{ product.price_min | money }}</span>{%- if product.compare_at_price_min > product.price_min -%}<span class="tdp-price-compare">{{ product.compare_at_price_min | money }}</span>{%- endif -%}</div>
-      {%- if section.settings.hero_desc != blank -%}<div class="tdp-hero-desc">{{ section.settings.hero_desc }}</div>{%- endif -%}
+      <div class="tdp-price-note">{%- if commission_price != blank -%}Custom commission from <strong>{{ commission_price }}</strong> &middot; {%- endif -%}Shipped from Ajman, UAE &middot; Insured delivery</div>
       {%- if product.variants.size > 1 -%}<div class="tdp-var-lbl">Select scale</div><div class="tdp-variants">{%- for v in product.variants -%}<div class="tdp-variant{% if forloop.first %} on{% endif %}" onclick="tdpVariant(this,'{{ v.id }}','{{ v.price | money }}')"><div><div class="tdp-var-scale">{{ v.option1 | upcase }}</div><div class="tdp-var-name">{{ v.title }}</div></div><div><div class="tdp-var-price">{{ v.price | money }}</div><div class="tdp-var-stock{% unless v.available %} out{% endunless %}">{%- if v.available -%}IN STOCK{%- else -%}SOLD OUT{%- endif -%}</div></div></div>{%- endfor -%}</div>{%- endif -%}
-      <div class="tdp-hspec">{%- if section.settings.hspec1_k != blank or section.settings.hspec1_v != blank or section.settings.hspec2_k != blank or section.settings.hspec2_v != blank or section.settings.hspec3_k != blank or section.settings.hspec3_v != blank -%}<div class="tdp-hspec-head" onclick="this.closest('.tdp-hspec').classList.toggle('open')"><span class="tdp-hspec-lbl">{{ section.settings.hspec_title | default: 'Product specs' }}</span><span class="tdp-hspec-ic">+</span></div><div class="tdp-hspec-body">{%- if section.settings.hspec1_k != blank or section.settings.hspec1_v != blank -%}<div class="tdp-trow"><span class="tdp-tk">{{ section.settings.hspec1_k }}</span><span class="tdp-tv">{{ section.settings.hspec1_v }}</span></div>{%- endif -%}{%- if section.settings.hspec2_k != blank or section.settings.hspec2_v != blank -%}<div class="tdp-trow"><span class="tdp-tk">{{ section.settings.hspec2_k }}</span><span class="tdp-tv">{{ section.settings.hspec2_v }}</span></div>{%- endif -%}{%- if section.settings.hspec3_k != blank or section.settings.hspec3_v != blank -%}<div class="tdp-trow"><span class="tdp-tk">{{ section.settings.hspec3_k }}</span><span class="tdp-tv">{{ section.settings.hspec3_v }}</span></div>{%- endif -%}</div>{%- endif -%}</div>{%- form 'product', product, id: 'tdp-form' -%}<input type="hidden" name="id" id="tdp-vid" value="{{ product.selected_or_first_available_variant.id }}">{%- if section.settings.perso_enable -%}<div class="tdp-perso"><label class="tdp-perso-lbl" for="tdp-perso-input">{{ section.settings.perso_label | default: 'Personalization text' }}</label><input type="text" id="tdp-perso-input" class="tdp-perso-input" name="properties[{{ section.settings.perso_label | default: 'Personalization text' }}]" placeholder="{{ section.settings.perso_placeholder | escape }}" maxlength="120"{% if section.settings.perso_required %} required{% endif %}></div>{%- endif -%}<div class="tdp-qty"><span class="tdp-qty-lbl">Quantity</span><div class="tdp-qty-box"><button type="button" class="tdp-qty-btn" onclick="tdpQty(-1)">&minus;</button><input type="number" class="tdp-qty-val" id="tdp-qty-val" name="quantity" value="1" min="1" inputmode="numeric"><button type="button" class="tdp-qty-btn" onclick="tdpQty(1)">+</button></div></div><div class="tdp-actions"><button type="submit" class="tdp-btn-cart">{%- if product.selected_or_first_available_variant.available -%}Add to cart{%- else -%}Currently unavailable{%- endif -%}</button><button type="button" class="tdp-btn-inq" onclick="tdpOpenModal()">&#9993; Send commission inquiry</button></div>{%- endform -%}
-      <div class="tdp-usp"><div class="tdp-usp-item"><svg class="tdp-usp-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v8H3z"/><path d="M14 10h4l3 3v2h-7z"/><circle cx="7" cy="17" r="1.6"/><circle cx="17.5" cy="17" r="1.6"/></svg><span class="tdp-usp-lbl">{{ section.settings.usp1_label | default: 'Worldwide Shipping' }}</span></div><div class="tdp-usp-item"><svg class="tdp-usp-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-2 2-3.2 4-3.2 6.2a3.2 3.2 0 0 0 6.4 0C15.2 7 14 5 12 3z"/><path d="M6.5 21c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/></svg><span class="tdp-usp-lbl">{{ section.settings.usp2_label | default: 'Handcrafted' }}</span></div><div class="tdp-usp-item"><svg class="tdp-usp-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1L19 8a2 2 0 0 0-3-3L5 16z"/><path d="M14 7l3 3"/></svg><span class="tdp-usp-lbl">{{ section.settings.usp3_label | default: 'Customized Text' }}</span></div></div>
-      <div class="tdp-table"><div class="tdp-trow"><span class="tdp-tk">Edition</span><span class="tdp-tv">{{ section.settings.edition_label | default: 'Open &middot; individually numbered' }}</span></div><div class="tdp-trow"><span class="tdp-tk">Workshop</span><span class="tdp-tv">{{ section.settings.workshop | default: 'The Diorama &middot; Dubai, UAE' }}</span></div><div class="tdp-trow"><span class="tdp-tk">Lead time</span><span class="tdp-tv">{{ section.settings.lead_time | default: '10&ndash;14 days &middot; in stock' }}</span></div></div>
+      {%- form 'product', product, id: 'tdp-form' -%}<input type="hidden" name="id" id="tdp-vid" value="{{ product.selected_or_first_available_variant.id }}"><div class="tdp-actions"><button type="submit" class="tdp-btn-cart">{%- if product.selected_or_first_available_variant.available -%}Add to cart &mdash; {{ product.selected_or_first_available_variant.price | money }}{%- else -%}Currently unavailable{%- endif -%}</button><button type="button" class="tdp-btn-inq" onclick="tdpOpenModal()">&#9993; Send commission inquiry</button></div>{%- endform -%}
+      <div class="tdp-trust">{%- assign trust_items = section.blocks | where: 'type', 'trust' -%}{%- if trust_items.size > 0 -%}{%- for b in trust_items -%}<div class="tdp-trust-item"><span class="tdp-trust-dot"></span>{{ b.settings.text }}</div>{%- endfor -%}{%- else -%}<div class="tdp-trust-item"><span class="tdp-trust-dot"></span>Insured worldwide shipping</div><div class="tdp-trust-item"><span class="tdp-trust-dot"></span>Foam-cradled archival crate</div><div class="tdp-trust-item"><span class="tdp-trust-dot"></span>Lifetime workshop warranty</div><div class="tdp-trust-item"><span class="tdp-trust-dot"></span>Free repair, forever</div><div class="tdp-trust-item"><span class="tdp-trust-dot"></span>Handbuilt &mdash; no kits</div><div class="tdp-trust-item"><span class="tdp-trust-dot"></span>~84 hours per piece</div><div class="tdp-trust-item"><span class="tdp-trust-dot"></span>Signed certificate</div><div class="tdp-trust-item"><span class="tdp-trust-dot"></span>Individually numbered</div>{%- endif -%}</div>
+      <div class="tdp-table"><div class="tdp-trow"><span class="tdp-tk">Edition</span><span class="tdp-tv">{{ section.settings.edition_label | default: 'Open &middot; individually numbered' }}</span></div><div class="tdp-trow"><span class="tdp-tk">Workshop</span><span class="tdp-tv">{{ section.settings.workshop | default: 'The Diorama &middot; Ajman, UAE' }}</span></div><div class="tdp-trow"><span class="tdp-tk">Lead time</span><span class="tdp-tv">{{ section.settings.lead_time | default: '10&ndash;14 days &middot; in stock' }}</span></div><div class="tdp-trow"><span class="tdp-tk">Returns</span><span class="tdp-tv">{{ section.settings.returns | default: '30 days &middot; fully insured' }}</span></div></div>
     </div>
   </div>
 
   <!-- S1: FEATURES — 3-column grid (always on) -->
-  <div class="tdp-sec tdp-s1"><div class="tdp-si tdp-s1-top"><h2 class="tdp-sec-h">{{ desc_title | default: 'Precision at every fitting.' }} <em>{{ desc_title_em | default: 'Nothing missed.' }}</em></h2><p class="tdp-sec-p">{%- if section.settings.s1_body != blank -%}{{ section.settings.s1_body }}{%- elsif product.description != blank -%}{{ product.description | strip_html | truncate: 220 }}{%- else -%}Every model is hand-built and hand-finished in our Dubai workshop. What follows is a look at the details that separate a true scale model from a toy.{%- endif -%}</p></div>
+  <div class="tdp-sec tdp-s1"><div class="tdp-si tdp-s1-top"><div class="tdp-sec-lbl">SECTION 01 <small>&mdash; WHAT YOU ARE PAYING FOR</small></div><h2 class="tdp-sec-h">{{ desc_title | default: 'Precision at every fitting.' }} <em>{{ desc_title_em | default: 'Nothing missed.' }}</em></h2><p class="tdp-sec-p">{%- if product.description != blank -%}{{ product.description | strip_html | truncate: 220 }}{%- else -%}Every model is hand-built and hand-finished in our Ajman workshop. What follows is a look at the details that separate a true scale model from a toy.{%- endif -%}</p></div>
   <div class="tdp-feats">
-    {%- assign feat_blocks = section.blocks | where: 'type', 'feature' -%}
-    {%- if feat_blocks.size > 0 -%}
-      {%- for b in feat_blocks -%}<div class="tdp-feat" {{ b.shopify_attributes }}><div class="tdp-feat-img">{%- if b.settings.image != blank -%}<img src="{{ b.settings.image | image_url: width: 800, height: 800, crop: 'center' }}" alt="{{ b.settings.image.alt | default: b.settings.title | escape }}" loading="lazy">{%- elsif product.images[forloop.index0] -%}<img src="{{ product.images[forloop.index0] | image_url: width: 800, height: 800, crop: 'center' }}" alt="{{ b.settings.title | escape }}" loading="lazy">{%- else -%}<svg width="44" height="33" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.22)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg>{%- endif -%}{%- if b.settings.caption != blank -%}<div class="tdp-feat-img-lbl">{{ b.settings.caption }}</div>{%- endif -%}</div><div class="tdp-feat-body"><div class="tdp-feat-title">{{ b.settings.title }}</div><div class="tdp-feat-desc">{{ b.settings.desc }}</div></div></div>{%- endfor -%}
-    {%- elsif included_items.size > 0 -%}
-      {%- for item in included_items -%}{%- assign pts = item | split: '||' -%}<div class="tdp-feat"><div class="tdp-feat-img">{%- assign fidx = forloop.index0 -%}{%- if case_image != blank and forloop.first -%}<img src="{{ case_image | image_url: width: 800 }}" alt="{{ pts[1] }}" loading="lazy">{%- elsif product.images[fidx] -%}<img src="{{ product.images[fidx] | image_url: width: 800 }}" alt="{{ pts[1] }}" loading="lazy">{%- else -%}<svg width="44" height="33" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.22)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg>{%- endif -%}<div class="tdp-feat-img-lbl">MACRO &middot; {{ pts[1] | upcase | truncate: 26, '' }}</div></div><div class="tdp-feat-body"><div class="tdp-feat-title">{{ pts[1] }}</div><div class="tdp-feat-desc">{{ pts[2] }}</div></div></div>{%- endfor -%}
+    {%- if included_items.size > 0 -%}
+      {%- for item in included_items -%}{%- assign pts = item | split: '||' -%}<div class="tdp-feat"><div class="tdp-feat-img">{%- assign fidx = forloop.index0 -%}{%- if case_image != blank and forloop.first -%}<img src="{{ case_image | image_url: width: 800 }}" alt="{{ pts[1] }}" loading="lazy">{%- elsif product.images[fidx] -%}<img src="{{ product.images[fidx] | image_url: width: 800 }}" alt="{{ pts[1] }}" loading="lazy">{%- else -%}<svg width="44" height="33" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.22)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg>{%- endif -%}<div class="tdp-feat-img-lbl">MACRO &middot; {{ pts[1] | upcase | truncate: 26, '' }}</div></div><div class="tdp-feat-body"><div class="tdp-feat-num">F-0{{ forloop.index }}</div><div class="tdp-feat-detail">DETAIL</div><div class="tdp-feat-title">{{ pts[1] }}</div><div class="tdp-feat-desc">{{ pts[2] }}</div></div></div>{%- endfor -%}
     {%- else -%}
-      <div class="tdp-feat"><div class="tdp-feat-img">{%- if product.images[0] -%}<img src="{{ product.images[0] | image_url: width: 800 }}" alt="{{ product.title }}" loading="lazy">{%- else -%}<svg width="44" height="33" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.22)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg>{%- endif -%}<div class="tdp-feat-img-lbl">MACRO &middot; HULL</div></div><div class="tdp-feat-body"><div class="tdp-feat-title">Hand-finished hull</div><div class="tdp-feat-desc">Every plank line, port and fitting is built to the original drawings and finished by hand.</div></div></div>
-      <div class="tdp-feat"><div class="tdp-feat-img">{%- if product.images[1] -%}<img src="{{ product.images[1] | image_url: width: 800 }}" alt="{{ product.title }}" loading="lazy">{%- else -%}<svg width="44" height="33" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.22)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg>{%- endif -%}<div class="tdp-feat-img-lbl">MACRO &middot; FITTINGS</div></div><div class="tdp-feat-body"><div class="tdp-feat-title">Solid brass fittings</div><div class="tdp-feat-desc">Individually cast metal components, never moulded plastic, at true scale.</div></div></div>
-      <div class="tdp-feat"><div class="tdp-feat-img">{%- if product.images[2] -%}<img src="{{ product.images[2] | image_url: width: 800 }}" alt="{{ product.title }}" loading="lazy">{%- else -%}<svg width="44" height="33" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.22)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg>{%- endif -%}<div class="tdp-feat-img-lbl">MACRO &middot; BASE</div></div><div class="tdp-feat-body"><div class="tdp-feat-title">Engraved display base</div><div class="tdp-feat-desc">Solid timber base with an engraved nameplate and protective acrylic case.</div></div></div>
+      <div class="tdp-feat"><div class="tdp-feat-img">{%- if product.images[0] -%}<img src="{{ product.images[0] | image_url: width: 800 }}" alt="{{ product.title }}" loading="lazy">{%- else -%}<svg width="44" height="33" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.22)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg>{%- endif -%}<div class="tdp-feat-img-lbl">MACRO &middot; HULL</div></div><div class="tdp-feat-body"><div class="tdp-feat-num">F-01</div><div class="tdp-feat-detail">DETAIL</div><div class="tdp-feat-title">Hand-finished hull</div><div class="tdp-feat-desc">Every plank line, port and fitting is built to the original drawings and finished by hand.</div></div></div>
+      <div class="tdp-feat"><div class="tdp-feat-img">{%- if product.images[1] -%}<img src="{{ product.images[1] | image_url: width: 800 }}" alt="{{ product.title }}" loading="lazy">{%- else -%}<svg width="44" height="33" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.22)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg>{%- endif -%}<div class="tdp-feat-img-lbl">MACRO &middot; FITTINGS</div></div><div class="tdp-feat-body"><div class="tdp-feat-num">F-02</div><div class="tdp-feat-detail">DETAIL</div><div class="tdp-feat-title">Solid brass fittings</div><div class="tdp-feat-desc">Individually cast metal components, never moulded plastic, at true scale.</div></div></div>
+      <div class="tdp-feat"><div class="tdp-feat-img">{%- if product.images[2] -%}<img src="{{ product.images[2] | image_url: width: 800 }}" alt="{{ product.title }}" loading="lazy">{%- else -%}<svg width="44" height="33" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.22)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg>{%- endif -%}<div class="tdp-feat-img-lbl">MACRO &middot; BASE</div></div><div class="tdp-feat-body"><div class="tdp-feat-num">F-03</div><div class="tdp-feat-detail">DETAIL</div><div class="tdp-feat-title">Engraved display base</div><div class="tdp-feat-desc">Solid timber base with an engraved nameplate and protective acrylic case.</div></div></div>
     {%- endif -%}
   </div></div>
 
   <!-- S2: WORKSHOP — IMAGE left, TEXT right (always on) -->
   <div class="tdp-sec tdp-s2"><div class="tdp-s2-inner">
-    <div>{%- if section.settings.s2_image != blank -%}<div class="tdp-s2-img"><img src="{{ section.settings.s2_image | image_url: width: 820 }}" alt="{{ product.title | escape }}" loading="lazy"><div class="tdp-s2-img-lbl">{{ case_eyebrow | upcase | default: 'WORKSHOP &middot; COMMISSION' }}</div></div>{%- elsif case_image != blank -%}<div class="tdp-s2-img"><img src="{{ case_image | image_url: width: 820 }}" alt="{{ product.title }}" loading="lazy"><div class="tdp-s2-img-lbl">{{ case_eyebrow | upcase | default: 'WORKSHOP &middot; COMMISSION' }}</div></div>{%- elsif product.featured_image -%}<div class="tdp-s2-img"><img src="{{ product.featured_image | image_url: width: 820 }}" alt="{{ product.title }}" loading="lazy"></div>{%- else -%}<div class="tdp-s2-img" style="display:flex;align-items:center;justify-content:center;"><svg width="52" height="40" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.18)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg></div>{%- endif -%}</div>
-    <div><h2 class="tdp-sec-h">{{ case_heading | default: 'Built by four hands, never four hundred.' }}</h2><p class="tdp-sec-p">{{ case_body | default: 'Every model is built and finished by artisan in Dubai, from the first grain laid on the hull to the last line of rigging on the mainmast.' }}</p>{%- if case_quote != blank -%}<div class="tdp-quote"><div class="tdp-quote-text">&ldquo;{{ case_quote }}&rdquo;</div>{%- if case_quote_attr != blank -%}<div class="tdp-quote-attr">{{ case_quote_attr }}</div>{%- endif -%}</div>{%- endif -%}</div>
+    <div>{%- if case_image != blank -%}<div class="tdp-s2-img"><img src="{{ case_image | image_url: width: 820 }}" alt="{{ product.title }}" loading="lazy"><div class="tdp-s2-img-lbl">{{ case_eyebrow | upcase | default: 'WORKSHOP &middot; COMMISSION' }}</div></div>{%- elsif product.featured_image -%}<div class="tdp-s2-img"><img src="{{ product.featured_image | image_url: width: 820 }}" alt="{{ product.title }}" loading="lazy"></div>{%- else -%}<div class="tdp-s2-img" style="display:flex;align-items:center;justify-content:center;"><svg width="52" height="40" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.18)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg></div>{%- endif -%}</div>
+    <div><div class="tdp-sec-lbl">SECTION 02 <small>&middot; {{ case_eyebrow | default: 'THE ATELIER' }}</small></div><h2 class="tdp-sec-h">{{ case_heading | default: 'Built by four hands, never four hundred.' }}</h2><p class="tdp-sec-p">{{ case_body | default: 'Every model is built and finished by a single artisan atelier in Ajman, from the first grain laid on the hull to the last line of rigging on the mainmast.' }}</p>{%- if case_quote != blank -%}<div class="tdp-quote"><div class="tdp-quote-text">&ldquo;{{ case_quote }}&rdquo;</div>{%- if case_quote_attr != blank -%}<div class="tdp-quote-attr">{{ case_quote_attr }}</div>{%- endif -%}</div>{%- endif -%}{%- if case_stats.size > 0 -%}<div class="tdp-stats">{%- for st in case_stats -%}{%- assign sp = st | split: '||' -%}<div class="tdp-stat"><span class="tdp-stat-n">{{ sp[0] }}</span><span class="tdp-stat-l">{{ sp[1] }}</span></div>{%- endfor -%}</div>{%- else -%}<div class="tdp-stats"><div class="tdp-stat"><span class="tdp-stat-n">84</span><span class="tdp-stat-l">Hours per piece</span></div><div class="tdp-stat"><span class="tdp-stat-n">1</span><span class="tdp-stat-l">Artisan, start to finish</span></div><div class="tdp-stat"><span class="tdp-stat-n">100%</span><span class="tdp-stat-l">Built to drawings</span></div></div>{%- endif -%}</div>
   </div></div>
 
   <!-- S3: PROVENANCE — TEXT left, IMAGE right (always on) -->
   <div class="tdp-sec tdp-s3"><div class="tdp-s3-inner">
-    <div><h2 class="tdp-sec-h">{{ section.settings.prov_h | default: 'Built to specification.' }} <em>{{ section.settings.prov_hem | default: 'Nothing approximated.' }}</em></h2>{%- assign prov_raw = section.settings.prov_p | default: 'Every model is built from the original technical drawings. Where drawings and photographs disagree, we side with the drawings. No embellishment, no artistic license.' -%}{%- assign prov_parts = prov_raw | split: '
-' -%}{%- assign prov_kept = '' -%}{%- for p in prov_parts -%}{%- assign pt = p | strip -%}{%- if pt != blank -%}{%- if prov_kept == '' -%}{%- assign prov_kept = pt -%}{%- else -%}{%- assign prov_kept = prov_kept | append: '|~|' | append: pt -%}{%- endif -%}{%- endif -%}{%- endfor -%}{%- assign prov_arr = prov_kept | split: '|~|' -%}{%- for p in prov_arr -%}{%- if forloop.last and prov_arr.size > 1 -%}<p class="tdp-sec-p tdp-prov-lead">{{ p }}</p>{%- else -%}<p class="tdp-sec-p">{{ p }}</p>{%- endif -%}{%- endfor -%}</div>
-    <div>{%- if section.settings.s3_image != blank -%}<div class="tdp-s3-img"><img src="{{ section.settings.s3_image | image_url: width: 700 }}" alt="{{ product.title | escape }}" loading="lazy"></div>{%- elsif product.images[1] -%}<div class="tdp-s3-img"><img src="{{ product.images[1] | image_url: width: 700 }}" alt="{{ product.title }}" loading="lazy"></div>{%- elsif product.featured_image -%}<div class="tdp-s3-img"><img src="{{ product.featured_image | image_url: width: 700 }}" alt="{{ product.title }}" loading="lazy"></div>{%- else -%}<div class="tdp-s3-img"><svg width="52" height="40" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.18)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg></div>{%- endif -%}{%- if section.settings.s3_credit != blank -%}<div class="tdp-s3-credit">{{ section.settings.s3_credit }}</div>{%- endif -%}</div>
+    <div><div class="tdp-sec-lbl">SECTION 03 <small>&middot; PROVENANCE</small></div><h2 class="tdp-sec-h">{{ section.settings.prov_h | default: 'Built to specification.' }} <em>{{ section.settings.prov_hem | default: 'Nothing approximated.' }}</em></h2><p class="tdp-sec-p">{{ section.settings.prov_p | default: 'Every model is built from the original technical drawings. Where drawings and photographs disagree, we side with the drawings. No embellishment, no artistic license.' }}</p><div class="tdp-prov-stats">{%- if spec_rows.size > 0 -%}{%- for row in spec_rows limit: 3 -%}{%- assign c = row | split: '||' -%}<div class="tdp-prov-stat"><span class="tdp-prov-stat-n">{{ c[1] | truncate: 9, '' }}</span><span class="tdp-prov-stat-l">{{ c[0] }}</span></div>{%- endfor -%}{%- else -%}<div class="tdp-prov-stat"><span class="tdp-prov-stat-n">1:100</span><span class="tdp-prov-stat-l">Scale</span></div><div class="tdp-prov-stat"><span class="tdp-prov-stat-n">84h</span><span class="tdp-prov-stat-l">Build time</span></div><div class="tdp-prov-stat"><span class="tdp-prov-stat-n">UAE</span><span class="tdp-prov-stat-l">Workshop</span></div>{%- endif -%}</div></div>
+    <div>{%- if product.images[1] -%}<div class="tdp-s3-img"><img src="{{ product.images[1] | image_url: width: 700 }}" alt="{{ product.title }}" loading="lazy"></div>{%- elsif product.featured_image -%}<div class="tdp-s3-img"><img src="{{ product.featured_image | image_url: width: 700 }}" alt="{{ product.title }}" loading="lazy"></div>{%- else -%}<div class="tdp-s3-img"><svg width="52" height="40" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.18)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg></div>{%- endif -%}</div>
   </div></div>
 
   <!-- S4: VIDEO — 2-col header + full video + 4-col chapters -->
   {%- assign ch_blocks = section.blocks | where: 'type', 'chapter' -%}
   {%- if section.settings.video_url != blank or ch_blocks.size > 0 -%}
   <div class="tdp-s4"><div class="tdp-s4-inner">
+    <div class="tdp-sec-lbl">SECTION 04 <small>&middot; FILM</small></div>
     <div class="tdp-s4-header"><div><h2 class="tdp-s4-h">{{ section.settings.vid_h | default: 'Eighty-four hours,' }}<br><em>{{ section.settings.vid_hem | default: 'in nine minutes.' }}</em></h2></div><div><p class="tdp-s4-sub">{{ section.settings.vid_sub | default: 'A short film from the workshop floor. Casting the brass, planting the hull, raising the mainmast. The whole build, from raw material to finished piece.' }}</p></div></div>
-    <div class="tdp-s4-frame{% if section.settings.vid_portrait %} tdp-s4-portrait{% endif %}">{%- if section.settings.video_url != blank -%}{%- assign vurl = section.settings.video_url -%}{%- if vurl contains 'youtube' or vurl contains 'youtu.be' -%}{%- assign ytid = vurl | split: 'v=' | last | split: '&' | first -%}{%- if vurl contains 'youtu.be' -%}{%- assign ytid = vurl | split: '/' | last | split: '?' | first -%}{%- endif -%}<iframe src="https://www.youtube.com/embed/{{ ytid }}" allow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>{%- elsif vurl contains 'vimeo' -%}{%- assign vmid = vurl | split: '/' | last -%}<iframe src="https://player.vimeo.com/video/{{ vmid }}" allow="autoplay;fullscreen" allowfullscreen></iframe>{%- else -%}<video src="{{ vurl }}" controls></video>{%- endif -%}{%- else -%}<div class="tdp-s4-placeholder"><div class="tdp-s4-play"></div><div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.22);">Add YouTube or Vimeo URL in section settings</div></div>{%- endif -%}</div>
+    <div class="tdp-s4-frame">{%- if section.settings.video_url != blank -%}{%- assign vurl = section.settings.video_url -%}{%- if vurl contains 'youtube' or vurl contains 'youtu.be' -%}{%- assign ytid = vurl | split: 'v=' | last | split: '&' | first -%}{%- if vurl contains 'youtu.be' -%}{%- assign ytid = vurl | split: '/' | last | split: '?' | first -%}{%- endif -%}<iframe src="https://www.youtube.com/embed/{{ ytid }}" allow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>{%- elsif vurl contains 'vimeo' -%}{%- assign vmid = vurl | split: '/' | last -%}<iframe src="https://player.vimeo.com/video/{{ vmid }}" allow="autoplay;fullscreen" allowfullscreen></iframe>{%- else -%}<video src="{{ vurl }}" controls></video>{%- endif -%}{%- else -%}<div class="tdp-s4-placeholder"><div class="tdp-s4-play"></div><div style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.22);">Add YouTube or Vimeo URL in section settings</div></div>{%- endif -%}</div>
     <div class="tdp-s4-meta"><div class="tdp-s4-title">{{ section.settings.vid_meta | default: 'Build Film' }} &mdash; {{ product.title }}</div>{%- if section.settings.vid_dur != blank -%}<div class="tdp-s4-dur">{{ section.settings.vid_dur }}</div>{%- endif -%}</div>
     {%- if ch_blocks.size > 0 -%}<div class="tdp-chapters">{%- for ch in ch_blocks -%}<div class="tdp-ch"><div class="tdp-ch-time">{{ ch.settings.time }}</div><div class="tdp-ch-title">{{ ch.settings.title }}</div></div>{%- endfor -%}</div>{%- endif -%}
   </div></div>
   {%- endif -%}
 
+  <!-- S5: THE FINE PRINT — tabs + spec cards (always on) -->
+  <div class="tdp-sec tdp-s5"><div class="tdp-s5-inner" id="tdp-s5">
+    <div class="tdp-sec-lbl">SECTION 05</div>
+    <h2 class="tdp-sec-h">{{ section.settings.spec_h | default: 'The fine print,' }} <em>{{ section.settings.spec_hem | default: 'uncondensed.' }}</em></h2>
+    <p class="tdp-sec-p" style="margin-bottom:32px;">{{ section.settings.spec_p | default: 'Materials, measurements, provenance. The catalogue copy and the notes, in one place.' }}</p>
+    <div class="tdp-tabs">
+      <div class="tdp-tab on" onclick="tdpTab(this,'tdp-p1')">Details</div>
+      <div class="tdp-tab" onclick="tdpTab(this,'tdp-p2')">Specs</div>
+      {%- if included_items.size > 0 -%}<div class="tdp-tab" onclick="tdpTab(this,'tdp-p3')">What&rsquo;s in the box</div>{%- endif -%}
+    </div>
+    <!-- TAB 1: DETAILS -->
+    <div class="tdp-panel on" id="tdp-p1"><div class="tdp-spec-grid">{%- if spec_rows.size > 0 -%}{%- assign half = spec_rows.size | divided_by: 2 | ceil -%}<div><div class="tdp-spec-ghead">Dimensions &amp; materials</div>{%- for row in spec_rows limit: half -%}{%- assign c = row | split: '||' -%}<div class="tdp-spec-row"><span class="tdp-spec-k">{{ c[0] }}</span><span class="tdp-spec-v">{{ c[1] }}</span></div>{%- endfor -%}</div><div><div class="tdp-spec-ghead">Provenance</div>{%- for row in spec_rows offset: half -%}{%- assign c = row | split: '||' -%}<div class="tdp-spec-row"><span class="tdp-spec-k">{{ c[0] }}</span><span class="tdp-spec-v">{{ c[1] }}</span></div>{%- endfor -%}<div class="tdp-spec-row"><span class="tdp-spec-k">Commissioned by</span><span class="tdp-spec-v">{{ commissioned_by }}</span></div></div>{%- else -%}<div><div class="tdp-spec-ghead">Dimensions &amp; materials</div><div class="tdp-spec-row"><span class="tdp-spec-k">Scale</span><span class="tdp-spec-v">1:100</span></div><div class="tdp-spec-row"><span class="tdp-spec-k">Materials</span><span class="tdp-spec-v">Resin, PLA &amp; brass</span></div><div class="tdp-spec-row"><span class="tdp-spec-k">Finish</span><span class="tdp-spec-v">Hand-painted</span></div></div><div><div class="tdp-spec-ghead">Provenance</div><div class="tdp-spec-row"><span class="tdp-spec-k">Workshop</span><span class="tdp-spec-v">{{ section.settings.workshop | default: 'The Diorama &middot; Ajman, UAE' }}</span></div><div class="tdp-spec-row"><span class="tdp-spec-k">Build time</span><span class="tdp-spec-v">{{ section.settings.build_time | default: 'Approx. 84 hours' }}</span></div><div class="tdp-spec-row"><span class="tdp-spec-k">Commissioned by</span><span class="tdp-spec-v">{{ commissioned_by }}</span></div></div>{%- endif -%}</div></div>
+    <!-- TAB 2: SPECS — two bordered cards -->
+    <div class="tdp-panel" id="tdp-p2"><div class="tdp-spec-cards">
+      <div class="tdp-spec-card">
+        <div class="tdp-spec-subgroup"><div class="tdp-spec-subh">Specifications</div><div class="tdp-spec-subsub">{{ section.settings.spec_dim_sub | default: 'Measured at 22&deg;C, 45% RH.' }}</div>{%- if spec_rows.size > 0 -%}{%- assign half2 = spec_rows.size | divided_by: 2 | ceil -%}{%- for row in spec_rows limit: half2 -%}{%- assign c = row | split: '||' -%}<div class="tdp-spec-row"><span class="tdp-spec-k">{{ c[0] }}</span><span class="tdp-spec-v">{{ c[1] }}</span></div>{%- endfor -%}{%- else -%}<div class="tdp-spec-row"><span class="tdp-spec-k">Scale</span><span class="tdp-spec-v">1:100</span></div><div class="tdp-spec-row"><span class="tdp-spec-k">Overall length</span><span class="tdp-spec-v">Made to drawings</span></div><div class="tdp-spec-row"><span class="tdp-spec-k">Display base</span><span class="tdp-spec-v">Solid timber</span></div>{%- endif -%}</div>
+        {%- if spec_rows.size > 0 -%}{%- assign rem_count = spec_rows.size | minus: half2 -%}{%- if rem_count > 0 -%}<div class="tdp-spec-subgroup"><div class="tdp-spec-subh">Materials</div><div class="tdp-spec-subsub">{{ section.settings.spec_mat_sub | default: 'Each component individually sourced.' }}</div>{%- for row in spec_rows offset: half2 -%}{%- assign c = row | split: '||' -%}<div class="tdp-spec-row"><span class="tdp-spec-k">{{ c[0] }}</span><span class="tdp-spec-v">{{ c[1] }}</span></div>{%- endfor -%}</div>{%- endif -%}{%- else -%}<div class="tdp-spec-subgroup"><div class="tdp-spec-subh">Materials</div><div class="tdp-spec-subsub">{{ section.settings.spec_mat_sub | default: 'Each component individually sourced.' }}</div><div class="tdp-spec-row"><span class="tdp-spec-k">Hull</span><span class="tdp-spec-v">Resin &amp; PLA composite</span></div><div class="tdp-spec-row"><span class="tdp-spec-k">Fittings</span><span class="tdp-spec-v">Cast brass</span></div><div class="tdp-spec-row"><span class="tdp-spec-k">Case</span><span class="tdp-spec-v">Clear acrylic</span></div></div>{%- endif -%}
+      </div>
+      <div class="tdp-spec-card">
+        <div class="tdp-spec-subgroup"><div class="tdp-spec-subh">Provenance</div><div class="tdp-spec-subsub">Who, where, how many hours.</div><div class="tdp-spec-row"><span class="tdp-spec-k">Workshop</span><span class="tdp-spec-v">{{ section.settings.workshop | default: 'The Diorama &middot; Ajman, UAE' }}</span></div><div class="tdp-spec-row"><span class="tdp-spec-k">Commissioned by</span><span class="tdp-spec-v">{{ commissioned_by }}</span></div><div class="tdp-spec-row"><span class="tdp-spec-k">Edition</span><span class="tdp-spec-v">{{ section.settings.edition_label | default: 'Open &middot; individually numbered' }}</span></div><div class="tdp-spec-row"><span class="tdp-spec-k">Build time</span><span class="tdp-spec-v">{{ section.settings.build_time | default: 'Approx. 84 hours per piece' }}</span></div><div class="tdp-spec-row"><span class="tdp-spec-k">Certificate</span><span class="tdp-spec-v">{{ section.settings.certificate | default: 'Signed certificate of authenticity' }}</span></div>{%- if section.settings.lead_artisan != blank and section.settings.lead_artisan != 'Lead artisan name' -%}<div class="tdp-spec-row"><span class="tdp-spec-k">Lead artisan</span><span class="tdp-spec-v">{{ section.settings.lead_artisan }}</span></div>{%- endif -%}</div>
+        <div class="tdp-spec-subgroup"><div class="tdp-spec-subh">Care &amp; conservation</div><div class="tdp-spec-subsub">Treat it like a small wooden instrument.</div><div class="tdp-spec-row"><span class="tdp-spec-k">Display</span><span class="tdp-spec-v">Out of direct sunlight, 18&ndash;24&deg;C</span></div><div class="tdp-spec-row"><span class="tdp-spec-k">Humidity</span><span class="tdp-spec-v">40&ndash;55% RH recommended</span></div><div class="tdp-spec-row"><span class="tdp-spec-k">Cleaning</span><span class="tdp-spec-v">Soft brush only, never solvents</span></div><div class="tdp-spec-row"><span class="tdp-spec-k">Insurance</span><span class="tdp-spec-v">{{ section.settings.insurance_note | default: 'Appraisal letter included' }}</span></div></div>
+      </div>
+    </div></div>
+    <!-- TAB 3: INBOX -->
+    {%- if included_items.size > 0 -%}<div class="tdp-panel" id="tdp-p3"><div class="tdp-inbox">{%- for item in included_items -%}{%- assign pts = item | split: '||' -%}<div class="tdp-inbox-item"><div class="tdp-inbox-icon">{{ pts[0] }}</div><div><div class="tdp-inbox-title">{{ pts[1] }}</div><div class="tdp-inbox-desc">{{ pts[2] }}</div></div></div>{%- endfor -%}</div></div>{%- endif -%}
+  </div></div>
+
   <!-- S6: FAQ -->
   {%- assign faq_blocks = section.blocks | where: 'type', 'faq' -%}
   {%- if faq_blocks.size > 0 -%}
   <div class="tdp-sec tdp-s6"><div class="tdp-s6-inner">
-    <div><h2 class="tdp-sec-h">{{ section.settings.faq_h | default: 'Common questions.' }}</h2><p class="tdp-sec-p">{{ section.settings.faq_p | default: 'The questions that come up most often. A real person answers everything else.' }}</p></div>
+    <div><div class="tdp-sec-lbl">SECTION 06</div><h2 class="tdp-sec-h">{{ section.settings.faq_h | default: 'Common questions.' }}</h2><p class="tdp-sec-p">{{ section.settings.faq_p | default: 'The questions that come up most often. A real person answers everything else.' }}</p></div>
     <div class="tdp-faq-list">{%- for b in faq_blocks -%}<div class="tdp-faq{% if forloop.first %} open{% endif %}"><div class="tdp-faq-q" onclick="tdpFaq(this.parentElement)"><div class="tdp-faq-qleft"><span class="tdp-faq-num">Q.0{{ forloop.index }}</span><span class="tdp-faq-qtext">{{ b.settings.q }}</span></div><span class="tdp-faq-icon">+</span></div><div class="tdp-faq-a">{{ b.settings.a }}</div></div>{%- endfor -%}</div>
   </div></div>
   {%- endif -%}
 
   <!-- S7: REVIEWS -->
   <div class="tdp-sec tdp-s7" id="tdp-reviews"><div class="tdp-s7-inner">
-    <h2 class="tdp-sec-h">{{ section.settings.rev_h | default: "Customer Reviews" }}</h2>
+    <div class="tdp-sec-lbl">SECTION 07 <small>&middot; OWNERS&rsquo; LEDGER</small></div>
+    <h2 class="tdp-sec-h">{{ section.settings.rev_h | default: "From the owners' ledger." }}</h2>
     <div class="tdp-rev-header"><div><div class="tdp-rev-big">{{ section.settings.rev_score | default: '5.0' }}</div><div class="tdp-rev-stars-big">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="tdp-rev-ct">{{ section.settings.rev_count | default: '12' }} verified reviews</div></div>
-    {%- assign _rt = section.settings.rev_count | default: '0' | plus: 0 -%}{%- if _rt < 1 -%}{%- assign _rt = 1 -%}{%- endif -%}{%- assign _r5 = section.settings.rev5 | default: '0' | plus: 0 -%}{%- assign _r4 = section.settings.rev4 | default: '0' | plus: 0 -%}{%- assign _r3 = section.settings.rev3 | default: '0' | plus: 0 -%}{%- assign _r2 = section.settings.rev2 | default: '0' | plus: 0 -%}{%- assign _r1 = section.settings.rev1 | default: '0' | plus: 0 -%}<div><div class="tdp-bar-row"><span class="tdp-bar-lbl">5</span><div class="tdp-bar-track"><div class="tdp-bar-fill" style="width:{{ _r5 | times: 100 | divided_by: _rt }}%"></div></div><span class="tdp-bar-ct">{{ _r5 }}</span></div><div class="tdp-bar-row"><span class="tdp-bar-lbl">4</span><div class="tdp-bar-track"><div class="tdp-bar-fill" style="width:{{ _r4 | times: 100 | divided_by: _rt }}%"></div></div><span class="tdp-bar-ct">{{ _r4 }}</span></div><div class="tdp-bar-row"><span class="tdp-bar-lbl">3</span><div class="tdp-bar-track"><div class="tdp-bar-fill" style="width:{{ _r3 | times: 100 | divided_by: _rt }}%"></div></div><span class="tdp-bar-ct">{{ _r3 }}</span></div><div class="tdp-bar-row"><span class="tdp-bar-lbl">2</span><div class="tdp-bar-track"><div class="tdp-bar-fill" style="width:{{ _r2 | times: 100 | divided_by: _rt }}%"></div></div><span class="tdp-bar-ct">{{ _r2 }}</span></div><div class="tdp-bar-row"><span class="tdp-bar-lbl">1</span><div class="tdp-bar-track"><div class="tdp-bar-fill" style="width:{{ _r1 | times: 100 | divided_by: _rt }}%"></div></div><span class="tdp-bar-ct">{{ _r1 }}</span></div></div></div>
+    <div><div class="tdp-bar-row"><span class="tdp-bar-lbl">5</span><div class="tdp-bar-track"><div class="tdp-bar-fill" style="width:88%"></div></div><span class="tdp-bar-ct">{{ section.settings.rev5 | default: '10' }}</span></div><div class="tdp-bar-row"><span class="tdp-bar-lbl">4</span><div class="tdp-bar-track"><div class="tdp-bar-fill" style="width:9%"></div></div><span class="tdp-bar-ct">{{ section.settings.rev4 | default: '2' }}</span></div><div class="tdp-bar-row"><span class="tdp-bar-lbl">3</span><div class="tdp-bar-track"><div class="tdp-bar-fill" style="width:0%"></div></div><span class="tdp-bar-ct">0</span></div><div class="tdp-bar-row"><span class="tdp-bar-lbl">2</span><div class="tdp-bar-track"><div class="tdp-bar-fill" style="width:0%"></div></div><span class="tdp-bar-ct">0</span></div><div class="tdp-bar-row"><span class="tdp-bar-lbl">1</span><div class="tdp-bar-track"><div class="tdp-bar-fill" style="width:0%"></div></div><span class="tdp-bar-ct">0</span></div></div></div>
     <div class="tdp-reviews">{%- assign rev_blocks = section.blocks | where: 'type', 'review' -%}{%- for b in rev_blocks -%}<div class="tdp-review"><div class="tdp-rev-top"><div class="tdp-rev-left"><div class="tdp-rev-avatar">{{ b.settings.name | slice: 0 | upcase }}</div><div><div class="tdp-rev-name">{{ b.settings.name }}</div><div class="tdp-rev-date">{{ b.settings.date }}</div></div></div><div class="tdp-rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div><div class="tdp-rev-title">{{ b.settings.title }}</div><div class="tdp-rev-body">{{ b.settings.body }}</div>{%- if b.settings.badge != blank -%}<div class="tdp-rev-badge">VERIFIED &middot; {{ b.settings.badge }}</div>{%- endif -%}</div>{%- else -%}<div class="tdp-review"><div class="tdp-rev-top"><div class="tdp-rev-left"><div class="tdp-rev-avatar">A</div><div><div class="tdp-rev-name">Ahmed K.</div><div class="tdp-rev-date">MAR 2026</div></div></div><div class="tdp-rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div><div class="tdp-rev-title">Better in person than in the photographs</div><div class="tdp-rev-body">The detail is extraordinary. Every client who visits asks where we got it before they ask about anything else. Worth every dirham.</div><div class="tdp-rev-badge">VERIFIED &middot; TITANIUM MARINE LLC</div></div>{%- endfor -%}</div>
   </div></div>
 
@@ -499,25 +429,16 @@ img,svg,video,iframe{max-width:100%}
 </div>
 
 <script>
-var tdpMedia=[{%- for m in product.media -%}{type:'{{ m.media_type }}',{%- if m.media_type=='image' -%}src:'{{ m | image_url: width: 960 }}',{%- elsif m.media_type=='video' -%}src:{{ m.sources | json }},poster:'{{ m.preview_image | image_url: width: 960 }}',{%- elsif m.media_type=='external_video' -%}eid:'{{ m.external_id }}',host:'{{ m.host }}',{%- endif -%}alt:'{{ m.alt | escape }}'}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}];
-function tdpGall(el,i){document.querySelectorAll('.tdp-thumb').forEach(function(t){t.classList.remove('on');});el.classList.add('on');var m=tdpMedia[i],w=document.getElementById('tdpMain');if(!m)return;if(m.type==='image'){w.innerHTML='<img src="'+m.src+'" alt="'+m.alt+'" style="width:100%;height:auto;display:block;">';}else if(m.type==='video'){var h='<video poster="'+(m.poster||'')+'" autoplay muted loop playsinline preload="auto" style="width:100%;display:block;">';if(Array.isArray(m.src))m.src.forEach(function(s){h+='<source src="'+s.url+'" type="'+s.mime_type+'">';});h+='</video>';w.innerHTML=h;var v=w.querySelector('video');if(v){v.load();v.play().catch(function(){v.muted=true;v.play();});}}else if(m.type==='external_video'){var src=m.host==='youtube'?'https://www.youtube.com/embed/'+m.eid+'?autoplay=1&mute=1':'https://player.vimeo.com/video/'+m.eid+'?autoplay=1&muted=1';w.innerHTML='<iframe src="'+src+'" allow="autoplay;encrypted-media;fullscreen" allowfullscreen style="width:100%;aspect-ratio:4/3;border:none;display:block;"></iframe>';}
+var tdpMedia=[{%- for m in product.media -%}{type:'{{ m.media_type }}',{%- if m.media_type=='image' -%}src:'{{ m | image_url: width: 960 }}',{%- elsif m.media_type=='video' -%}src:{{ m.sources | json }},{%- elsif m.media_type=='external_video' -%}eid:'{{ m.external_id }}',host:'{{ m.host }}',{%- endif -%}alt:'{{ m.alt | escape }}'}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}];
+function tdpGall(el,i){document.querySelectorAll('.tdp-thumb').forEach(function(t){t.classList.remove('on');});el.classList.add('on');var m=tdpMedia[i],w=document.getElementById('tdpMain');if(!m)return;if(m.type==='image'){w.innerHTML='<img src="'+m.src+'" alt="'+m.alt+'" style="width:100%;height:auto;display:block;">';}else if(m.type==='video'){var h='<video controls muted loop playsinline style="width:100%;display:block;">';if(Array.isArray(m.src))m.src.forEach(function(s){h+='<source src="'+s.url+'" type="'+s.mime_type+'">';});h+='</video>';w.innerHTML=h;var v=w.querySelector('video');if(v){v.load();v.play().catch(function(){v.muted=true;v.play();});}}else if(m.type==='external_video'){var src=m.host==='youtube'?'https://www.youtube.com/embed/'+m.eid+'?autoplay=1&mute=1':'https://player.vimeo.com/video/'+m.eid+'?autoplay=1&muted=1';w.innerHTML='<iframe src="'+src+'" allow="autoplay;encrypted-media;fullscreen" allowfullscreen style="width:100%;aspect-ratio:4/3;border:none;display:block;"></iframe>';}
 document.getElementById('tdpViewLbl').textContent=m.alt?m.alt.toUpperCase():'VIEW '+(i+1);document.getElementById('tdpCount').textContent='IMAGE '+(i+1)+' / '+tdpMedia.length;}
-function tdpNav(d){var th=document.querySelectorAll(".tdp-thumb");if(!th.length)return;var cur=0;for(var i=0;i<th.length;i++){if(th[i].classList.contains("on")){cur=i;break;}}var n=(cur+d+th.length)%th.length;tdpGall(th[n],n);}
-function tdpVariant(el,vid,price){document.querySelectorAll('.tdp-variant').forEach(function(v){v.classList.remove('on');});el.classList.add('on');document.getElementById('tdp-vid').value=vid;}
-function tdpQty(d){var el=document.getElementById('tdp-qty-val');if(!el)return;var n=parseInt(el.value,10);if(isNaN(n)||n<1)n=1;n=n+d;if(n<1)n=1;el.value=n;}
+function tdpVariant(el,vid,price){document.querySelectorAll('.tdp-variant').forEach(function(v){v.classList.remove('on');});el.classList.add('on');document.getElementById('tdp-vid').value=vid;var b=document.querySelector('.tdp-btn-cart');if(b)b.textContent='Add to cart — '+price;}
 function tdpTab(el,pid){var wrap=document.getElementById('tdp-s5');wrap.querySelectorAll('.tdp-tab').forEach(function(t){t.classList.remove('on');});wrap.querySelectorAll('.tdp-panel').forEach(function(p){p.classList.remove('on');});el.classList.add('on');var p=document.getElementById(pid);if(p)p.classList.add('on');}
 function tdpFaq(item){var open=item.classList.contains('open');document.querySelectorAll('.tdp-faq').forEach(function(i){i.classList.remove('open');});if(!open)item.classList.add('open');}
 function tdpOpenModal(){document.getElementById('tdp-modal').classList.add('on');}
 function tdpCloseModal(){document.getElementById('tdp-modal').classList.remove('on');document.getElementById('tdp-mfwrap').style.display='block';document.getElementById('tdp-mok').style.display='none';document.getElementById('tdp-mform').reset();}
 document.getElementById('tdp-modal').addEventListener('click',function(e){if(e.target===this)tdpCloseModal();});
 document.getElementById('tdp-mform').addEventListener('submit',function(e){e.preventDefault();var form=this,data=new FormData(form),body='form_type=contact&utf8=✓';data.forEach(function(v,k){body+='&contact['+encodeURIComponent(k)+']='+encodeURIComponent(v);});fetch('/contact',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body}).then(function(){document.getElementById('tdp-mfwrap').style.display='none';document.getElementById('tdp-mok').style.display='block';setTimeout(tdpCloseModal,3500);}).catch(function(){alert('There was an issue. Please try again.');});});
-
-
-/* seamless autoplay for gallery video */
-(function(){function pl(v){if(!v)return;try{v.muted=true;var p=v.play();if(p&&p.catch)p.catch(function(){});}catch(e){}}function kick(){pl(document.querySelector('#tdpMain video'));}if(document.readyState!=='loading')kick();else document.addEventListener('DOMContentLoaded',kick);window.addEventListener('load',kick);document.addEventListener('DOMContentLoaded',function(){var m=document.getElementById('tdpMain');if(m&&'IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){var v=m.querySelector('video');if(!v)return;if(e.isIntersecting){pl(v);}else{try{v.pause();}catch(_){}}});},{threshold:0.2}).observe(m);}setInterval(function(){var v=document.querySelector('#tdpMain video');if(v&&v.paused&&!v.ended){var r=v.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)pl(v);}},1200);});})();
-</script>
-<script>
-(function(){try{var s=document.querySelector('.tdp-s7');if(!s)return;var fills=s.querySelectorAll('.tdp-bar-fill');var done=false;function go(){if(done)return;done=true;s.classList.add('tdp-animate');for(var i=0;i<fills.length;i++){var f=fills[i],t=f.style.width;f.style.transition='none';f.style.width='0';void f.offsetWidth;f.style.transition='';f.style.width=t;}}if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){go();io.disconnect();}});},{threshold:0,rootMargin:'0px 0px -12% 0px'});io.observe(s);}else{go();}}catch(e){}})();
 </script>
 
 {% schema %}
@@ -529,46 +450,24 @@ document.getElementById('tdp-mform').addEventListener('submit',function(e){e.pre
     {"type":"text","id":"edition_label","label":"Edition badge","default":"EDITION · OPEN"},
     {"type":"text","id":"year_lbl","label":"Eyebrow year label","default":"UAE"},
     {"type":"text","id":"commission_price","label":"Default commission price","default":"AED 15,000"},
-    {"type":"text","id":"workshop","label":"Workshop label","default":"The Diorama · Dubai, UAE"},
+    {"type":"text","id":"workshop","label":"Workshop label","default":"The Diorama · Ajman, UAE"},
     {"type":"text","id":"lead_time","label":"Lead time","default":"10–14 business days · in stock"},
     {"type":"text","id":"returns","label":"Returns policy","default":"30 days · fully insured"},
-    {"type":"header","content":"Hero short description"},
-    {"type":"textarea","id":"hero_desc","label":"Short description (below title)","default":"A handcrafted scale model of the Offshore Support Vessel."},
-    {"type":"header","content":"Hero spec table (click to expand)"},
-    {"type":"text","id":"hspec_title","label":"Menu label","default":"Product specs"},
-    {"type":"text","id":"hspec1_k","label":"Row 1 label","default":"Scale"},
-    {"type":"text","id":"hspec1_v","label":"Row 1 value","default":"1:100"},
-    {"type":"text","id":"hspec2_k","label":"Row 2 label","default":"Materials"},
-    {"type":"text","id":"hspec2_v","label":"Row 2 value","default":"Resin, PLA & brass"},
-    {"type":"text","id":"hspec3_k","label":"Row 3 label","default":"Finish"},
-    {"type":"text","id":"hspec3_v","label":"Row 3 value","default":"Hand-painted"},
-    {"type":"header","content":"Hero feature icons"},
-    {"type":"text","id":"usp1_label","label":"Icon 1 label","default":"Worldwide Shipping"},
-    {"type":"text","id":"usp2_label","label":"Icon 2 label","default":"Handcrafted"},
-    {"type":"text","id":"usp3_label","label":"Icon 3 label","default":"Customized Text"},
-    {"type":"header","content":"Personalization"},
-    {"type":"checkbox","id":"perso_enable","label":"Show personalization text box","default":true},
-    {"type":"text","id":"perso_label","label":"Personalization label","default":"Personalization text"},
-    {"type":"text","id":"perso_placeholder","label":"Placeholder text","default":"e.g. vessel name or dedication"},
-    {"type":"checkbox","id":"perso_required","label":"Make it required","default":false},
     {"type":"header","content":"S01 Description"},
     {"type":"text","id":"desc_title","label":"Title","default":"Precision at every fitting."},
     {"type":"text","id":"desc_title_em","label":"Title italic","default":"Nothing missed."},
-    {"type":"textarea","id":"s1_body","label":"Body text (below heading)"},
     {"type":"header","content":"S02 Workshop"},
-    {"type":"image_picker","id":"s2_image","label":"Section 02 image"},
     {"type":"text","id":"case_eyebrow","label":"Eyebrow","default":"The Atelier"},
     {"type":"text","id":"case_heading","label":"Heading","default":"Built by four hands, never four hundred."},
-    {"type":"textarea","id":"case_body","label":"Body","default":"Every model is built and finished by a single artisan atelier in Dubai, from the first grain laid on the hull to the last line of rigging."},
+    {"type":"textarea","id":"case_body","label":"Body","default":"Every model is built and finished by a single artisan atelier in Ajman, from the first grain laid on the hull to the last line of rigging."},
     {"type":"textarea","id":"case_quote","label":"Pull quote","default":"The model exceeded every expectation."},
     {"type":"text","id":"case_quote_attr","label":"Quote attribution","default":"Client — Company Name"},
     {"type":"header","content":"S03 Provenance"},
-    {"type":"image_picker","id":"s3_image","label":"Section 03 image"},{"type":"text","id":"s3_credit","label":"Section 03 image credit (small caption)","default":""},
     {"type":"text","id":"prov_h","label":"Heading","default":"Drawn from the original technical drawings."},
     {"type":"text","id":"prov_hem","label":"Heading italic","default":"Nothing approximated."},
     {"type":"textarea","id":"prov_p","label":"Body","default":"The model is built from the original technical drawings. No embellishment, no artistic license."},
     {"type":"header","content":"S04 Video"},
-    {"type":"url","id":"video_url","label":"Video URL (YouTube or Vimeo)"},{"type":"checkbox","id":"vid_portrait","label":"Portrait video (vertical / Shorts) on mobile","default":false},
+    {"type":"url","id":"video_url","label":"Video URL (YouTube or Vimeo)"},
     {"type":"text","id":"vid_h","label":"Heading","default":"Eighty-four hours,"},
     {"type":"text","id":"vid_hem","label":"Heading italic part","default":"in nine minutes."},
     {"type":"textarea","id":"vid_sub","label":"Subtitle","default":"A short film from the workshop floor. Casting the brass, planting the hull, raising the mainmast. The whole build."},
@@ -588,26 +487,22 @@ document.getElementById('tdp-mform').addEventListener('submit',function(e){e.pre
     {"type":"text","id":"faq_h","label":"Heading","default":"Common questions."},
     {"type":"textarea","id":"faq_p","label":"Subtitle","default":"The questions that come up most often. A real person answers everything else."},
     {"type":"header","content":"S07 Reviews"},
-    {"type":"text","id":"rev_h","label":"Heading","default":"Customer Reviews"},
+    {"type":"text","id":"rev_h","label":"Heading","default":"From the owners' ledger."},
     {"type":"text","id":"rev_score","label":"Review score","default":"5.0"},
     {"type":"text","id":"rev_count","label":"Review count","default":"12"},
-    {"type":"text","id":"rev5","label":"5-star count","default":"9"},
+    {"type":"text","id":"rev5","label":"5-star count","default":"10"},
     {"type":"text","id":"rev4","label":"4-star count","default":"2"},
-    {"type":"text","id":"rev2","label":"2-star count","default":"1"},{"type":"text","id":"rev3","label":"3-star count","default":"0"},{"type":"text","id":"rev1","label":"1-star count","default":"0"},
     {"type":"header","content":"CTA strip"},
     {"type":"text","id":"cta_ey","label":"CTA eyebrow","default":"Have a similar project?"},
     {"type":"text","id":"cta_heading","label":"CTA heading","default":"Every great model begins with"},
     {"type":"text","id":"cta_heading_em","label":"CTA heading italic","default":"one conversation."}
   ],
   "blocks":[
-    {"type":"feature","name":"S01 Feature card","settings":[{"type":"image_picker","id":"image","label":"Image (auto-cropped square)"},{"type":"text","id":"caption","label":"Image caption","default":"Macro \u00b7 Hull"},{"type":"text","id":"num","label":"Index","default":"F-01"},{"type":"text","id":"detail","label":"Small label","default":"DETAIL"},{"type":"text","id":"title","label":"Title","default":"Hand-finished hull"},{"type":"textarea","id":"desc","label":"Description","default":"Every plank line, port and fitting is built to the original drawings and finished by hand."}]},
     {"type":"trust","name":"Trust item","settings":[{"type":"text","id":"text","label":"Text","default":"Insured worldwide shipping"}]},
     {"type":"faq","name":"FAQ question","settings":[{"type":"text","id":"q","label":"Question","default":"Is the model pre-assembled?"},{"type":"textarea","id":"a","label":"Answer","default":"Every piece ships fully assembled and hand-finished."}]},
     {"type":"chapter","name":"Video chapter","settings":[{"type":"text","id":"time","label":"Timecode","default":"00:00"},{"type":"text","id":"title","label":"Chapter title","default":"The Workshop"}]},
     {"type":"review","name":"Review","settings":[{"type":"text","id":"name","label":"Name","default":"Ahmed K."},{"type":"text","id":"date","label":"Date","default":"MAR 2026"},{"type":"text","id":"title","label":"Review title","default":"Better in person than in the photographs"},{"type":"textarea","id":"body","label":"Review body","default":"The detail is extraordinary."},{"type":"text","id":"badge","label":"Verified badge (company name)","default":"Verified purchase"}]}
   ],
-  "presets":[{"name":"Diorama Product Page","blocks":[{"type":"feature","settings":{"caption":"Macro \u00b7 Hull","num":"F-01","detail":"DETAIL","title":"Hand-finished hull","desc":"Every plank line, port and fitting is built to the original drawings and finished by hand."}},{"type":"feature","settings":{"caption":"Macro \u00b7 Fittings","num":"F-02","detail":"DETAIL","title":"Solid brass fittings","desc":"Individually cast metal components, never moulded plastic, at true scale."}},{"type":"feature","settings":{"caption":"Macro \u00b7 Base","num":"F-03","detail":"DETAIL","title":"Engraved display base","desc":"Solid timber base with an engraved nameplate and protective acrylic case."}}]}]
+  "presets":[{"name":"Diorama Product Page"}]
 }
 {% endschema %}
-
-{% comment %}v2 1781176680{% endcomment %}

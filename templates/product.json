@@ -1,1 +1,130 @@
-{"sections":{"diorama-product":{"type":"diorama-product","blocks":{"feat-1":{"type":"feature","settings":{"image":"shopify:\/\/shop_images\/vesselshipminiatureforcorporategifting.jpg","caption":"Hull","num":"F-01","detail":"DETAIL","title":"Gloss finished hull","desc":"Automotive Grade Spray Paint is applied for Smooth surface. Ship Hull has gloss effect for superior finishing."}},"feat-2":{"type":"feature","settings":{"image":"shopify:\/\/shop_images\/vesselshipminiaturelogo.jpg","caption":"Fittings","num":"F-02","detail":"DETAIL","title":"Customized Text","desc":"You can make this vessel personalised with engraving your name, company name or name of the person receiving this."}},"feat-3":{"type":"feature","settings":{"image":"shopify:\/\/shop_images\/vesselshipminiature.jpg","caption":"Base","num":"F-03","detail":"DETAIL","title":"Protective Cover","desc":"Solid timber base with an transparent cover to protect the model from dust"}},"faq-1":{"type":"faq","settings":{"q":"Is the model pre-assembled, or do I build it?","a":"Every piece ships fully assembled and hand-finished. It is a finished display collectible, not a kit."}},"faq-2":{"type":"faq","settings":{"q":"How long does a standard model take to ship?","a":"These models are manufactured on Demand. Hence, lead time is within 14–21 business days from order confirmation. You'll receive a tracking number as soon as the piece leaves our Dubai workshop."}},"faq-3":{"type":"faq","settings":{"q":"What is included in a custom commission?","a":"Every commission includes the scale model built from your technical drawings, a clear acrylic display case, an engraved black acrylic nameplate, LED lighting. This scaled model will be custom made according to your requirements. Fill the form if you need a custom commission and someone from team will contact you."}},"faq-4":{"type":"faq","settings":{"q":"Can I get a model in a different scale?","a":"Yes — 1:200, 1:100, 1:75, 1:50 and fully custom scales are all available. Scale affects the final model length and the level of detail achievable. We advise the best scale for your vessel type and display location during the brief."}},"faq-5":{"type":"faq","settings":{"q":"Do you ship internationally?","a":"Yes. We ship worldwide from Dubai, UAE. GCC deliveries typically arrive in 3–5 business days. International shipping to Europe, UK, Asia and North America takes 5–10 business days. Full customs documentation is included."}},"faq-6":{"type":"faq","settings":{"q":"What are the customization options?","a":"For standard product checkout. We customized only logo engraving on the base. If you want more customization in terms of shape, size and colors then better send a commission inquiry."}},"review-1":{"type":"review","settings":{"name":"Ahmed K.","date":"MAR 2026","title":"Better in person than in the photographs","body":"The detail is extraordinary. Every client who visits asks where we got it before they ask about anything else. The acrylic case is flawless and the engraving on the base is crisp. Worth every dirham.","badge":"TITANIUM MARINE LLC"}},"review-2":{"type":"review","settings":{"name":"Sarah L.","date":"FEB 2026","title":"Used it in every client presentation since delivery","body":"The 1:100 scale model sits in our boardroom and has become the conversation starter at every meeting. The photography package was a bonus we didn't expect. Highly recommended.","badge":"PRIYA BLUE SHIPPING"}},"review-3":{"type":"review","settings":{"name":"Rajan M.","date":"JAN 2026","title":"Delivered in 19 days. Zero revisions needed.","body":"The 3D render approval process gave us complete confidence before manufacturing. The final model matched the render exactly. Professional from brief to delivery.","badge":"GULF OFFSHORE GROUP"}}},"block_order":["feat-1","feat-2","feat-3","faq-1","faq-2","faq-3","faq-4","faq-5","faq-6","review-1","review-2","review-3"],"settings":{"ann_text":"","edition_label":"LIMITED EDITION","year_lbl":"UAE","commission_price":"","workshop":"The Diorama · Dubai, UAE","lead_time":"14–21 business days · Made on Demand","returns":"30 days · fully insured","hero_desc":"A handcrafted ship model of the Offshore Support Vessel. You can add your text to personalise this collection. This text will be engraved on the wooden base with your text.","hspec_title":"Product specs","hspec1_k":"Scale & Dimension","hspec1_v":"1:500 , 17.5 x 6 x 10 cm","hspec2_k":"Materials","hspec2_v":"Resin, Acrylic","hspec3_k":"Finish","hspec3_v":"Gloss Hull and Metallic","usp1_label":"Worldwide Shipping","usp2_label":"Handcrafted","usp3_label":"Customized Text","perso_enable":true,"perso_label":"Personalization text","perso_placeholder":"e.g. name","perso_required":false,"desc_title":"Does your heart belongs","desc_title_em":"to the sea?","s1_body":"This miniature of offshore support vessel is a perfect piece to own if your true calling come from the ocea. Here are some features that makes this collection special.","s2_image":"shopify:\/\/shop_images\/vesselshipmodel.jpg","case_eyebrow":"Case Study","case_heading":"A Miniature that Marine Industry loves","case_body":"We built 21 pieces of this offshore support vessel for the SPM Shipping company. They used this as corporate gifting for their client.","case_quote":"Really impressed with their service - they’re super quick, give timely updates throughout the process, and the quality of their work is really nice. The best part is how they handle any issues raised along the way; they’re always helpful, accommodating, and easy to work with. Highly recommended!","case_quote_attr":"Kajal Mishra — Marketing Manager","s3_image":"shopify:\/\/shop_images\/WhatsApp_Image_2026-05-30_at_10.38.24_AM.jpg","prov_h":"Backbone of","prov_hem":"Supply Industry","prov_p":"This Offshore Supply Ship is the backbone of offshore energy industry. Without this ship, supply of oil and critical fuel will become a challenge. Hence, they are referred to as the backbone of supply logistics.\n\nThis Ship is the symbol of hard work and Reliability","video_url":"https://www.youtube.com/watch?v=8mi-3_Cp1wE","vid_portrait":true,"vid_h":"The build,","vid_hem":"from start to finish.","vid_sub":"A short film from the workshop floor — every stage of the commission from manufacturing to assembly.","vid_meta":"Building the Ship Model","vid_dur":"9:14","spec_h":"Model","spec_hem":"Specification","spec_p":"Materials, measurements, provenance — everything about this model in one place.","spec_dim_sub":"Measured at 22°C, 45% RH.","spec_mat_sub":"Each component is individually fabricated","build_time":"Approx. 32 hours per piece","certificate":"","lead_artisan":"","insurance_note":"","faq_h":"Common questions.","faq_p":"The questions that come up most often. A real person answers everything else — write to us any time.","rev_h":"Customer Reviews","rev_score":"5.0","rev_count":"12","rev5":"9","rev4":"2","rev2":"1","cta_ey":"Have a similar project?","cta_heading":"Every great model begins with","cta_heading_em":"one conversation."}}},"order":["diorama-product"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Is the model pre-assembled, or do I build it?",
+            "a": "Every piece ships fully assembled and hand-finished. It is a finished display collectible, not a kit."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "How long does a standard model take to ship?",
+            "a": "Standard stock models ship within 10–14 business days from order confirmation. You'll receive a tracking number as soon as the piece leaves our Ajman workshop."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "What is included in a custom commission?",
+            "a": "Every commission includes the scale model built from your technical drawings, a clear acrylic display case, an engraved black acrylic nameplate, a certificate of authenticity, one free revision round, and professional studio photography. A 50% deposit starts production."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Can I get a model in a different scale?",
+            "a": "Yes — 1:200, 1:100, 1:75, 1:50 and fully custom scales are all available. Scale affects the final model length and the level of detail achievable. We advise the best scale for your vessel type and display location during the brief."
+          }
+        },
+        "faq-5": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship internationally?",
+            "a": "Yes. We ship worldwide from Ajman, UAE. GCC deliveries typically arrive in 2–4 business days. International shipping to Europe, UK, Asia and North America takes 5–10 business days. Full customs documentation is included."
+          }
+        },
+        "faq-6": {
+          "type": "faq",
+          "settings": {
+            "q": "What if I want changes after seeing the 3D render?",
+            "a": "One revision round is included at no extra cost before physical printing begins. We send a digital 3D render for your approval — only when you confirm do we start production. Additional revisions after approval are charged at a flat rate."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Ahmed K.",
+            "date": "MAR 2026",
+            "title": "Better in person than in the photographs",
+            "body": "The detail is extraordinary. Every client who visits asks where we got it before they ask about anything else. The acrylic case is flawless and the engraving on the base is crisp. Worth every dirham.",
+            "badge": "TITANIUM MARINE LLC"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "Sarah L.",
+            "date": "FEB 2026",
+            "title": "Used it in every client presentation since delivery",
+            "body": "The 1:100 scale model sits in our boardroom and has become the conversation starter at every meeting. The photography package was a bonus we didn't expect. Highly recommended.",
+            "badge": "PRIYA BLUE SHIPPING"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Rajan M.",
+            "date": "JAN 2026",
+            "title": "Delivered in 19 days. Zero revisions needed.",
+            "body": "The 3D render approval process gave us complete confidence before a single gram of resin was printed. The final model matched the render exactly. Professional from brief to delivery.",
+            "badge": "GULF OFFSHORE GROUP"
+          }
+        }
+      },
+      "block_order": [
+        "faq-1", "faq-2", "faq-3", "faq-4", "faq-5", "faq-6",
+        "review-1", "review-2", "review-3"
+      ],
+      "settings": {
+        "ann_text": "Free UAE delivery over AED 400 · Lifetime workshop warranty · 90-min WhatsApp response",
+        "edition_label": "EDITION · OPEN",
+        "year_lbl": "UAE",
+        "commission_price": "AED 15,000",
+        "workshop": "The Diorama · Ajman, UAE",
+        "lead_time": "10–14 business days · in stock",
+        "returns": "30 days · fully insured",
+        "desc_title": "Precision at every fitting.",
+        "desc_title_em": "Nothing missed.",
+        "case_eyebrow": "Case Study",
+        "case_heading": "A display that speaks before anyone does.",
+        "case_body": "Commission story goes here. Edit via product metafields: case_heading, case_body, case_quote.",
+        "case_quote": "The model exceeded every expectation.",
+        "case_quote_attr": "Senior Director — Maritime Operations",
+        "prov_h": "Built to specification.",
+        "prov_hem": "Nothing approximated.",
+        "prov_p": "Every model is built from your technical drawings and specification documents. Where drawings and photographs disagree, we side with the drawings.",
+        "vid_h": "The build,",
+        "vid_hem": "from start to finish.",
+        "vid_sub": "A short film from the workshop floor — every stage of the commission from brief to delivery.",
+        "spec_h": "The fine print,",
+        "spec_hem": "uncondensed.",
+        "spec_p": "Materials, measurements, provenance — everything about this model in one place.",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "From the owners' ledger.",
+        "rev_score": "5.0",
+        "rev_count": "12",
+        "rev5": "10",
+        "rev4": "2",
+        "cta_ey": "Have a similar project?",
+        "cta_heading": "Every great model begins with",
+        "cta_heading_em": "one conversation."
+      }
+    }
+  },
+  "order": ["diorama-product"]
+}
