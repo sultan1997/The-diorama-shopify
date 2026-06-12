@@ -48,6 +48,11 @@
   .dfp .viewer-info .live{display:inline-flex;align-items:center;gap:6px;}
   .dfp .viewer-info .live::before{content:"";width:6px;height:6px;border-radius:999px;background:var(--blueprint);}
   .dfp .viewer-controls{position:absolute;bottom:14px;left:14px;right:14px;display:flex;justify-content:space-between;align-items:center;z-index:2;}
+  .dfp .dfp-nav{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.95);border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:4;box-shadow:0 1px 7px rgba(0,0,0,.12);transition:background .15s,box-shadow .15s;padding:0;}
+  .dfp .dfp-nav:hover{background:#fff;box-shadow:0 3px 12px rgba(0,0,0,.2);}
+  .dfp .dfp-nav svg{width:16px;height:16px;stroke:#1f1f1f;stroke-width:1.8;fill:none;}
+  .dfp .dfp-nav-prev{left:12px;}.dfp .dfp-nav-next{right:12px;}
+  @media(max-width:600px){.dfp .dfp-nav{width:34px;height:34px;}.dfp .dfp-nav svg{width:14px;height:14px;}}
   .dfp .vc-axes{display:flex;gap:4px;background:rgba(255,255,255,.95);border:1px solid var(--rule);border-radius:8px;padding:4px;}
   .dfp .vc-axes button{min-width:42px;height:32px;padding:0 6px;background:transparent;border:0;font-family:var(--mono);font-size:10px;color:var(--ink-2);border-radius:4px;}
   .dfp .vc-axes button[data-active="true"]{background:var(--blueprint-bg);color:var(--blueprint-deep);}
@@ -359,6 +364,7 @@
               <button type="button" aria-label="Fullscreen"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9V3h6M21 9V3h-6M3 15v6h6M21 15v6h-6"/></svg></button>
             </div>
           </div>
+          {%- if product.media.size > 1 -%}<button type="button" class="dfp-nav dfp-nav-prev" aria-label="Previous" onclick="dfpNav(-1)"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button><button type="button" class="dfp-nav dfp-nav-next" aria-label="Next" onclick="dfpNav(1)"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>{%- endif -%}
         </div>
         {%- if product.media.size > 1 -%}
         <div class="thumb-rail">
@@ -685,6 +691,7 @@
   window.dfpMode=function(b){ var g=grp(b); if(!g)return; g.querySelectorAll('button').forEach(function(x){x.setAttribute('data-active','false');}); b.setAttribute('data-active','true'); };
   window.dfpAxis=function(b){ var g=grp(b); if(!g)return; g.querySelectorAll('button').forEach(function(x){x.setAttribute('data-active','false');}); b.setAttribute('data-active','true'); };
   window.dfpSwap=function(b,src){ var st=document.getElementById('dfpStage'); if(!st)return; var mv=st.querySelector('model-viewer'); var img=st.querySelector('img.dfp-swap'); var isModel=b.getAttribute('data-media-type')==='model'; if(isModel){ if(mv){ if(!mv.getAttribute('src') && mv.dataset.glb){ mv.setAttribute('src', mv.dataset.glb); } mv.classList.remove('dfp-hide'); } if(img){img.style.display='none';} } else { if(mv)mv.classList.add('dfp-hide'); if(img){ img.src=src; img.style.display='block'; img.style.zIndex='2'; } } document.querySelectorAll('.dfp .thumb-rail .vt').forEach(function(x){x.setAttribute('data-active','false');}); b.setAttribute('data-active','true'); };
+  window.dfpNav=function(d){ var th=document.querySelectorAll('.dfp .thumb-rail .vt'); if(!th.length)return; var cur=0; for(var i=0;i<th.length;i++){ if(th[i].getAttribute('data-active')==='true'){cur=i;break;} } var n=(cur+d+th.length)%th.length; th[n].click(); };
   window.dfpFaq=function(item){ var open=item.classList.contains('open'); item.parentElement.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open'); var t=i.querySelector('.toggle'); if(t)t.textContent='+';}); if(!open){ item.classList.add('open'); var t=item.querySelector('.toggle'); if(t)t.textContent='–'; } };
 })();
 </script>
