@@ -1,0 +1,182 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "",
+            "num": "01",
+            "detail": "",
+            "title": "Large Presence",
+            "desc": "Framed by your entrance and garlands, its scale makes an immediate, premium first impression on every guest who arrives."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "",
+            "num": "02",
+            "detail": "",
+            "title": "Hand-Finished Detail",
+            "desc": "Every detail - from the tailored coat to the crest on the hat - is painted and finished by hand for a refined, high-end look up close."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "",
+            "num": "03",
+            "detail": "",
+            "title": "Your Brand Colours",
+            "desc": "Choose your colour palette and add your logo to the hat and base so the piece sits seamlessly within your venue's identity."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you match our exact brand colours?",
+            "a": "Yes. We hand-paint to your palette and add your logo. Share your brand guide in a commission inquiry."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "What sizes are available?",
+            "a": "This is the 2.5 meter height version; we also build at 2 meter and custom heights to suit your space."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it be reused next year?",
+            "a": "Yes - it's built to be stored and re-displayed season after season."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship and install?",
+            "a": "We ship worldwide from Dubai, crated for safe transit; local delivery and placement can be arranged."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Omar A.",
+            "date": "FEB 2026",
+            "title": "Exceeded expectations",
+            "body": "The craftsmanship is superb and the finish is flawless. Exactly what we hoped for and delivered on time.",
+            "badge": "Verified purchase"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "Sara M.",
+            "date": "JAN 2026",
+            "title": "Stunning centrepiece",
+            "body": "It draws attention the moment people walk in. The detail up close is remarkable.",
+            "badge": "Verified purchase"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel R.",
+            "date": "MAR 2026",
+            "title": "Worth every dirham",
+            "body": "Communication was easy and the final piece is even better than the photos. Highly recommend.",
+            "badge": "Verified purchase"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A 2.5-metre custom nutcracker built for premium spaces - hotels, lobbies and luxury retail. Hand-painted in your brand palette with your logo on the hat and base, it stands as an elegant, photo-worthy festive guardian at your entrance.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimension",
+        "hspec1_v": "70 x 70 x 250 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Wood, PLastic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt Multicolor · LED lighting",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your logo, brand colours, height and base text",
+        "perso_required": false,
+        "desc_title": "Want an Entrance",
+        "desc_title_em": "Guests Can't Walk Past?",
+        "s1_body": "When a standard decoration won't do, this Giant Nutcracker delivers presence. Designed for hotels and luxury venues, it is hand-painted in refined tones, finished by hand, and personalised with your branding - an elegant festive landmark that elevates the whole entrance and draws guests in for a photo.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "An Entrance Statement",
+        "case_body": "Created as a festive centrepiece for a luxury Josette in DIFC, this 2.5-metre nutcracker anchored the venue's seasonal look - colour-matched to the brand and finished to a standard that reads beautifully both day and night.",
+        "case_quote": "Its an impressive display to welcome our visitor. The colours matched our branding perfectly.",
+        "case_quote_attr": "Josette Manager",
+        "s3_image": "",
+        "prov_h": "A Christmas",
+        "prov_hem": "Icon",
+        "prov_p": "For generations the nutcracker has stood as a festive symbol of welcome and protection. Built tall and tailored to your brand, it becomes a centrepiece your guests remember. The guardian of the festive season.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at full 1:1 scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "60 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "14",
+        "rev5": "12",
+        "rev4": "2",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own trophy replica?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "",
+            "num": "01",
+            "detail": "",
+            "title": "Detailed 3D City Relief",
+            "desc": "Buildings, roads and landmarks are reproduced in detailed relief, so the whole area is instantly recognisable."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "",
+            "num": "02",
+            "detail": "",
+            "title": "Accurate layout",
+            "desc": "We extract the layout of Dubai city from google map and 3d source file. Based on the 3D Data we convert into miniature to retain max details."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you map any city or area?",
+            "a": "Yes - send the area and we'll build an accurate 3D relief map to your chosen extent."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it be branded and backlit?",
+            "a": ""
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Layla H.",
+            "date": "DEC 2025",
+            "title": "Beautifully made",
+            "body": "Hand-finished to a very high standard. A real conversation piece in our space.",
+            "badge": "Verified purchase"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James P.",
+            "date": "FEB 2026",
+            "title": "Exactly to brief",
+            "body": "They captured what we wanted precisely and the quality is first-class.",
+            "badge": "Verified purchase"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Omar A.",
+            "date": "FEB 2026",
+            "title": "Exceeded expectations",
+            "body": "The craftsmanship is superb and the finish is flawless. Exactly what we hoped for and delivered on time.",
+            "badge": "Verified purchase"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "faq-1",
+        "faq-2",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A wall-mounted 3D relief map of the dubai city, finished in clean white with magnetic attachment pins. A premium statement piece for receptions, showrooms and exhibition stands.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimension",
+        "hspec1_v": "1:27000 , 2.5 x 1.2 meter",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Bioplastic, Metal",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your area/city, branding, frame finish and lighting",
+        "perso_required": false,
+        "desc_title": "Want Your Whole City",
+        "desc_title_em": "as a Centrepiece?",
+        "s1_body": "We turn any city, district or development into a detailed 3D relief map, mounted on a frame with your branding. Every block, road and landmark is rendered to scale in crisp relief - a sophisticated centrepiece for a property developer's showroom, a corporate reception or an exhibition stand that draws people in for a closer look.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "A Reception Centrepiece",
+        "case_body": "Created for Al Rostamani group's headquarters, this 3D Dubai relief map turned a blank wall into a talking point - they were participating in exhibition where they wanted to flex various company location on the city map. After Exhibition, they installed this 3d map on the reception as a timeless display.",
+        "case_quote": "This map was an attraction in the Event. Great job for completing this in just 7 days",
+        "case_quote_attr": "Nazli, owner of sketchbook events",
+        "s3_image": "",
+        "prov_h": "The Whole City,",
+        "prov_hem": "at a Glance",
+        "prov_p": "A flat map informs; a 3D relief map impresses. Seeing a city rise off the wall in detail turns information into a centrepiece people remember. Your city, lifted off the wall.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at full 1:1 scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "50 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "7",
+        "rev5": "5",
+        "rev4": "2",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own trophy replica?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "s3_credit": "Image: Nino Verde, CC BY-SA 3.0, via Wikimedia Commons"
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

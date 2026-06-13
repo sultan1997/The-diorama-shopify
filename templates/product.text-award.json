@@ -1,0 +1,182 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "",
+            "num": "01",
+            "detail": "",
+            "title": "Story in the Letters",
+            "desc": "The figure is formed entirely of meaningful text - achievements, values and names - so the award itself tells the story."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "",
+            "num": "02",
+            "detail": "",
+            "title": "Personalised Per Winner",
+            "desc": "First, second, third or any number, each composed from the exact words you choose for that recipient or category."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "",
+            "num": "03",
+            "detail": "",
+            "title": "Crisp, On-Brand Finish",
+            "desc": "We handle the typography design, printing and hand-finishing in our own studio, so every piece is crisp, consistent and on-brand."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can I choose the number and the words it's made from?",
+            "a": "Yes - that's the point. Send us the number or shape and the exact words, names or values, and we design the typography around them."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you produce a full set (1st, 2nd, 3rd)?",
+            "a": "Yes, we regularly produce matched ranking sets for awards programmes and events."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "What finishes are available?",
+            "a": "Normally white color looks the best but any other colors and metallic finish can also be made."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai with tracked delivery."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel R.",
+            "date": "MAR 2026",
+            "title": "Worth every dirham",
+            "body": "Communication was easy and the final piece is even better than the photos. Highly recommend.",
+            "badge": "Verified purchase"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "Layla H.",
+            "date": "DEC 2025",
+            "title": "Beautifully made",
+            "body": "Hand-finished to a very high standard. A real conversation piece in our space.",
+            "badge": "Verified purchase"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "James P.",
+            "date": "FEB 2026",
+            "title": "Exactly to brief",
+            "body": "They captured what we wanted precisely and the quality is first-class.",
+            "badge": "Verified purchase"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A bold 3D typographic award where the trophy itself is built from words - the ranking number formed entirely of the names, values and achievements that matter to the recipient. 3D-printed, hand-finished and mounted on a solid base. A modern, meaningful alternative to the standard cup.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimension",
+        "hspec1_v": "25 cm height",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Bioplastic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your number/shape and the exact words to build it from",
+        "perso_required": false,
+        "desc_title": "Want an Award Built From",
+        "desc_title_em": "the Words That Matter?",
+        "s1_body": "Most trophies say the same thing. This one is different: the number is sculpted from the very words you want to celebrate - the winner's name, the project, the values, the milestone. We design the typography, 3D-print it, and finish it on a clean base so the message reads from every angle. Ideal for corporate awards, rankings and recognition where the story matters as much as the win.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "Recognition That Means More",
+        "case_body": "Produced for an event company whose client wanted a unique way to give awards. They send us the typography PDF which we then converted into a 3D Typography award.",
+        "case_quote": "Everyone wanted to read theirs up close. It made the recognition feel personal.",
+        "case_quote_attr": "Amir - Promotional Events",
+        "s3_image": "",
+        "prov_h": "Where Typography",
+        "prov_hem": "Becomes the Trophy",
+        "prov_p": "By turning words into form, the award carries its message in its very shape - a modern take on recognition that feels designed, not bought off a shelf. The message is the trophy.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at full 1:1 scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "16 hours",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "12",
+        "rev5": "10",
+        "rev4": "2",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own trophy replica?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

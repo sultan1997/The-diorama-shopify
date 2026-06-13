@@ -1,0 +1,182 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "",
+            "num": "01",
+            "detail": "",
+            "title": "Life Size Sculpture",
+            "desc": "Standing 2 metres tall, it reads from across a lobby or street and instantly becomes the spot guests gather to photograph."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "",
+            "num": "02",
+            "detail": "",
+            "title": "LED Lighting",
+            "desc": "Built-in warm LED lighting makes the piece come alive in the evening, keeping your entrance festive day and night."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "",
+            "num": "03",
+            "detail": "",
+            "title": "Colors and LOGO",
+            "desc": "Logo, monogram and brand colours are worked into the hat and base, so the piece feels made for your space - because it is."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it be made in our brand colours with our logo?",
+            "a": "Yes. We paint it in your colours and add your logo to the hat and base. Send a commission inquiry with your branding."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can I choose a different height?",
+            "a": "Yes - this is the 2m version, and we also build taller. Tell us your space and we'll advise the best size."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Is the LED lighting included?",
+            "a": "Yes, warm LED lighting is built in and mains-powered."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from our Dubai studio, with wooden crater and anti-vibration packaging."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Sara M.",
+            "date": "JAN 2026",
+            "title": "Stunning centrepiece",
+            "body": "It draws attention the moment people walk in. The detail up close is remarkable.",
+            "badge": "Verified purchase"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel R.",
+            "date": "MAR 2026",
+            "title": "Worth every dirham",
+            "body": "Communication was easy and the final piece is even better than the photos. Highly recommend.",
+            "badge": "Verified purchase"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Layla H.",
+            "date": "DEC 2025",
+            "title": "Beautifully made",
+            "body": "Hand-finished to a very high standard. A real conversation piece in our space.",
+            "badge": "Verified purchase"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A 2-metre life size nutcracker that turns any entrance, mall or lobby into a festive landmark. Hand-built, hand-painted and lit with warm LEDs, with your logo and colours built right in. A show-stopping seasonal centrepiece guests stop to photograph.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimension",
+        "hspec1_v": "200 x 55 x 55 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Wood, Plastic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your logo, brand colours, height and base text",
+        "perso_required": false,
+        "desc_title": "Make Your Entrance",
+        "desc_title_em": "Unforgettable",
+        "s1_body": "Few decorations command attention like a giant nutcracker standing guard at your door. At 2 metres tall, this custom piece is built for hotels, malls, showrooms and events that want a festive centrepiece worth photographing. We paint it in your brand colours, add your logo, and install LED lighting to personalise this sculpture - a seasonal showpiece you can bring back year after year.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "A Festive Landmark for the Season",
+        "case_body": "Commissioned as a seasonal centrepiece for a hotel entrance, this nutcracker quickly became the most-photographed spot on the property through the festive period - branded, lit, and reused the following year. We made 2 nutcrackers at the same time for Alici and IL BORRO Restaurant.",
+        "case_quote": "Guests lined up to take photos with it. It made our entrance feel like an festival.",
+        "case_quote_attr": "Alici - Hotel Operations",
+        "s3_image": "",
+        "prov_h": "A Christmas",
+        "prov_hem": "Icon",
+        "prov_p": "The nutcracker has guarded doorways as a symbol of good luck and protection for centuries. Scaled up and lit, it becomes the perfect modern centrepiece for any festive space. The guardian of the festive season.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at full 1:1 scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "46 hours",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "9",
+        "rev5": "7",
+        "rev4": "2",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own trophy replica?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

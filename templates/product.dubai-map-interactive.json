@@ -1,0 +1,138 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "",
+            "num": "01",
+            "detail": "",
+            "title": "Exact Detailing of Dubai",
+            "desc": "Accurate detailing of all the current and future development of Dubai included in the map based on actual Dubai. All the important landmark details like Burj Khalifa, Palm, dubai frame, metro lines are included in the design. This makes sure that your visitors get the accurate image of Dubai. We keep updating the Dubai map design according to latest developments every year."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "",
+            "num": "02",
+            "detail": "",
+            "title": "Personalised Branding",
+            "desc": "Your company logo and branding will be attached on the platform. If you want more personalisation in terms of size, color and layout design then send us a \"commission inquiry\""
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel R.",
+            "date": "MAR 2026",
+            "title": "Worth every dirham",
+            "body": "Communication was easy and the final piece is even better than the photos. Highly recommend.",
+            "badge": "Verified purchase"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "Layla H.",
+            "date": "DEC 2025",
+            "title": "Beautifully made",
+            "body": "Hand-finished to a very high standard. A real conversation piece in our space.",
+            "badge": "Verified purchase"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "James P.",
+            "date": "FEB 2026",
+            "title": "Exactly to brief",
+            "body": "They captured what we wanted precisely and the quality is first-class.",
+            "badge": "Verified purchase"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "3D City Model of Dubai which real estate companies use to showcase various properties in Dubai for Engaging Presentation. Whole map is made according to actual layout of Dubai. This product can be customized according to your sales gallery requirements.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimension",
+        "hspec1_v": "1:27000 , 200 x 105 x 120 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Bioplastic, Acrylic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your Company Branding, Model Size and any other features",
+        "perso_required": false,
+        "desc_title": "Want to Transform Your",
+        "desc_title_em": "Real Estate Presentation?",
+        "s1_body": "Most real estate brokers sell property in a boring way. They show off plan renderings, brochures, dubai map or do site visit to developers sales gallery. All agents do this. But showing property in a 3D Dubai map not able makes the visitors understand the location but also differentiate your presentation.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "Heaven Properties Sales Gallery",
+        "case_body": "Heaven Properties wanted to showcase dubai properties to their clients in hungary. So we commission the above map and shipped it internationally to hungary. Their team was impressed with the map and they are using it for all the presentations.",
+        "case_quote": "Dubai Mockup is amazing. Everybody in the team likes it. We use it for all our dubai property sales pitch.",
+        "case_quote_attr": "Milkos , Co-founder of Heaven Properties",
+        "s3_image": "",
+        "prov_h": "Dubai: The Home of",
+        "prov_hem": "Luxury",
+        "prov_p": "Dubai is a city that needs no explanation. Its hight standard of living combined with safety and tax free environment makes it perfect location for real estate investment. Dubai is the symbole of Luxury",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at full 1:1 scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 80 hours per piece",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "11",
+        "rev5": "9",
+        "rev4": "2",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own trophy replica?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

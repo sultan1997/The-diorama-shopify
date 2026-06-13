@@ -1,0 +1,146 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you build a specific city or development?",
+            "a": "Yes. We model any city, district or master plan to your chosen scale - send us the area and we'll advise the best size."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can the model be colour-finished or lit?",
+            "a": "Yes - any color is possible, multicolor colour and LED lighting options are available. Tell us your preference in a commission inquiry."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Is it suitable for repeated exhibition use?",
+            "a": "Yes, it is built on a sturdy base for transport and reuse across events."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes"
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Omar A.",
+            "date": "FEB 2026",
+            "title": "Exceeded expectations",
+            "body": "The craftsmanship is superb and the finish is flawless. Exactly what we hoped for and delivered on time.",
+            "badge": "Verified purchase"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "Sara M.",
+            "date": "JAN 2026",
+            "title": "Stunning centrepiece",
+            "body": "It draws attention the moment people walk in. The detail up close is remarkable.",
+            "badge": "Verified purchase"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel R.",
+            "date": "MAR 2026",
+            "title": "Worth every dirham",
+            "body": "Communication was easy and the final piece is even better than the photos. Highly recommend.",
+            "badge": "Verified purchase"
+          }
+        }
+      },
+      "block_order": [
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A crisp white 3D-printed energy model of a city, building, solar panels, wind turbine reproduced to scale on a clean display base. Perfect for exhibitions, sales galleries and corporate lobbies that need to show energy infrastructure of city or development at a glance.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimension",
+        "hspec1_v": "1:2000 , 1 x 1 x 0.1 meter",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your city, area or development, scale, and base branding",
+        "perso_required": false,
+        "desc_title": "Want the Whole Energy Infrastrcutre",
+        "desc_title_em": "on One Table?",
+        "s1_body": "A physical city energy model communicates scale and context in a way a screen never can. We 3D-print every energy detail like solar panels, wind turbine, transmission lines, factories in a clean monochrome finish that reads beautifully under gallery lighting. Use it to present a power district, a master plan or an entire Energy Grid to investors, buyers and visitors - and we can build it for any city you choose.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "Built to Present Energy",
+        "case_body": "Esyasoft wanted to showcase their energy infrastructure to their clients in Gitex. They came to us with just 3 days of deadline. We 3d printed miniature of their energy infrastructure which helped them to showcase in their GITEX event.",
+        "case_quote": "Visitors gathered around it immediately. It explained our project better than any slide could.",
+        "case_quote_attr": "Arafat - Manager of Esyasoft",
+        "s3_image": "",
+        "prov_h": "Context You Can",
+        "prov_hem": "See and Touch",
+        "prov_p": "Energy and Electricity is an important part of our daily life. Without energy, there is no progress or future development for mankind. We would have been stuck in cave without the existence of Energy. Energy is a Symbol of Progress",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at full 1:1 scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "22 hours",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "6",
+        "rev5": "4",
+        "rev4": "2",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own trophy replica?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "s3_credit": "Image: Nils Huenerfuerst, CC BY-SA 4.0, via Wikimedia Commons"
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

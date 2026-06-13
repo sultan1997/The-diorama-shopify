@@ -1,0 +1,146 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you make a different mountain?",
+            "a": "Yes. Send us the peak you have in mind - Kailash, Everest, a local mountain or one with personal meaning - and we'll sculpt it to scale."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Does it come framed and ready to hang?",
+            "a": "Yes, it is finished, framed and ready to mount on the wall."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can I choose the size and frame?",
+            "a": "Yes - tell us your wall space and preferred frame style in a commission inquiry."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, securely packed to protect the relief and frame."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "James P.",
+            "date": "FEB 2026",
+            "title": "Exactly to brief",
+            "body": "They captured what we wanted precisely and the quality is first-class.",
+            "badge": "Verified purchase"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "Omar A.",
+            "date": "FEB 2026",
+            "title": "Exceeded expectations",
+            "body": "The craftsmanship is superb and the finish is flawless. Exactly what we hoped for and delivered on time.",
+            "badge": "Verified purchase"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Sara M.",
+            "date": "JAN 2026",
+            "title": "Stunning centrepiece",
+            "body": "It draws attention the moment people walk in. The detail up close is remarkable.",
+            "badge": "Verified purchase"
+          }
+        }
+      },
+      "block_order": [
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A handcrafted 3D relief of Mount Kailash, sculpted in fine layered detail and finished in warm sunrise tones, then mounted in an ornate frame. A striking piece of dimensional wall art that catches light and shadow like the real peak.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimension",
+        "hspec1_v": "60 x 40 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Bioplastic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt Multicolor",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": false,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Choose your mountain, frame style and size",
+        "perso_required": false,
+        "desc_title": "Want a Mountain Range",
+        "desc_title_em": "as Living Wall Art?",
+        "s1_body": "Unlike a flat print, this is a true three-dimensional relief - every ridge, face and contour of Mount Kailash sculpted and hand-finished so the piece shifts with the light through the day. Framed and ready to hang, it makes a meaningful centrepiece for a home, office or meditation space. We can recreate any mountain that holds meaning for you.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "A Peak with Meaning",
+        "case_body": "Commissioned as a statement wall piece, this relief recreates a mountain of personal and spiritual significance - the kind of artwork that anchors a room and starts conversations. We build each one to the customer's chosen peak, finish and frame.",
+        "case_quote": "The detail is incredible and love the way it looks on my wall. A real talking point in our space.",
+        "case_quote_attr": "Jaya Sharma",
+        "s3_image": "",
+        "prov_h": "The Sacred",
+        "prov_hem": "Summit",
+        "prov_p": "Mount Kailash is revered across cultures as a place of pilgrimage and meaning. Rendered as a tactile 3D relief, its presence and sense of stillness carry into any room. A mountain you can reach out and touch.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at full 1:1 scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "22 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "8",
+        "rev5": "6",
+        "rev4": "2",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own trophy replica?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "s3_credit": "Image: Vyacheslav Argenberg, CC BY 4.0, via Wikimedia Commons"
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

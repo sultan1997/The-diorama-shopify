@@ -1,0 +1,182 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "",
+            "num": "01",
+            "detail": "",
+            "title": "Custom Layout",
+            "desc": "Every plot, block and road is reproduced accurately so visitors grasp the full scope of the project in a single glance."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "",
+            "num": "02",
+            "detail": "",
+            "title": "LED Lighting",
+            "desc": "Commercial buildings have LED lighting installed which brings the property to life. Street lights included as well."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "",
+            "num": "03",
+            "detail": "",
+            "title": "Branding and LOGO",
+            "desc": "The base carries your company branding and logo, turning the model into a centrepiece that reinforces your identity at every viewing."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you build my specific development layout?",
+            "a": "Yes. We build from your master-plan drawings and CAD files, accurate to scale."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it include LED lighting and zone colours?",
+            "a": "Yes - LED zone lighting, colour-coded phases and landmark highlighting are all available."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "How large can the model be?",
+            "a": "This is a 3-metre build; we produce models from tabletop scale up to large multi-section installations. Tell us your sizes."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship and install worldwide?",
+            "a": "Yes, we crate and ship worldwide from Dubai; large models are built in sections for transport."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Layla H.",
+            "date": "DEC 2025",
+            "title": "Beautifully made",
+            "body": "Hand-finished to a very high standard. A real conversation piece in our space.",
+            "badge": "Verified purchase"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James P.",
+            "date": "FEB 2026",
+            "title": "Exactly to brief",
+            "body": "They captured what we wanted precisely and the quality is first-class.",
+            "badge": "Verified purchase"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Omar A.",
+            "date": "FEB 2026",
+            "title": "Exceeded expectations",
+            "body": "The craftsmanship is superb and the finish is flawless. Exactly what we hoped for and delivered on time.",
+            "badge": "Verified purchase"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A 3-metre master-plan model that puts an entire development in front of your buyers - every plot, road and zone reproduced to scale on a branded display platform. Built for sales galleries and launch events where investors need to see the whole vision at once.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimension",
+        "hspec1_v": "1:200, 300 x 150 x 100 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Acrylic, Resin",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your development layout, branding, scale and zone colours",
+        "perso_required": false,
+        "desc_title": "Want Buyers to Grasp",
+        "desc_title_em": "the Whole Project at a Glance?",
+        "s1_body": "A master-plan model sells the vision in a way drawings and screens cannot. At 3 metres, this model lays out the entire development - plots, road network, landscaping and landmarks - all to scale on a platform finished in your brand identity. Buyers and investors gather around it, orient themselves instantly, and understand the project in seconds. We build it from your plans and keep it accurate to the latest layout.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "The Heart of the Sales Gallery",
+        "case_body": "Commissioned as the centrepiece for Rasikhoon real-estate sales gallery, this 3-metre master plan gave the developer's team a single, tangible reference to present every phase of the project to investors and buyers - on brand, to scale, and built to be updated as the development evolves.",
+        "case_quote": "Clients finally see the whole project at a glance. It has become the centre of every exhibition we participate.",
+        "case_quote_attr": "Malek - Sales Manager of Rasikhoon Real Estate",
+        "s3_image": "",
+        "prov_h": "Why Developers Still Build",
+        "prov_hem": "Physical Models",
+        "prov_p": "A scale model turns abstract plans into something investors can stand over, point at and believe in. That sense of scale and permanence is exactly what closes high-value real-estate decisions. The vision, made tangible.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at full 1:1 scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "88 hours",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "15",
+        "rev5": "13",
+        "rev4": "2",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own trophy replica?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}
