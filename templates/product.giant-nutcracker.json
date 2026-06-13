@@ -6,7 +6,7 @@
         "feat-1": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-giant-nutcracker-2.jpg",
             "caption": "",
             "num": "01",
             "detail": "",
@@ -17,7 +17,7 @@
         "feat-2": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-giant-nutcracker-7.jpg",
             "caption": "",
             "num": "02",
             "detail": "",
@@ -28,7 +28,7 @@
         "feat-3": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-giant-nutcracker-9.jpg",
             "caption": "",
             "num": "03",
             "detail": "",
@@ -133,7 +133,7 @@
         "desc_title": "Want an Entrance",
         "desc_title_em": "Guests Can't Walk Past?",
         "s1_body": "When a standard decoration won't do, this Giant Nutcracker delivers presence. Designed for hotels and luxury venues, it is hand-painted in refined tones, finished by hand, and personalised with your branding - an elegant festive landmark that elevates the whole entrance and draws guests in for a photo.",
-        "s2_image": "",
+        "s2_image": "shopify://shop_images/df-giant-nutcracker-4.jpg",
         "case_eyebrow": "Case Study",
         "case_heading": "An Entrance Statement",
         "case_body": "Created as a festive centrepiece for a luxury Josette in DIFC, this 2.5-metre nutcracker anchored the venue's seasonal look - colour-matched to the brand and finished to a standard that reads beautifully both day and night.",
