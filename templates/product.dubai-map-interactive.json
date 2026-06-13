@@ -6,23 +6,34 @@
         "feat-1": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-dubai-map-interactive-9.jpg",
             "caption": "",
             "num": "01",
             "detail": "",
-            "title": "Exact Detailing of Dubai",
-            "desc": "Accurate detailing of all the current and future development of Dubai included in the map based on actual Dubai. All the important landmark details like Burj Khalifa, Palm, dubai frame, metro lines are included in the design. This makes sure that your visitors get the accurate image of Dubai. We keep updating the Dubai map design according to latest developments every year."
+            "title": "Zone LED Control",
+            "desc": "Different location of Dubai can be turned on with LED to present specific locations. There are total 12 buttons included. 2 buttons are for power on/off and LED of full city. Rest of the 10 buttons are for specific locations which include - Downtown, Business bay, JVC, Marinetime City, Dubai Marine, Jumeirah Gold Estate, Dubai South, Creek Harbour, Meydan"
           }
         },
         "feat-2": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-dubai-map-interactive-7.jpg",
             "caption": "",
             "num": "02",
             "detail": "",
             "title": "Personalised Branding",
             "desc": "Your company logo and branding will be attached on the platform. If you want more personalisation in terms of size, color and layout design then send us a \"commission inquiry\""
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/df-dubai-map-interactive-4.jpg",
+            "caption": "",
+            "num": "03",
+            "detail": "",
+            "title": "Exact Detailing of Dubai",
+            "desc": "Accurate detailing of all the current and future development of Dubai included in the map based on actual Dubai. All the important landmark details like Burj Khalifa, Palm, dubai frame, metro lines are included in the design. This makes sure that your visitors get the accurate image of Dubai. We keep updating the Dubai map design according to latest developments every year."
           }
         },
         "review-1": {
@@ -59,6 +70,7 @@
       "block_order": [
         "feat-1",
         "feat-2",
+        "feat-3",
         "review-1",
         "review-2",
         "review-3"
@@ -89,13 +101,13 @@
         "desc_title": "Want to Transform Your",
         "desc_title_em": "Real Estate Presentation?",
         "s1_body": "Most real estate brokers sell property in a boring way. They show off plan renderings, brochures, dubai map or do site visit to developers sales gallery. All agents do this. But showing property in a 3D Dubai map not able makes the visitors understand the location but also differentiate your presentation.",
-        "s2_image": "",
+        "s2_image": "shopify://shop_images/df-dubai-map-interactive-8.jpg",
         "case_eyebrow": "Case Study",
         "case_heading": "Heaven Properties Sales Gallery",
         "case_body": "Heaven Properties wanted to showcase dubai properties to their clients in hungary. So we commission the above map and shipped it internationally to hungary. Their team was impressed with the map and they are using it for all the presentations.",
         "case_quote": "Dubai Mockup is amazing. Everybody in the team likes it. We use it for all our dubai property sales pitch.",
         "case_quote_attr": "Milkos , Co-founder of Heaven Properties",
-        "s3_image": "",
+        "s3_image": "shopify://shop_images/df-prov-dubai-map-interactive.jpg",
         "prov_h": "Dubai: The Home of",
         "prov_hem": "Luxury",
         "prov_p": "Dubai is a city that needs no explanation. Its hight standard of living combined with safety and tax free environment makes it perfect location for real estate investment. Dubai is the symbole of Luxury",

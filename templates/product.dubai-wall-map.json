@@ -6,7 +6,7 @@
         "feat-1": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-dubai-wall-map-2.jpg",
             "caption": "",
             "num": "01",
             "detail": "",
@@ -17,9 +17,20 @@
         "feat-2": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-dubai-wall-map-4.jpg",
             "caption": "",
             "num": "02",
+            "detail": "",
+            "title": "Magnetic Pin",
+            "desc": "layout is in Galvanised Iron which allows for magnetic pin to be attached on top. You can show multiple real estate location on the same map to flex your company reputation."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/df-dubai-wall-map-6.jpg",
+            "caption": "",
+            "num": "03",
             "detail": "",
             "title": "Accurate layout",
             "desc": "We extract the layout of Dubai city from google map and 3d source file. Based on the 3D Data we convert into miniature to retain max details."
@@ -73,6 +84,7 @@
       "block_order": [
         "feat-1",
         "feat-2",
+        "feat-3",
         "faq-1",
         "faq-2",
         "review-1",
@@ -111,7 +123,7 @@
         "case_body": "Created for Al Rostamani group's headquarters, this 3D Dubai relief map turned a blank wall into a talking point - they were participating in exhibition where they wanted to flex various company location on the city map. After Exhibition, they installed this 3d map on the reception as a timeless display.",
         "case_quote": "This map was an attraction in the Event. Great job for completing this in just 7 days",
         "case_quote_attr": "Nazli, owner of sketchbook events",
-        "s3_image": "",
+        "s3_image": "shopify://shop_images/df-prov-dubai-wall-map.jpg",
         "prov_h": "The Whole City,",
         "prov_hem": "at a Glance",
         "prov_p": "A flat map informs; a 3D relief map impresses. Seeing a city rise off the wall in detail turns information into a centrepiece people remember. Your city, lifted off the wall.",

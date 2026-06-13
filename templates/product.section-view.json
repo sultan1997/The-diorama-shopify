@@ -6,7 +6,7 @@
         "feat-1": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-section-view-6.jpg",
             "caption": "",
             "num": "01",
             "detail": "",
@@ -17,7 +17,7 @@
         "feat-2": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-section-view-4.jpg",
             "caption": "",
             "num": "02",
             "detail": "",
@@ -28,7 +28,7 @@
         "feat-3": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-section-view-12.jpg",
             "caption": "",
             "num": "03",
             "detail": "",
@@ -139,7 +139,7 @@
         "case_body": "Built as a presentation model for an architect, this cutaway let the design team walk clients straight through the scheme - levels, spaces and landscaping all legible at once - and settled questions that drawings alone left open.",
         "case_quote": "The section view answered every client question instantly. They understood the whole design in seconds.",
         "case_quote_attr": "Dhaval - Architect",
-        "s3_image": "",
+        "s3_image": "shopify://shop_images/df-section-view-2.jpg",
         "prov_h": "Architecture You Can",
         "prov_hem": "Read at a Glance",
         "prov_p": "A cutaway model communicates spatial relationships that drawings and renders struggle to convey. Seeing a building in section, in three dimensions, is the fastest way to build understanding and confidence. The design, laid open.",

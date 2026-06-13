@@ -6,7 +6,7 @@
         "feat-1": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-master-plan-15.jpg",
             "caption": "",
             "num": "01",
             "detail": "",
@@ -17,7 +17,7 @@
         "feat-2": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-master-plan-14.jpg",
             "caption": "",
             "num": "02",
             "detail": "",
@@ -28,7 +28,7 @@
         "feat-3": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-master-plan-12.jpg",
             "caption": "",
             "num": "03",
             "detail": "",
@@ -133,13 +133,13 @@
         "desc_title": "Want Buyers to Grasp",
         "desc_title_em": "the Whole Project at a Glance?",
         "s1_body": "A master-plan model sells the vision in a way drawings and screens cannot. At 3 metres, this model lays out the entire development - plots, road network, landscaping and landmarks - all to scale on a platform finished in your brand identity. Buyers and investors gather around it, orient themselves instantly, and understand the project in seconds. We build it from your plans and keep it accurate to the latest layout.",
-        "s2_image": "",
+        "s2_image": "shopify://shop_images/df-master-plan-3.jpg",
         "case_eyebrow": "Case Study",
         "case_heading": "The Heart of the Sales Gallery",
         "case_body": "Commissioned as the centrepiece for Rasikhoon real-estate sales gallery, this 3-metre master plan gave the developer's team a single, tangible reference to present every phase of the project to investors and buyers - on brand, to scale, and built to be updated as the development evolves.",
         "case_quote": "Clients finally see the whole project at a glance. It has become the centre of every exhibition we participate.",
         "case_quote_attr": "Malek - Sales Manager of Rasikhoon Real Estate",
-        "s3_image": "",
+        "s3_image": "shopify://shop_images/df-master-plan-15.jpg",
         "prov_h": "Why Developers Still Build",
         "prov_hem": "Physical Models",
         "prov_p": "A scale model turns abstract plans into something investors can stand over, point at and believe in. That sense of scale and permanence is exactly what closes high-value real-estate decisions. The vision, made tangible.",

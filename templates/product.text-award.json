@@ -6,7 +6,7 @@
         "feat-1": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-text-award-2.jpg",
             "caption": "",
             "num": "01",
             "detail": "",
@@ -17,7 +17,7 @@
         "feat-2": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-text-award-3.jpg",
             "caption": "",
             "num": "02",
             "detail": "",
@@ -28,7 +28,7 @@
         "feat-3": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-text-award-5.jpg",
             "caption": "",
             "num": "03",
             "detail": "",

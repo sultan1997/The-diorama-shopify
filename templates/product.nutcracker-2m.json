@@ -6,7 +6,7 @@
         "feat-1": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-nutcracker-2m-5.jpg",
             "caption": "",
             "num": "01",
             "detail": "",
@@ -17,7 +17,7 @@
         "feat-2": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-nutcracker-2m-2.jpg",
             "caption": "",
             "num": "02",
             "detail": "",
@@ -28,7 +28,7 @@
         "feat-3": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/df-nutcracker-2m-4.jpg",
             "caption": "",
             "num": "03",
             "detail": "",
@@ -133,13 +133,13 @@
         "desc_title": "Make Your Entrance",
         "desc_title_em": "Unforgettable",
         "s1_body": "Few decorations command attention like a giant nutcracker standing guard at your door. At 2 metres tall, this custom piece is built for hotels, malls, showrooms and events that want a festive centrepiece worth photographing. We paint it in your brand colours, add your logo, and install LED lighting to personalise this sculpture - a seasonal showpiece you can bring back year after year.",
-        "s2_image": "",
+        "s2_image": "shopify://shop_images/df-nutcracker-2m-3.jpg",
         "case_eyebrow": "Case Study",
         "case_heading": "A Festive Landmark for the Season",
         "case_body": "Commissioned as a seasonal centrepiece for a hotel entrance, this nutcracker quickly became the most-photographed spot on the property through the festive period - branded, lit, and reused the following year. We made 2 nutcrackers at the same time for Alici and IL BORRO Restaurant.",
         "case_quote": "Guests lined up to take photos with it. It made our entrance feel like an festival.",
         "case_quote_attr": "Alici - Hotel Operations",
-        "s3_image": "",
+        "s3_image": "shopify://shop_images/df-prov-nutcracker-2m.webp",
         "prov_h": "A Christmas",
         "prov_hem": "Icon",
         "prov_p": "The nutcracker has guarded doorways as a symbol of good luck and protection for centuries. Scaled up and lit, it becomes the perfect modern centrepiece for any festive space. The guardian of the festive season.",
