@@ -40,14 +40,28 @@
           "type": "faq",
           "settings": {
             "q": "Can you map any city or area?",
-            "a": "Yes - send the area and we'll build an accurate 3D relief map to your chosen extent."
+            "a": "Yes — we build 3D models of any city, district or master plan. Send us the location or layout and we reproduce it to scale."
           }
         },
         "faq-2": {
           "type": "faq",
           "settings": {
-            "q": "Can it be branded and backlit?",
-            "a": ""
+            "q": "Can it be customised to our branding?",
+            "a": "Yes. Your logo, colours and base layout are added so the piece matches your sales gallery, showroom or office."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "What sizes are available?",
+            "a": "From wall-mounted panels to large floor and table models. Tell us your space and we'll advise on the ideal scale."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, crated and insured for safe transit."
           }
         },
         "review-1": {
@@ -87,6 +101,8 @@
         "feat-3",
         "faq-1",
         "faq-2",
+        "faq-3",
+        "faq-4",
         "review-1",
         "review-2",
         "review-3"
@@ -127,12 +143,12 @@
         "prov_h": "The Whole City,",
         "prov_hem": "at a Glance",
         "prov_p": "A flat map informs; a 3D relief map impresses. Seeing a city rise off the wall in detail turns information into a centrepiece people remember. Your city, lifted off the wall.",
-        "video_url": "",
-        "vid_portrait": true,
+        "video_url": "https://www.youtube.com/watch?v=osLaHeSdcV0",
+        "vid_portrait": false,
         "vid_h": "The build,",
-        "vid_hem": "from all sides",
-        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
-        "vid_meta": "Building the UEFA Cup",
+        "vid_hem": "from start to finish.",
+        "vid_sub": "A short film from the workshop floor — see the 3D map take shape.",
+        "vid_meta": "Building the Dubai Relief Map",
         "vid_dur": "",
         "spec_h": "Model",
         "spec_hem": "Specification",

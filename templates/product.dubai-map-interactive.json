@@ -36,6 +36,34 @@
             "desc": "Accurate detailing of all the current and future development of Dubai included in the map based on actual Dubai. All the important landmark details like Burj Khalifa, Palm, dubai frame, metro lines are included in the design. This makes sure that your visitors get the accurate image of Dubai. We keep updating the Dubai map design according to latest developments every year."
           }
         },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you map any city or area?",
+            "a": "Yes — we build 3D models of any city, district or master plan. Send us the location or layout and we reproduce it to scale."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it be customised to our branding?",
+            "a": "Yes. Your logo, colours and base layout are added so the piece matches your sales gallery, showroom or office."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "What sizes are available?",
+            "a": "From wall-mounted panels to large floor and table models. Tell us your space and we'll advise on the ideal scale."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, crated and insured for safe transit."
+          }
+        },
         "review-1": {
           "type": "review",
           "settings": {
@@ -71,6 +99,10 @@
         "feat-1",
         "feat-2",
         "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
         "review-1",
         "review-2",
         "review-3"
@@ -111,12 +143,12 @@
         "prov_h": "Dubai: The Home of",
         "prov_hem": "Luxury",
         "prov_p": "Dubai is a city that needs no explanation. Its hight standard of living combined with safety and tax free environment makes it perfect location for real estate investment. Dubai is the symbole of Luxury",
-        "video_url": "",
-        "vid_portrait": true,
+        "video_url": "https://www.youtube.com/watch?v=osLaHeSdcV0",
+        "vid_portrait": false,
         "vid_h": "The build,",
-        "vid_hem": "from all sides",
-        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
-        "vid_meta": "Building the UEFA Cup",
+        "vid_hem": "from start to finish.",
+        "vid_sub": "A short film from the workshop floor — see the 3D map take shape.",
+        "vid_meta": "Building the Interactive Dubai Map",
         "vid_dur": "",
         "spec_h": "Model",
         "spec_hem": "Specification",
