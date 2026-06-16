@@ -28,7 +28,7 @@
         "feat-3": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/df-text-award-5.jpg",
+            "image": "shopify://shop_images/df-text-award-4.jpg",
             "caption": "",
             "num": "03",
             "detail": "",
@@ -139,10 +139,10 @@
         "case_body": "Produced for an event company whose client wanted a unique way to give awards. They send us the typography PDF which we then converted into a 3D Typography award.",
         "case_quote": "Everyone wanted to read theirs up close. It made the recognition feel personal.",
         "case_quote_attr": "Amir - Promotional Events",
-        "s3_image": "",
-        "prov_h": "Where Typography",
-        "prov_hem": "Becomes the Trophy",
-        "prov_p": "By turning words into form, the award carries its message in its very shape - a modern take on recognition that feels designed, not bought off a shelf. The message is the trophy.",
+        "s3_image": "shopify://shop_images/df-prov-text-award.jpg",
+        "prov_h": "Inspired by the",
+        "prov_hem": "Champions’ No.1 Trophy",
+        "prov_p": "The idea of a number built entirely from names that matter was made famous by the Swiss Indoors Basel trophy — a sculpted ‘1’ formed from the surnames of every man to reach World No.1, presented here to Roger Federer. We bring that same storytelling to your awards, composing each figure from the names, values and achievements you choose.",
         "video_url": "",
         "vid_portrait": true,
         "vid_h": "The build,",
