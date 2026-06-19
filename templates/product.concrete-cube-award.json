@@ -1,0 +1,172 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/concrete-cube-award-2.jpg",
+            "caption": "Engraved",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Engraved Real Concrete",
+            "desc": "The award name, recipient and year are engraved directly into the concrete for a tactile, permanent finish."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/concrete-cube-award-3.jpg",
+            "caption": "Choose",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Choose Your Finish",
+            "desc": "Pick concrete grey or any color, with a bold accent colour, to match your brand and the occasion."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "What finishes are available?",
+            "a": "Concrete grey or terrazzo, with your choice of accent colour."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can each cube be personalised?",
+            "a": "Yes, the engraving is customised per recipient - award name, name and year."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can we order a set for an awards night?",
+            "a": "Yes, matched sets with individual engraving are available. Send a commission inquiry."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, packed to protect the cube and case."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A solid concrete cube award with crisp engraved lettering and a bold red accent, presented under a clear case. A modern, architectural take on the corporate trophy - understated, premium and fully personalised.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "20 x 20 x 20 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Acrylic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "concrete Texture",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Engraved text (award, recipient, year)",
+        "perso_required": false,
+        "desc_title": "Want Recognition",
+        "desc_title_em": "With a Designer Edge?",
+        "s1_body": "For brands that prefer understated over ornate, this concrete cube award is a statement in restraint. The engraving is cut directly into the concrete face, with a sharp red accent for contrast, and the whole piece sits under a clear case. Available in concrete or terrazzo finishes, it is the ideal trophy for design-led companies, architecture and innovation awards.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "Understated, On-Brand Recognition",
+        "case_body": "Created as a corporate recognition award, this concrete cube gave a design-conscious company a trophy that matched its aesthetic - minimal, tactile and premium, personalised per recipient and protected under a clear case.",
+        "case_quote": "Exactly the understated, design-led look we wanted. Recipients love how different it feels.",
+        "case_quote_attr": "Ahmed - Spacewell",
+        "s3_image": "shopify://shop_images/concrete-cube-award-1.jpg",
+        "prov_h": "Less Is",
+        "prov_hem": "More",
+        "prov_p": "Not every award needs gold and glass. A clean concrete form with precise engraving signals confidence and good taste - recognition that feels designed, not bought off a shelf.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 16 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "12",
+        "rev5": "11",
+        "rev4": "1",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

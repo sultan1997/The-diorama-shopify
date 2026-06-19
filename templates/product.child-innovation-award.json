@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/child-innovation-award-4.jpg",
+            "caption": "Various",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Various Finishes and Color",
+            "desc": "Various finish available to celebrate different winners from gold, silver and bronze. Gloss effect is added so that your award shines during the ceremony."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/child-innovation-award-5.jpg",
+            "caption": "Bespoke",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Bespoke Walnut Base",
+            "desc": "Walnut Circular Wooden base makes the award appear distinct compared to generic black wooden base used for most of the other awards"
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/child-innovation-award-6.jpg",
+            "caption": "Personalizatio",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Personalization",
+            "desc": "We engrave your custom text and branding on each award to personalize for each recipient."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can we get it in different finishes?",
+            "a": "Yes - gold, silver and bronze are available along with any other RAL colors, ideal for tiered awards."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can each award be personalised?",
+            "a": "Yes, each base carries an engraved plaque with the award name and recipient."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you design a custom figure for us?",
+            "a": "Yes - we can adapt this figure or sculpt an entirely custom character for your programme."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai with tracked, insured delivery."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A characterful figurine award - a child holding up a bright idea - finished in metallic gold, silver or bronze on an engraved base. A warm, memorable trophy for innovation, creativity and \"bright idea\" recognition programmes.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "12 x 12 x 30 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin, Wood",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Metallic Gloss",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Award name, recipient, finish (gold/silver/bronze) and base plaque",
+        "perso_required": false,
+        "desc_title": "Want to Celebrate",
+        "desc_title_em": "Bright Young Ideas?",
+        "s1_body": "Some achievements deserve a trophy with a little more heart. This figurine captures the spark of a new idea and turns it into a keepsake your winners actually want on their desk. Available in metallic gold, silver and bronze finishes with an engraved plaque, it is ideal for innovation awards, creativity programmes and \"idea of the year\" style recognition - run as a tiered set or a single standout prize.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "Recognition With Personality",
+        "case_body": "Created as an innovation-award series, these figurines gave a recognition programme a warm, distinctive identity - tiered in gold, silver and bronze, each with its own engraved category and recipient.",
+        "case_quote": "Winners loved them - far more personality than a standard cup. They're proudly on desks across the office.",
+        "case_quote_attr": "Charles - Innovation Programme",
+        "s3_image": "shopify://shop_images/child-innovation-award-1.jpg",
+        "prov_h": "An Award With",
+        "prov_hem": "Character",
+        "prov_p": "Recognition lands hardest when it feels human. A figurine that captures the joy of a new idea makes the moment memorable in a way a generic trophy never will.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 18 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "12",
+        "rev5": "11",
+        "rev4": "1",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

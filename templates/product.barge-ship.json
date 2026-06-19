@@ -1,0 +1,152 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/barge-ship-3.jpg",
+            "caption": "Realistic",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Realistic Detaling",
+            "desc": "Tiny details of tyres, chains, cabinates and rails are installed which makes it looks like a real barge vessel."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/barge-ship-4.jpg",
+            "caption": "Personalisatio",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Personalisation",
+            "desc": "This barge color was changed according to their company branding color and metal plate was made with specs sheet of barge. Your model will have similar personalization."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/barge-ship-7.jpg",
+            "caption": "Wooden",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Wooden Base & Transparent Cover",
+            "desc": "We know that barge vessel model is an important display item for any marine or shipping company. Hence we protect it by dust protective transparent cover and sturdy wooden base with texture for visual appeal."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "This is a Model of Black Pearl Barge used by shipping company for display. Its a Marine Vessel designed for bulk transportation on rivers, canals and lakes.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "1:166 , 60 x 18.2 x 13.4 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Bioplastic, Resin",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Gloss and Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Put your name or company logo for branding",
+        "perso_required": false,
+        "desc_title": "Does your heart belong",
+        "desc_title_em": "to the Sea?",
+        "s1_body": "Barge Model is an display piece for marine companies who regulary use barge for their transportation. This specific model belongs to black pearl barge which is a 100m longe barge vessel.",
+        "s2_image": "shopify://shop_images/barge-ship-2.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "Boardroom Display",
+        "case_body": "We made 2 vessel models for sea line shipping. They wanted ship scaled model of their product for investor meetings and presentation. Barge Vessel is the first model we delivered followed by LC Hanoon Ship.",
+        "case_quote": "Barge is an impressive display which is kept in our office. Whenever we have meetings, we show them these ship models and it makes explaining our operations easier.",
+        "case_quote_attr": "Shahid , Operations Manager of SRS",
+        "s3_image": "shopify://shop_images/barge-ship-provenance.jpg",
+        "prov_h": "Significance of",
+        "prov_hem": "Barge Vessel",
+        "prov_p": "Barge is a flat bottomed marine vessel which is mainly used to transport heavy cargos through inland waterway. They are capable to take huge payload which makes them a cost effective method of transportation.",
+        "video_url": "https://www.youtube.com/watch?v=voVWrPs1AWo",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "in motion",
+        "vid_sub": "A short film from the workshop floor.",
+        "vid_meta": "Building the Black Pearl Barge Vessel Model",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. Approx. 22 hours per piece",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "12",
+        "rev5": "11",
+        "rev4": "1",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

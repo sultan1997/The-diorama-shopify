@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/boat-model-4.jpg",
+            "caption": "Detailed",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Detailed Deck Layout",
+            "desc": "The cockpit, sun pads and seating are modelled to scale, capturing the layout and comfort of the real boat."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/boat-model-6.jpg",
+            "caption": "True-to-Life",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "True-to-Life Replica",
+            "desc": "Sleek hull lines, windscreen, helm and bimini top are reproduced faithfully for a true-to-life replica."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/boat-model-3.jpg",
+            "caption": "Cased",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Cased Display Base",
+            "desc": "A gloss base and clear case present the model beautifully and keep it dust-free on a desk or showroom shelf."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you replicate my specific boat?",
+            "a": "Yes. Send photos, the make/model or drawings and we'll build an accurate scale replica, including the boat's name."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can I choose hull colours and details?",
+            "a": "Yes - hull colours, upholstery, fittings and the base plaque are all customisable."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Does it come with a display case?",
+            "a": "Yes, a black wooden base and clear protective case are included."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, crated to protect the model in transit."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A finely detailed scale replica of a luxury sport boat - sleek white hull, teak-look deck, plush seating and a bimini top - presented on a mirrored base under a clear case. A standout display piece for owners, dealers and marine brands.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "1:20, 40 x 30 x 20 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin, Bioplastic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Gloss Hull, Matt interior",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "preferred colors and engraving plate",
+        "perso_required": false,
+        "desc_title": "Want Your Boat",
+        "desc_title_em": "Recreated in Miniature?",
+        "s1_body": "A scale model of a boat is the perfect way to celebrate an owner, mark a sale, or showcase a model in a showroom. We reproduce the hull lines, deck layout, upholstery and fittings in fine detail, then mount the model on a presentation base with a protective case. Give us the boat - your own vessel or a dealership model - and we'll recreate it down to the name on the transom.",
+        "s2_image": "shopify://shop_images/boat-model-5.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "A Keepsake for Owners & Dealers",
+        "case_body": "Commissioned as a presentation replica for Class Marine, this boat model makes an ideal handover gift for a new owner or a showroom showcase for a dealership - the vessel recreated in miniature, name and all, ready to display under a clear case.",
+        "case_quote": "Thanks to this boat miniature, I can show my visitors the miniature of boat instead of doing a boat tour on actual site. Makes my presentations easier.",
+        "case_quote_attr": "Tariq - Class Marine",
+        "s3_image": "shopify://shop_images/boat-model-4.jpg",
+        "prov_h": "For the Love",
+        "prov_hem": "of the Water",
+        "prov_p": "A boat is more than a vessel - it is memories on the water. A faithful scale model keeps that feeling on display long after the season ends.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 32 hours",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "12",
+        "rev5": "11",
+        "rev4": "1",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}
