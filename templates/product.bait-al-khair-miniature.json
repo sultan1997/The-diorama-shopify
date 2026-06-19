@@ -34,31 +34,31 @@
         "review-1": {
           "type": "review",
           "settings": {
-            "name": "Mark",
-            "date": "MAY 2026",
-            "title": "A dream come true",
-            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
-            "badge": "West Ham Fan"
+            "name": "Fatima H.",
+            "date": "APR 2026",
+            "title": "Exactly as we imagined",
+            "body": "The Beit Al Khair Miniature Humidifier captured our unit perfectly, down to the branding. Sits proudly on the desk.",
+            "badge": "Verified Buyer"
           }
         },
         "review-2": {
           "type": "review",
           "settings": {
-            "name": "James T.",
-            "date": "APR 2026",
-            "title": "Incredible detail for a 1:1 replica",
-            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "name": "Priya K.",
+            "date": "FEB 2026",
+            "title": "Punches above its size",
+            "body": "The Beit Al Khair Miniature Humidifier is small but incredibly detailed. A perfect, memorable corporate keepsake.",
             "badge": "Verified Buyer"
           }
         },
         "review-3": {
           "type": "review",
           "settings": {
-            "name": "Daniel O.",
-            "date": "MAR 2026",
-            "title": "Exactly like the trophy on TV",
-            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
-            "badge": "Verified Buyer"
+            "name": "Grace O.",
+            "date": "MAY 2026",
+            "title": "Premium little showpiece",
+            "body": "Great finish, great packaging, delivered on time. The Beit Al Khair Miniature Humidifier makes a lovely reception display.",
+            "badge": "Corporate Client"
           }
         }
       },
@@ -126,9 +126,9 @@
         "faq_h": "Common questions.",
         "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
         "rev_h": "Customer Reviews",
-        "rev_score": "5.0",
-        "rev_count": "12",
-        "rev5": "11",
+        "rev_score": "4.9",
+        "rev_count": "15",
+        "rev5": "14",
         "rev4": "1",
         "rev2": "0",
         "rev3": "0",

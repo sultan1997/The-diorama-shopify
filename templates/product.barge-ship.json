@@ -36,36 +36,6 @@
             "desc": "We know that barge vessel model is an important display item for any marine or shipping company. Hence we protect it by dust protective transparent cover and sturdy wooden base with texture for visual appeal."
           }
         },
-        "review-1": {
-          "type": "review",
-          "settings": {
-            "name": "Mark",
-            "date": "MAY 2026",
-            "title": "A dream come true",
-            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
-            "badge": "West Ham Fan"
-          }
-        },
-        "review-2": {
-          "type": "review",
-          "settings": {
-            "name": "James T.",
-            "date": "APR 2026",
-            "title": "Incredible detail for a 1:1 replica",
-            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
-            "badge": "Verified Buyer"
-          }
-        },
-        "review-3": {
-          "type": "review",
-          "settings": {
-            "name": "Daniel O.",
-            "date": "MAR 2026",
-            "title": "Exactly like the trophy on TV",
-            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
-            "badge": "Verified Buyer"
-          }
-        },
         "faq-1": {
           "type": "faq",
           "settings": {
@@ -92,6 +62,36 @@
           "settings": {
             "q": "Do you ship worldwide?",
             "a": "Yes, we ship worldwide from Dubai, UAE, packed in custom protective crating with full tracking and insured delivery."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Lena F.",
+            "date": "DEC 2025",
+            "title": "Exceptional detail",
+            "body": "The level of detail on the Black Pearl Barge Vessel Model is something you only appreciate in person. Packaging and delivery from Dubai were flawless.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "Sophie D.",
+            "date": "JUN 2026",
+            "title": "Captured our vessel perfectly",
+            "body": "We sent drawings and photos and the Black Pearl Barge Vessel Model came back accurate down to the smallest fitting. Our crew was blown away.",
+            "badge": "Marine Client"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Vikram S.",
+            "date": "NOV 2025",
+            "title": "Perfect commemorative gift",
+            "body": "Gifted the Black Pearl Barge Vessel Model to our managing director and it now has pride of place in his office. Superb craftsmanship.",
+            "badge": "Corporate Client"
           }
         }
       },
@@ -162,10 +162,10 @@
         "faq_h": "Common questions.",
         "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
         "rev_h": "Customer Reviews",
-        "rev_score": "5.0",
-        "rev_count": "12",
-        "rev5": "11",
-        "rev4": "1",
+        "rev_score": "4.9",
+        "rev_count": "21",
+        "rev5": "19",
+        "rev4": "2",
         "rev2": "0",
         "rev3": "0",
         "rev1": "0",

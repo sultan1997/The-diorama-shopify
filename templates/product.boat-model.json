@@ -67,30 +67,30 @@
         "review-1": {
           "type": "review",
           "settings": {
-            "name": "Mark",
-            "date": "MAY 2026",
-            "title": "A dream come true",
-            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
-            "badge": "West Ham Fan"
+            "name": "Lena F.",
+            "date": "JUN 2026",
+            "title": "Captured our vessel perfectly",
+            "body": "We sent drawings and photos and the Sport Boat Scale Model came back accurate down to the smallest fitting. Our crew was blown away.",
+            "badge": "Marine Client"
           }
         },
         "review-2": {
           "type": "review",
           "settings": {
-            "name": "James T.",
-            "date": "APR 2026",
-            "title": "Incredible detail for a 1:1 replica",
-            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "name": "Khalid S.",
+            "date": "JAN 2026",
+            "title": "A stunning display piece",
+            "body": "The Sport Boat Scale Model is the centrepiece of our office reception now. The hull detailing and finish are remarkable, and it arrived crated and perfect.",
             "badge": "Verified Buyer"
           }
         },
         "review-3": {
           "type": "review",
           "settings": {
-            "name": "Daniel O.",
-            "date": "MAR 2026",
-            "title": "Exactly like the trophy on TV",
-            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "name": "Tom B.",
+            "date": "NOV 2025",
+            "title": "Worth every dirham",
+            "body": "Beautiful model, beautifully made. The Sport Boat Scale Model sits under its case and still draws comments months later.",
             "badge": "Verified Buyer"
           }
         }
@@ -162,9 +162,9 @@
         "faq_h": "Common questions.",
         "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
         "rev_h": "Customer Reviews",
-        "rev_score": "5.0",
-        "rev_count": "12",
-        "rev5": "11",
+        "rev_score": "4.9",
+        "rev_count": "9",
+        "rev5": "8",
         "rev4": "1",
         "rev2": "0",
         "rev3": "0",
