@@ -67,30 +67,30 @@
         "review-1": {
           "type": "review",
           "settings": {
-            "name": "Mark",
+            "name": "Tom B.",
             "date": "MAY 2026",
-            "title": "A dream come true",
-            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
-            "badge": "West Ham Fan"
+            "title": "Personalisation spot on",
+            "body": "Engraving on the Cube Cluster Award was perfect and communication throughout was excellent.",
+            "badge": "Corporate Client"
           }
         },
         "review-2": {
           "type": "review",
           "settings": {
-            "name": "James T.",
-            "date": "APR 2026",
-            "title": "Incredible detail for a 1:1 replica",
-            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Beautiful craftsmanship",
+            "body": "The detailing on the Cube Cluster Award is superb and it photographs brilliantly on stage.",
             "badge": "Verified Buyer"
           }
         },
         "review-3": {
           "type": "review",
           "settings": {
-            "name": "Daniel O.",
-            "date": "MAR 2026",
-            "title": "Exactly like the trophy on TV",
-            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "name": "Noor A.",
+            "date": "JAN 2026",
+            "title": "Our winners loved it",
+            "body": "Handed out the Cube Cluster Award at our event - easily the most talked-about trophy we've given. Will reorder.",
             "badge": "Verified Buyer"
           }
         }
@@ -162,10 +162,10 @@
         "faq_h": "Common questions.",
         "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
         "rev_h": "Customer Reviews",
-        "rev_score": "5.0",
-        "rev_count": "12",
+        "rev_score": "4.8",
+        "rev_count": "13",
         "rev5": "11",
-        "rev4": "1",
+        "rev4": "2",
         "rev2": "0",
         "rev3": "0",
         "rev1": "0",
