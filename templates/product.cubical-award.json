@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/cubical-award-2.jpg",
+            "caption": "Modern",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Modern Cube Design",
+            "desc": "The exploding-cube form is dynamic and contemporary - a world away from the standard cup or plaque."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/cubical-award-3.jpg",
+            "caption": "Matched",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Matched to Brand Colours",
+            "desc": "We finish each piece in your palette and engrave your branding, so the award is unmistakably yours."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/cubical-award-4.jpg",
+            "caption": "Full",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Full Programme Sets",
+            "desc": "Produce a full coordinated series in matching styles and finishes, each personalised per category and recipient."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it be made in our brand colours?",
+            "a": "Yes - we finish each award in your palette and add your logo and engraving."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you produce a full set?",
+            "a": "Yes, coordinated series with individual engraving are available."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "What sizes are available?",
+            "a": "We can scale the piece up or down to suit your tiers and budget."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai with tracked, insured delivery."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A striking award built from a cluster of exploding cubes, finished in bold colour with engraved recipient details on the base. A modern, design-led trophy for companies that want recognition to feel as forward-thinking as they are.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "10 x 10 x 25 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Award name, recipient, brand colours and logo on the base",
+        "perso_required": false,
+        "desc_title": "Want a Trophy",
+        "desc_title_em": "That Looks Genuinely Modern?",
+        "s1_body": "This cube-cluster award turns simple geometry into a dynamic, eye-catching trophy - a burst of cubes frozen mid-motion, finished in your brand colour with engraved details on the base. Ideal for tech companies, academies and innovation programmes, it can be produced as a single standout award or a full coordinated series.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "A Series With One Bold Identity",
+        "case_body": "Produced as a recognition series, these cube awards gave a programme a single, modern identity - finished in brand colours, engraved per winner, and instantly recognisable across a whole awards night.",
+        "case_quote": "Exactly the contemporary look we wanted. The whole set looked incredible on stage.",
+        "case_quote_attr": "Priya - Event coordinator",
+        "s3_image": "shopify://shop_images/cubical-award-1.jpg",
+        "prov_h": "Geometry in",
+        "prov_hem": "Motion",
+        "prov_p": "A cluster of cubes caught mid-explosion suggests energy, growth and ideas taking shape - the perfect metaphor for the achievements it celebrates.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 18 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "12",
+        "rev5": "11",
+        "rev4": "1",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/crane-miniature-2.jpg",
+            "caption": "Modelled",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Modelled to Scale",
+            "desc": "Each unit is modelled from your equipment and finished in your brand colours for an accurate, recognisable replica."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/crane-miniature-3.jpg",
+            "caption": "Produced",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Produced in Quantity",
+            "desc": "We build matched batches and pack each piece carefully, ready for gifting and shipping at scale."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you model our specific crane?",
+            "a": "Yes. Send drawings or photos and we'll build an accurate branded miniature."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you produce a large batch?",
+            "a": "Yes - matched batches in quantity for gifting and events are our speciality."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can each have a display case?",
+            "a": "Yes, clear cases and branded bases are available on request."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "Detailed miniatures of construction crane equipment, finished in bright yellow on branded bases and produced in matched batches. A memorable corporate gift and giveaway for equipment makers, rental firms and project teams.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "10 x 10 x 10 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Metallic",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your equipment, branding, and colours",
+        "perso_required": false,
+        "desc_title": "Want Your Fleet",
+        "desc_title_em": "Captured in Miniature?",
+        "s1_body": "We recreate your crane and lifting equipment as accurate, branded miniatures - finished in your colours and produced in the quantities you need. Ideal as client gifts, event giveaways or reception pieces that put your machines in front of customers in a form they will actually keep.",
+        "s2_image": "shopify://shop_images/crane-miniature-4.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "Gifts That Represent the Work",
+        "case_body": "Produced as a branded batch for Al Futtaim, these crane miniatures became client gifts and event giveaways - small, on-brand reminders of the machines the company puts on site. About 600 qty of miniature were made for them.",
+        "case_quote": "A whole batch, all identical and perfectly branded. Our clients loved them.",
+        "case_quote_attr": "Arun - Sales Manager at Al Futtaim Machinery",
+        "s3_image": "shopify://shop_images/crane-miniature-provenance.jpg",
+        "prov_h": "The Machines That",
+        "prov_hem": "Build the Skyline",
+        "prov_p": "Cranes are the backbone of every major project. A faithful miniature celebrates that work and keeps your brand in view on desks and shelves.",
+        "video_url": "https://www.youtube.com/watch?v=2XO0c_O36u0",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "in motion",
+        "vid_sub": "A short film from the workshop floor.",
+        "vid_meta": "Building the Crane Equipment Miniature - Branded Corporate Gift Set",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 18 hours",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "12",
+        "rev5": "11",
+        "rev4": "1",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": "Image: Oleg Yunakov, CC BY-SA 4.0, via Wikimedia Commons"
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/football-loafers-and-glove-award-3.jpg",
+            "caption": "Customisable",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Customisable Colours",
+            "desc": "The Golden Boot is sculpted in detail and finished in premium gold, but it can also be applied in other colours like silver or bronze."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "Personally",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Personally Engraved",
+            "desc": "Each base carries an engraved plaque with the award, league and recipient - unique to the winner."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "caption": "Large",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Large Size",
+            "desc": "At 30 cm tall, this glove-and-boot award stands out when presented to winners."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you make other football awards too?",
+            "a": "Yes - MVP, top scorer, best keeper, player of the season and custom categories can all be created to match."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can each be personalised?",
+            "a": "Yes, each base is engraved with the award, league/season and recipient."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can we order a full set for an awards night?",
+            "a": "Yes, matched sets across categories are available. Send a commission inquiry."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai with tracked, insured delivery."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "Football awards in gleaming gold - a Golden Boot and a Golden Glove, each mounted on a black base with an engraved plaque. The perfect trophies for top scorer and best goalkeeper in any league, tournament or club season.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "20 x 20 x 30 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Metallic",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Award name, recipient, league/season and base plaque",
+        "perso_required": false,
+        "desc_title": "Want to Crown",
+        "desc_title_em": "Your Season's Best?",
+        "s1_body": "Give your league's standout players an award worthy of the moment. These gold football trophies - a Golden Boot for the top scorer and a Golden Glove for the best keeper - are sculpted, finished in rich gold and mounted on engraved bases. Ideal for amateur leagues, corporate tournaments, schools and clubs, and we can create matching awards for any category you run.",
+        "s2_image": "shopify://shop_images/football-loafers-and-glove-award-3.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "Awards Players Want to Win",
+        "case_body": "Created as a Golden Boot and Golden Glove set for a football league, these trophies gave the end-of-season awards real prestige - personalised, premium and genuinely coveted by the players.",
+        "case_quote": "Our players loved them. The gold boot and glove gave our awards night a real pro feel.",
+        "case_quote_attr": "Amir - Promotional Events",
+        "s3_image": "shopify://shop_images/football-loafers-and-glove-award-provenance.jpg",
+        "prov_h": "Icons of",
+        "prov_hem": "the Game",
+        "prov_p": "The Golden Boot and Golden Glove are football's most coveted individual honours. Recreated as custom trophies, they bring that same prestige to your league, club or tournament.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 20 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "12",
+        "rev5": "11",
+        "rev4": "1",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": "Image: Jonathan McIntosh, CC BY 2.0, via Wikimedia Commons"
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

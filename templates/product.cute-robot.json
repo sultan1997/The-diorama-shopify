@@ -1,0 +1,148 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you make our specific mascot or character?",
+            "a": "Yes - send your character art or 3D file and we'll model and finish it as a figure."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "What sizes are available?",
+            "a": "From desktop figures to large reception-scale pieces. Tell us your space."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you produce a batch for giveaways?",
+            "a": "Yes, matched batches for events and gifting are available."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A friendly mascot robot figure brought to life in 3D - clean white body, a glossy blue \"eye\" face and a cheerful wave. The perfect way to turn your brand character or app mascot into a real, displayable figure for reception desks, events and gifts.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "21 x 26.5 x 30 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin, Acrylic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt body, gloss eyes",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your character/mascot, colours, size and branding",
+        "perso_required": false,
+        "desc_title": "Want to Bring Your Mascot",
+        "desc_title_em": "to Life?",
+        "s1_body": "A mascot works hardest when people can actually see it. We turn your brand character, app icon or mascot illustration into a clean, charming 3D figure - finished in your colours with your branding - ready to greet visitors at reception, headline an event, or delight clients as a gift. Built as a one-off display piece or a batch of giveaways.",
+        "s2_image": "shopify://shop_images/cute-robot-2.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "From Logo to Lobby",
+        "case_body": "Created from a brand's mascot illustration, this figure gave the character a physical presence - a friendly face for the reception desk and a memorable giveaway that made the brand stick.",
+        "case_quote": "Seeing our mascot as a real figure was a delight. It greets everyone who visits now.",
+        "case_quote_attr": "Atif Ali - Exhibition Contractor",
+        "s3_image": "shopify://shop_images/cute-robot-provenance.jpg",
+        "prov_h": "A Character",
+        "prov_hem": "You Can Hold",
+        "prov_p": "A mascot on a screen is easy to scroll past. The same character as a physical figure becomes something people notice, photograph and remember.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 20 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "12",
+        "rev5": "11",
+        "rev4": "1",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": "Baymex Movie"
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

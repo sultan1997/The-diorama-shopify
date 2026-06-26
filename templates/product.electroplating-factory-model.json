@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/electroplating-factory-model-5.jpg",
+            "caption": "Whole",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Whole Facility to Scale",
+            "desc": "Every building, process line and walkway is reproduced accurately so the complete operation reads clearly from any angle."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/electroplating-factory-model-3.jpg",
+            "caption": "Clearly",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Clearly Labelled Plants",
+            "desc": "Named buildings and zones help your team walk clients through the process step by step."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/electroplating-factory-model-9.jpg",
+            "caption": "LED-Lit",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "LED-Lit Interior Detail",
+            "desc": "Interior detailing and built-in lighting bring the facility to life, day or night, on the stand or in the boardroom."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you build a model of our specific facility?",
+            "a": "Yes. Send your site and building drawings and we'll reproduce the facility to scale, with labelled buildings."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it include lighting and interior detail?",
+            "a": "Yes - LED lighting, lit interiors and labelled zones are all available."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Does it come with a protective case?",
+            "a": "A clear case and presentation base is included by default to protect your model."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, crated to protect the model."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A fully detailed scale model of an electroplating and galvanizing factory - named buildings, process lines, landscaping and LED-lit interiors, all to scale on a presentation base. The ultimate way to explain a whole industrial facility to investors and visitors.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "100 x 70 x 30 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin , Acrylic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt, Metallic",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your facility layout, building labels, branding and LED lighting",
+        "perso_required": false,
+        "desc_title": "Want Your Entire Facility",
+        "desc_title_em": "on One Table?",
+        "s1_body": "This model lays out a complete industrial facility in miniature - the electroplating plant, effluent treatment plant and hot-dip galvanizing plant, each clearly labelled, with process lines, walkways, landscaping and LED-lit interiors. Built to scale from your drawings, it lets clients, investors and visitors understand your whole operation at a glance. A commanding centrepiece for boardrooms, exhibitions and reception areas.",
+        "s2_image": "shopify://shop_images/electroplating-factory-model-case.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "A Facility Tour Without Leaving the Room",
+        "case_body": "Commissioned for Evess, a Russian electroplating company participating in the WETEX exhibition. This model let the team walk stakeholders through the entire plant - building by building, process by process - in a single, tangible centrepiece that no slide deck could match.",
+        "case_quote": "We can explain our entire operation in minutes now. It's the highlight of our WETEX Exhibition.",
+        "case_quote_attr": "Svetlana - Marketing Manager at Evess",
+        "s3_image": "shopify://shop_images/electroplating-factory-model-10.jpg",
+        "prov_h": "Operations,",
+        "prov_hem": "Made Visible",
+        "prov_p": "A complex facility is hard to picture from drawings. A detailed, labelled scale model turns that complexity into a clear, confidence-building story for clients and investors.",
+        "video_url": "https://www.youtube.com/watch?v=NCV14QDcBiY",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "in motion",
+        "vid_sub": "A short film from the workshop floor.",
+        "vid_meta": "Building the Electroplating Factory Scale Model - Custom Industrial Plant Model",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 56 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "12",
+        "rev5": "11",
+        "rev4": "1",
+        "rev2": "0",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "LED Lighting",
+        "hspec4_v": "Yes",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}
