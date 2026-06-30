@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/horse-food-miniature-2.jpg",
+            "caption": "Lifelike",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Lifelike Centrepiece Figure",
+            "desc": "The horse is modelled with natural detail and finish, giving the display real presence and quality."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/horse-food-miniature-3.jpg",
+            "caption": "Your",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Your Products in Miniature",
+            "desc": "Your product range is reproduced in miniature on a branded base, telling your story in one tidy display."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/horse-food-miniature-4.jpg",
+            "caption": "Your",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Your Branding",
+            "desc": "We put your message and branding on the base so the diorama is customised to you."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you model a different animal or figure?",
+            "a": "Yes - any animal, mascot or figure can be modelled to suit your brand."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you reproduce our products in miniature?",
+            "a": "Yes, we recreate your packs and products to scale with your branding."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can we order a batch for gifting?",
+            "a": "Yes, matched batches for corporate gifting are available."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A finely modelled horse figure paired with miniature product packs on a branded base, presented under a clear case. A characterful corporate gift and counter display for equestrian, feed and lifestyle brands.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "30 x 15 x 15 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your figure, product packs, branding and base plaque",
+        "perso_required": false,
+        "desc_title": "Want Your Food Brand",
+        "desc_title_em": "Beautifully Displayed?",
+        "s1_body": "This display pairs a lifelike horse figure with miniature versions of your products, all on a branded base under a clear case. It tells your brand story at a glance - ideal as a corporate gift, a counter or reception display, or a trade-show piece for equestrian, feed and lifestyle companies. We model the figure and recreate your product range in miniature.",
+        "s2_image": "shopify://shop_images/horse-food-miniature-1.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "A Display That Tells the Brand Story",
+        "case_body": "Built as a branded display for a feed brand, this horse-and-products piece brought the brand to life on counters and at events - a memorable corporate gift that paired a lifelike figure with the company's own product range in miniature.",
+        "case_quote": "It captures our brand perfectly - the horse and our mini products together. Customers love it.",
+        "case_quote_attr": "Henry - Zabeel Food",
+        "s3_image": "shopify://shop_images/horse-food-miniature-provenance.jpg",
+        "prov_h": "Brand Storytelling,",
+        "prov_hem": "in Miniature",
+        "prov_p": "Pairing a characterful figure with your actual products turns a gift into a story. It is a display people keep - and one that quietly keeps selling your brand.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 22 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": "Image: Tomas Sennett / US NARA, public domain"
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

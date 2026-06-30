@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/gac-logistics-warehouse-model-2.jpg",
+            "caption": "Your",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Your Branding",
+            "desc": "Your logo and livery are applied across the buildings, perimeter walls and the fleet of trucks, so the model is unmistakably yours."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/gac-logistics-warehouse-model-4.jpg",
+            "caption": "Warm",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Warm LED-Lit Interiors",
+            "desc": "Built-in LED lighting makes the offices and warehouses glow from within, bringing the facility to life day or night, on the stand or in the boardroom."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/gac-logistics-warehouse-model-8.jpg",
+            "caption": "Interior",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Interior Detail",
+            "desc": "Open warehouse sections reveal racking, stacked pallets and a forklift at work - the operational detail that turns a building into a believable working site."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you build a model of our specific warehouse or facility?",
+            "a": "Yes. Send drawings, site plans or photos and we will build an accurate, branded scale model of your exact facility, including buildings, yard and fleet."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can the buildings be lit?",
+            "a": "Yes - warm interior LED lighting is built in, and we can add switchable or remote-controlled lighting on request."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "How big is the model and can I choose the scale?",
+            "a": "We build to the size and scale your space allows - from a tabletop presentation model to a large exhibition centrepiece. Tell us your display area and we will advise."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, crated for safe transit."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "21-35 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A fully detailed scale model of a logistics warehouse and distribution facility - offices, warehouses, loading docks, branded trucks, landscaping and warm LED-lit interiors, all to scale on a presentation base. The ideal way to showcase an entire logistics operation to clients, investors and visitors in a single, tangible centrepiece.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "1:50 · 200 x 200 x 110 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin, acrylic, MDF base",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your facility layout, branding and size",
+        "perso_required": false,
+        "desc_title": "Want Your Whole Facility",
+        "desc_title_em": "on One Table?",
+        "s1_body": "This logistics warehouse model recreates an entire distribution facility in miniature - the warehouses and offices, the loading docks with branded trucks pulling in, the yard, roads and landscaping, all built to scale and lit from within with warm LED lighting. Built from your drawings and finished in your branding, it lets clients, investors and visitors understand your whole operation at a glance. A commanding centrepiece for receptions, boardrooms and exhibition stands.",
+        "s2_image": "shopify://shop_images/gac-logistics-warehouse-model-case.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "An Entire Operation, in Miniature",
+        "case_body": "Built for GAC Logistics company to showcase their upcoming warehouse and distribution facility, this model turned a sprawling real-world site into a tangible centrepiece - used in reception and at exhibitions to walk clients through the whole operation, building by building.",
+        "case_quote": "Clients finally see our entire facility at a glance. The model looks gorgeous.",
+        "case_quote_attr": "Francois - Managing Director of GAC",
+        "s3_image": "shopify://shop_images/gac-logistics-warehouse-model-5.jpg",
+        "prov_h": "A Whole Site,",
+        "prov_hem": "You Can Point To",
+        "prov_p": "A logistics facility is hard to picture from a site plan or a slide. A detailed, lit scale model turns that complexity into a clear, confidence-building story - a centrepiece that keeps your operation in front of clients long after the meeting ends.",
+        "video_url": "https://www.youtube.com/watch?v=hgjNaXVNnQg",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "in motion",
+        "vid_sub": "A short film from the workshop floor.",
+        "vid_meta": "Building the Logistics Warehouse Scale Model - Custom Branded Facility Model",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 80 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "LED Lighting",
+        "hspec4_v": "Yes",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

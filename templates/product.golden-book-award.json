@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/golden-book-award-5.jpg",
+            "caption": "Your",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Your Emblem Centre Stage",
+            "desc": "Your logo or institutional emblem is reproduced as a medallion at the heart of the award."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/golden-book-award-2.jpg",
+            "caption": "Realistic",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Realistic Book Design",
+            "desc": "The fanned, open-book shape gives the piece elegance and meaning that a plain plaque can't match."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/golden-book-award-3.jpg",
+            "caption": "Award",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Award Support",
+            "desc": "Proper support is given to the book so it doesn't touch the ground - the same respect is built into this award."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you feature our logo or emblem?",
+            "a": "Yes, we reproduce your emblem as the central medallion and can engrave the recipient details."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "What finishes are available?",
+            "a": "Gold, silver, bronze and custom colour finishes."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can we order a set?",
+            "a": "Yes, matched series with individual engraving are available."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai with tracked, insured delivery."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "An elegant award shaped as an open book in a warm gold finish, with your emblem or logo featured as a medallion at its centre. A refined, meaningful trophy for academies, institutes, graduations and knowledge-based recognition.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "25 x 20 x 12 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Metallic Gold",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your emblem/logo, award name, recipient and finish",
+        "perso_required": false,
+        "desc_title": "Want Knowledge",
+        "desc_title_em": "Honoured in Gold?",
+        "s1_body": "An open book is a timeless symbol of learning and achievement. This award sculpts that idea in a warm gold finish, with your institution's emblem or logo set as a medallion at the centre. Ideal for academies, training institutes, graduations and knowledge-based recognition - produced as a single award or a coordinated series.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "Recognition With Meaning",
+        "case_body": "Created for a government institute's recognition programme, this open-book award paired a meaningful form with the organisation's emblem - an elegant, on-brand trophy that recipients were proud to display.",
+        "case_quote": "The open-book design with our emblem was exactly right for an academic award. Beautifully made.",
+        "case_quote_attr": "Ahmed - Institution of Administrative and Joint Logistics",
+        "s3_image": "shopify://shop_images/golden-book-award-provenance.jpg",
+        "prov_h": "The Open",
+        "prov_hem": "Book",
+        "prov_p": "Across cultures, the open book stands for knowledge, learning and achievement. As an award, it gives recognition a depth of meaning that resonates with academic and professional honourees alike.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 22 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": "Image: HonysTorresArt, CC BY-SA 4.0, via Wikimedia Commons"
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

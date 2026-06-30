@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/gitex-city-model-5.jpg",
+            "caption": "Grasp",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Grasp It Instantly",
+            "desc": "Streets, blocks, vehicles and landscaping are reproduced to scale, so the entire project reads in a single glance."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/gitex-city-model-2.jpg",
+            "caption": "Commands",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Commands the Stand",
+            "desc": "Finished to display standard with a presentation base, it becomes the centrepiece crowds gather around at shows."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/gitex-city-model-13.jpg",
+            "caption": "Street-Level",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Street-Level Detail",
+            "desc": "Roundabouts, roads, cars and greenery are modelled in detail for a city that feels alive up close."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you build our specific city or development?",
+            "a": "Yes. Send your maps, masterplan or CAD and we'll reproduce it to your chosen scale."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it include LED lighting?",
+            "a": "Yes - building, street and landmark lighting can all be built in for a dramatic display."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Is it suitable for repeated exhibition use?",
+            "a": "Yes, it is built on a sturdy base and can be made in sections for transport."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, crated to protect the model in transit."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A detailed city development scale model - buildings, roads, vehicles and landscaping reproduced to scale on a presentation base. Built to headline exhibition stands and sales galleries, it lets visitors take in an entire development at a glance.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "200 x 100 x 30 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin, Acrylic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your city/development, branding, scale and LED lighting",
+        "perso_required": false,
+        "desc_title": "Want a Whole City",
+        "desc_title_em": "on the Table?",
+        "s1_body": "This city model brings a development to life in three dimensions - streets, blocks, cars and greenery, all to scale and finished to exhibition standard. We built this one to headline a stand at GITEX, where crowds gathered around it; the same model works just as well in a sales gallery or reception. Give us your city or masterplan and we reproduce it, right down to the road layout and landmark buildings.",
+        "s2_image": "shopify://shop_images/gitex-city-model-case.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "The Star of the Stand",
+        "case_body": "Built for Dubai AI to demonstrate their disaster detection software using a city scaled model, this city model in GITEX drew a steady crowd - a tangible, detailed development that visitors could walk around and understand far faster than any screen. It even drew media attention and became a highlight in the newspaper.",
+        "case_quote": "Thanks to this model, more people visited our exhibition booth. Everyone wanted to see the city up close.",
+        "case_quote_attr": "Maria - Dubai AI",
+        "s3_image": "shopify://shop_images/gitex-city-model-8.jpg",
+        "prov_h": "Dont Just Talk,",
+        "prov_hem": "Demonstrate Your Idea",
+        "prov_p": "GITEX is a competitive Technology Exhibition in UAE every year. Having a scale model gives you a competitive edge and differentiate your booth compared to other participants. Leading to more visitor footfall and visibility for your project.",
+        "video_url": "https://www.youtube.com/watch?v=mtTzYFHSvEY",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "in motion",
+        "vid_sub": "A short film from the workshop floor.",
+        "vid_meta": "Building the GITEX City Development Scale Model - 3D Printed Urban Model",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 56 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "LED Lighting",
+        "hspec4_v": "Yes",
+        "s3_credit": "Image: Tonenight, CC BY-SA 4.0, via Wikimedia Commons"
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

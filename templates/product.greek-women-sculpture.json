@@ -1,0 +1,148 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "What sizes are available?",
+            "a": "From tabletop busts to large statement pieces. Tell us your space and we'll advise."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "What finishes can I choose?",
+            "a": "Stone-look white, marble effect, bronze and custom finishes."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you recreate other classical sculptures?",
+            "a": "Yes - busts, figures and reliefs in the classical style can all be reproduced."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, crated to protect the sculpture."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A graceful classical bust of a woman in the Greek tradition, sculpted with soft, flowing detail and a clean stone-look finish. A timeless decorative sculpture for interiors, studios and galleries - made in the size and finish you choose.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "100 x 80 x 40 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Bioplastic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "color or finish",
+        "perso_required": false,
+        "desc_title": "Want Timeless",
+        "desc_title_em": "Classical Elegance?",
+        "s1_body": "This classical female bust brings a sense of calm, timeless beauty to any space. Sculpted in the Greek tradition with soft features and flowing hair, and finished in a clean stone look, it makes an elegant centrepiece for a console, shelf or studio. Choose your size and finish, and we can recreate other classical busts and figures in the same style.",
+        "s2_image": "shopify://shop_images/greek-women-sculpture-1.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "Classical Beauty, Made Accessible",
+        "case_body": "Produced as a decorative sculpture for Espire Hospitality Reception, this classical bust brings museum-style elegance into a modern interior - a calm, timeless focal point made to the size and finish a space calls for.",
+        "case_quote": "Beautifully sculpted - it brings a real sense of calm and class to the room.",
+        "case_quote_attr": "Ann - Espire Hospitality",
+        "s3_image": "shopify://shop_images/greek-women-sculpture-provenance.jpg",
+        "prov_h": "Beauty That",
+        "prov_hem": "Never Dates",
+        "prov_p": "Classical sculpture has defined ideals of beauty for thousands of years. A faithful bust brings that timeless elegance into your own home, at whatever scale suits your space.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 32 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": "Image: Venus de Milo, public domain, via Wikimedia Commons"
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

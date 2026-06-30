@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/golf-award-2.jpg",
+            "caption": "Raises",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Raises a Smile",
+            "desc": "The cheering golf-ball character brings personality to the prize-giving and makes a fun keepsake."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/golf-award-3.jpg",
+            "caption": "Classic",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Classic Ball-on-Tee",
+            "desc": "A clean golf-ball-on-tee design offers a more traditional take, personalised for categories like \"Most Golf\"."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/golf-award-3.jpg",
+            "caption": "Personalised",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Personalised Text & Logo",
+            "desc": "There is personalisation text on both the engraving plate and the golf award itself."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you make awards for all our categories?",
+            "a": "Yes - Longest Drive, Nearest the Pin, Most Golf, winner and more, all personalised."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can each be engraved?",
+            "a": "Yes, each base carries an engraved plaque with the category, event and winner."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you design other novelty trophies?",
+            "a": "Yes - tell us your sport or theme and we'll create matching characterful awards."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai with tracked, insured delivery."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "Fun, characterful golf trophies - a cheering golf-ball character and a ball-on-tee design - on bases with engraved plaques. The perfect lighthearted awards for \"Longest Drive\", \"Most Golf\" and other golf-day categories.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "15 x 10 x 30 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt, Metallic",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Engraving base plaque text",
+        "perso_required": false,
+        "desc_title": "Want Golf-Day Recognition",
+        "desc_title_em": "With a Smile?",
+        "s1_body": "Bring some personality to your golf event. These novelty trophies - a celebrating golf-ball character with arms raised, and a classic ball-on-tee design - are fun, photogenic and personalised with the category and winner. Ideal for corporate golf days, society events and tournaments, with matching designs for every award you hand out.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "The Hit of the Golf Day",
+        "case_body": "Created for a corporate golf event, these novelty trophies made the prize-giving genuinely fun - personalised per category and proudly carried home by every winner.",
+        "case_quote": "Everyone loved them - way more fun than a standard cup. Perfect for our golf day.",
+        "case_quote_attr": "Amir - Promotional Event",
+        "s3_image": "shopify://shop_images/golf-award-provenance.jpg",
+        "prov_h": "Awards With",
+        "prov_hem": "Personality",
+        "prov_p": "A golf day is meant to be enjoyed - so why not the trophies? Playful, characterful awards make the prize-giving as memorable as the round itself.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 22 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": "Image: Santeri Viinamaki, CC BY-SA 4.0, via Wikimedia Commons"
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}
