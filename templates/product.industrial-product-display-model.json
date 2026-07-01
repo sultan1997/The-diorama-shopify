@@ -1,0 +1,148 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you model our specific equipment?",
+            "a": "Yes. Send drawings or photos and we'll build an accurate, branded scale model."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can finishes and colours match our real unit?",
+            "a": "Yes, colours, logos and markings are reproduced so the model is unmistakably yours."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Does it include a display case?",
+            "a": "Yes, a clear case and finished base are included."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, packed for safe transit."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A precise scale replica of your industrial water cooled chiller unit equipment - pumps, units or control gear reproduced in detail and presented under a clear case. The ideal showcase and corporate gift for equipment, engineering and manufacturing firms.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "30 x 30 x 30 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your equipment, colours, branding and display case",
+        "perso_required": false,
+        "desc_title": "Want Your Equipment",
+        "desc_title_em": "Showroom-Ready in Miniature?",
+        "s1_body": "Hard to bring a pump skid, chiller or control unit into a meeting? We build it in miniature. This scale model reproduces your equipment down to its panels, piping and fittings, finished under a clear case so it stays pristine on a desk, reception counter or exhibition stand. A memorable showcase piece and corporate gift for equipment and engineering companies - we model whichever unit best represents your business.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "The Product, in Miniature",
+        "case_body": "Commissioned by Biatherm equipment company, these cased models let the team showcase their units at exhibitions and sales office - a tangible, branded reminder of the kit they supply, far more memorable than a brochure.",
+        "case_quote": "Clients loved seeing a miniature of the exact unit we make. A brilliant talking point in every meeting.",
+        "case_quote_attr": "Ahmed - Biatherm Equipment Manufacturer",
+        "s3_image": "shopify://shop_images/industrial-product-display-model-2.jpg",
+        "prov_h": "Big Equipment,",
+        "prov_hem": "Pocket-Sized",
+        "prov_p": "A scale model brings equipment that's too big for the boardroom right onto the table - cased, branded and built to last. It's a sales aid and a showpiece in one.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 22 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

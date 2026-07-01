@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/hot-tapping-and-cold-tapping-model-11.jpg",
+            "caption": "Interactive",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Interactive Movement",
+            "desc": "Model is fitted with manual interaction feature which allows you to effectively explain your concepts. The 2 movements include a horizontal latch movement and a vertical movement of the pipe and cutter."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/hot-tapping-and-cold-tapping-model-6.jpg",
+            "caption": "Your",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Your Branding Colours & Logo",
+            "desc": "We use your preferred colours along with your company logo so that this model is built for you, turning the model into a professional sales tool."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/hot-tapping-and-cold-tapping-model-3.jpg",
+            "caption": "Protective",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Protective Display Case",
+            "desc": "A clear case keeps the model pristine for exhibitions, meetings and training sessions."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you model our specific equipment?",
+            "a": "Yes. Send drawings or photos and we'll build an accurate, branded scale model."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it be a cutaway or moving demo?",
+            "a": "Yes - cutaways and selected moving/demo elements can be built in to show the operation."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Does it include a display case?",
+            "a": "Yes, a clear case and branded base are included."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, packed for safe transit."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A detailed demonstration model of a hot-tapping / line-stopping operation - the drilling machine, fittings and pipe section reproduced to scale on a branded base. The clearest way to explain a specialist pipeline service to clients and at exhibitions.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "50 x 20 x 9 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your preferred colors and company logo",
+        "perso_required": false,
+        "desc_title": "Want to Explain a Specialist",
+        "desc_title_em": "Service in Seconds?",
+        "s1_body": "Hot tapping and line stopping are hard to picture from words alone. This model makes them obvious: the machine, the fittings and the pipe section reproduced to scale and colour-coded, mounted on a branded base. A powerful sales and training tool for pipeline service companies - on the exhibition stand, in client meetings and in the boardroom.",
+        "s2_image": "shopify://shop_images/hot-tapping-and-cold-tapping-model-7.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "A Service You Can Demonstrate",
+        "case_body": "Built for a pipeline-services firm, this model let the team show clients exactly how hot tapping and line stopping work - a tangible demo that explained a specialist service far better than any diagram, on the stand and in meetings.",
+        "case_quote": "Clients finally understood our service at a glance. It anchors our exhibition stand.",
+        "case_quote_attr": "Jiju - Marketing Manager at Unique Group",
+        "s3_image": "shopify://shop_images/hot-tapping-and-cold-tapping-model-10.jpg",
+        "prov_h": "Specialist Work,",
+        "prov_hem": "Made Clear",
+        "prov_p": "The more technical the service, the more a physical model helps. Seeing the equipment and pipe in three dimensions turns a complex explanation into an instant understanding.",
+        "video_url": "https://www.youtube.com/watch?v=9hLMF8bQF6g",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "in motion",
+        "vid_sub": "A short film from the workshop floor.",
+        "vid_meta": "Building the Hot Tapping & Line Stopping Demo Model - Custom Industrial Cutaway",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 22 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}
