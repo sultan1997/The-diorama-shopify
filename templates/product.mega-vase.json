@@ -34,31 +34,31 @@
         "review-1": {
           "type": "review",
           "settings": {
-            "name": "Mark",
+            "name": "Ann",
             "date": "MAY 2026",
-            "title": "A dream come true",
-            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
-            "badge": "West Ham Fan"
+            "title": "Brings real presence",
+            "body": "Beautifully sculpted and the proportions are perfect for our space.",
+            "badge": "Stylist"
           }
         },
         "review-2": {
           "type": "review",
           "settings": {
-            "name": "James T.",
-            "date": "APR 2026",
-            "title": "Incredible detail for a 1:1 replica",
-            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
-            "badge": "Verified Buyer"
+            "name": "Palavi",
+            "date": "JUN 2026",
+            "title": "Statement piece",
+            "body": "Looks fantastic on the wall - exactly the drama we wanted. Stunning finish.",
+            "badge": "Interior Designer"
           }
         },
         "review-3": {
           "type": "review",
           "settings": {
-            "name": "Daniel O.",
-            "date": "MAR 2026",
-            "title": "Exactly like the trophy on TV",
-            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
-            "badge": "Verified Buyer"
+            "name": "Sami",
+            "date": "MAY 2026",
+            "title": "Perfect scale",
+            "body": "Sized exactly to our wall. Premium look, beautifully made.",
+            "badge": "Designer"
           }
         }
       },
@@ -126,11 +126,11 @@
         "faq_h": "Common questions.",
         "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
         "rev_h": "Customer Reviews",
-        "rev_score": "5.0",
-        "rev_count": "24",
-        "rev5": "21",
-        "rev4": "2",
-        "rev2": "1",
+        "rev_score": "4.7",
+        "rev_count": "8",
+        "rev5": "7",
+        "rev4": "1",
+        "rev2": "0",
         "rev3": "0",
         "rev1": "0",
         "cta_ey": "Want your own custom piece?",
