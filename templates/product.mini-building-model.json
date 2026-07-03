@@ -1,0 +1,172 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/mini-building-model-2.jpg",
+            "caption": "Easy-to-Read",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Easy-to-Read Masterplan",
+            "desc": "Towers, podiums, roads and green spaces are laid out to scale, so the whole scheme reads clearly at a glance."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/mini-building-model-3.jpg",
+            "caption": "Detail",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Detail That Holds Up Close",
+            "desc": "Landscaping, water features and building forms are modelled cleanly, rewarding a closer look from any angle."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you build from our masterplan?",
+            "a": "Yes - send your drawings or CAD and we'll build an accurate massing model to scale."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it include landscaping and roads?",
+            "a": "Yes, landscaping, roads and water features are all modelled."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it be lit or branded?",
+            "a": "Yes, lighting and branded bases are available on request."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A clean white massing model of a mixed-use development - towers, podiums and landscaped spaces laid out to scale on a presentation base. The ideal tool for pitching a development to investors and buyers. Price given is for each building.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "25 x 25 x 25 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your development, massing, landscaping and base",
+        "perso_required": false,
+        "desc_title": "Want Your Development",
+        "desc_title_em": "Clear at a Glance?",
+        "s1_body": "Before a development is built, a massing model lets people see it. We translate your masterplan into a crisp white model - towers, podium buildings, roads and landscaped areas all to scale - so investors, partners and buyers grasp the scheme instantly. A clean, professional centrepiece for sales suites, investor pitches and planning presentations.",
+        "s2_image": "shopify://shop_images/mini-building-model-1.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "The Pitch That Closes",
+        "case_body": "Built to present a mixed-use scheme in Exhibition, this massing model gave the sales team a tangible centrepiece - investors and buyers could see the whole development laid out, understanding the vision far faster than from drawings.",
+        "case_quote": "It was the centrepiece of the event. We attached RFID under the model to make it more interactive.",
+        "case_quote_attr": "Juzar - Enginious",
+        "s3_image": "shopify://shop_images/mini-building-model-5.jpg",
+        "prov_h": "The Vision,",
+        "prov_hem": "Made Tangible",
+        "prov_p": "Renders and drawings ask people to imagine; a physical model lets them see. A clean massing model turns a masterplan into something investors and buyers can walk around and believe in.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 20 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

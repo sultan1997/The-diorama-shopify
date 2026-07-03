@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/mechatronics-logo-2.jpg",
+            "caption": "Attractive",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Attractive LED Lighting",
+            "desc": "Company logo and few spots on model is illuminated which gives a detailed look."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/mechatronics-logo-1.jpg",
+            "caption": "Real",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Real 3D Depth",
+            "desc": "Every component is manufactured and assembled separately to give it 3D effect unlike 2D Printing."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/mechatronics-logo-3.jpg",
+            "caption": "Your",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Your Company Logo",
+            "desc": "We add your company logo as a signage to make this artwork truly yours."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you build it from our branding and theme?",
+            "a": "Yes - send your logo and theme and we'll design a layered, lit piece around it."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can the lighting be customised?",
+            "a": "Yes, LED colour and effect are tailored to your design."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can we order a matched set?",
+            "a": "Yes, coordinated sets for programmes are available."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A layered 3D shadow-box plaque with backlit LED detailing - gears, circuitry and themed artwork built up in depth, finished with your branding. A premium recognition or branding piece for receptions and awards. This LED plaque shows futuristic vision of nature and technology working together instead of fighting against each other. We add your company logo to show your commitment.o this vision.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "",
+        "hspec2_k": "Materials",
+        "hspec2_v": "",
+        "hspec3_k": "Finish",
+        "hspec3_v": "",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your logo",
+        "perso_required": false,
+        "desc_title": "Want Your Brand",
+        "desc_title_em": "to look Futuristic?",
+        "s1_body": "More than a flat plaque, this is a layered 3D light box - themed artwork, gears, circuitry and your logo built up in depth and backlit with LEDs for a glowing, premium effect. Ideal as a corporate recognition piece, a programme award or a branded reception display that captures your vision in one striking, illuminated panel.",
+        "s2_image": "shopify://shop_images/mechatronics-logo-3.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "A Story Worth Lighting Up",
+        "case_body": "Created as a recognition piece for Aramco exhibiton event, this futuristic 3D logo box captured the theme and branding in glowing 3D detail - a centrepiece that stood out far more than a standard certificate or plaque.",
+        "case_quote": "Stunning - the depth and the lighting make it special. It takes pride of place in our reception.",
+        "case_quote_attr": "Neel - Aramco",
+        "s3_image": "shopify://shop_images/mechatronics-logo-provenance.jpg",
+        "prov_h": "Fusion of",
+        "prov_hem": "Technology with Nature",
+        "prov_p": "Throughout history, nature and technology have always been at war with each other. Brands that help nature along their journey deserve special recognition like this to set an example for the rest.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

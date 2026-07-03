@@ -1,0 +1,148 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you make any shape or colour?",
+            "a": "Yes - tell us the form and colour and we'll build it with a glossy finish."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it carry our branding?",
+            "a": "Yes, branding is added to the base."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can we order a batch?",
+            "a": "Yes, matched batches for gifting are available."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A glossy balloon-style sculpture in vivid red on a branded base. A playful, premium art piece and corporate gift that brings colour and personality to a desk, reception or retail space.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "10 x 10 x 14 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Gloss",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your logo",
+        "perso_required": false,
+        "desc_title": "Want Playful Art",
+        "desc_title_em": "With a Glossy Finish?",
+        "s1_body": "Inspired by the joy of balloon art, this glossy sculpture brings colour and fun to any space. Finished in vivid red with a flawless sheen and mounted on a branded base, it makes a playful collectible, a premium corporate gift or a retail accent. We build it in any shape, colour and branding you like.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "Fun, in High Gloss",
+        "case_body": "Produced as a branded gift, these glossy balloon sculptures brought colour and personality to the recipients' desks - a playful, premium piece that stood out from the usual corporate gift.",
+        "case_quote": "So fun and beautifully made. It's the most cheerful thing on my desk.",
+        "case_quote_attr": "Madhave - Private Comission",
+        "s3_image": "shopify://shop_images/mini-balloon-sculpture-1.jpg",
+        "prov_h": "Joy,",
+        "prov_hem": "You Can Display",
+        "prov_p": "Not every piece needs to be serious. A glossy, colourful sculpture brings personality and warmth to a space - and a smile to whoever receives it.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 22 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

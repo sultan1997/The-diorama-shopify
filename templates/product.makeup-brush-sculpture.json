@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/makeup-brush-sculpture-2.jpg",
+            "caption": "Glowing",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Glowing Focal Point",
+            "desc": "Illuminated brush tips glow softly, turning the installation into a luminous centrepiece that draws every eye."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/makeup-brush-sculpture-3.jpg",
+            "caption": "Life",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Life Size",
+            "desc": "Sculpted larger than life, it becomes an Insta-worthy attraction."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/makeup-brush-sculpture-3.jpg",
+            "caption": "Interactive",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Interactive LED Control",
+            "desc": "Sculpture comes with a mobile app which allows you to control LED in 4 different zones. Multiple colours and 16 LED effects are available."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you build any product oversized?",
+            "a": "Yes - send your product and we'll sculpt it at scale, illuminated with LED."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it be suspended or freestanding?",
+            "a": "Yes, we build for ceiling suspension, plinths or wall mounting."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can the lighting be customised?",
+            "a": "Yes, lighting colour and effect are customized in mobile app which we will give you during installation."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A cluster of oversized makeup brushes with glowing illuminated tips, suspended as a retail ceiling installation. A glamorous, eye-catching centrepiece for beauty stores, counters and brand spaces.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "100 x 100 x 230 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Glass Fiber, Metal, Fiber Optics",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt, Metallic",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your product, scale, lighting and mounting",
+        "perso_required": false,
+        "desc_title": "Want Beauty",
+        "desc_title_em": "on a Grand Scale?",
+        "s1_body": "We turn beauty products into showstopping installations. This suspended cluster of giant makeup brushes glows from illuminated tips, drawing the eye upward and giving a retail space instant glamour and a sense of brand. Whether hung from a ceiling or standing on a plinth, we build your product oversized and lit to make a statement.",
+        "s2_image": "shopify://shop_images/makeup-brush-sculpture-2.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "A Store That Glows",
+        "case_body": "Created for Letoil beauty retail space in DFC, this suspended brush installation gave the store a glamorous, instantly recognisable centrepiece - a glowing focal point that defined the brand's area and drew shoppers in.",
+        "case_quote": "It completely transformed our space. Customers look up, stop and reach for their phones.",
+        "case_quote_attr": "Ishat - Letoil",
+        "s3_image": "shopify://shop_images/makeup-brush-sculpture-provenance.jpg",
+        "prov_h": "Your Product,",
+        "prov_hem": "As the Centrepiece",
+        "prov_p": "An oversized, illuminated product does what shelving never can - it gives a space identity and pulls people toward your brand.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 80 Hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": "Image: Orelsimantov, CC BY-SA 4.0, via Wikimedia Commons"
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}
