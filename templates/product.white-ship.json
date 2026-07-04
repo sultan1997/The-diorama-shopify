@@ -1,0 +1,172 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/white-ship-2.jpg",
+            "caption": "LED-Lit",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "LED-Lit Display Base",
+            "desc": "A multicolor LED-lit base gives the model a premium, finished presence that stands out in any reception."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/white-ship-1.jpg",
+            "caption": "Accurate",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Accurate Vessel Detail",
+            "desc": "Hull lines, decks and fittings are reproduced to scale, so the model is a faithful likeness of your ship."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you model our specific vessel?",
+            "a": "Yes - send drawings or photos and we'll build an accurate replica with your livery."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can the base be lit?",
+            "a": "Yes, an LED-lit base is included as shown."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Does it include a case?",
+            "a": "Yes, a clear case is available on request."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A clean scale model of a passenger ferry, finished in white with an accent stripe and presented on a blue LED-lit base. A premium showpiece and gift for ferry operators, shipbuilders and marine firms.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "70 x 30 x 35 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your vessel, livery, name and lit base",
+        "perso_required": false,
+        "desc_title": "Want Your Vessel",
+        "desc_title_em": "Beautifully Presented?",
+        "s1_body": "We recreate your ferry or passenger vessel as an accurate scale model - hull, decks, superstructure and fittings - finished in your livery and presented on a striking LED-lit base. The ideal piece to mark a launch, gift a client or display in a reception, built faithfully from your drawings.",
+        "s2_image": "shopify://shop_images/white-ship-1.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "VIP Gift",
+        "case_body": "Built as a special gift from Unique Group for their client, this model became the centrepiece of the operator's reception - the vessel recreated to scale on a glowing base, a memorable gift to impress their client.",
+        "case_quote": "A beautiful likeness of our ferry, and the lit base makes it a real showpiece.",
+        "case_quote_attr": "Jiju - Marketing head at Unique Group",
+        "s3_image": "shopify://shop_images/white-ship-1.jpg",
+        "prov_h": "Your Ship,",
+        "prov_hem": "Beautifully Presented",
+        "prov_p": "A faithful model honours the vessel; a lit base turns it into a showpiece. Together they make a launch or milestone something people stop to admire.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 32 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": "Image: Alexxx1979, CC BY-SA 3.0, via Wikimedia Commons"
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}
