@@ -1,0 +1,196 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/spiral-award-2.jpg",
+            "caption": "Signature",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Signature Spiral Top",
+            "desc": "A stepped, spiralling square labyrinth is sculpted into the top of the tower - a striking, three-dimensional signature that catches the light from every angle."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/spiral-award-3.jpg",
+            "caption": "Engraved",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Engraved Logo & Recipient",
+            "desc": "Your logo, award category and the recipient's name are precisely engraved on the face, making every piece unique to the occasion."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/spiral-award-4.jpg",
+            "caption": "Premium",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Premium Matte-Black Tower",
+            "desc": "The tall, weighty tower form and deep matte-black finish give the award real presence on stage and on the shelf."
+          }
+        },
+        "feat-4": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/spiral-award-1.jpg",
+            "caption": "Velvet-Lined",
+            "num": "F-04",
+            "detail": "DETAIL",
+            "title": "Velvet-Lined Gift Box",
+            "desc": "Each award is presented in a velvet-lined box with a gold clasp, turning the hand-over into a memorable unboxing."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can the plaque be engraved to our text?",
+            "a": "Yes - the award, recipient and message are all engraved."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can we order a matched set?",
+            "a": "Yes, coordinated boxed sets are available."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can the finish be customised?",
+            "a": "Yes, finishes and box options can be tailored."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "feat-4",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A premium black tower award crowned with a sculpted spiralling labyrinth, engraved with your logo and recipient and presented in a velvet-lined gift box. A refined, substantial recognition piece for prizes, milestones and executive awards.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "9 x 9 x 25 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Award name, recipient, finish and box",
+        "perso_required": false,
+        "desc_title": "Want Recognition",
+        "desc_title_em": "Beautifully Presented?",
+        "s1_body": "This award turns recognition into a sculpture. A tall matte-black tower is crowned with a stepped, spiralling square labyrinth that catches the light from every angle, while your logo, award category and recipient are precisely engraved on the face. Presented in a velvet-lined gift box, it gives prizes, milestones and executive honours the gravitas they deserve - produced as a single piece or a coordinated set for a whole programme.",
+        "s2_image": "shopify://shop_images/spiral-award-6.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "An Award Worth Unboxing",
+        "case_body": "Created as an executive recognition piece, this boxed plaque gave a milestone the gravitas it deserved - presented in a velvet-lined case that made the moment feel as significant as the achievement.",
+        "case_quote": "The presentation box makes it feel truly special. A fitting way to honour a milestone.",
+        "case_quote_attr": "Nawas - Index Holdings",
+        "s3_image": "shopify://shop_images/spiral-award-5.jpg",
+        "prov_h": "Presentation,",
+        "prov_hem": "That Honours the Moment",
+        "prov_p": "How an award is presented shapes how it's received. A premium plaque in a velvet-lined box turns recognition into an occasion.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 22 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

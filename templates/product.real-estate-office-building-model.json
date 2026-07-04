@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/real-estate-office-building-model-3.jpg",
+            "caption": "Glowing",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Glowing LED",
+            "desc": "Warm LED lighting glows through the windows, giving the model a premium, finished presence day or night."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/real-estate-office-building-model-6.jpg",
+            "caption": "Landscaping",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Landscaping",
+            "desc": "Plaza, roads, landscaping and entrance are all modelled, placing your building in a realistic context."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/real-estate-office-building-model-2.jpg",
+            "caption": "Mesh",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Mesh Facad",
+            "desc": "The standout feature of this building is its mesh-type facade, which is perfectly replicated in the model."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you model our specific building?",
+            "a": "Yes - send drawings or renders and we'll build an accurate lit scale model."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can the lighting be customised?",
+            "a": "Yes, facade and interior lighting are tailored to your building."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it include the plaza and landscaping?",
+            "a": "Yes, the full setting is modelled around your building."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A striking architectural model of a G+2 commercial building with warm LED-lit windows, landscaped plaza, roads and a branded base. The perfect centrepiece for a developer's sales suite or boardroom.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "",
+        "hspec2_k": "Materials",
+        "hspec2_v": "",
+        "hspec3_k": "Finish",
+        "hspec3_v": "",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your building, lighting, landscaping and branded base",
+        "perso_required": false,
+        "desc_title": "Want Your Building",
+        "desc_title_em": "Brought to Light?",
+        "s1_body": "We recreate your commercial or office building as a detailed scale model and bring it to life with warm LED lighting glowing through the windows. Set on a base with plaza, roads and landscaping, it's the ideal piece for a sales suite, investor pitch or reception - built faithfully from your drawings, down to the facade and entrance.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "Model that Validates the Design",
+        "case_body": "Built for Style Consultancy to verify their client's architectural design. After delivery, they found a couple of design flaws which were easily fixed, saving them millions in design mistakes before construction.",
+        "case_quote": "The lighting makes it spectacular. It anchors our office building and impressed our client.",
+        "case_quote_attr": "Eng Kias - Style Consultancy",
+        "s3_image": "shopify://shop_images/real-estate-office-building-model-5.jpg",
+        "prov_h": "Architecture That",
+        "prov_hem": "Comes Alive",
+        "prov_p": "A model honours the design; lighting brings it to life. Together they turn a development into a showpiece that helps to visualize the project before construction.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

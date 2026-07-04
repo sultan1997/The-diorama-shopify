@@ -1,0 +1,148 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you build from our site plans?",
+            "a": "Yes - send your layout and we'll build an accurate master model at the size you need."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can areas be labelled?",
+            "a": "Yes, key buildings and areas can be labelled."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it be lit and branded?",
+            "a": "Yes, lighting and a branded base are available."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A large (2x1 metre) master model of a starch factory facility - buildings, roads, tanks and landscaping laid out in detail on a presentation base. A commanding centrepiece for boardrooms, exhibitions and project reviews.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "200 x 100 x 120 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin, Acrylic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your facility, labels, branding and base",
+        "perso_required": false,
+        "desc_title": "Want Your Whole Facility",
+        "desc_title_em": "Laid Out to Scale?",
+        "s1_body": "At two metres, this master model lays out an entire industrial facility - production buildings, offices, tanks, roads and landscaping - so engineers, clients and investors can read the whole site at a glance. Built from your plans, it's the centrepiece for boardrooms, exhibition stands and project reviews where a complex facility needs to be understood fast.",
+        "s2_image": "shopify://shop_images/rak-starch-facotry-2x1m-2.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "Visitors were impressed",
+        "case_body": "Built for Oren Hydrocarbon to showcase their Starch Factory, this large master model impressed every visitor who came to the Oren Hydrocarbon factory. They loved the model so much that management commissioned 2 more factory models of their sites in Egypt and Iraq.",
+        "case_quote": "The scale of the model lets people grasp our whole facility instantly. A superb presentation tool.",
+        "case_quote_attr": "Abul - Supervisor",
+        "s3_image": "shopify://shop_images/rak-starch-facotry-2x1m-1.jpg",
+        "prov_h": "A Complex Site,",
+        "prov_hem": "on One Table",
+        "prov_p": "A site plan is abstract; a large master model is real. Built to scale, it turns a complex facility into instant understanding and confidence.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 40 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

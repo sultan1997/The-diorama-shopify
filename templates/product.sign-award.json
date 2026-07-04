@@ -1,0 +1,172 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/sign-award-2.jpg",
+            "caption": "Unmistakably",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Unmistakably Yours",
+            "desc": "Your logo or wordmark becomes the trophy itself, so the award carries your brand at a glance."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/sign-award-3.jpg",
+            "caption": "Names",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Names the Moment",
+            "desc": "An engraved base carries the award title and year, making each piece specific to the occasion."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you make an award from our logo?",
+            "a": "Yes - send your logo and colours and we'll build it in 3D on a finished base."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can we order a matched set?",
+            "a": "Yes, coordinated batches with personalised plaques are available."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can the finish match our brand?",
+            "a": "Yes, colours and finish are matched to your brand."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "Your wordmark or logo sculpted in 3D and mounted on a polished base with an engraved title. A bold, on-brand appreciation award for partners, teams and milestones.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "30 x 20 x 15 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin, Acrylic, Wood",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Gloss",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your logo/wordmark, colours, base and plaque text",
+        "perso_required": false,
+        "desc_title": "Want Your Brand",
+        "desc_title_em": "as the Award?",
+        "s1_body": "Skip the generic cup. We turn your logo or script wordmark into a three-dimensional award, finished in your colours on a polished base with an engraved title. Instantly recognisable and unmistakably yours, it's ideal for appreciation awards, partner recognition and anniversaries - as a single piece or a coordinated set.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "An Award That's Pure Brand",
+        "case_body": "Built from a company's wordmark, this appreciation award gave a recognition moment a distinctly on-brand identity - a piece that looked far more considered than an off-the-shelf trophy.",
+        "case_quote": "Having our own logo as the award made it feel special and completely ours. A lovely touch.",
+        "case_quote_attr": "Atik - Creative Spot",
+        "s3_image": "shopify://shop_images/sign-award-4.jpg",
+        "prov_h": "Recognition,",
+        "prov_hem": "On Brand",
+        "prov_p": "An award built from your own brand carries your identity in a way no generic trophy can - recognition that reinforces the brand every time it's seen.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 24 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

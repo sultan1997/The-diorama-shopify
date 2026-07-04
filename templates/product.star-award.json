@@ -1,0 +1,196 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/star-award-2.jpg",
+            "caption": "Bold",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Bold 3D Faceted Star",
+            "desc": "The multi-pointed star is sculpted in three dimensions with crisp faceted planes, catching the light for a striking, premium look from every angle."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/star-award-1.jpg",
+            "caption": "Engraved",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Engraved Wooden Base",
+            "desc": "The star sits on a solid wooden base engraved with your award name, recipient and year - grounding the piece and making each one unique."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/star-award-3.jpg",
+            "caption": "Gold",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Gold or Silver Finish",
+            "desc": "Choose a warm metallic gold or a cool silver finish to suit your event and branding."
+          }
+        },
+        "feat-4": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/star-award-4.jpg",
+            "caption": "Matched",
+            "num": "F-04",
+            "detail": "DETAIL",
+            "title": "Matched Sets for Every Winner",
+            "desc": "We produce coordinated batches with the year engraved on the star, so a whole programme shares one consistent, premium look."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can the base be engraved?",
+            "a": "Yes - the award, recipient and year are engraved."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can we order a set?",
+            "a": "Yes, matched batches for multiple recipients are available."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can the finish be changed?",
+            "a": "Yes, gold, silver and other finishes are available."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "feat-4",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A bold three-dimensional gold star mounted on a base with space for engraving. A classic, instantly understood award for top performers, achievements and 'star of the year' recognition.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "20 x 15 x 8 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin, Wood",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Metallic",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "base plaque text",
+        "perso_required": false,
+        "desc_title": "Want to Honour",
+        "desc_title_em": "Your Standout Star?",
+        "s1_body": "Nothing says achievement quite like a star. This bold 3D gold star sits on a solid base with an engraved plaque naming the award and recipient - a timeless, instantly understood trophy for top performers, 'star of the year' awards and milestone recognition. Available as a single piece or a coordinated set.",
+        "s2_image": "shopify://shop_images/star-award-5.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "A Star Performer's Award",
+        "case_body": "Created as a 'star of the year' trophy, this gold star gave top performers a bold, classic award - instantly understood and proudly displayed as a mark of their achievement.",
+        "case_quote": "A clean, classic award our top performers in our talent show are proud to win and display.",
+        "case_quote_attr": "Rekha - L'Oreal",
+        "s3_image": "shopify://shop_images/star-award-5.jpg",
+        "prov_h": "Achievement,",
+        "prov_hem": "With a Shine",
+        "prov_p": "A star is recognition everyone understands. As a bold gold trophy, it turns 'well done' into a keepsake worth displaying.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 16 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

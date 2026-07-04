@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/ranthalos-armor-cosplay-2.jpg",
+            "caption": "Screen-Accurat",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Screen-Accurate Detail",
+            "desc": "Every scale, spike and plate is sculpted to your reference, so the finished armor reads true to its source."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/ranthalos-armor-cosplay-3.jpg",
+            "caption": "Wearable",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Wearable & Durable",
+            "desc": "Built lightweight and articulated, the armor is made to be worn, moved in and photographed all day."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/ranthalos-armor-cosplay-7.jpg",
+            "caption": "Made",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Made for your body type",
+            "desc": "We scale the armour according to your body to make sure that it fits you perfectly."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you build any character's armor?",
+            "a": "Yes - send reference images or concept art and we'll build the full set to fit you."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Is it comfortable to wear?",
+            "a": "Yes, we build armor lightweight and articulated for real wearability."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you build individual pieces?",
+            "a": "Yes, full sets or single pieces like helmets and pauldrons are available."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A full-body Rathalos fantasy cosplay armor built from Monster Hunter - layered dragon-scale plates, winged pauldrons, sculpted helmet and gauntlets in rich red and steel. Wearable, durable and built to your character reference.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "According to your body size",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Bioplastic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Metallic",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your body size, armour color and finish",
+        "perso_required": false,
+        "desc_title": "Want to Become",
+        "desc_title_em": "the Character?",
+        "s1_body": "From a game, film or original concept, we build full cosplay armor that's accurate, wearable and durable. This dragon-scale Rathalos suit from Monster Hunter layers sculpted plates, winged pauldrons, a detailed helmet and gauntlets into a complete costume - finished in rich metallic colours and fitted to the wearer. Ideal for competitions, conventions, brand events and serious collectors.",
+        "s2_image": "shopify://shop_images/ranthalos-armor-cosplay-15.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "From Game to Convention Floor",
+        "case_body": "Built For Fahads favourite character Rathalos from Monster Hunter, this full armor set turned a digital design into a wearable, competition-ready costume - accurate, durable and a showstopper on the convention floor.",
+        "case_quote": "The build quality is unreal and it actually fits and moves. People went crazy just by looking at it.",
+        "case_quote_attr": "Fahad - Cosplayer",
+        "s3_image": "shopify://shop_images/ranthalos-armor-cosplay-provenance.jpg",
+        "prov_h": "Fantasy,",
+        "prov_hem": "You Can Wear",
+        "prov_p": "A character is a fantasy until you can step into it. We build armor accurate and wearable enough to bring your favourite character off the screen and onto the floor.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 60 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": "Image: Miguel Discart, CC BY-SA 2.0, via Wikimedia Commons"
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

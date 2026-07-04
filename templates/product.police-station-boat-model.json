@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/police-station-boat-model-5.jpg",
+            "caption": "Concept",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Concept Understood Instantly",
+            "desc": "The model brings the idea to life in full 3D, so stakeholders grasp a bold concept in a single look."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/police-station-boat-model-3.jpg",
+            "caption": "Every",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Every Detail Considered",
+            "desc": "Deck, railings, landscaping and rooftop features are all modelled, making the concept feel complete and real."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/police-station-boat-model-7.jpg",
+            "caption": "LED",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "LED Lighting on Building",
+            "desc": "The building is lit with warm white LEDs, which adds to the detail of the model."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you build any concept?",
+            "a": "Yes - send your idea, sketches or brief and we'll bring it to life as a detailed model."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it include themed and functional details?",
+            "a": "Yes, themed elements, lighting and features can all be built in."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it be branded?",
+            "a": "Yes, your branding and a finished base are included."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "An imaginative concept model of a floating station themed around a giant officer's cap, complete with deck, palms, railings and a solar-panelled roof. A creative showpiece that brings a bold design idea to life.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "30 x 20 x 20 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin, Acrylic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your concept, theme, branding and base",
+        "perso_required": false,
+        "desc_title": "Want a Bold Idea",
+        "desc_title_em": "Made Real?",
+        "s1_body": "Some concepts are too creative for a drawing to do justice. This themed station model - a floating platform crowned with a giant officer's cap - shows how we bring imaginative ideas to life in three dimensions, down to the deck, palms, railings and solar roof. Perfect for design concepts, brand activations and presentations that need to make a statement.",
+        "s2_image": "",
+        "case_eyebrow": "Case Study",
+        "case_heading": "From Sketch to Showpiece",
+        "case_body": "Built from a creative brief, this themed station model turned an ambitious concept into a tangible showpiece - a striking presentation piece that helped the idea land far better than renders alone.",
+        "case_quote": "It brought our wild idea to life perfectly. The detail and creativity blew everyone away.",
+        "case_quote_attr": "Muntasir - Dubai Civil Defence",
+        "s3_image": "shopify://shop_images/police-station-boat-model-2.jpg",
+        "prov_h": "Imagination,",
+        "prov_hem": "In Three Dimensions",
+        "prov_p": "The boldest ideas deserve more than a drawing. A detailed concept model lets people walk around an idea, understand it and believe in it.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 30 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}
