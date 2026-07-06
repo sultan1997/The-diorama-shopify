@@ -41,7 +41,7 @@
       <div class="col">
         <div class="col-h">{{ section.settings.col1_h }}</div>
         <ul>
-          {%- for i in (1..5) -%}
+          {%- for i in (1..7) -%}
             {%- assign lk = 'col1_l' | append: i -%}{%- assign uk = 'col1_u' | append: i -%}
             {%- assign lbl = section.settings[lk] -%}{%- assign url = section.settings[uk] -%}
             {%- if lbl != blank -%}<li><a href="{{ url }}">{{ lbl }}</a></li>{%- endif -%}
@@ -98,6 +98,10 @@
     { "type": "url", "id": "col1_u4", "label": "Link 4 URL" },
     { "type": "text", "id": "col1_l5", "label": "Link 5 label" },
     { "type": "url", "id": "col1_u5", "label": "Link 5 URL" },
+    { "type": "text", "id": "col1_l6", "label": "Link 6 label" },
+    { "type": "url", "id": "col1_u6", "label": "Link 6 URL" },
+    { "type": "text", "id": "col1_l7", "label": "Link 7 label" },
+    { "type": "url", "id": "col1_u7", "label": "Link 7 URL" },
     { "type": "header", "content": "Column 2" },
     { "type": "text", "id": "col2_h", "label": "Heading", "default": "Studio" },
     { "type": "text", "id": "col2_l1", "label": "Link 1 label", "default": "About us" },

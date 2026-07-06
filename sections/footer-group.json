@@ -8,7 +8,13 @@
         "col1_u1": "/collections/sales-gallery-models",
         "col1_u2": "/collections/ship-marine-models",
         "col1_u3": "/collections/awards-trophies",
-        "col1_u4": "/collections/collectables-art"
+        "col1_u4": "/collections/collectables-art",
+        "col1_l5": "Wall Art & Sculptures",
+        "col1_u5": "/collections/wall-art-sculptures",
+        "col1_l6": "Miniature Gifts",
+        "col1_u6": "/collections/miniature-gifts",
+        "col1_l7": "3D Design Files",
+        "col1_u7": "/collections/3d-design-files-1"
       }
     }
   },
