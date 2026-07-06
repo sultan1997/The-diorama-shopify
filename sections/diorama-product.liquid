@@ -382,6 +382,9 @@ img,svg,video,iframe{max-width:100%}
       <div class="tdp-modal-h">Commission inquiry</div>
       <div class="tdp-modal-sub">Send your brief &mdash; we reply on WhatsApp within 90 minutes.</div>
       <form id="tdp-mform">
+        <input type="hidden" name="Subject" value="Diorama Website Lead — {{ product.title | escape }}">
+        <input type="hidden" name="Lead source" value="The Diorama website (the-diorama.com)">
+        <input type="hidden" name="Product page" value="https://the-diorama.com{{ product.url }}">
         <div class="tdp-mrow"><div class="tdp-mf"><label class="tdp-ml">Name *</label><input type="text" class="tdp-mi" name="name" required placeholder="Your name"></div><div class="tdp-mf"><label class="tdp-ml">Company</label><input type="text" class="tdp-mi" name="company" placeholder="Company"></div></div>
         <div class="tdp-mrow"><div class="tdp-mf"><label class="tdp-ml">WhatsApp *</label><input type="tel" class="tdp-mi" name="whatsapp" required placeholder="+971 50 xxx xxxx"></div><div class="tdp-mf"><label class="tdp-ml">Email</label><input type="email" class="tdp-mi" name="email" placeholder="you@company.com"></div></div>
         <div class="tdp-mf"><label class="tdp-ml">Product</label><input type="text" class="tdp-mi" name="product" value="{{ product.title }}" readonly style="opacity:.55"></div>
