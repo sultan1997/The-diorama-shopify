@@ -381,17 +381,17 @@ img,svg,video,iframe{max-width:100%}
     <div id="tdp-mfwrap">
       <div class="tdp-modal-h">Commission inquiry</div>
       <div class="tdp-modal-sub">Send your brief &mdash; we reply on WhatsApp within 90 minutes.</div>
-      <form id="tdp-mform">
-        <input type="hidden" name="Subject" value="Diorama Website Lead — {{ product.title | escape }}">
-        <input type="hidden" name="Lead source" value="The Diorama website (the-diorama.com)">
-        <input type="hidden" name="Product page" value="https://the-diorama.com{{ product.url }}">
-        <div class="tdp-mrow"><div class="tdp-mf"><label class="tdp-ml">Name *</label><input type="text" class="tdp-mi" name="name" required placeholder="Your name"></div><div class="tdp-mf"><label class="tdp-ml">Company</label><input type="text" class="tdp-mi" name="company" placeholder="Company"></div></div>
-        <div class="tdp-mrow"><div class="tdp-mf"><label class="tdp-ml">WhatsApp *</label><input type="tel" class="tdp-mi" name="whatsapp" required placeholder="+971 50 xxx xxxx"></div><div class="tdp-mf"><label class="tdp-ml">Email</label><input type="email" class="tdp-mi" name="email" placeholder="you@company.com"></div></div>
-        <div class="tdp-mf"><label class="tdp-ml">Product</label><input type="text" class="tdp-mi" name="product" value="{{ product.title }}" readonly style="opacity:.55"></div>
-        <div class="tdp-mf"><label class="tdp-ml">Project Type *</label><select class="tdp-ms" name="type" required><option value="" disabled selected>Select&hellip;</option><option>Custom commission &mdash; identical to product shown</option><option>Custom commission &mdash; modified version</option><option>Corporate gifting &mdash; bulk order</option><option>3D file download</option><option>Other</option></select></div>
-        <div class="tdp-mf"><label class="tdp-ml">Brief</label><textarea class="tdp-mta" name="brief" placeholder="Scale, livery, deadline, quantity&hellip;"></textarea></div>
+      {%- form 'contact', id: 'tdp-mform' -%}{%- if form.posted_successfully? -%}<span id="tdp-contact-ok" hidden></span>{%- endif -%}{%- if form.errors -%}<div class="tdp-mform-err" style="color:#b00020;font-size:12px;line-height:1.5;margin-bottom:10px">{{ form.errors | default_errors }}</div>{%- endif -%}
+        <input type="hidden" name="contact[Subject]" value="Diorama Website Lead — {{ product.title | escape }}">
+        <input type="hidden" name="contact[Lead source]" value="The Diorama website (the-diorama.com)">
+        <input type="hidden" name="contact[Product page]" value="https://the-diorama.com{{ product.url }}">
+        <div class="tdp-mrow"><div class="tdp-mf"><label class="tdp-ml">Name *</label><input type="text" class="tdp-mi" name="contact[name]" required placeholder="Your name"></div><div class="tdp-mf"><label class="tdp-ml">Company</label><input type="text" class="tdp-mi" name="contact[Company]" placeholder="Company"></div></div>
+        <div class="tdp-mrow"><div class="tdp-mf"><label class="tdp-ml">WhatsApp *</label><input type="tel" class="tdp-mi" name="contact[WhatsApp]" required placeholder="+971 50 xxx xxxx"></div><div class="tdp-mf"><label class="tdp-ml">Email *</label><input type="email" class="tdp-mi" name="contact[email]" required placeholder="you@company.com"></div></div>
+        <div class="tdp-mf"><label class="tdp-ml">Product</label><input type="text" class="tdp-mi" name="contact[Product]" value="{{ product.title }}" readonly style="opacity:.55"></div>
+        <div class="tdp-mf"><label class="tdp-ml">Project Type *</label><select class="tdp-ms" name="contact[Project type]" required><option value="" disabled selected>Select&hellip;</option><option>Custom commission &mdash; identical to product shown</option><option>Custom commission &mdash; modified version</option><option>Corporate gifting &mdash; bulk order</option><option>3D file download</option><option>Other</option></select></div>
+        <div class="tdp-mf"><label class="tdp-ml">Brief</label><textarea class="tdp-mta" name="contact[body]" placeholder="Scale, livery, deadline, quantity&hellip;"></textarea></div>
         <button type="submit" class="tdp-msub">Send inquiry &rarr;</button>
-      </form>
+      {%- endform -%}
     </div>
     <div class="tdp-mok" id="tdp-mok"><div class="tdp-mok-ic">&#10003;</div><div class="tdp-mok-h">Inquiry received</div><div class="tdp-mok-p">We will reply on WhatsApp within 90 minutes during business hours.</div></div>
   </div>
@@ -512,7 +512,7 @@ function tdpFaq(item){var open=item.classList.contains('open');document.querySel
 function tdpOpenModal(){document.getElementById('tdp-modal').classList.add('on');}
 function tdpCloseModal(){document.getElementById('tdp-modal').classList.remove('on');document.getElementById('tdp-mfwrap').style.display='block';document.getElementById('tdp-mok').style.display='none';document.getElementById('tdp-mform').reset();}
 document.getElementById('tdp-modal').addEventListener('click',function(e){if(e.target===this)tdpCloseModal();});
-document.getElementById('tdp-mform').addEventListener('submit',function(e){e.preventDefault();var form=this,data=new FormData(form),body='form_type=contact&utf8=✓';data.forEach(function(v,k){body+='&contact['+encodeURIComponent(k)+']='+encodeURIComponent(v);});fetch('/contact',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body}).then(function(){document.getElementById('tdp-mfwrap').style.display='none';document.getElementById('tdp-mok').style.display='block';setTimeout(tdpCloseModal,3500);}).catch(function(){alert('There was an issue. Please try again.');});});
+(function(){var q=new URLSearchParams(location.search);var ok=document.getElementById('tdp-contact-ok')||q.get('contact_posted')==='true';var errEl=document.querySelector('#tdp-mform .tdp-mform-err');if(ok){tdpOpenModal();document.getElementById('tdp-mfwrap').style.display='none';document.getElementById('tdp-mok').style.display='block';if(history.replaceState){history.replaceState(null,'',location.pathname);}}else if(errEl){tdpOpenModal();}})();
 
 
 /* seamless autoplay for gallery video */
