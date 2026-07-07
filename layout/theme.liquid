@@ -393,5 +393,18 @@
     .tdp-actions .tdp-btn-inq:hover{background:#22099A !important;border-color:#22099A !important;color:#fff !important;}
   </style>
   {%- endif -%}
+  <script>
+  (function(){
+    function fixPT(){
+      var sel=document.querySelector('#tdp-mform select[name="contact[Project type]"]');
+      if(!sel) return;
+      var cur=sel.value;
+      sel.innerHTML='<option value="" disabled selected>Select\u2026</option>'
+        +'<option>Custom commission \u2014 modified version</option>'
+        +'<option>Corporate gifting \u2014 bulk order</option>';
+    }
+    if(document.readyState!=='loading') fixPT(); else document.addEventListener('DOMContentLoaded',fixPT);
+  })();
+  </script>
   </body>
 </html>
