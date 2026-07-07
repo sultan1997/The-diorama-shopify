@@ -383,5 +383,15 @@
     .td-wa-txt{display:none;}
     @media(max-width:600px){.td-wa{left:16px;bottom:16px;width:52px;height:52px;}}
   </style>
+  {%- if product and product.tags contains 'service' -%}
+  <style>
+    .tdp-price-row{display:none !important;}
+    .tdp-qty{display:none !important;}
+    .tdp-perso{display:none !important;}
+    .tdp-btn-cart{display:none !important;}
+    .tdp-actions .tdp-btn-inq{background:#2A0FBE !important;border:1.5px solid #2A0FBE !important;color:#fff !important;padding:16px !important;font-size:11px !important;font-weight:700 !important;letter-spacing:.16em !important;}
+    .tdp-actions .tdp-btn-inq:hover{background:#22099A !important;border-color:#22099A !important;color:#fff !important;}
+  </style>
+  {%- endif -%}
   </body>
 </html>
