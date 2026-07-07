@@ -397,6 +397,8 @@
   (function(){
     function fixPT(){
       var sel=document.querySelector('#tdp-mform select[name="contact[Project type]"]');
+      var sub=document.querySelector('#tdp-mform')?document.querySelector('.tdp-modal-sub'):document.querySelector('.tdp-modal-sub');
+      if(sub) sub.textContent='Send your brief \u2014 We will get in touch with you soon.';
       if(!sel) return;
       var cur=sel.value;
       sel.innerHTML='<option value="" disabled selected>Select\u2026</option>'

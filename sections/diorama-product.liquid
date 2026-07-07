@@ -382,7 +382,7 @@ img,svg,video,iframe{max-width:100%}
     <button class="tdp-modal-x" onclick="tdpCloseModal()">&times;</button>
     <div id="tdp-mfwrap">
       <div class="tdp-modal-h">Commission inquiry</div>
-      <div class="tdp-modal-sub">Send your brief &mdash; we reply on WhatsApp within 90 minutes.</div>
+      <div class="tdp-modal-sub">Send your brief &mdash; We will get in touch with you soon.</div>
       {%- form 'contact', id: 'tdp-mform' -%}{%- if form.posted_successfully? -%}<span id="tdp-contact-ok" hidden></span>{%- endif -%}{%- if form.errors -%}<div class="tdp-mform-err" style="color:#b00020;font-size:12px;line-height:1.5;margin-bottom:10px">{{ form.errors | default_errors }}</div>{%- endif -%}
         <input type="hidden" name="contact[Subject]" value="Diorama Website Lead — {{ product.title | escape }}">
         <input type="hidden" name="contact[Lead source]" value="The Diorama website (the-diorama.com)">
