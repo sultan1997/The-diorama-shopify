@@ -408,5 +408,11 @@
     if(document.readyState!=='loading') fixPT(); else document.addEventListener('DOMContentLoaded',fixPT);
   })();
   </script>
+  {%- if product and product.handle == 'uefa-europa-conference-cup-replica' -%}
+  <style>
+    .tdp-s3-img{background:transparent !important;}
+    .tdp-s3-img img{object-fit:contain !important;object-position:center center !important;}
+  </style>
+  {%- endif -%}
   </body>
 </html>
