@@ -1,0 +1,177 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/sbm-buoy-miniature-gift-6.jpg",
+            "caption": "Faithful",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Faithful SBM Detail",
+            "desc": "The buoy body, manifold, piping and fittings are modelled to scale, for an authentic, premium miniature."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/sbm-buoy-miniature-gift-4.jpg",
+            "caption": "Cased",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Cased & Branded",
+            "desc": "A glass case and engraved plaque keep the model protected and presentation-ready, carrying your branding."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/sbm-buoy-miniature-gift-3.jpg",
+            "caption": "Velvet",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Velvet Gift Box",
+            "desc": "Gift box creates an unique opening experience for the person who is receiving this SBM Buoy miniature."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you model our specific asset?",
+            "a": "Yes - send photos or drawings and we'll build an accurate, branded miniature."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you produce a batch?",
+            "a": "Yes, matched batches for handovers and gifting are a speciality."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Does each include a case?",
+            "a": "Yes, a glass case and engraved plaque are included."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A detailed miniature of a Single Buoy Mooring (SBM), finished in red and black with piping and fittings, presented in a glass case with a branded plaque. A premium keepsake and gift for offshore, marine and oil & gas firms. Comes with a VIP Gifting box in black velvet.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "20 x 20 x 20 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin, Wood",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Gloss",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your unit, colours, plaque text and case",
+        "perso_required": false,
+        "desc_title": "Want Your Asset",
+        "desc_title_em": "as a Keepsake?",
+        "s1_body": "A miniature of an offshore asset is a gift people keep on the desk for years. We reproduce your Single Buoy Mooring in detail - the buoy body, manifold, piping and fittings - finished in your colours and presented in a glass case with a branded plaque. Produced in matched batches, it's the ideal premium handout for milestones, handovers and corporate gifting.",
+        "s2_image": "shopify://shop_images/sbm-buoy-miniature-gift-2.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "The Gift They Keep",
+        "case_body": "Produced as branded miniatures for MILAHA to give to their government clients, these cased SBM models became a treasured handover gift - displayed on desks long after the milestone, quietly carrying the brand.",
+        "case_quote": "A superb keepsake of the project. Our client proudly displays it in the office.",
+        "case_quote_attr": "Abdul - MILAHA",
+        "s3_image": "shopify://shop_images/sbm-buoy-miniature-gift-5.jpg",
+        "prov_h": "An Asset,",
+        "prov_hem": "Kept on the Desk",
+        "prov_p": "A flyer is binned; a detailed miniature of your asset is kept. As a branded gift, it carries your name and marks the milestone far longer than any brochure.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 22 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "service_mode": false,
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

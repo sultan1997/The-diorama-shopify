@@ -1,0 +1,173 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/custom-factory-model-2.jpg",
+            "caption": "Tanks",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Tanks & Pipework to Scale",
+            "desc": "Storage tanks, silos, pipe racks and structures are modelled in detail, capturing the real layout of the plant."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/custom-factory-model-3.jpg",
+            "caption": "Full",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Full Site Layout",
+            "desc": "Roads, vehicles and surrounding infrastructure are laid out to your plan on a finished, presentation-ready base."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you build from our site plan?",
+            "a": "Yes - send drawings or a layout and we'll build an accurate plant model."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it be branded and colour-matched?",
+            "a": "Yes, your colours, logos and signage are reproduced."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it come with a case?",
+            "a": "Yes, a clear case can be made for the model on request."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "We convert your factory into detailed diorama with all the details of tankers, piping and equipment. The ideal way to present a facility to clients and investors, and a centrepiece for exhibitions. Send us a commission inquiry to get started.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "Any Size",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin, Acrylic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Any Finish",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": false,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your plant, layout, branding and base",
+        "perso_required": false,
+        "desc_title": "Want Your Facility",
+        "desc_title_em": "Shown at a Glance?",
+        "s1_body": "A whole plant is hard to explain in a meeting. We reproduce your facility as an accurate scale model - tanks, silos, pipe racks, structures and vehicles - laid out to your site plan and finished on a branded base. A powerful tool for client presentations, investor briefings, inductions and exhibition stands.",
+        "s2_image": "shopify://shop_images/custom-factory-model-4.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "The Whole Plant, on One Table",
+        "case_body": "Built for a process facility, this model let the team walk clients and inspectors through the whole site in one glance - explaining flow and layout far faster than drawings could.",
+        "case_quote": "It made our facility instantly clear to visitors. The best presentation tool we have.",
+        "case_quote_attr": "Nitin - Clean Edge Resource Country Manager",
+        "s3_image": "shopify://shop_images/custom-factory-model-6.jpg",
+        "prov_h": "A Facility,",
+        "prov_hem": "Made Understandable",
+        "prov_p": "The more complex the plant, the more a model helps. Seeing it in 3D turns a maze of drawings into instant understanding for clients, investors and new staff.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. ASAP",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "service_mode": true,
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

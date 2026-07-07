@@ -1,0 +1,173 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/custom-industrial-product-models-2.jpg",
+            "caption": "Exact",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Exact Product Replica",
+            "desc": "Casing, controls, pumps and pipework are modelled to scale, so the piece is a faithful likeness of your unit."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/custom-industrial-product-models-3.jpg",
+            "caption": "Cased",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Cased & Branded",
+            "desc": "A clear case, finished base and branded plaque keep the model clean and presentation-ready on a desk or counter."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you model our specific product?",
+            "a": "Yes - send photos or drawings and we'll build an accurate, branded replica."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can colours and branding match?",
+            "a": "Yes, your colours, logos and markings are reproduced."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Does it include a case?",
+            "a": "Yes, a clear case, finished base and plaque are included."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A precise scale replica of your industrial product - here a water-cooled chiller unit with pumps and pipework - reproduced in detail and presented under a clear case with a branded plaque. A professional showcase and gift for equipment and engineering firms. Send commission inquiry to convert your products into scaled model.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "Any Size",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin, Acrylic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Any Finish",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": false,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your equipment, colours, branding and display case",
+        "perso_required": false,
+        "desc_title": "Want Your Product",
+        "desc_title_em": "Showroom-Ready in Miniature?",
+        "s1_body": "Hard to bring a chiller, pump skid or control unit into a meeting? We build it in miniature. This scale model reproduces your equipment down to the pumps, panels and pipework, finished in your branding and presented under a clear case with a plaque. A memorable showcase piece and gift for equipment manufacturers and their clients.",
+        "s2_image": "shopify://shop_images/custom-industrial-product-models-case.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "The Product, in Miniature",
+        "case_body": "Commissioned by Byrne Eqipment, these cased models let the team showcase their units at exhibitions and in the sales office - a tangible reminder that clients loved seeing on the table.",
+        "case_quote": "Clients loved seeing a miniature of the exact unit we make. We have 20 products so its easier to showcase everything in one go.",
+        "case_quote_attr": "Maritess - Designer at Byrne Equipment",
+        "s3_image": "shopify://shop_images/custom-industrial-product-models-5.jpg",
+        "prov_h": "Big Equipment,",
+        "prov_hem": "Pocket-Sized",
+        "prov_p": "A scale model brings equipment that's too big for the boardroom right onto the table - cased, branded and built to last. It's a sales aid and a showpiece in one.",
+        "video_url": "https://www.youtube.com/watch?v=XI5Fyf_if-s",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "in motion",
+        "vid_sub": "A short film from the workshop floor.",
+        "vid_meta": "Building the Industrial Product Display Model - Custom Equipment Replica",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. ASAP",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "service_mode": true,
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

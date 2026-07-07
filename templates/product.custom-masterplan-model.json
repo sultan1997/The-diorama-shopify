@@ -1,0 +1,177 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/custom-masterplan-model-2.jpg",
+            "caption": "Full",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Full Street Layout",
+            "desc": "Roads, plots, shopfronts and parking are laid out exactly to your plan, so the whole scheme reads at a glance."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/custom-masterplan-model-6.jpg",
+            "caption": "Colour-Coded",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Colour-Coded & Named",
+            "desc": "Colour-coded blocks, named roads and signage make phases, zones and key locations easy to point out to clients."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/custom-masterplan-model-3.jpg",
+            "caption": "Platform",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Platform with Logo",
+            "desc": "Colour-coded blocks, named roads and signage make phases, zones and key locations easy to point out to clients."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you build from our masterplan drawings?",
+            "a": "Yes - send your site plan and we'll build an accurate scale model."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can zones and roads be colour-coded and named?",
+            "a": "Yes, colour-coding, named roads and signage are all available."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can it be split into phases?",
+            "a": "Yes, phased or sectional models can be built on reque"
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A detailed masterplan model of a development - streets, shops, parking and landscaping laid out on a branded base with named roads. The centrepiece for sales suites, exhibitions and investor briefings. Send us a commission inquiry to make a masterplan of your property.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "Any Size",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin, Acrylic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Any Finish",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": false,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your masterplan, blocks, roads, branding and base",
+        "perso_required": false,
+        "desc_title": "Want Your Masterplan",
+        "desc_title_em": "Laid Out to Scale?",
+        "s1_body": "A masterplan model turns a development into something people can grasp instantly. We reproduce the streets, blocks, shopfronts, parking and landscaping to scale, with named roads and colour-coded zones, finished on a branded base. Ideal for sales suites, government and investor presentations, and exhibition stands.",
+        "s2_image": "shopify://shop_images/custom-masterplan-model-2.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "A Masterplan Made Clear",
+        "case_body": "Built to present a large development, this masterplan model let the team walk visitors through the whole scheme at an exhibition - roads, units and zones laid out clearly and drawing a constant crowd around the stand.",
+        "case_quote": "Visitors gathered around it all day. It explained the whole development in seconds.",
+        "case_quote_attr": "Abdul Rehman - Rasikhoon Real Estate",
+        "s3_image": "shopify://shop_images/custom-masterplan-model-6.jpg",
+        "prov_h": "A Whole Scheme,",
+        "prov_hem": "at a Glance",
+        "prov_p": "A masterplan is hard to picture from drawings alone. As a model, it lets clients, investors and officials see the entire development at once - and believe in it.",
+        "video_url": "https://www.youtube.com/watch?v=mtTzYFHSvEY",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "in motion",
+        "vid_sub": "A short film from the workshop floor.",
+        "vid_meta": "Building the Masterplan Model",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. ASAP",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "service_mode": true,
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/custom-parametric-sculpture-art-2.jpg",
+            "caption": "Custom",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Custom Design",
+            "desc": "Precisely cut slats create a smooth, rippling wave that gives the panel genuine depth and movement."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/custom-parametric-sculpture-art-3.jpg",
+            "caption": "Hand-Finished",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Hand-Finished Wood",
+            "desc": "Warm wood tones are hand-finished so the surface catches the light and changes as you move around it."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/custom-parametric-sculpture-art-3.jpg",
+            "caption": "Multicolor",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Multicolor Depth",
+            "desc": "Having 2 colors add more story and depth to your space. Making your parametric wall art stand out."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you make it to our size?",
+            "a": "Yes - the panel is cut to your dimensions and wave pattern."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can we choose the wood tone or colour?",
+            "a": "Yes, wood tones and finishes are tailored to your space."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Is it ready to hang?",
+            "a": "Yes, the panel comes finished and ready to mount."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwi",
+            "a": ""
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Mark",
+            "date": "MAY 2026",
+            "title": "A dream come true",
+            "body": "I’m a West Ham fan and it was my dream to get this cup. The size and detail are spot on. I will treasure it.",
+            "badge": "West Ham Fan"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "James T.",
+            "date": "APR 2026",
+            "title": "Incredible detail for a 1:1 replica",
+            "body": "Ordered this as a surprise for my dad, a lifelong football fan. The size and finish are stunning, and engraving our family name on it made it really personal. It now has pride of place in his study.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Daniel O.",
+            "date": "MAR 2026",
+            "title": "Exactly like the trophy on TV",
+            "body": "I was nervous ordering something this big online, but it arrived perfectly packed and looks identical to the cup I've seen lifted on TV. Communication throughout was excellent.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "7-10 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "We build parametric wall art that mesmerises your audience when they look at it. A striking, contemporary piece that brings depth and movement to homes, offices and receptions. Send us a comission inquiry and we will design a paramertic art for your space.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "Any Size",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Wood, MDF",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Any Finish",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": false,
+        "perso_label": "Personalization text",
+        "perso_placeholder": "Your size, wave pattern, wood tone and finish",
+        "perso_required": false,
+        "desc_title": "Want a Wall Piece",
+        "desc_title_em": "With Real Movement?",
+        "s1_body": "A parametric wave panel turns a flat wall into a sculpture. Precisely cut slats flow into a rippling, three-dimensional wave and are hand-finished in warm wood tones that shift with the light. Made to your size and pattern, it's a contemporary statement piece for living rooms, offices, receptions and hospitality spaces.",
+        "s2_image": "shopify://shop_images/custom-parametric-sculpture-art-6.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "A Statement on the Wall",
+        "case_body": "Created as a feature wall piece, this parametric panel became the focal point of the room - a sculptural wave that visitors stop to look at and run their hand across.",
+        "case_quote": "It transformed the wall. Everyone who visits comments on it.",
+        "case_quote_attr": "Idris - Interior Designer",
+        "s3_image": "shopify://shop_images/custom-parametric-sculpture-art-7.jpg",
+        "prov_h": "Flat Wall,",
+        "prov_hem": "Turned Sculpture",
+        "prov_p": "Great wall art changes a space. A parametric wave brings light, shadow and movement to a blank wall - a quiet centrepiece that never stops drawing the eye.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the cup in all angles",
+        "vid_meta": "Building the UEFA Cup",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. ASAP",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "24",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want your own custom piece?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "service_mode": true,
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}
