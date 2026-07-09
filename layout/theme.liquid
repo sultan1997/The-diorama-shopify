@@ -469,7 +469,7 @@
       setHref('get inspiration','/collections');
       setHref('view all collections','/collections');
       setHref('shop all','/collections/all');
-      [].slice.call(document.querySelectorAll('.tdp-rel-price')).forEach(function(el){if(/0[.,]00/.test(el.textContent)){el.style.display='none';}});
+      [].slice.call(document.querySelectorAll('body *')).forEach(function(el){if(el.children.length===0){var _t=el.textContent.trim();if(/^(from\s+)?(dhs\.?|aed)\s*0[.,]00$/i.test(_t)){el.style.display='none';}}});
       [].slice.call(document.querySelectorAll('a,button')).forEach(function(el){
         if(el.textContent.trim().toLowerCase()==='commission a model'){
           el.addEventListener('click',function(e){e.preventDefault();if(document.getElementById('tdpg-modal')){tdpgOpen();}else if(typeof tdpOpenModal==='function'){tdpOpenModal();}});
