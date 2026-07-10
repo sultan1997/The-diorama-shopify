@@ -484,5 +484,11 @@
     if(document.readyState!=='loading')run();else document.addEventListener('DOMContentLoaded',run);
   })();
   </script>
+  {%- if product and product.handle == 'cube-cluster-award-geometric-3d-printed-trophy' -%}
+  <style>
+    .tdp-main-img{aspect-ratio:1/1 !important;overflow:hidden;background:var(--bg-warm);}
+    .tdp-main-img img{width:100% !important;height:100% !important;object-fit:cover !important;object-position:center center !important;}
+  </style>
+  {%- endif -%}
   </body>
 </html>
