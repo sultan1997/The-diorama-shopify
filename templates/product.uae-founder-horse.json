@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/uae-founder-horse-3.jpg",
+            "caption": "Framed",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Framed Equestrian Statue",
+            "desc": "The founder on horseback is sculpted in fine detail and set within a gold frame, giving the piece a striking, portrait-like presence."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/uae-founder-horse-5.jpg",
+            "caption": "Engravable",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Engravable Nameplate",
+            "desc": "A gold plaque on the plinth is ready to engrave with the recipient, occasion, date or logo, making each award unique to the moment."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/uae-founder-horse-4.jpg",
+            "caption": "Heritage",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Heritage Gold Finish",
+            "desc": "A rich metallic-gold finish with falcon emblems and a black base gives the award a premium, ceremonial look worthy of the occasion."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can the plaque be engraved with our text?",
+            "a": "Yes - the nameplate is engraved with your recipient, occasion, date or logo."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Can we order a matched set?",
+            "a": "Yes, coordinated batches for ceremonies and multiple recipients are available."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can the size or finish be changed?",
+            "a": "Yes, the piece can be scaled and finished to suit your event."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Taha J.",
+            "date": "JUL 2026",
+            "title": "A dignified tribute",
+            "body": "A beautiful, dignified tribute. It was the perfect way to honour our guests on National Day.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "Fatima A.",
+            "date": "JUN 2026",
+            "title": "Beautiful craftsmanship",
+            "body": "The gold finish and the falcon details are stunning in person. The engraved plaque made it truly personal for our recipient.",
+            "badge": "Corporate Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Khalid M.",
+            "date": "JUL 2026",
+            "title": "Proudly displayed",
+            "body": "Ordered a set for our ceremony - every piece arrived perfectly packed and identical. They now sit on our partners' desks.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "LIMITED EDITION",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "A gold equestrian statue of the UAE's Founding Father on horseback, framed and mounted on a black-and-gold plinth with an engravable nameplate and falcon emblems. A prestigious commemorative award for National Day, VIP recognition and heritage tributes.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "21 x 10 x 30 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Metallic Gold",
+        "hspec4_k": "",
+        "hspec4_v": "",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Customized Text",
+        "perso_enable": true,
+        "perso_label": "Engraved plaque text",
+        "perso_placeholder": "Recipient, occasion, date or logo",
+        "perso_required": false,
+        "desc_title": "A Tribute",
+        "desc_title_em": "Cast in Gold",
+        "s1_body": "This commemorative piece honours the UAE's Founding Father as a gold equestrian statue, framed and raised on a black-and-gold plinth finished with falcon emblems and a nameplate ready for engraving. It is a dignified award and heritage gift for National Day ceremonies, government and corporate recognition, and milestone tributes - a symbol of leadership and legacy that recipients display with pride. Available as a single presentation piece or a coordinated set.",
+        "s2_image": "shopify://shop_images/uae-founder-horse-6.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "A National Day Centrepiece",
+        "case_body": "Created as a commemorative tribute to the UAE's Founding Father, this framed gold statue was presented as a VIP award - a dignified, heritage-rich piece that honoured leadership and took pride of place on the recipient's desk.",
+        "case_quote": "A beautiful, dignified tribute. It was the perfect way to honour our guests on National Day.",
+        "case_quote_attr": "Taha Josh - UAE Government",
+        "s3_image": "shopify://shop_images/uae-founder-horse-7.jpg",
+        "prov_h": "Leadership,",
+        "prov_hem": "Cast in Gold",
+        "prov_p": "The best tributes carry meaning. An equestrian statue of the Founding Father turns recognition into a symbol of vision, heritage and leadership that recipients are proud to display.",
+        "video_url": "https://www.youtube.com/shorts/--T2QKBC3oo",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from all sides",
+        "vid_sub": "A short video from the workshop floor to see the award from all angles",
+        "vid_meta": "Building the UAE Founder award",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually cast and finished",
+        "build_time": "Approx. 18 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "3",
+        "rev5": "3",
+        "rev4": "0",
+        "rev3": "0",
+        "rev2": "0",
+        "rev1": "0",
+        "cta_ey": "Planning a ceremony or tribute?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/kalandoor-fitout-2.jpg",
+            "caption": "Illuminated",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Illuminated Branded Facade",
+            "desc": "The signage band and backlit shopfront windows are reproduced with warm LED lighting, capturing the showroom exactly as customers see it at night."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/kalandoor-fitout-4.jpg",
+            "caption": "Streetscape",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Detailed Streetscape",
+            "desc": "Palms, planters, benches and a caravan of camels bring the pavement to life, grounding the store in its setting and adding charm and character."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/kalandoor-fitout-6.jpg",
+            "caption": "Presentation",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Branded Acrylic Display Case",
+            "desc": "The model is sealed under a clear acrylic cover on a black base printed with the project name and contractor logo - dust-free and ready to display."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Can you model our own store or fitout project?",
+            "a": "Yes - every model is custom built from your photos, drawings or 3D files, with your signage and branding reproduced in miniature."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Is the acrylic display case included?",
+            "a": "Yes, the clear acrylic cover and branded presentation base are part of the piece, keeping it dust-free and display-ready."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Does the model light up?",
+            "a": "Yes, the facade signage and window displays are lit with built-in LEDs."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes, we ship worldwide from Dubai, carefully packed."
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "name": "Nijesh",
+            "date": "JUL 2026",
+            "title": "A handover worth remembering",
+            "body": "A beautiful way to celebrate the project. It now takes pride of place in our office and clients always ask about it.",
+            "badge": "Kalandoor Building Contracting"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "name": "Priya M.",
+            "date": "JUN 2026",
+            "title": "The lighting is stunning",
+            "body": "The backlit shop windows look exactly like the real showroom at night. The little camels on the pavement are a lovely touch.",
+            "badge": "Verified Buyer"
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "name": "Ahmed T.",
+            "date": "JUL 2026",
+            "title": "Perfect client gift",
+            "body": "We presented it at the project handover and it stole the show. Great communication and careful packing throughout.",
+            "badge": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "review-1",
+        "review-2",
+        "review-3"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "MADE TO ORDER",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "14-21 business days, Made on Demand",
+        "returns": "30 days · fully insured",
+        "hero_desc": "An illuminated scale model of a jewellery showroom fitout, with glowing branded facade, backlit window displays and a landscaped streetscape with palms and camels, all sealed in a clear acrylic case on a branded base. Built as a fitout showcase and VIP gift.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Scale & Dimensions",
+        "hspec1_v": "35 x 35 x 19 cm",
+        "hspec2_k": "Materials",
+        "hspec2_v": "Resin, acrylic",
+        "hspec3_k": "Finish",
+        "hspec3_v": "Matt",
+        "hspec4_k": "Lighting",
+        "hspec4_v": "Warm White LED",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Custom Branding",
+        "perso_enable": true,
+        "perso_label": "Your project design & branding",
+        "perso_placeholder": "Store name, branding and dimensions",
+        "perso_required": false,
+        "desc_title": "A Fitout",
+        "desc_title_em": "Captured in Miniature",
+        "s1_body": "Commissioned to celebrate a completed jewellery showroom fitout, this model recreates the storefront in miniature - the branded signage band, backlit window displays glowing with jewellery imagery, and a desert streetscape of palms, benches and camels that sets the scene. The piece sits on a black presentation base carrying the project and contractor branding, protected under a clear acrylic case. It is a fitout showcase, office centrepiece and client handover gift in one - a lasting record of a project the whole team is proud of.",
+        "s2_image": "shopify://shop_images/kalandoor-fitout-5.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "A Handover Worth Remembering",
+        "case_body": "Created for Kalandoor Building Contracting to mark the completion of a Joyalukkas showroom fitout, the model was presented as a commemorative piece - turning a finished project into a permanent showcase of the contractor's design and build work.",
+        "case_quote": "A beautiful way to celebrate the project. It now takes pride of place in our office.",
+        "case_quote_attr": "Nijesh - Kalandoor Building Contracting",
+        "s3_image": "shopify://shop_images/kalandoor-fitout-7.jpg",
+        "prov_h": "Every Project,",
+        "prov_hem": "Worth Preserving",
+        "prov_p": "Fitouts get handed over, but the work behind them deserves to be remembered. A miniature of the finished store turns a completed contract into a portfolio piece, a client gift and a conversation starter.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "The build,",
+        "vid_hem": "from the workshop",
+        "vid_sub": "A short video from the workshop floor showing the model coming together",
+        "vid_meta": "Building the showroom fitout model",
+        "vid_dur": "",
+        "spec_h": "Model",
+        "spec_hem": "Specification",
+        "spec_p": "Materials, measurements and finish — everything about this model in one place.",
+        "spec_dim_sub": "Measured at scale.",
+        "spec_mat_sub": "Each piece is individually built and finished",
+        "build_time": "Approx. 38 hrs",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "3",
+        "rev5": "3",
+        "rev4": "0",
+        "rev3": "0",
+        "rev2": "0",
+        "rev1": "0",
+        "cta_ey": "Finished a project worth celebrating?",
+        "cta_heading": "Every great piece begins with",
+        "cta_heading_em": "one conversation.",
+        "s3_credit": ""
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}
