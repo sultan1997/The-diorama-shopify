@@ -52,7 +52,7 @@
       <div class="col">
         <div class="col-h">{{ section.settings.col2_h }}</div>
         <ul>
-          {%- for i in (1..5) -%}
+          {%- for i in (1..7) -%}
             {%- assign lk = 'col2_l' | append: i -%}{%- assign uk = 'col2_u' | append: i -%}
             {%- assign lbl = section.settings[lk] -%}{%- assign url = section.settings[uk] -%}
             {%- if lbl != blank -%}<li><a href="{{ url }}">{{ lbl }}</a></li>{%- endif -%}
@@ -114,6 +114,10 @@
     { "type": "url", "id": "col2_u4", "label": "Link 4 URL" },
     { "type": "text", "id": "col2_l5", "label": "Link 5 label" },
     { "type": "url", "id": "col2_u5", "label": "Link 5 URL" },
+    { "type": "text", "id": "col2_l6", "label": "Link 6 label" },
+    { "type": "url", "id": "col2_u6", "label": "Link 6 URL" },
+    { "type": "text", "id": "col2_l7", "label": "Link 7 label" },
+    { "type": "url", "id": "col2_u7", "label": "Link 7 URL" },
     { "type": "header", "content": "Newsletter" },
     { "type": "text", "id": "news_h", "label": "Heading", "default": "Get Inspiration" },
     { "type": "textarea", "id": "news_sub", "label": "Subtext", "default": "New models and studio stories, straight to your inbox." },
