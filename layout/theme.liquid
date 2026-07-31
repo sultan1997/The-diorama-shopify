@@ -485,7 +485,7 @@
   })();
   </script>
       {%- comment -%} awards-cta-label: secondary CTA label for Awards & Trophies products {%- endcomment -%}
-    {%- if template contains 'product' and product.tags contains 'Awards' -%}
+    {%- if template contains 'product' -%}{%- if product.tags contains 'Awards' or product.tags contains 'gift' -%}
       <script>
         document.addEventListener('DOMContentLoaded', function () {
           document.querySelectorAll('.tdp-btn-inq:not(.tdp-btn-inq-primary)').forEach(function (b) {
@@ -493,6 +493,6 @@
           });
         });
       </script>
-    {%- endif -%}
+    {%- endif -%}{%- endif -%}
 </body>
 </html>
