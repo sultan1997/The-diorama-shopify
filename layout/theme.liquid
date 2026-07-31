@@ -484,5 +484,15 @@
     if(document.readyState!=='loading')run();else document.addEventListener('DOMContentLoaded',run);
   })();
   </script>
-  </body>
+      {%- comment -%} awards-cta-label: secondary CTA label for Awards & Trophies products {%- endcomment -%}
+    {%- if template contains 'product' and product.type == 'Awards & Trophies' -%}
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelectorAll('.tdp-btn-inq:not(.tdp-btn-inq-primary)').forEach(function (b) {
+            b.innerHTML = '&#9993; Request Customization / Bulk Orders';
+          });
+        });
+      </script>
+    {%- endif -%}
+</body>
 </html>
