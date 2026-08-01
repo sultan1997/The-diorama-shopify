@@ -6,7 +6,7 @@
         "feat-1": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/jet-engine-model-2.jpg",
+            "image": "shopify://shop_images/jet-engine-model-1.jpg",
             "caption": "Cutaway",
             "num": "F-01",
             "detail": "DETAIL",
@@ -28,7 +28,7 @@
         "feat-3": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/jet-engine-model-1.jpg",
+            "image": "shopify://shop_images/jet-engine-model-2.jpg",
             "caption": "Rotating",
             "num": "F-03",
             "detail": "DETAIL",
@@ -133,7 +133,7 @@
         "desc_title": "Want the Engineering",
         "desc_title_em": "on Full Display?",
         "s1_body": "A jet engine is a masterpiece of engineering hidden inside a cowling. This model brings it into the open - the fan, compressor stages and turbine reproduced in detail, with the casing cut away so you can see how thrust is made. Built to scale from your reference, it's a commanding centrepiece for aerospace receptions, exhibitions, training rooms and collectors.",
-        "s2_image": "shopify://shop_images/jet-engine-model-3.jpg",
+        "s2_image": "shopify://shop_images/jet-engine-model-4.jpg",
         "case_eyebrow": "Case Study",
         "case_heading": "A Centrepiece That Explains Itself",
         "case_body": "Built as a cutaway display, this turbofan model let an aerospace team show how a jet engine works without a single slide - a head-turning centrepiece for the reception and a clear teaching aid for training and tours.",
