@@ -1,0 +1,401 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "design-file-product",
+      "blocks": {
+        "fmt-1": {
+          "type": "format",
+          "settings": {
+            "ext": "STL",
+            "tag": "printable"
+          }
+        },
+        "fmt-2": {
+          "type": "format",
+          "settings": {
+            "ext": "OBJ",
+            "tag": "printable"
+          }
+        },
+        "fmt-3": {
+          "type": "format",
+          "settings": {
+            "ext": "FBX",
+            "tag": "source"
+          }
+        },
+        "fmt-4": {
+          "type": "format",
+          "settings": {
+            "ext": "GLB",
+            "tag": "source"
+          }
+        },
+        "fmt-5": {
+          "type": "format",
+          "settings": {
+            "ext": "BLEND",
+            "tag": "source"
+          }
+        },
+        "man-1": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "STL",
+            "tag": "printable",
+            "nm": "Moon 3D Design File (77X76X37).stl",
+            "size": "602.6 MB",
+            "category": "3D Print",
+            "purpose": "Full sphere, 12.6 M triangles, ready to slice"
+          }
+        },
+        "man-2": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "STL",
+            "tag": "printable",
+            "nm": "Moon 3D Print File - Lunar Half 1.stl",
+            "size": "303.1 MB",
+            "category": "3D Print",
+            "purpose": "Pre-cut half — print flat-face-down, no supports"
+          }
+        },
+        "man-3": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "STL",
+            "tag": "printable",
+            "nm": "Moon 3D Print File - Lunar Half 2.stl",
+            "size": "299.5 MB",
+            "category": "3D Print",
+            "purpose": "Pre-cut half — print flat-face-down, no supports"
+          }
+        },
+        "man-4": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "OBJ",
+            "tag": "printable",
+            "nm": "Moon 3D Design File (77X76X37).obj",
+            "size": "1.10 GB",
+            "category": "3D Print",
+            "purpose": "Triangulated mesh, 12.6 M faces"
+          }
+        },
+        "man-5": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "FBX",
+            "tag": "source",
+            "nm": "Moon 3D Design File (77X76X37).fbx",
+            "size": "331.8 MB",
+            "category": "Source",
+            "purpose": "Scene-ready mesh for 3D apps (no materials)"
+          }
+        },
+        "man-6": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "GLB",
+            "tag": "source",
+            "nm": "Moon 3D Design File (77X76X37).glb",
+            "size": "1007.8 MB",
+            "category": "Source",
+            "purpose": "Binary glTF for web and AR viewers"
+          }
+        },
+        "man-7": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "BLEND",
+            "tag": "source",
+            "nm": "Moon 3D Design File (77X76X37).blend",
+            "size": "280.5 MB",
+            "category": "Source",
+            "purpose": "Editable Blender source file"
+          }
+        },
+        "cmp-1": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "B",
+            "app": "Blender",
+            "ver": "v3.6 — 4.x"
+          }
+        },
+        "cmp-2": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "P",
+            "app": "PrusaSlicer",
+            "ver": "v2.7+"
+          }
+        },
+        "cmp-3": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "C",
+            "app": "Cura",
+            "ver": "v5+"
+          }
+        },
+        "cmp-4": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "C",
+            "app": "Chitubox",
+            "ver": "v1.9+"
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Will this print on a standard FDM machine?",
+            "a": "Yes. At 77 x 76 x 37 mm it fits any desktop bed. The Production folder includes two pre-cut halves so you can print each one flat-face-down with no supports, then glue up a clean sphere. FDM gives a good surface; SLA resin will hold the finer crater detail."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Is the crater detail real geometry or a texture?",
+            "a": "Real geometry. The relief is modelled into the mesh across the whole surface, so it prints as physical depth rather than relying on a normal or bump map. That is why the mesh is dense — 12.6 million triangles."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Does the pack include textures or materials?",
+            "a": "No. This is an untextured mesh with no UV mapping and no material library. The surface detail is all modelled geometry, so it prints and renders on its own — but if you want a coloured render you will need to assign your own materials."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Can I use this design for my own projects?",
+            "a": "Yes. These files are licensed for your personal projects — make it for yourself, your home, a study model, or a gift. The license is for personal, non-commercial use, so it isn't intended for reselling finished units or the file pack itself."
+          }
+        },
+        "faq-5": {
+          "type": "faq",
+          "settings": {
+            "q": "Is there any Refund Policy?",
+            "a": "We usually dont offer Refunds for Digital Files. However, if you are not satisfied with it then our designer will help you to sort things out."
+          }
+        },
+        "rev-1": {
+          "type": "review",
+          "settings": {
+            "name": "Omar K.",
+            "when": "JUL 2026",
+            "ttl": "The halves lined up perfectly",
+            "body": "Printed both halves flat-face-down on a Prusa MK4, no supports, glued them with CA and the seam basically disappeared after a light sand. The craters read properly even in PLA at 0.16 layer height.",
+            "tags": "Verified buyer, Personal license, Prusa MK4"
+          }
+        },
+        "rev-2": {
+          "type": "review",
+          "settings": {
+            "name": "Hannah L.",
+            "when": "JUN 2026",
+            "ttl": "Actual relief, not a bump map",
+            "body": "I have downloaded three moon models before this and all of them faked the surface with a texture. This one is modelled in. Scaled it to 180 mm for a resin print and the mare edges are still crisp.",
+            "tags": "Verified buyer, Personal license, Elegoo Saturn"
+          }
+        },
+        "rev-3": {
+          "type": "review",
+          "settings": {
+            "name": "Ravi T.",
+            "when": "JUN 2026",
+            "ttl": "Great model, heavy files",
+            "body": "No complaints about the geometry — sliced first time. Just be ready for the download size, the OBJ alone is over a gigabyte. Worth it, but do it on a decent connection.",
+            "tags": "Verified buyer, Personal license, Ender 3 V3"
+          }
+        }
+      },
+      "block_order": [
+        "fmt-1",
+        "fmt-2",
+        "fmt-3",
+        "fmt-4",
+        "fmt-5",
+        "man-1",
+        "man-2",
+        "man-3",
+        "man-4",
+        "man-5",
+        "man-6",
+        "man-7",
+        "cmp-1",
+        "cmp-2",
+        "cmp-3",
+        "cmp-4",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "faq-5",
+        "rev-1",
+        "rev-2",
+        "rev-3"
+      ],
+      "settings": {
+        "show_announce": false,
+        "show_crumbs": true,
+        "show_benefits": true,
+        "show_usp": true,
+        "show_geom": true,
+        "show_manifest": true,
+        "show_compat": true,
+        "show_faq": true,
+        "show_reviews": true,
+        "show_related": true,
+        "ann1": "After sales support",
+        "ann2": "For personal projects only",
+        "ann3": "Used by 18,400+ makers",
+        "crumb1": "All files",
+        "crumb2": "Wall art & sculptures",
+        "crumb3": "Astronomy",
+        "view_mode1": "Solid",
+        "view_mode2": "Wireframe",
+        "view_mode3": "X-ray",
+        "view_info1": "3D MODEL · 12,637,628 tris",
+        "view_info2": "2 PARTS",
+        "axis1": "3/4",
+        "axis2": "FRONT",
+        "axis3": "SIDE",
+        "axis4": "TOP",
+        "designer_ava": "TD",
+        "designer_name": "The Diorama",
+        "designer_files": "248 files",
+        "verified_label": "Verified seller",
+        "title_override": "",
+        "subtitle": "A crater-accurate lunar sphere, modelled from surface relief data and ready to slice.",
+        "stat_rating": "4.8",
+        "stat_reviews": "214 reviews",
+        "stat_downloads": "486 downloads",
+        "stat_version": "v1.0",
+        "badge1_ttl": "3D Printable",
+        "badge1_sub": "STL · OBJ",
+        "badge2_ttl": "Real Surface Relief",
+        "badge2_sub": "12.6 M triangles",
+        "badge3_ttl": "Editable Source",
+        "badge3_sub": "BLEND · FBX · GLB",
+        "usage_label": "Usage",
+        "usage_pick": "Personal projects only",
+        "usage_note": "Licensed for personal projects only. Not for resale or commercial production.",
+        "formats_label": "Included formats",
+        "formats_count": "5 formats · 3.86 GB total",
+        "variant_label": "License",
+        "cta_label": "Buy & download",
+        "cta_sold": "Sold out",
+        "cta_meta": "Instant download · secure checkout",
+        "qf1_k": "Software",
+        "qf1_v": "Blender, PrusaSlicer, Cura, Chitubox",
+        "qf2_k": "Machine",
+        "qf2_v": "FDM / SLA resin",
+        "qf3_k": "Difficulty",
+        "qf3_v": "Beginner",
+        "benefits_h": "Made for your own projects.",
+        "benefits_lede": "Whether you design for a living, build for clients, or make things for the love of it, this pack drops straight into your workflow — yours to print and finish for any personal project.",
+        "bt1_k": "The designer spent",
+        "bt1_v": "12 hours",
+        "bt1_s": "modelling true crater and mare relief across the entire lunar surface",
+        "bt2_k": "You get it in",
+        "bt2_v": "under 1 minute",
+        "bt2_s": "Buy, download the pack, and open it in your software. The hard part is already done.",
+        "ben1_h": "Designers",
+        "ben1_p": "Skip the blank canvas. Drop a finished, high-detail lunar sphere into your concepts and renders, then scale it to whatever your project needs.",
+        "ben2_h": "Architects",
+        "ben2_p": "A real, fabricable object for your visualizations and study models. Use it to dress a scene, test scale, or 3D-print a maquette for your own work.",
+        "ben3_h": "Hobbyists",
+        "ben3_p": "Everything you need to make a beautiful piece at home — slicer-ready meshes and pre-cut halves that print without supports. No CAD experience required.",
+        "usp_h": "Finally a 3D Design File for Manufacturing",
+        "usp_lede": "Most of the 3D design files online are not 3d printable and requires alot of post processing work. Since we are manufacturers ourself, All our design files are built for fabrication.",
+        "uspc1_num": "USP-01",
+        "uspc1_h": "3D-printable, end to end.",
+        "uspc1_p": "A dense triangulated mesh split into support-free halves, so it slices cleanly the first time.",
+        "uspc1_c1": "STL, OBJ, FBX, GLB — various formats",
+        "uspc1_c2": "Tested on Prusa MK4, Bambu X1C, Ender 3",
+        "uspc1_c3": "",
+        "uspc1_c4": "12.6 M triangles of real relief",
+        "uspc2_num": "USP-02",
+        "uspc2_h": "Production Files Attached",
+        "uspc2_p": "The sphere is already sectioned into two printable halves with flat mating faces, so you spend less time re-designing. Just adjust your scale and start your machine.",
+        "uspc2_c1": "2 pre-cut halves included",
+        "uspc2_c2": "Flat mating faces, no supports needed",
+        "uspc2_c3": "",
+        "uspc2_c4": "Scales cleanly for lamps and wall reliefs",
+        "uspc3_num": "USP-03",
+        "uspc3_h": "Real relief, not a bump map.",
+        "uspc3_p": "The craters and mare are modelled into the geometry across the whole surface, so the detail survives printing at any scale instead of vanishing with the texture.",
+        "uspc3_c1": "Modelled surface relief",
+        "uspc3_c2": "Holds detail at SLA resolution",
+        "uspc3_c3": "Untextured — assign your own materials",
+        "uspc3_c4": "",
+        "geom_h": "Some more file details",
+        "geom_lede": "Topology, dimensions and file sizes — everything you'd want to know before you hit slice.",
+        "geom1_k": "Polygons",
+        "geom1_v": "12,637,628",
+        "geom1_s": "Triangulated faces",
+        "geom2_k": "Vertices",
+        "geom2_v": "6,318,818",
+        "geom2_s": "Across 2 bodies",
+        "geom3_k": "Parts (assembly)",
+        "geom3_v": "2",
+        "geom3_s": "moon1 + Moon2, print-ready halves",
+        "geom4_k": "Dimensions",
+        "geom4_v": "77 × 76 × 37",
+        "geom4_s": "Millimeters",
+        "geom5_k": "Design hours",
+        "geom5_v": "12 hr",
+        "geom5_s": "Modelled from lunar surface relief",
+        "geom6_k": "Production files",
+        "geom6_v": "Yes",
+        "geom6_s": "Pre-split halves included",
+        "manifest_h": "Every file, nothing hidden.",
+        "manifest_lede": "The full manifest of what lands in the zip when you download. Every file is named, sized, and explained — and tagged by what it's for.",
+        "man_col1": "Format",
+        "man_col2": "Filename",
+        "man_col3": "Size",
+        "man_col4": "Category",
+        "man_col5": "Purpose",
+        "manifest_foot_l": "7 files · 3.86 GB total",
+        "manifest_foot_r": "4 printable · 3 source",
+        "compat_h": "Opens in your software.",
+        "compat_lede": "Tested against the most common modelling and slicer apps. If you're on something else, the pack still includes neutral STL, OBJ and GLB.",
+        "faq_h": "Most-asked.",
+        "faq_lede": "If yours isn't here, write to us. Real makers answer real questions, usually within four hours during the working week.",
+        "reviews_h": "Customer Reviews",
+        "reviews_lede": "All reviews are from verified buyers. We surface the ones that mention build experience first.",
+        "rev_big": "4.8",
+        "rev_of": "out of 5 · 214 verified reviews",
+        "rev_p5": "88",
+        "rev_c5": "188",
+        "rev_p4": "8",
+        "rev_c4": "17",
+        "rev_p3": "2",
+        "rev_c3": "4",
+        "rev_p2": "1",
+        "rev_c2": "3",
+        "rev_p1": "1",
+        "rev_c1": "2",
+        "reviews_empty": "No reviews yet.",
+        "related_h": "More 3D Design Files",
+        "related_lede": "More pieces from the same collection — pulled in automatically from this product's collection."
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
