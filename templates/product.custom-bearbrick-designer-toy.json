@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "diorama-product": {
@@ -111,6 +120,8 @@
         "hspec2_v": "Resin",
         "hspec3_k": "Finish",
         "hspec3_v": "Any Finish",
+        "hspec4_k": "Weight",
+        "hspec4_v": "3 kg",
         "usp1_label": "Worldwide Shipping",
         "usp2_label": "Handcrafted",
         "usp3_label": "Customized Text",
@@ -128,6 +139,7 @@
         "case_quote": "Everyone wanted one. The figures got more attention than any flyer we've ever printed.",
         "case_quote_attr": "Gregory - Brand Manager Metaverse",
         "s3_image": "shopify://shop_images/custom-bearbrick-designer-toy-provenance.jpg",
+        "s3_credit": "",
         "prov_h": "A Brand,",
         "prov_hem": "Worth Collecting",
         "prov_p": "Designer toys turn a brand into something people want to own. As a custom collectible, your logo lives on a shelf instead of in a bin - admired, photographed and shared.",
@@ -159,11 +171,7 @@
         "rev1": "0",
         "cta_ey": "Want your own custom piece?",
         "cta_heading": "Every great piece begins with",
-        "cta_heading_em": "one conversation.",
-        "service_mode": true,
-        "hspec4_k": "",
-        "hspec4_v": "",
-        "s3_credit": ""
+        "cta_heading_em": "one conversation."
       }
     }
   },
