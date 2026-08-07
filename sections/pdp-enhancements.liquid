@@ -1,0 +1,65 @@
+{% comment %}
+  Product page presentation fixes.
+
+  Replaces the earlier pdp-mobile-fold section and now carries two changes:
+
+  1. Mobile above-the-fold. Measured on the Purple Bearbrick page at 375x812
+     before the fix: .tdp-thumbs wrapped 12 thumbnails onto 3 rows (178px),
+     gallery total 528px, price at y=874 - below the fold. Collapsing the
+     strip to one scrollable row and capping the hero image reclaims ~165px
+     and lifts the price above the fold.
+
+  2. Specs panel open by default. .tdp-hspec ships collapsed, with an inline
+     onclick that toggles the 'open' class. Dimensions, material and finish
+     were therefore invisible unless a shopper tapped the header - the first
+     thing someone needs to know about a 70cm figure. Adding the class on
+     load opens it while leaving the toggle intact, so it can still be
+     collapsed.
+
+  Both belong in sections/diorama-product.liquid alongside the rest of the
+  product CSS; they live here only to avoid rewriting that 74KB file
+  wholesale. Fold them in next time that file is edited.
+{% endcomment %}
+
+{%- if template.name == 'product' and product != blank -%}
+  <style>
+    @media (max-width: 749px) {
+      .tdp-gallery .tdp-thumbs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+      }
+      .tdp-gallery .tdp-thumbs::-webkit-scrollbar { display: none; }
+      .tdp-gallery .tdp-thumb { flex: 0 0 auto; }
+
+      .tdp-gallery .tdp-main-img { max-height: 300px; }
+      .tdp-gallery .tdp-main-img img {
+        max-height: 300px;
+        object-fit: contain;
+      }
+    }
+  </style>
+
+  <script>
+    (function () {
+      function openSpecs() {
+        var panels = document.querySelectorAll('.tdp-hspec');
+        for (var i = 0; i < panels.length; i++) {
+          panels[i].classList.add('open');
+        }
+      }
+      openSpecs();
+      // Re-apply when the theme editor re-renders the product section.
+      document.addEventListener('shopify:section:load', openSpecs);
+    })();
+  </script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "PDP presentation fixes",
+  "settings": []
+}
+{% endschema %}

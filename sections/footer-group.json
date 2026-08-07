@@ -38,8 +38,8 @@
       "type": "product-schema",
       "settings": {}
     },
-    "pdp_mobile_fold": {
-      "type": "pdp-mobile-fold",
+    "pdp_enhancements": {
+      "type": "pdp-enhancements",
       "settings": {}
     },
     "sticky_atc": {
@@ -54,7 +54,7 @@
   "order": [
     "diorama_footer",
     "product_schema",
-    "pdp_mobile_fold",
+    "pdp_enhancements",
     "sticky_atc"
   ]
 }
