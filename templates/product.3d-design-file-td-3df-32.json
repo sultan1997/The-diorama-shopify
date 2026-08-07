@@ -275,7 +275,7 @@
         "uspc2_c3": "",
         "uspc2_c4": "Scales cleanly",
         "uspc3_num": "USP-03",
-        "uspc3_h": "Modelled, not faked.",
+        "uspc3_h": "Modelled in full detail.",
         "uspc3_p": "Detail is built into the geometry so it survives printing at any scale.",
         "uspc3_c1": "Modelled detail",
         "uspc3_c2": "Holds detail when printed",

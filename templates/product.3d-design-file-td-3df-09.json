@@ -311,7 +311,7 @@
         "uspc2_c3": "",
         "uspc2_c4": "Prints upright, no raft",
         "uspc3_num": "USP-03",
-        "uspc3_h": "Modelled, not faked.",
+        "uspc3_h": "Modelled in full detail.",
         "uspc3_p": "The helix is real geometry, so the fin pitch survives printing at any scale.",
         "uspc3_c1": "Modelled detail",
         "uspc3_c2": "Holds detail when printed",
