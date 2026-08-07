@@ -1,6 +1,10 @@
 {% comment %}
   Sticky add-to-cart bar for product pages.
 
+  Rendered from the footer section group, so it covers every product
+  template without touching them individually. The template guard below
+  keeps it off every other page type.
+
   Mirrors the main CTA (.tdp-btn-cart inside #tdp-form) rendered by the
   diorama-product section. The bar slides up once that button has scrolled
   above the viewport, and clicking it forwards the click to the real button
@@ -10,9 +14,12 @@
   still empty, the bar sends the shopper to that field instead of adding an
   un-engraved piece. Scrolling the buy box back into view hides the bar, so
   they simply continue with the real button.
+
+  If a product template has no diorama-product buy box, the script removes
+  the bar on load rather than showing a button that does nothing.
 {% endcomment %}
 
-{%- if section.settings.enabled and product != blank -%}
+{%- if section.settings.enabled and template.name == 'product' and product != blank -%}
   <style>
     .tdp-sticky{
       position:fixed;left:0;right:0;bottom:0;z-index:9997;
@@ -119,6 +126,7 @@
       function persoInput() { return document.getElementById('tdp-perso-input'); }
 
       var main = mainBtn();
+      // Product templates without the diorama-product buy box get no bar.
       if (!btn || !main) { bar.remove(); return; }
 
       var shown = false;

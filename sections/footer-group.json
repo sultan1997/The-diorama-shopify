@@ -33,9 +33,18 @@
         "copyright": "© 2026 The Diorama — a brand of Macoma General Trading LLC. All rights reserved.",
         "tagline": "Dubai, UAE · info@macomatech.com · +971 50 750 2394"
       }
+    },
+    "sticky_atc": {
+      "type": "sticky-atc",
+      "settings": {
+        "enabled": true,
+        "show_image": true,
+        "visible_on": "both"
+      }
     }
   },
   "order": [
-    "diorama_footer"
+    "diorama_footer",
+    "sticky_atc"
   ]
 }
