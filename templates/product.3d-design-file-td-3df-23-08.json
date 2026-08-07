@@ -1,0 +1,349 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "design-file-product",
+      "blocks": {
+        "fmt-1": {
+          "type": "format",
+          "settings": {
+            "ext": "BLEND",
+            "tag": "source"
+          }
+        },
+        "fmt-2": {
+          "type": "format",
+          "settings": {
+            "ext": "FBX",
+            "tag": "source"
+          }
+        },
+        "fmt-3": {
+          "type": "format",
+          "settings": {
+            "ext": "GLB",
+            "tag": "source"
+          }
+        },
+        "fmt-4": {
+          "type": "format",
+          "settings": {
+            "ext": "MTL",
+            "tag": "source"
+          }
+        },
+        "fmt-5": {
+          "type": "format",
+          "settings": {
+            "ext": "OBJ",
+            "tag": "printable"
+          }
+        },
+        "fmt-6": {
+          "type": "format",
+          "settings": {
+            "ext": "STL",
+            "tag": "printable"
+          }
+        },
+        "man-1": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "BLEND",
+            "tag": "source",
+            "nm": "p.blend",
+            "size": "930 KB",
+            "category": "Source",
+            "purpose": "Editable Blender source file"
+          }
+        },
+        "man-2": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "FBX",
+            "tag": "source",
+            "nm": "p.fbx",
+            "size": "35 KB",
+            "category": "Source",
+            "purpose": "Scene-ready mesh for 3D apps"
+          }
+        },
+        "man-3": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "GLB",
+            "tag": "source",
+            "nm": "p.glb",
+            "size": "29 KB",
+            "category": "Source",
+            "purpose": "Binary glTF for web and AR viewers"
+          }
+        },
+        "man-4": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "MTL",
+            "tag": "source",
+            "nm": "p.mtl",
+            "size": "608 B",
+            "category": "Source",
+            "purpose": "Material library for the OBJ"
+          }
+        },
+        "man-5": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "OBJ",
+            "tag": "printable",
+            "nm": "p.obj",
+            "size": "30 KB",
+            "category": "3D Print",
+            "purpose": "Mesh with geometry data"
+          }
+        },
+        "man-6": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "STL",
+            "tag": "printable",
+            "nm": "D.stl",
+            "size": "149 KB",
+            "category": "3D Print",
+            "purpose": "Mesh ready to slice"
+          }
+        },
+        "man-7": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "STL",
+            "tag": "printable",
+            "nm": "P.stl",
+            "size": "24 KB",
+            "category": "3D Print",
+            "purpose": "Mesh ready to slice"
+          }
+        },
+        "cmp-1": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "B",
+            "app": "Blender",
+            "ver": ""
+          }
+        },
+        "cmp-2": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "P",
+            "app": "PrusaSlicer",
+            "ver": ""
+          }
+        },
+        "cmp-3": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "C",
+            "app": "Cura",
+            "ver": ""
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Will this print on a standard desktop machine?",
+            "a": "Yes. At 2 x 3 x 2 mm it fits a normal bed, and the pack includes the production files listed in the manifest. FDM gives a good surface; SLA resin holds finer detail."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "Is the detail real geometry or a texture?",
+            "a": "Real geometry - the mesh carries 490 triangles of modelled detail."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Does the pack include textures or materials?",
+            "a": "Yes - the model carries UV mapping and material data, so it renders with its assigned materials."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Can I use this design for my own projects?",
+            "a": "Licensed for personal projects only. Not for resale or commercial production. Print it, cut it, machine it, remix the source - just not for resale."
+          }
+        },
+        "faq-5": {
+          "type": "faq",
+          "settings": {
+            "q": "Is there any Refund Policy?",
+            "a": "We usually dont offer Refunds for Digital Files. However, if you are not satisfied with it then our designer will help you to sort things out."
+          }
+        }
+      },
+      "block_order": [
+        "fmt-1",
+        "fmt-2",
+        "fmt-3",
+        "fmt-4",
+        "fmt-5",
+        "fmt-6",
+        "man-1",
+        "man-2",
+        "man-3",
+        "man-4",
+        "man-5",
+        "man-6",
+        "man-7",
+        "cmp-1",
+        "cmp-2",
+        "cmp-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "faq-5"
+      ],
+      "settings": {
+        "show_announce": false,
+        "show_crumbs": true,
+        "show_benefits": true,
+        "show_usp": true,
+        "show_geom": true,
+        "show_manifest": true,
+        "show_compat": true,
+        "show_faq": true,
+        "show_reviews": false,
+        "show_related": true,
+        "crumb1": "All files",
+        "crumb2": "3D Design Files",
+        "crumb3": "",
+        "view_mode1": "Solid",
+        "view_mode2": "Wireframe",
+        "view_mode3": "X-ray",
+        "view_info1": "3D MODEL - 490 tris",
+        "view_info2": "6 bodies + 3 productio",
+        "axis1": "3/4",
+        "axis2": "FRONT",
+        "axis3": "SIDE",
+        "axis4": "TOP",
+        "designer_ava": "TD",
+        "designer_name": "The Diorama",
+        "verified_label": "Verified seller",
+        "title_override": "",
+        "subtitle": "A bold standing letter-P logo award on a bevelled base - a custom branded desk trophy.",
+        "stat_rating": "",
+        "stat_reviews": "",
+        "stat_downloads": "",
+        "stat_version": "v1.0",
+        "badge1_ttl": "3D Printable",
+        "badge1_sub": "STL - OBJ",
+        "badge2_ttl": "Production Files",
+        "badge2_sub": "6 bodies + 3 production file",
+        "badge3_ttl": "Editable Source",
+        "badge3_sub": "BLEND - FBX - GLB",
+        "usage_label": "Usage",
+        "usage_pick": "Personal projects only",
+        "usage_note": "Licensed for personal projects only. Not for resale or commercial production.",
+        "formats_label": "Included formats",
+        "formats_count": "6 formats - 1.2 MB total",
+        "variant_label": "License",
+        "cta_label": "Add to Cart",
+        "cta_sold": "Sold out",
+        "cta_meta": "Secure checkout - files delivered after purchase",
+        "qf1_k": "Software",
+        "qf1_v": "Blender, PrusaSlicer, Cura",
+        "qf2_k": "Machine",
+        "qf2_v": "FDM / SLA resin",
+        "qf3_k": "Difficulty",
+        "qf3_v": "Beginner",
+        "benefits_h": "Made for your own projects.",
+        "benefits_lede": "Whether you design for a living, build for clients, or make things for the love of it, this pack drops straight into your workflow.",
+        "bt1_k": "The designer spent",
+        "bt1_v": "Hours",
+        "bt1_s": "modelling and cleaning up this file",
+        "bt2_k": "You get it in",
+        "bt2_v": "under 1 minute",
+        "bt2_s": "Buy, download the pack, and open it in your software. The hard part is already done.",
+        "ben1_h": "Designers",
+        "ben1_p": "Drop a finished, editable model into your concepts and renders, then scale it to whatever your project needs.",
+        "ben2_h": "Architects",
+        "ben2_p": "A real, fabricable object for your visualizations and study models.",
+        "ben3_h": "Hobbyists",
+        "ben3_p": "Slicer-ready meshes and production parts. No CAD experience required.",
+        "usp_h": "Finally a 3D Design File for Manufacturing",
+        "usp_lede": "Most 3D design files online are not 3d printable and require a lot of post processing. Since we are manufacturers ourselves, our design files are built for fabrication.",
+        "uspc1_num": "USP-01",
+        "uspc1_h": "3D-printable, end to end.",
+        "uspc1_p": "Print-ready meshes with the production parts already separated.",
+        "uspc1_c1": "BLEND, FBX, GLB, MTL, OBJ, STL",
+        "uspc1_c2": "Tested on Prusa MK4, Bambu X1C, Ender 3",
+        "uspc1_c3": "",
+        "uspc1_c4": "490 triangles",
+        "uspc2_num": "USP-02",
+        "uspc2_h": "Production Files Attached",
+        "uspc2_p": "The production folder holds the parts as they are meant to be made, so you spend less time re-designing.",
+        "uspc2_c1": "6 bodies + 3 production file",
+        "uspc2_c2": "Print-ready parts",
+        "uspc2_c3": "",
+        "uspc2_c4": "Scales cleanly",
+        "uspc3_num": "USP-03",
+        "uspc3_h": "Modelled in full detail.",
+        "uspc3_p": "Detail is built into the geometry so it survives printing at any scale.",
+        "uspc3_c1": "Modelled detail",
+        "uspc3_c2": "Holds detail when printed",
+        "uspc3_c3": "UV mapped",
+        "uspc3_c4": "",
+        "geom_h": "Some more file details",
+        "geom_lede": "Topology, dimensions and file sizes - everything you'd want to know before you hit slice.",
+        "manifest_h": "Every file, nothing hidden.",
+        "manifest_lede": "The full manifest of what lands in the zip when you download.",
+        "man_col1": "Format",
+        "man_col2": "Filename",
+        "man_col3": "Size",
+        "man_col4": "Category",
+        "man_col5": "Purpose",
+        "manifest_foot_l": "7 files - 1.2 MB total",
+        "manifest_foot_r": "",
+        "compat_h": "Opens in your software.",
+        "compat_lede": "Tested against the most common modelling and slicer apps.",
+        "faq_h": "Most-asked.",
+        "faq_lede": "If yours isn't here, write to us.",
+        "reviews_empty": "No reviews yet.",
+        "related_h": "More 3D Design Files",
+        "related_lede": "More pieces from the same collection.",
+        "geom1_k": "Polygons",
+        "geom1_v": "490",
+        "geom1_s": "Triangulated faces",
+        "geom2_k": "Vertices",
+        "geom2_v": "675",
+        "geom2_s": "Mesh vertices as exported",
+        "geom3_k": "Parts (assembly)",
+        "geom3_v": "6",
+        "geom3_s": "6 bodies + 3 production file(s) in \\Production",
+        "geom4_k": "Dimensions",
+        "geom4_v": "2 x 3 x 2",
+        "geom4_s": "Millimeters",
+        "geom5_k": "Production files",
+        "geom5_v": "Yes",
+        "geom5_s": "Print-ready parts included",
+        "geom6_k": "",
+        "geom6_v": "",
+        "geom6_s": ""
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

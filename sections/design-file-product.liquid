@@ -293,6 +293,7 @@
   .dfp .viewer .stage model-viewer{ position:absolute !important; inset:0 !important; width:100% !important; height:100% !important; display:block !important; }
   .dfp .viewer .stage model-viewer.dfp-hide{ display:none !important; }
   .dfp .viewer .stage img.dfp-swap{ position:absolute !important; inset:0 !important; width:100% !important; height:100% !important; object-fit:contain; }
+  .dfp .viewer .stage video.dfp-vid{ position:absolute !important; inset:0 !important; width:100% !important; height:100% !important; object-fit:contain; background:#000; z-index:3; }
 </style>
 
 {%- liquid
@@ -369,10 +370,12 @@
         {%- if product.media.size > 1 -%}
         <div class="thumb-rail">
           {%- for media in product.media -%}
-            <button type="button" class="vt" data-active="{% if forloop.first %}true{% else %}false{% endif %}" data-media-type="{{ media.media_type }}" data-media-id="{{ media.id }}" onclick="dfpSwap(this,'{{ media.preview_image | image_url: width: 1100 }}')">
+            {%- assign vsrc = '' -%}{%- if media.media_type == 'video' -%}{%- assign _mp4 = media.sources | where: 'format', 'mp4' -%}{%- if _mp4.size > 0 -%}{%- assign vsrc = _mp4.last.url -%}{%- endif -%}{%- endif -%}
+            <button type="button" class="vt" data-active="{% if forloop.first %}true{% else %}false{% endif %}" data-media-type="{{ media.media_type }}" data-media-id="{{ media.id }}" data-video-src="{{ vsrc }}" onclick="dfpSwap(this,'{{ media.preview_image | image_url: width: 1100 }}')">
               <span class="vt-bg"></span>
               <img src="{{ media.preview_image | image_url: width: 220 }}" alt="{{ media.alt | escape }}">
               {%- if media.media_type == 'model' -%}<span class="vt-3d">3D</span>{%- endif -%}
+              {%- if media.media_type == 'video' -%}<span class="vt-3d">&#9654;</span>{%- endif -%}
               <span class="vt-label">{{ forloop.index }}</span>
             </button>
           {%- endfor -%}
@@ -394,9 +397,7 @@
         <div class="stat-row">
           <span style="display:inline-flex;gap:8px;align-items:center">
             <span class="stars-inner">★★★★★</span>
-            <span class="mono">{{ section.settings.stat_rating | default: '4.9' }} · <strong>{{ section.settings.stat_reviews | default: '328 reviews' }}</strong></span>
           </span>
-          {%- if section.settings.stat_downloads != blank -%}<span class="sep"></span><span class="mono">↓ <strong>{{ section.settings.stat_downloads }}</strong></span>{%- endif -%}
           {%- if section.settings.stat_version != blank -%}<span class="sep"></span><span class="mono">{{ section.settings.stat_version }}</span>{%- endif -%}
         </div>
 
@@ -449,11 +450,11 @@
           <div class="cta-row">
             <button type="submit" class="cta blueprint"{% unless product.available %} disabled{% endunless %}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
-              {%- if product.available -%}{{ section.settings.cta_label | default: 'Buy & download' }}{%- else -%}{{ section.settings.cta_sold | default: 'Sold out' }}{%- endif -%}
+              {%- if product.available -%}Add to Cart{%- else -%}{{ section.settings.cta_sold | default: 'Sold out' }}{%- endif -%}
             </button>
           </div>
         {%- endform -%}
-        {%- if section.settings.cta_meta != blank -%}<div class="meta-line">{{ section.settings.cta_meta }}</div>{%- endif -%}
+        <div class="meta-line">Secure checkout &middot; files delivered after purchase</div>
 
         <div class="quickfacts">
           {%- if section.settings.qf1_k != blank -%}<div class="qf"><span class="k">{{ section.settings.qf1_k }}</span><span class="v">{{ section.settings.qf1_v }}</span></div>{%- endif -%}
@@ -624,43 +625,6 @@
   </section>
   {%- endif -%}
 
-  {%- assign rev_blocks = section.blocks | where: 'type', 'review' -%}
-  {%- if section.settings.show_reviews -%}
-  <section class="section">
-    <div class="container">
-      <div class="sec-head">
-        <div><h2>{{ section.settings.reviews_h | default: 'Customer Reviews' }}</h2></div>
-        <div class="lede">{{ section.settings.reviews_lede }}</div>
-      </div>
-      <div class="reviews">
-        <div class="review-sum">
-          <div class="big">{{ section.settings.rev_big | default: '4.9' }}</div>
-          <div class="of">{{ section.settings.rev_of | default: 'out of 5 · 328 verified reviews' }}</div>
-          <div class="bars">
-            <div class="bar"><span class="lab">5★</span><span class="track"><span class="fill" style="width:{{ section.settings.rev_p5 | default: '93' }}%"></span></span><span class="ct">{{ section.settings.rev_c5 | default: '305' }}</span></div>
-            <div class="bar"><span class="lab">4★</span><span class="track"><span class="fill" style="width:{{ section.settings.rev_p4 | default: '5' }}%"></span></span><span class="ct">{{ section.settings.rev_c4 | default: '16' }}</span></div>
-            <div class="bar"><span class="lab">3★</span><span class="track"><span class="fill" style="width:{{ section.settings.rev_p3 | default: '2' }}%"></span></span><span class="ct">{{ section.settings.rev_c3 | default: '5' }}</span></div>
-            <div class="bar"><span class="lab">2★</span><span class="track"><span class="fill" style="width:{{ section.settings.rev_p2 | default: '1' }}%"></span></span><span class="ct">{{ section.settings.rev_c2 | default: '1' }}</span></div>
-            <div class="bar"><span class="lab">1★</span><span class="track"><span class="fill" style="width:{{ section.settings.rev_p1 | default: '1' }}%"></span></span><span class="ct">{{ section.settings.rev_c1 | default: '1' }}</span></div>
-          </div>
-        </div>
-        <div class="review-list">
-          {%- for b in rev_blocks -%}
-          <div class="review" {{ b.shopify_attributes }}>
-            <div class="head"><div class="who"><div class="ava">{{ b.settings.name | slice: 0 | upcase }}</div><div><div class="name">{{ b.settings.name }}</div><div class="when">{{ b.settings.when }}</div></div></div><div class="stars-inner">★★★★★</div></div>
-            <div class="ttl">{{ b.settings.ttl }}</div>
-            <div class="body">{{ b.settings.body }}</div>
-            {%- if b.settings.tags != blank -%}<div class="tags">{%- assign tg = b.settings.tags | split: ',' -%}{%- for t in tg -%}<span class="tag">{{ t | strip }}</span>{%- endfor -%}</div>{%- endif -%}
-          </div>
-          {%- else -%}
-          <div class="review"><div class="ttl">{{ section.settings.reviews_empty | default: 'No reviews yet.' }}</div></div>
-          {%- endfor -%}
-        </div>
-      </div>
-    </div>
-  </section>
-  {%- endif -%}
-
   {%- if section.settings.show_related and product.collections.first -%}
   <section class="section">
     <div class="container">
@@ -690,7 +654,7 @@
   function grp(el){ return el.closest('.viewer-toolbar, .vc-axes'); }
   window.dfpMode=function(b){ var g=grp(b); if(!g)return; g.querySelectorAll('button').forEach(function(x){x.setAttribute('data-active','false');}); b.setAttribute('data-active','true'); };
   window.dfpAxis=function(b){ var g=grp(b); if(!g)return; g.querySelectorAll('button').forEach(function(x){x.setAttribute('data-active','false');}); b.setAttribute('data-active','true'); };
-  window.dfpSwap=function(b,src){ var st=document.getElementById('dfpStage'); if(!st)return; var mv=st.querySelector('model-viewer'); var img=st.querySelector('img.dfp-swap'); var isModel=b.getAttribute('data-media-type')==='model'; if(isModel){ if(mv){ if(!mv.getAttribute('src') && mv.dataset.glb){ mv.setAttribute('src', mv.dataset.glb); } mv.classList.remove('dfp-hide'); } if(img){img.style.display='none';} } else { if(mv)mv.classList.add('dfp-hide'); if(img){ img.src=src; img.style.display='block'; img.style.zIndex='2'; } } document.querySelectorAll('.dfp .thumb-rail .vt').forEach(function(x){x.setAttribute('data-active','false');}); b.setAttribute('data-active','true'); };
+  window.dfpSwap=function(b,src){ var st=document.getElementById('dfpStage'); if(!st)return; var mv=st.querySelector('model-viewer'); var img=st.querySelector('img.dfp-swap'); var vid=st.querySelector('video.dfp-vid'); var type=b.getAttribute('data-media-type'); if(mv)mv.classList.add('dfp-hide'); if(img)img.style.display='none'; if(vid){ try{vid.pause();}catch(e){} vid.style.display='none'; } if(type==='model'){ if(mv){ if(!mv.getAttribute('src') && mv.dataset.glb){ mv.setAttribute('src', mv.dataset.glb); } mv.classList.remove('dfp-hide'); } } else if(type==='video'){ var vs=b.getAttribute('data-video-src'); if(vs){ if(!vid){ vid=document.createElement('video'); vid.className='dfp-vid'; vid.setAttribute('playsinline',''); vid.setAttribute('controls',''); vid.setAttribute('loop',''); vid.muted=true; vid.setAttribute('preload','metadata'); st.appendChild(vid); } if(vid.getAttribute('src')!==vs){ vid.setAttribute('src', vs); } vid.style.display='block'; try{vid.play();}catch(e){} } else if(img){ img.src=src; img.style.display='block'; img.style.zIndex='2'; } } else { if(img){ img.src=src; img.style.display='block'; img.style.zIndex='2'; } } document.querySelectorAll('.dfp .thumb-rail .vt').forEach(function(x){x.setAttribute('data-active','false');}); b.setAttribute('data-active','true'); };
   window.dfpNav=function(d){ var th=document.querySelectorAll('.dfp .thumb-rail .vt'); if(!th.length)return; var cur=0; for(var i=0;i<th.length;i++){ if(th[i].getAttribute('data-active')==='true'){cur=i;break;} } var n=(cur+d+th.length)%th.length; th[n].click(); };
   window.dfpFaq=function(item){ var open=item.classList.contains('open'); item.parentElement.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open'); var t=i.querySelector('.toggle'); if(t)t.textContent='+';}); if(!open){ item.classList.add('open'); var t=item.querySelector('.toggle'); if(t)t.textContent='–'; } };
 })();
