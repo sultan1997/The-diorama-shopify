@@ -190,9 +190,18 @@
         "cta_heading": "Every great piece begins with",
         "cta_heading_em": "one conversation."
       }
+    },
+    "sticky-atc": {
+      "type": "sticky-atc",
+      "settings": {
+        "enabled": true,
+        "show_image": true,
+        "visible_on": "both"
+      }
     }
   },
   "order": [
-    "diorama-product"
+    "diorama-product",
+    "sticky-atc"
   ]
 }
