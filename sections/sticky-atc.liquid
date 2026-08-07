@@ -6,14 +6,17 @@
   keeps it off every other page type.
 
   Mirrors the main CTA (.tdp-btn-cart inside #tdp-form) rendered by the
-  diorama-product section. The bar slides up once that button has scrolled
-  above the viewport, and clicking it forwards the click to the real button
+  diorama-product section. Clicking it forwards the click to the real button
   so quantity, personalisation and variant handling stay in one place.
+
+  Visibility rule: never show while the real Add to cart is on screen. Past
+  that, show once it has scrolled above the viewport - or, on mobile, once
+  the shopper is roughly a screen down and the real button is out of view,
+  which matters on templates where the buy box sits well below the fold.
 
   Personalisation: if the product offers engraving text and the field is
   still empty, the bar sends the shopper to that field instead of adding an
-  un-engraved piece. Scrolling the buy box back into view hides the bar, so
-  they simply continue with the real button.
+  un-engraved piece.
 
   If a product template has no diorama-product buy box, the script removes
   the bar on load rather than showing a button that does nothing.
@@ -129,15 +132,25 @@
       // Product templates without the diorama-product buy box get no bar.
       if (!btn || !main) { bar.remove(); return; }
 
+      var mobileQuery = window.matchMedia ? window.matchMedia('(max-width: 749px)') : null;
+      function isMobile() {
+        return mobileQuery ? mobileQuery.matches : window.innerWidth <= 749;
+      }
+
       var shown = false;
-      var past = false;
+      var past = false;          // real CTA has scrolled above the viewport
+      var ctaVisible = false;    // real CTA is currently on screen
+      var scrolledEnough = false; // roughly one screen down (mobile safety net)
 
       function modalOpen() {
         return !!modal && getComputedStyle(modal).display !== 'none';
       }
 
       function apply() {
-        var next = past && !modalOpen();
+        // Two visible Add to cart buttons at once is just noise, so the real
+        // one being on screen always wins.
+        var wanted = past || (isMobile() && scrolledEnough);
+        var next = wanted && !ctaVisible && !modalOpen();
         if (next === shown) return;
         shown = next;
         bar.setAttribute('data-show', next ? '1' : '0');
@@ -192,15 +205,31 @@
       if ('IntersectionObserver' in window) {
         new IntersectionObserver(function (entries) {
           var e = entries[0];
+          ctaVisible = e.isIntersecting;
           past = !e.isIntersecting && e.boundingClientRect.top < 0;
           apply();
         }, { threshold: 0 }).observe(main);
       } else {
         window.addEventListener('scroll', function () {
-          past = main.getBoundingClientRect().bottom < 0;
+          var r = main.getBoundingClientRect();
+          ctaVisible = r.bottom > 0 && r.top < window.innerHeight;
+          past = r.bottom < 0;
           apply();
         }, { passive: true });
       }
+
+      var ticking = false;
+      function onScroll() {
+        if (ticking) return;
+        ticking = true;
+        (window.requestAnimationFrame || setTimeout)(function () {
+          ticking = false;
+          var next = window.pageYOffset > window.innerHeight * 0.75;
+          if (next !== scrolledEnough) { scrolledEnough = next; apply(); }
+        });
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
 
       if (window.MutationObserver) {
         var actions = main.parentNode;
