@@ -140,6 +140,8 @@
         "hspec2_v": "Resin",
         "hspec3_k": "Finish",
         "hspec3_v": "Gloss Metallic",
+        "hspec4_k": "Weight",
+        "hspec4_v": "4 kg",
         "usp1_label": "Worldwide Shipping",
         "usp2_label": "Handcrafted",
         "usp3_label": "Customized Text",
@@ -190,18 +192,9 @@
         "cta_heading": "Every great piece begins with",
         "cta_heading_em": "one conversation."
       }
-    },
-    "sticky-atc": {
-      "type": "sticky-atc",
-      "settings": {
-        "enabled": true,
-        "show_image": true,
-        "visible_on": "both"
-      }
     }
   },
   "order": [
-    "diorama-product",
-    "sticky-atc"
+    "diorama-product"
   ]
 }
