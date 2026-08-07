@@ -5,6 +5,11 @@
   diorama-product section. The bar slides up once that button has scrolled
   above the viewport, and clicking it forwards the click to the real button
   so quantity, personalisation and variant handling stay in one place.
+
+  Personalisation: if the product offers engraving text and the field is
+  still empty, the bar sends the shopper to that field instead of adding an
+  un-engraved piece. Scrolling the buy box back into view hides the bar, so
+  they simply continue with the real button.
 {% endcomment %}
 
 {%- if section.settings.enabled and product != blank -%}
@@ -45,6 +50,13 @@
     .tdp-sticky-btn:hover{opacity:.86}
     .tdp-sticky-btn:disabled{background:#9b9b9b;cursor:not-allowed}
 
+    /* Draws the eye to the engraving field when the bar sends them there. */
+    @keyframes tdp-perso-flash{
+      0%,100%{box-shadow:0 0 0 0 rgba(58,19,255,0)}
+      15%,65%{box-shadow:0 0 0 3px rgba(58,19,255,.35)}
+    }
+    .tdp-perso-flash{animation:tdp-perso-flash 1.5s ease-out}
+
     /* Lift the floating WhatsApp button clear of the bar. */
     body.tdp-sticky-on .td-wa{bottom:104px;transition:bottom .3s cubic-bezier(.4,0,.2,1)}
 
@@ -63,6 +75,7 @@
     {%- endif %}
     @media (prefers-reduced-motion:reduce){
       .tdp-sticky,body.tdp-sticky-on .td-wa{transition:none}
+      .tdp-perso-flash{animation:none;box-shadow:0 0 0 3px rgba(58,19,255,.35)}
     }
   </style>
 
@@ -103,6 +116,7 @@
       var modal = document.getElementById('tdp-modal');
 
       function mainBtn() { return document.querySelector('.tdp-actions .tdp-btn-cart'); }
+      function persoInput() { return document.getElementById('tdp-perso-input'); }
 
       var main = mainBtn();
       if (!btn || !main) { bar.remove(); return; }
@@ -134,9 +148,36 @@
       }
       sync();
 
+      // Send the shopper to the engraving field rather than adding a blank one.
+      // Focus first so the tap still counts as a user gesture on iOS, then scroll.
+      function promptForPersonalisation(input) {
+        var reduce = window.matchMedia
+          && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var target = input.closest ? (input.closest('.tdp-perso') || input) : input;
+
+        try { input.focus({ preventScroll: true }); } catch (e) { input.focus(); }
+        try {
+          target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+        } catch (e) {
+          target.scrollIntoView();
+        }
+
+        input.classList.remove('tdp-perso-flash');
+        void input.offsetWidth; // restart the animation if it is already running
+        input.classList.add('tdp-perso-flash');
+        setTimeout(function () { input.classList.remove('tdp-perso-flash'); }, 1600);
+      }
+
       btn.addEventListener('click', function () {
         var m = mainBtn();
         if (!m || m.disabled) return;
+
+        var p = persoInput();
+        if (p && !p.value.trim()) {
+          promptForPersonalisation(p);
+          return;
+        }
+
         m.click();
       });
 
