@@ -1,0 +1,63 @@
+{% comment %}
+  Product structured data (JSON-LD) for product pages.
+
+  The custom diorama-product section replaced Dawn's main-product, which is
+  where this markup normally lives, so product pages were shipping only
+  Organization schema. Google Merchant Center uses this to validate the
+  landing page against the feed; without it, price/availability mismatch
+  disapprovals are much more likely.
+
+  Rendered from the footer section group so it covers every product template.
+
+  Deliberately omits aggregateRating: there are no real reviews behind the
+  star graphic in the buy box, and inventing one is both a policy risk and
+  a lie to customers.
+{% endcomment %}
+
+{%- if template.name == 'product' and product != blank -%}
+  {%- liquid
+    assign v = product.selected_or_first_available_variant
+    assign sku_value = v.sku | default: v.id | append: ''
+    assign desc = product.description | strip_html | strip_newlines | truncate: 4000
+    assign product_href = request.origin | append: product.url
+  -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": {{ product.title | json }},
+      "url": {{ product_href | json }},
+      "description": {{ desc | json }},
+      "sku": {{ sku_value | json }},
+      "brand": {
+        "@type": "Brand",
+        "name": {{ product.vendor | default: shop.name | json }}
+      },
+      "image": [
+        {%- for img in product.images limit: 6 -%}
+          {{ img | image_url: width: 1600 | prepend: 'https:' | json }}
+          {%- unless forloop.last %},{% endunless -%}
+        {%- endfor -%}
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": {{ product_href | json }},
+        "priceCurrency": {{ cart.currency.iso_code | json }},
+        "price": {{ v.price | divided_by: 100.0 }},
+        "availability": "https://schema.org/{% if v.available %}InStock{% else %}OutOfStock{% endif %}",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": {{ shop.name | json }}
+        }
+      }
+    }
+  </script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Product schema (JSON-LD)",
+  "settings": []
+}
+{% endschema %}

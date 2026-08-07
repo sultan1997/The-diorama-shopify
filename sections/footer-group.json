@@ -34,6 +34,14 @@
         "tagline": "Dubai, UAE · info@macomatech.com · +971 50 750 2394"
       }
     },
+    "product_schema": {
+      "type": "product-schema",
+      "settings": {}
+    },
+    "pdp_mobile_fold": {
+      "type": "pdp-mobile-fold",
+      "settings": {}
+    },
     "sticky_atc": {
       "type": "sticky-atc",
       "settings": {
@@ -45,6 +53,8 @@
   },
   "order": [
     "diorama_footer",
+    "product_schema",
+    "pdp_mobile_fold",
     "sticky_atc"
   ]
 }
