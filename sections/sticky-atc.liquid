@@ -23,6 +23,27 @@
 {% endcomment %}
 
 {%- if section.settings.enabled and template.name == 'product' and product != blank -%}
+
+  {%- comment -%}
+    Quote mode. B2B pages carry no price - every variant is 0 - and their real
+    CTA is the commission inquiry, not Add to cart. Driven off the price rather
+    than a list of handles, so a newly published 0-priced product picks this up
+    on its own with no code change.
+
+    Label precedence: per-product metafield, then the section default, then the
+    hard-coded fallback. Set custom.sticky_cta_text on a product to give that
+    page its own wording.
+  {%- endcomment -%}
+  {%- assign tdp_quote_mode = false -%}
+  {%- if product.price_max == 0 -%}
+    {%- assign tdp_quote_mode = true -%}
+  {%- endif -%}
+  {%- assign tdp_quote_label = product.metafields.custom.sticky_cta_text.value
+    | default: section.settings.quote_cta_text
+    | default: 'Send commission inquiry' -%}
+  {%- assign tdp_quote_price = section.settings.quote_price_text
+    | default: 'Price on request' -%}
+
   <style>
     .tdp-sticky{
       position:fixed;left:0;right:0;bottom:0;z-index:9997;
@@ -104,11 +125,24 @@
       <div class="tdp-sticky-txt">
         <div class="tdp-sticky-title">{{ product.title }}</div>
         <div class="tdp-sticky-price" data-sticky-price>
-          {{- product.selected_or_first_available_variant.price | money -}}
+          {%- if tdp_quote_mode -%}
+            {{- tdp_quote_price -}}
+          {%- else -%}
+            {{- product.selected_or_first_available_variant.price | money -}}
+          {%- endif -%}
         </div>
       </div>
-      <button type="button" class="tdp-sticky-btn" data-sticky-btn>
-        {{- 'products.product.add_to_cart' | t -}}
+      <button
+        type="button"
+        class="tdp-sticky-btn"
+        data-sticky-btn
+        {% if tdp_quote_mode %}data-quote="1"{% endif %}
+      >
+        {%- if tdp_quote_mode -%}
+          {{- tdp_quote_label -}}
+        {%- else -%}
+          {{- 'products.product.add_to_cart' | t -}}
+        {%- endif -%}
       </button>
     </div>
   </div>
@@ -126,10 +160,15 @@
       var modal = document.getElementById('tdp-modal');
 
       function mainBtn() { return document.querySelector('.tdp-actions .tdp-btn-cart'); }
+      function inqBtn()  { return document.querySelector('.tdp-actions .tdp-btn-inq'); }
       function persoInput() { return document.getElementById('tdp-perso-input'); }
 
-      var main = mainBtn();
-      // Product templates without the diorama-product buy box get no bar.
+      // On a quote page the bar shadows the commission inquiry button, not the
+      // cart button, so it both tracks and forwards to the CTA that matters.
+      var quote = btn && btn.getAttribute('data-quote') === '1';
+
+      var main = quote ? inqBtn() : mainBtn();
+      // Product templates without the matching buy box button get no bar.
       if (!btn || !main) { bar.remove(); return; }
 
       var mobileQuery = window.matchMedia ? window.matchMedia('(max-width: 749px)') : null;
@@ -159,7 +198,10 @@
       }
 
       // Keep label, availability and price in step with the real buy box.
+      // Quote pages hold their own label and "price on request" text, and the
+      // inquiry button is never disabled, so there is nothing to mirror.
       function sync() {
+        if (quote) return;
         var m = mainBtn();
         if (!m) return;
         btn.textContent = (m.textContent || 'Add to cart').trim();
@@ -190,6 +232,14 @@
       }
 
       btn.addEventListener('click', function () {
+        // Quote pages open the commission form. No cart, so no quantity,
+        // variant or engraving handling applies.
+        if (quote) {
+          var q = inqBtn();
+          if (q) q.click();
+          return;
+        }
+
         var m = mainBtn();
         if (!m || m.disabled) return;
 
@@ -270,6 +320,27 @@
       "id": "show_image",
       "label": "Show product thumbnail",
       "default": true
+    },
+    {
+      "type": "header",
+      "content": "Quote pages (products priced 0)"
+    },
+    {
+      "type": "paragraph",
+      "content": "Products where every variant is 0 are treated as B2B enquiry pages: the bar opens the commission form instead of adding to cart. To give one product its own wording, set the 'sticky_cta_text' metafield on that product — it overrides the button label below."
+    },
+    {
+      "type": "text",
+      "id": "quote_cta_text",
+      "label": "Button label",
+      "default": "Send commission inquiry"
+    },
+    {
+      "type": "text",
+      "id": "quote_price_text",
+      "label": "Text shown instead of the price",
+      "default": "Price on request",
+      "info": "These pages would otherwise show AED 0.00."
     },
     {
       "type": "select",
