@@ -1451,5 +1451,24 @@
         "default": "scheme-1"
       }
     ]
+  },
+  {
+    "name": "Lead capture",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Google Sheets lead pipeline"
+      },
+      {
+        "type": "paragraph",
+        "content": "Commission inquiries are always emailed by Shopify. Adding the URL below also copies each lead into the Google Sheet and notifies the sales inboxes."
+      },
+      {
+        "type": "text",
+        "id": "tdp_lead_endpoint",
+        "label": "Apps Script Web App URL",
+        "info": "Paste the deployment URL ending in /exec. Leave blank to switch the Sheet pipeline off without touching code."
+      }
+    ]
   }
 ]

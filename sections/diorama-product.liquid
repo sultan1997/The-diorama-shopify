@@ -373,6 +373,7 @@ img,svg,video,iframe{max-width:100%}
   .tdp-sec-h{font-size:32px}
   .tdp-sec-p{font-size:14px}
 }
+.tdp-hp-wrap{position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden}
 </style>
 
 <div class="tdp-ov" id="tdp-modal">
@@ -385,6 +386,7 @@ img,svg,video,iframe{max-width:100%}
         <input type="hidden" name="contact[Subject]" value="Diorama Website Lead — {{ product.title | escape }}">
         <input type="hidden" name="contact[Lead source]" value="The Diorama website (the-diorama.com)">
         <input type="hidden" name="contact[Product page]" value="https://the-diorama.com{{ product.url }}">
+        <div class="tdp-hp-wrap" aria-hidden="true"><label>Website<input type="text" id="tdp-hp" name="tdp_hp" tabindex="-1" autocomplete="off"></label></div>
         <div class="tdp-mrow"><div class="tdp-mf"><label class="tdp-ml">Name *</label><input type="text" class="tdp-mi" name="contact[name]" required placeholder="Your name"></div><div class="tdp-mf"><label class="tdp-ml">Company</label><input type="text" class="tdp-mi" name="contact[Company]" placeholder="Company"></div></div>
         <div class="tdp-mrow"><div class="tdp-mf"><label class="tdp-ml">WhatsApp *</label><input type="tel" class="tdp-mi" name="contact[WhatsApp]" required placeholder="+971 50 xxx xxxx"></div><div class="tdp-mf"><label class="tdp-ml">Email *</label><input type="email" class="tdp-mi" name="contact[email]" required placeholder="you@company.com"></div></div>
         <div class="tdp-mf"><label class="tdp-ml">Product</label><input type="text" class="tdp-mi" name="contact[Product]" value="{{ product.title }}" readonly style="opacity:.55"></div>
@@ -509,6 +511,40 @@ document.getElementById('tdp-modal').addEventListener('click',function(e){if(e.t
 
 /* seamless autoplay for gallery video */
 (function(){function pl(v){if(!v)return;try{v.muted=true;var p=v.play();if(p&&p.catch)p.catch(function(){});}catch(e){}}function kick(){pl(document.querySelector('#tdpMain video'));}if(document.readyState!=='loading')kick();else document.addEventListener('DOMContentLoaded',kick);window.addEventListener('load',kick);document.addEventListener('DOMContentLoaded',function(){var m=document.getElementById('tdpMain');if(m&&'IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){var v=m.querySelector('video');if(!v)return;if(e.isIntersecting){pl(v);}else{try{v.pause();}catch(_){}}});},{threshold:0.2}).observe(m);}setInterval(function(){var v=document.querySelector('#tdpMain video');if(v&&v.paused&&!v.ended){var r=v.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)pl(v);}},1200);});})();
+</script>
+<script>
+/* Lead mirror. Copies each commission inquiry to the Google Sheet pipeline as the
+   form submits. The native Shopify contact POST is never blocked, so if the endpoint
+   is down or unset we still get the lead by email exactly as before. */
+(function(){
+  var EP = {{ settings.tdp_lead_endpoint | default: '' | json }};
+  var form = document.getElementById('tdp-mform');
+  if(!EP || !form) return;
+  var sent = false;
+  form.addEventListener('submit', function(){
+    if(sent) return; sent = true;
+    try{
+      var hp = document.getElementById('tdp-hp');
+      if(hp && hp.value) return; /* bot filled the honeypot */
+      var d = {};
+      new FormData(form).forEach(function(v,k){
+        var m = k.match(/^contact\[(.+)\]$/);
+        if(m) d[m[1]] = v;
+      });
+      var q = new URLSearchParams(location.search);
+      d.page_url     = location.href;
+      d.referrer     = document.referrer || '';
+      d.utm_source   = q.get('utm_source')   || '';
+      d.utm_medium   = q.get('utm_medium')   || '';
+      d.utm_campaign = q.get('utm_campaign') || '';
+      d.device       = window.innerWidth < 750 ? 'Mobile' : 'Desktop';
+      d.submission_id = String(Date.now()) + '-' + Math.random().toString(36).slice(2,10);
+      var body = new Blob([JSON.stringify(d)], {type:'text/plain;charset=UTF-8'});
+      if(navigator.sendBeacon) navigator.sendBeacon(EP, body);
+      else fetch(EP, {method:'POST', body: body, keepalive:true, mode:'no-cors'});
+    }catch(e){}
+  }, true);
+})();
 </script>
 <script>
 (function(){try{var s=document.querySelector('.tdp-s7');if(!s)return;var fills=s.querySelectorAll('.tdp-bar-fill');var done=false;function go(){if(done)return;done=true;s.classList.add('tdp-animate');for(var i=0;i<fills.length;i++){var f=fills[i],t=f.style.width;f.style.transition='none';f.style.width='0';void f.offsetWidth;f.style.transition='';f.style.width=t;}}if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){go();io.disconnect();}});},{threshold:0,rootMargin:'0px 0px -12% 0px'});io.observe(s);}else{go();}}catch(e){}})();
