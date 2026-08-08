@@ -145,8 +145,10 @@
 .tdp-s3-img{aspect-ratio:1/1;background:var(--bg-warm);overflow:hidden;display:flex;align-items:center;justify-content:center}
 .tdp-s3-img img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
 /* A portrait shot in this square frame loses its bottom quarter to
-   object-fit:cover, which cuts the feet off a standing figure. Fit those
-   whole and centre them instead; landscape and square shots still fill. */
+   object-fit:cover, which cuts the feet off a standing figure. The frame
+   takes the image's own ratio instead (set inline from its dimensions), so
+   the whole subject shows and no backing colour is left exposed down the
+   sides. Landscape and square shots keep the 1:1 frame and still fill it. */
 .tdp-s3-img img.is-portrait{object-fit:contain;object-position:center}.tdp-s3-credit{font-size:10px;line-height:1.45;color:rgba(255,255,255,.55);margin-top:8px;letter-spacing:.02em}
 .tdp-prov-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:30px}
 .tdp-prov-stat{background:var(--white);padding:18px 14px}
@@ -493,7 +495,7 @@ img,svg,video,iframe{max-width:100%}
           assign s3_portrait = true
         endif
       endif
-    -%}{%- if s3_img -%}<div class="tdp-s3-img"><img{% if s3_portrait %} class="is-portrait"{% endif %} src="{{ s3_img | image_url: width: 700 }}" alt="{{ product.title | escape }}" loading="lazy"{%- if section.settings.s3_focus != blank %} style="object-position:{{ section.settings.s3_focus }}"{% endif -%}></div>{%- else -%}<div class="tdp-s3-img"><svg width="52" height="40" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.18)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg></div>{%- endif -%}{%- if section.settings.s3_credit != blank -%}<div class="tdp-s3-credit">{{ section.settings.s3_credit }}</div>{%- endif -%}</div>
+    -%}{%- if s3_img -%}<div class="tdp-s3-img"{% if s3_portrait %} style="aspect-ratio:{{ s3_img.width }}/{{ s3_img.height }}"{% endif %}><img{% if s3_portrait %} class="is-portrait"{% endif %} src="{{ s3_img | image_url: width: 700 }}" alt="{{ product.title | escape }}" loading="lazy"{%- if section.settings.s3_focus != blank %} style="object-position:{{ section.settings.s3_focus }}"{% endif -%}></div>{%- else -%}<div class="tdp-s3-img"><svg width="52" height="40" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.18)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg></div>{%- endif -%}{%- if section.settings.s3_credit != blank -%}<div class="tdp-s3-credit">{{ section.settings.s3_credit }}</div>{%- endif -%}</div>
   </div></div>
 
   <!-- S4: VIDEO — 2-col header + full video + 4-col chapters -->
