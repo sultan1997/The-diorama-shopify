@@ -471,7 +471,7 @@ img,svg,video,iframe{max-width:100%}
 
   <!-- S2: WORKSHOP — IMAGE left, TEXT right (always on) -->
   <div class="tdp-sec tdp-s2"><div class="tdp-s2-inner">
-    <div>{%- if section.settings.s2_image != blank -%}<div class="tdp-s2-img"><img src="{{ section.settings.s2_image | image_url: width: 820 }}" alt="{{ product.title | escape }}" loading="lazy"><div class="tdp-s2-img-lbl">{{ case_eyebrow | upcase | default: 'WORKSHOP &middot; COMMISSION' }}</div></div>{%- elsif case_image != blank -%}<div class="tdp-s2-img"><img src="{{ case_image | image_url: width: 820 }}" alt="{{ product.title }}" loading="lazy"><div class="tdp-s2-img-lbl">{{ case_eyebrow | upcase | default: 'WORKSHOP &middot; COMMISSION' }}</div></div>{%- elsif product.featured_image -%}<div class="tdp-s2-img"><img src="{{ product.featured_image | image_url: width: 820 }}" alt="{{ product.title }}" loading="lazy"></div>{%- else -%}<div class="tdp-s2-img" style="display:flex;align-items:center;justify-content:center;"><svg width="52" height="40" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.18)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg></div>{%- endif -%}</div>
+    <div>{%- if section.settings.s2_image != blank -%}<div class="tdp-s2-img"><img src="{{ section.settings.s2_image | image_url: width: 820 }}" alt="{{ product.title | escape }}" loading="lazy"><div class="tdp-s2-img-lbl">{{ case_eyebrow | upcase | default: 'WORKSHOP &middot; COMMISSION' }}</div></div>{%- elsif case_image != blank -%}<div class="tdp-s2-img"><img src="{{ case_image | image_url: width: 820 }}" alt="{{ product.title }}" loading="lazy"><div class="tdp-s2-img-lbl">{{ case_eyebrow | upcase | default: 'WORKSHOP &middot; COMMISSION' }}</div></div>{%- elsif product.images[1] -%}<div class="tdp-s2-img"><img src="{{ product.images[1] | image_url: width: 820 }}" alt="{{ product.title }}" loading="lazy"></div>{%- elsif product.featured_image -%}<div class="tdp-s2-img"><img src="{{ product.featured_image | image_url: width: 820 }}" alt="{{ product.title }}" loading="lazy"></div>{%- else -%}<div class="tdp-s2-img" style="display:flex;align-items:center;justify-content:center;"><svg width="52" height="40" viewBox="0 0 80 60" fill="none" stroke="rgba(184,146,42,.18)" stroke-width="1.5"><rect x="4" y="28" width="72" height="16" rx="2"/><path d="M4 28 L12 16 L68 16 L76 28"/></svg></div>{%- endif -%}</div>
     <div><h2 class="tdp-sec-h">{{ case_heading | default: 'Built by four hands, never four hundred.' }}</h2><p class="tdp-sec-p">{{ case_body | default: 'Every model is built and finished by artisan in Dubai, from the first grain laid on the hull to the last line of rigging on the mainmast.' }}</p>{%- if case_quote != blank -%}<div class="tdp-quote"><div class="tdp-quote-text">&ldquo;{{ case_quote }}&rdquo;</div>{%- if case_quote_attr != blank -%}<div class="tdp-quote-attr">{{ case_quote_attr }}</div>{%- endif -%}</div>{%- endif -%}</div>
   </div></div>
 
@@ -482,8 +482,13 @@ img,svg,video,iframe{max-width:100%}
     <div>{%- liquid
       # Resolve the provenance image once so the portrait test below applies
       # to whichever source actually wins, not just the section setting.
+      # Gallery fallbacks are staggered so the editorial sections never repeat
+      # each other or the hero: the case block takes gallery image 2, this one
+      # takes image 3, and each drops back only if the shot does not exist.
       if section.settings.s3_image != blank
         assign s3_img = section.settings.s3_image
+      elsif product.images[2]
+        assign s3_img = product.images[2]
       elsif product.images[1]
         assign s3_img = product.images[1]
       elsif product.featured_image
