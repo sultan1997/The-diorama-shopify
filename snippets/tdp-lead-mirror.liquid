@@ -1,0 +1,83 @@
+{%- comment -%}
+  Lead mirror — copies every lead-generating form submission to the Google
+  Sheet pipeline (Apps Script endpoint set in Theme settings > Lead capture).
+
+  Rendered once from theme.liquid so it covers all four forms wherever they
+  appear: the product-page inquiry modal, the global commission form on the
+  homepage and contact page, the contact page form, and the footer newsletter.
+
+  The native Shopify POST is never blocked or delayed — sendBeacon hands the
+  copy to the browser and returns immediately. If the endpoint is down, the
+  URL is blank, or this script throws, Shopify's own notification email still
+  arrives exactly as before. The sheet is additive, never a point of failure.
+{%- endcomment -%}
+
+{%- if settings.tdp_lead_endpoint != blank -%}
+<script>
+(function () {
+  var EP = {{ settings.tdp_lead_endpoint | json }};
+
+  /* form id -> label recorded in the sheet's Form column */
+  var FORMS = {
+    'tdp-mform':    'Product inquiry',
+    'tdpg-mform':   'Commission inquiry',
+    'ContactForm':  'Contact page',
+    'contact_form': 'Newsletter'
+  };
+
+  /* Give every tracked form a honeypot. Bots fill hidden fields; humans can't
+     see them. Not a contact[...] field, so Shopify ignores it entirely. */
+  function armHoneypots() {
+    Object.keys(FORMS).forEach(function (id) {
+      var f = document.getElementById(id);
+      if (!f || f.querySelector('input[name="tdp_hp"]')) return;
+      var wrap = document.createElement('div');
+      wrap.setAttribute('aria-hidden', 'true');
+      wrap.style.cssText = 'position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden';
+      wrap.innerHTML = '<label>Website<input type="text" name="tdp_hp" tabindex="-1" autocomplete="off"></label>';
+      f.appendChild(wrap);
+    });
+  }
+  if (document.readyState !== 'loading') armHoneypots();
+  else document.addEventListener('DOMContentLoaded', armHoneypots);
+
+  var sent = {};
+
+  document.addEventListener('submit', function (ev) {
+    try {
+      var form = ev.target;
+      if (!form || form.tagName !== 'FORM') return;
+
+      var label = FORMS[form.id];
+      if (!label) return;                       /* not a form we track */
+      if (sent[form.id]) return;                /* double-submit guard */
+
+      var hp = form.querySelector('input[name="tdp_hp"]');
+      if (hp && hp.value) return;               /* bot */
+
+      sent[form.id] = 1;
+
+      var d = {};
+      new FormData(form).forEach(function (v, k) {
+        var m = k.match(/^contact\[(.+)\]$/);
+        if (m) d[m[1]] = v;
+      });
+
+      var q = new URLSearchParams(location.search);
+      d.form         = label;
+      d.page_url     = location.href;
+      d.referrer     = document.referrer || '';
+      d.utm_source   = q.get('utm_source')   || '';
+      d.utm_medium   = q.get('utm_medium')   || '';
+      d.utm_campaign = q.get('utm_campaign') || '';
+      d.device       = window.innerWidth < 750 ? 'Mobile' : 'Desktop';
+      d.submission_id = String(Date.now()) + '-' + Math.random().toString(36).slice(2, 10);
+
+      var body = new Blob([JSON.stringify(d)], { type: 'text/plain;charset=UTF-8' });
+      if (navigator.sendBeacon) navigator.sendBeacon(EP, body);
+      else fetch(EP, { method: 'POST', body: body, keepalive: true, mode: 'no-cors' });
+    } catch (e) { /* never let this break a real submission */ }
+  }, true);
+})();
+</script>
+{%- endif -%}
