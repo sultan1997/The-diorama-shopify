@@ -1,0 +1,178 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "diorama-product": {
+      "type": "diorama-product",
+      "blocks": {
+        "feat-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/couple-f5.png",
+            "caption": "Personalised",
+            "num": "F-01",
+            "detail": "DETAIL",
+            "title": "Engraved With Your Names",
+            "desc": "Both partner names and your own message are laser-engraved onto the base - a keepsake that is unmistakably the two of you, not an off-the-shelf gift."
+          }
+        },
+        "feat-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/couple-f2.png",
+            "caption": "Display Case",
+            "num": "F-02",
+            "detail": "DETAIL",
+            "title": "Sealed & Ready to Display",
+            "desc": "Arrives inside a crystal-clear case on a solid base, keeping the figurine dust-free and gift-ready on any desk, shelf or bedside table."
+          }
+        },
+        "feat-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/couple-f3.png",
+            "caption": "Two Versions",
+            "num": "F-03",
+            "detail": "DETAIL",
+            "title": "Young or Mature Love",
+            "desc": "Pick the pairing that suits the couple - Young Love (white figure, red heart) or Mature Love (grey figure, golden heart)."
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Is it made to order?",
+            "a": "Yes - each figurine is handcrafted and personalised to order in Dubai, then checked against your order before it is sealed in its case and shipped."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "How do I personalise it?",
+            "a": "Enter both partner names and a short message directly on the product page before you add to cart, and we laser-engrave them onto the base. The message can be up to 25 characters - perfect for an anniversary date or a short line."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "What's the difference between Young Love and Mature Love?",
+            "a": "It is the colourway. Young Love is a white figure with a red heart; Mature Love is a grey figure with a golden heart. The engraving colour matches the heart. The sculpture and personalisation are the same on both."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "What is it made of and how big is it?",
+            "a": "A cast-resin embracing couple in a crystal-clear acrylic display case on an engraved base, approximately 10 x 10 x 10 cm - dust-free and ready to display."
+          }
+        },
+        "faq-5": {
+          "type": "faq",
+          "settings": {
+            "q": "Do you ship worldwide?",
+            "a": "Yes - we ship worldwide from Dubai, UAE with tracked delivery, as well as across the UAE domestically."
+          }
+        }
+      },
+      "block_order": [
+        "feat-1",
+        "feat-2",
+        "feat-3",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "faq-5"
+      ],
+      "settings": {
+        "ann_text": "",
+        "edition_label": "PERSONALISED",
+        "year_lbl": "UAE",
+        "commission_price": "",
+        "workshop": "The Diorama · Dubai, UAE",
+        "lead_time": "7-14 business days - made on demand",
+        "returns": "Insured worldwide delivery",
+        "hero_desc": "Two names, one embrace - a minimalist embracing-couple sculpture cradling a single heart, sealed in a crystal-clear display case on a personalised base engraved with both your names and your own message.",
+        "hspec_title": "Product specs",
+        "hspec1_k": "Materials",
+        "hspec1_v": "Cast resin figure, acrylic display case, engraved acrylic base",
+        "hspec2_k": "Versions",
+        "hspec2_v": "Young Love (white + red) / Mature Love (grey + gold)",
+        "hspec3_k": "Dimensions",
+        "hspec3_v": "Approx. 10 x 10 x 10 cm",
+        "hspec4_k": "Personalisation",
+        "hspec4_v": "2 names + 1 message, laser engraved",
+        "usp1_label": "Worldwide Shipping",
+        "usp2_label": "Handcrafted",
+        "usp3_label": "Personalised",
+        "perso_enable": true,
+        "perso_label": "Partner name 1",
+        "perso_placeholder": "e.g. your name",
+        "perso_required": true,
+        "desc_title": "Made for",
+        "desc_title_em": "the two of you.",
+        "s1_body": "An embracing couple, cradling a single heart and sealed in a clear display case - personalised on the base with both your names and your own message. Not an off-the-shelf gift, but the two of you.",
+        "s2_image": "shopify://shop_images/couple-case.jpg",
+        "case_eyebrow": "Case Study",
+        "case_heading": "Best Friends' Wedding Gift",
+        "case_body": "Made as a wedding gift for Sultan's best friend. He did not want to give a generic gift like a perfume or a watch, so he decided to create a unique keepsake instead. His friend Pranay was overjoyed - he kept the white piece and gave the grey one to his parents. That is how we decided that white is 'Young Love' and grey is 'Mature Love'.",
+        "case_quote": "My gift stood apart from every other gift he received - an amazing keepsake, and the product quality is superb.",
+        "case_quote_attr": "Sultan Morbiwala",
+        "s3_image": "shopify://shop_images/couple-prov.jpg",
+        "prov_h": "Personalised",
+        "prov_hem": "for you.",
+        "prov_p": "It's easy to give a gift you picked up ready-made from the market. But to truly make someone feel special, nothing beats a personalised one - engraved with your names and your own moment.",
+        "video_url": "",
+        "vid_portrait": true,
+        "vid_h": "",
+        "vid_hem": "",
+        "vid_sub": "",
+        "vid_meta": "",
+        "vid_dur": "",
+        "spec_h": "",
+        "spec_hem": "",
+        "spec_p": "",
+        "spec_dim_sub": "Approx. 10 x 10 x 10 cm",
+        "spec_mat_sub": "Resin + acrylic",
+        "build_time": "",
+        "certificate": "",
+        "lead_artisan": "",
+        "insurance_note": "",
+        "faq_h": "Common questions.",
+        "faq_p": "The questions that come up most often - a real person answers everything else.",
+        "rev_h": "Customer Reviews",
+        "rev_score": "5.0",
+        "rev_count": "8",
+        "rev5": "21",
+        "rev4": "2",
+        "rev2": "1",
+        "rev3": "0",
+        "rev1": "0",
+        "cta_ey": "Want a keepsake of your own?",
+        "cta_heading": "Every great gift begins with",
+        "cta_heading_em": "one conversation.",
+        "perso_max": 20,
+        "perso2_enable": true,
+        "perso2_label": "Partner name 2",
+        "perso2_placeholder": "e.g. their name",
+        "perso2_required": true,
+        "perso2_max": 20,
+        "perso3_enable": true,
+        "perso3_label": "Message",
+        "perso3_placeholder": "e.g. 7th Feb 2025",
+        "perso3_required": true,
+        "perso3_max": 25
+      }
+    }
+  },
+  "order": [
+    "diorama-product"
+  ]
+}
