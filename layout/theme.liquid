@@ -10,6 +10,15 @@
       if(q.get('contact_posted')==='true'&&location.pathname.indexOf('thank-you-inquiry')===-1){
         location.replace('/pages/thank-you-inquiry');}}catch(e){}})();
     </script>
+    {%- if page.handle == 'thank-you-inquiry' -%}
+    <!-- Meta Pixel: Lead conversion, inquiry thank-you page only -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1063077242966074');
+    fbq('track','Lead',{content_name:'Website inquiry',content_category:'Customization / Bulk order'});
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1063077242966074&ev=Lead&noscript=1"/></noscript>
+    {%- endif -%}
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
