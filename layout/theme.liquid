@@ -1,6 +1,15 @@
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
   <head>
+    <script>
+    /* Lead thank-you redirect: a successful contact/inquiry submit (product inquiry,
+       commission, contact page) reloads with ?contact_posted=true. Send those leads
+       to the dedicated thank-you page. Lead capture already fired via sendBeacon on
+       submit (see tdp-lead-mirror), so this redirect never affects the Sheet/email. */
+    (function(){try{var q=new URLSearchParams(location.search);
+      if(q.get('contact_posted')==='true'&&location.pathname.indexOf('thank-you-inquiry')===-1){
+        location.replace('/pages/thank-you-inquiry');}}catch(e){}})();
+    </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
