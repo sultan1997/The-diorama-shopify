@@ -32,6 +32,13 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
 
+    {%- comment -%} Perf: connect to Google Fonts early, and preload the LCP product image {%- endcomment -%}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    {%- if product and product.media.first.media_type == 'image' -%}
+      <link rel="preload" as="image" href="{{ product.media.first | image_url: width: 960 }}" fetchpriority="high">
+    {%- endif -%}
+
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
