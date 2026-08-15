@@ -32,11 +32,11 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
 
-    {%- comment -%} Perf: connect to Google Fonts early, and preload the LCP product image {%- endcomment -%}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    {%- comment -%} Perf: connect to the Google Fonts file CDN, and preload the LCP product image (responsive, matches the gallery <img>) {%- endcomment -%}
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     {%- if product and product.media.first.media_type == 'image' -%}
-      <link rel="preload" as="image" href="{{ product.media.first | image_url: width: 960 }}" fetchpriority="high">
+      {%- assign lcp_img = product.media.first -%}
+      <link rel="preload" as="image" fetchpriority="high" imagesrcset="{{ lcp_img | image_url: width: 400 }} 400w, {{ lcp_img | image_url: width: 550 }} 550w, {{ lcp_img | image_url: width: 750 }} 750w, {{ lcp_img | image_url: width: 960 }} 960w, {{ lcp_img | image_url: width: 1200 }} 1200w" imagesizes="(max-width: 749px) 100vw, 600px">
     {%- endif -%}
 
     {%- if settings.favicon != blank -%}
