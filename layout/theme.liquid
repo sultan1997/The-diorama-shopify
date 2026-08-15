@@ -443,6 +443,13 @@
     .tdp-s3-img img{object-fit:contain !important;object-position:center center !important;}
   </style>
   {%- endif -%}
+  {%- if product and product.handle contains 'bearbrick' -%}
+  <style>
+    /* Bearbrick figures are tall — show the whole figure instead of cropping top/bottom */
+    .tdp-feat-img img, .tdp-s2-img img{object-fit:contain !important;}
+    .tdp-feat-img, .tdp-s2-img{background:#f4f1ec !important;}
+  </style>
+  {%- endif -%}
   {%- unless request.page_type == 'product' -%}
   <div class="tdpg-ov" id="tdpg-modal" role="dialog" aria-modal="true">
     <div class="tdpg-modal">
