@@ -166,7 +166,7 @@
       </div>
       <div class="hero-media">
         <div class="hero-track">
-          <div class="m m1">{%- if section.settings.hero_img1 != blank -%}<img src="{{ section.settings.hero_img1 | image_url: width: 900 }}" alt="">{%- else -%}<span class="hero-ph"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m3 15 5-5 4 4 3-3 6 6"/></svg></span>{%- endif -%}</div>
+          <div class="m m1">{%- if section.settings.hero_img1 != blank -%}<img src="{{ section.settings.hero_img1 | image_url: width: 900 }}" alt="" fetchpriority="high" loading="eager">{%- else -%}<span class="hero-ph"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m3 15 5-5 4 4 3-3 6 6"/></svg></span>{%- endif -%}</div>
           <div class="m m2">{%- if section.settings.hero_img2 != blank -%}<img src="{{ section.settings.hero_img2 | image_url: width: 900 }}" alt="">{%- else -%}<span class="hero-ph"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg></span>{%- endif -%}</div>
           <div class="m m3">{%- if section.settings.hero_img3 != blank -%}<img src="{{ section.settings.hero_img3 | image_url: width: 900 }}" alt="">{%- else -%}<span class="hero-ph"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg></span>{%- endif -%}</div>
         </div>
