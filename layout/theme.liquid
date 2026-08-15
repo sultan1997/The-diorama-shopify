@@ -450,16 +450,17 @@
       <div id="tdpg-wrap">
         <div class="tdpg-h">Commission inquiry</div>
         <div class="tdpg-sub">Send your brief &mdash; We will get in touch with you soon.</div>
-        {%- form 'contact', id: 'tdpg-mform' -%}
+        {%- form 'contact', id: 'tdpg-mform', class: 'tdps-form' -%}
           {%- if form.posted_successfully? -%}<span id="tdpg-ok" hidden></span>{%- endif -%}
           {%- if form.errors -%}<div class="tdpg-err">{{ form.errors | default_errors }}</div>{%- endif -%}
           <input type="hidden" name="contact[Subject]" value="Diorama Website Lead &mdash; Commission (site)">
           <input type="hidden" name="contact[Lead source]" value="The Diorama website (site CTA)">
           <input type="hidden" name="contact[Page]" value="{{ canonical_url }}">
-          <div class="tdpg-row"><div class="tdpg-f"><label>Name *</label><input type="text" name="contact[name]" required placeholder="Your name"></div><div class="tdpg-f"><label>Company</label><input type="text" name="contact[Company]" placeholder="Company"></div></div>
-          <div class="tdpg-row"><div class="tdpg-f"><label>WhatsApp *</label><input type="tel" name="contact[WhatsApp]" required placeholder="+971 50 xxx xxxx"></div><div class="tdpg-f"><label>Email *</label><input type="email" name="contact[email]" required placeholder="you@company.com"></div></div>
-          <div class="tdpg-f"><label>Project Type *</label><select name="contact[Project type]" required><option value="" disabled selected>Select&hellip;</option><option>Custom commission &mdash; modified version</option><option>Corporate gifting &mdash; bulk order</option></select></div>
-          <div class="tdpg-f"><label>Brief</label><textarea name="contact[body]" placeholder="Scale, livery, deadline, quantity&hellip;"></textarea></div>
+          <input type="hidden" name="contact[Project type]" value="Website inquiry">
+          <div class="tdps-step"><div class="tdpg-f"><label>Name *</label><input type="text" name="contact[name]" required placeholder="Your name"></div></div>
+          <div class="tdps-step"><div class="tdpg-f"><label>WhatsApp *</label><input type="tel" name="contact[WhatsApp]" required placeholder="+971 50 xxx xxxx"></div></div>
+          <div class="tdps-step"><div class="tdpg-f"><label>Email *</label><input type="email" name="contact[email]" required placeholder="you@company.com"></div></div>
+          <div class="tdps-step"><div class="tdpg-f"><label>Brief</label><textarea name="contact[body]" placeholder="Scale, livery, deadline, quantity&hellip;"></textarea></div></div>
           <button type="submit" class="tdpg-send">Send inquiry &rarr;</button>
         {%- endform -%}
       </div>
@@ -492,7 +493,7 @@
   <script>
   (function(){
     function setHref(txt,url){[].slice.call(document.querySelectorAll('a')).forEach(function(a){if(a.textContent.trim().toLowerCase()===txt){var h=a.getAttribute('href');if(!h||h==='#'){a.setAttribute('href',url);}}});}
-    window.tdpgOpen=function(){var m=document.getElementById('tdpg-modal');if(m){m.classList.add('on');}};
+    window.tdpgOpen=function(){var m=document.getElementById('tdpg-modal');if(m){m.classList.add('on');}if(window.tdpsResetAll)window.tdpsResetAll();};
     window.tdpgClose=function(){var m=document.getElementById('tdpg-modal');if(m){m.classList.remove('on');}var w=document.getElementById('tdpg-wrap');if(w)w.style.display='block';var ok=document.getElementById('tdpg-okbox');if(ok)ok.style.display='none';};
     function run(){
       setHref('get inspiration','/collections');
@@ -511,6 +512,94 @@
     }
     document.addEventListener('click',function(e){var m=document.getElementById('tdpg-modal');if(m&&e.target===m)tdpgClose();});
     if(document.readyState!=='loading')run();else document.addEventListener('DOMContentLoaded',run);
+  })();
+  </script>
+
+  {%- comment -%} Stepped (SurveyMonkey-style) inquiry forms — one field per screen. Progressive enhancement: without JS all steps show as a normal form. {%- endcomment -%}
+  <style>
+    form.tdps-form.tdps-ready .tdps-step{display:none;}
+    form.tdps-form.tdps-ready .tdps-step.tdps-on{display:block;animation:tdps-in .28s ease;}
+    @keyframes tdps-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    .tdps-top{margin-bottom:18px;}
+    .tdps-prog{height:3px;background:#ececf1;border-radius:3px;overflow:hidden;}
+    .tdps-prog-bar{height:100%;width:0;background:#2A0FBE;transition:width .32s cubic-bezier(.4,0,.2,1);}
+    .tdps-count{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#b3b3bd;margin-top:8px;}
+    .tdps-nav{display:flex;align-items:center;gap:12px;margin-top:16px;}
+    .tdps-back{background:none;border:none;color:#9a9aa5;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;padding:8px 2px;}
+    .tdps-back:hover{color:#2A0FBE;}
+    .tdps-next{margin-left:auto;background:#2A0FBE;color:#fff;border:none;padding:13px 30px;font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;font-family:inherit;transition:background .2s;}
+    .tdps-next:hover{background:#22099A;}
+    form.tdps-form.tdps-ready .tdps-nav button[type="submit"]{width:auto;margin:0 0 0 auto;}
+  </style>
+  <script>
+  (function(){
+    function initForm(form){
+      try{
+        var steps=[].slice.call(form.querySelectorAll('.tdps-step'));
+        if(steps.length<2){return;}
+        var top=document.createElement('div');
+        top.className='tdps-top';
+        top.innerHTML='<div class="tdps-prog"><div class="tdps-prog-bar"></div></div><div class="tdps-count"></div>';
+        form.insertBefore(top,form.firstChild);
+        var bar=top.querySelector('.tdps-prog-bar'), cnt=top.querySelector('.tdps-count');
+        var submitBtn=form.querySelector('button[type="submit"],input[type="submit"]');
+        var idx=0;
+        function firstInput(step){return step.querySelector('input,select,textarea');}
+        function render(){
+          for(var i=0;i<steps.length;i++){steps[i].classList.toggle('tdps-on',i===idx);}
+          bar.style.width=(steps.length>1?(idx/(steps.length-1)*100):100)+'%';
+          cnt.textContent='Step '+(idx+1)+' of '+steps.length;
+          var inp=firstInput(steps[idx]);
+          if(inp){setTimeout(function(){try{inp.focus();}catch(e){}},70);}
+        }
+        function valid(i){
+          var inp=firstInput(steps[i]);
+          if(!inp){return true;}
+          if(inp.checkValidity&&!inp.checkValidity()){if(inp.reportValidity){inp.reportValidity();}return false;}
+          return true;
+        }
+        function go(n){
+          if(n>idx&&!valid(idx)){return;}
+          idx=Math.max(0,Math.min(steps.length-1,n));
+          render();
+        }
+        for(var i=0;i<steps.length;i++){
+          (function(i){
+            var nav=document.createElement('div');
+            nav.className='tdps-nav';
+            if(i>0){
+              var b=document.createElement('button');
+              b.type='button';b.className='tdps-back';b.innerHTML='&larr; Back';
+              b.onclick=function(){go(idx-1);};
+              nav.appendChild(b);
+            }
+            if(i<steps.length-1){
+              var nx=document.createElement('button');
+              nx.type='button';nx.className='tdps-next';nx.innerHTML='Next &rarr;';
+              nx.onclick=function(){go(idx+1);};
+              nav.appendChild(nx);
+            }else if(submitBtn){
+              nav.appendChild(submitBtn);
+            }
+            steps[i].appendChild(nav);
+          })(i);
+        }
+        form.addEventListener('keydown',function(e){
+          if(e.key==='Enter'||e.keyCode===13){
+            var t=e.target;
+            if(t&&t.tagName!=='TEXTAREA'&&steps[idx]&&steps[idx].contains(t)&&idx<steps.length-1){
+              e.preventDefault();go(idx+1);
+            }
+          }
+        });
+        form.tdpsReset=function(){idx=0;render();};
+        form.classList.add('tdps-ready');
+        render();
+      }catch(err){form.classList.remove('tdps-ready');}
+    }
+    window.tdpsResetAll=function(){[].slice.call(document.querySelectorAll('form.tdps-form')).forEach(function(f){if(f.tdpsReset){f.tdpsReset();}});};
+    function init(){[].slice.call(document.querySelectorAll('form.tdps-form')).forEach(initForm);}
+    if(document.readyState!=='loading'){init();}else{document.addEventListener('DOMContentLoaded',init);}
   })();
   </script>
       {%- comment -%} awards-cta-label: secondary CTA label for Awards & Trophies products {%- endcomment -%}

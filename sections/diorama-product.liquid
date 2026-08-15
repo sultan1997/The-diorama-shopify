@@ -402,16 +402,17 @@ img,svg,video,iframe{max-width:100%}
     <div id="tdp-mfwrap">
       <div class="tdp-modal-h">Commission inquiry</div>
       <div class="tdp-modal-sub">Send your brief &mdash; we reply on WhatsApp within 90 minutes.</div>
-      {%- form 'contact', id: 'tdp-mform' -%}{%- if form.posted_successfully? -%}<span id="tdp-contact-ok" hidden></span>{%- endif -%}{%- if form.errors -%}<div class="tdp-mform-err" style="color:#b00020;font-size:12px;line-height:1.5;margin-bottom:10px">{{ form.errors | default_errors }}</div>{%- endif -%}
+      {%- form 'contact', id: 'tdp-mform', class: 'tdps-form' -%}{%- if form.posted_successfully? -%}<span id="tdp-contact-ok" hidden></span>{%- endif -%}{%- if form.errors -%}<div class="tdp-mform-err" style="color:#b00020;font-size:12px;line-height:1.5;margin-bottom:10px">{{ form.errors | default_errors }}</div>{%- endif -%}
         <input type="hidden" name="contact[Subject]" value="Diorama Website Lead — {{ product.title | escape }}">
         <input type="hidden" name="contact[Lead source]" value="The Diorama website (the-diorama.com)">
         <input type="hidden" name="contact[Product page]" value="https://the-diorama.com{{ product.url }}">
+        <input type="hidden" name="contact[Product]" value="{{ product.title | escape }}">
+        <input type="hidden" name="contact[Project type]" value="Website inquiry">
         <div class="tdp-hp-wrap" aria-hidden="true"><label>Website<input type="text" id="tdp-hp" name="tdp_hp" tabindex="-1" autocomplete="off"></label></div>
-        <div class="tdp-mrow"><div class="tdp-mf"><label class="tdp-ml">Name *</label><input type="text" class="tdp-mi" name="contact[name]" required placeholder="Your name"></div><div class="tdp-mf"><label class="tdp-ml">Company</label><input type="text" class="tdp-mi" name="contact[Company]" placeholder="Company"></div></div>
-        <div class="tdp-mrow"><div class="tdp-mf"><label class="tdp-ml">WhatsApp *</label><input type="tel" class="tdp-mi" name="contact[WhatsApp]" required placeholder="+971 50 xxx xxxx"></div><div class="tdp-mf"><label class="tdp-ml">Email *</label><input type="email" class="tdp-mi" name="contact[email]" required placeholder="you@company.com"></div></div>
-        <div class="tdp-mf"><label class="tdp-ml">Product</label><input type="text" class="tdp-mi" name="contact[Product]" value="{{ product.title }}" readonly style="opacity:.55"></div>
-        <div class="tdp-mf"><label class="tdp-ml">Project Type *</label><select class="tdp-ms" name="contact[Project type]" required><option value="" disabled selected>Select&hellip;</option><option>Custom commission &mdash; identical to product shown</option><option>Custom commission &mdash; modified version</option><option>Corporate gifting &mdash; bulk order</option><option>3D file download</option><option>Other</option></select></div>
-        <div class="tdp-mf"><label class="tdp-ml">Brief</label><textarea class="tdp-mta" name="contact[body]" placeholder="Scale, livery, deadline, quantity&hellip;"></textarea></div>
+        <div class="tdps-step"><div class="tdp-mf"><label class="tdp-ml">Name *</label><input type="text" class="tdp-mi" name="contact[name]" required placeholder="Your name"></div></div>
+        <div class="tdps-step"><div class="tdp-mf"><label class="tdp-ml">WhatsApp *</label><input type="tel" class="tdp-mi" name="contact[WhatsApp]" required placeholder="+971 50 xxx xxxx"></div></div>
+        <div class="tdps-step"><div class="tdp-mf"><label class="tdp-ml">Email *</label><input type="email" class="tdp-mi" name="contact[email]" required placeholder="you@company.com"></div></div>
+        <div class="tdps-step"><div class="tdp-mf"><label class="tdp-ml">Brief</label><textarea class="tdp-mta" name="contact[body]" placeholder="Scale, livery, deadline, quantity&hellip;"></textarea></div></div>
         <button type="submit" class="tdp-msub">Send inquiry &rarr;</button>
       {%- endform -%}
     </div>
@@ -544,7 +545,7 @@ function tdpPersoCount(el){var m=parseInt(el.getAttribute('maxlength')||'0',10);
 function tdpQty(d){var el=document.getElementById('tdp-qty-val');if(!el)return;var n=parseInt(el.value,10);if(isNaN(n)||n<1)n=1;n=n+d;if(n<1)n=1;el.value=n;}
 function tdpTab(el,pid){var wrap=document.getElementById('tdp-s5');wrap.querySelectorAll('.tdp-tab').forEach(function(t){t.classList.remove('on');});wrap.querySelectorAll('.tdp-panel').forEach(function(p){p.classList.remove('on');});el.classList.add('on');var p=document.getElementById(pid);if(p)p.classList.add('on');}
 function tdpFaq(item){var open=item.classList.contains('open');document.querySelectorAll('.tdp-faq').forEach(function(i){i.classList.remove('open');});if(!open)item.classList.add('open');}
-function tdpOpenModal(){document.getElementById('tdp-modal').classList.add('on');}
+function tdpOpenModal(){document.getElementById('tdp-modal').classList.add('on');if(window.tdpsResetAll)window.tdpsResetAll();}
 function tdpCloseModal(){document.getElementById('tdp-modal').classList.remove('on');document.getElementById('tdp-mfwrap').style.display='block';document.getElementById('tdp-mok').style.display='none';document.getElementById('tdp-mform').reset();}
 document.getElementById('tdp-modal').addEventListener('click',function(e){if(e.target===this)tdpCloseModal();});
 (function(){var q=new URLSearchParams(location.search);var ok=document.getElementById('tdp-contact-ok')||q.get('contact_posted')==='true';var errEl=document.querySelector('#tdp-mform .tdp-mform-err');if(ok){tdpOpenModal();document.getElementById('tdp-mfwrap').style.display='none';document.getElementById('tdp-mok').style.display='block';if(history.replaceState){history.replaceState(null,'',location.pathname);}}else if(errEl){tdpOpenModal();}})();
