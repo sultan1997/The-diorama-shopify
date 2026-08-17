@@ -54,11 +54,11 @@
 .tdp-img-view{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-light);border:1px solid var(--border-warm);padding:4px 12px;background:rgba(250,250,250,.92);white-space:nowrap}
 .tdp-img-count{position:absolute;bottom:14px;left:14px;font-size:9px;letter-spacing:.06em;color:var(--ink-faint)}
 .tdp-img-count{display:none}
-.tdp-nav-rail{position:absolute;top:0;left:0;width:100%;aspect-ratio:var(--tdp-ar,0.8);pointer-events:none;z-index:6}.tdp-nav{position:absolute;top:50%;transform:translateY(-50%);pointer-events:auto;width:42px;height:42px;border-radius:50%;background:rgba(250,250,250,.92);border:1px solid rgba(0,0,0,.08);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:6;box-shadow:0 1px 7px rgba(0,0,0,.13);transition:background .15s,box-shadow .15s}
+.tdp-nav-rail{position:absolute;top:0;left:0;width:100%;aspect-ratio:var(--tdp-ar,0.8);pointer-events:none;z-index:6}.tdp-nav{position:absolute;top:50%;transform:translateY(-50%);pointer-events:auto;width:44px;height:44px;border-radius:50%;background:rgba(250,250,250,.92);border:1px solid rgba(0,0,0,.08);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:6;box-shadow:0 1px 7px rgba(0,0,0,.13);transition:background .15s,box-shadow .15s}
 .tdp-nav:hover{background:#fff;box-shadow:0 3px 12px rgba(0,0,0,.2)}
 .tdp-nav svg{width:17px;height:17px;stroke:var(--ink);stroke-width:1.8;fill:none}
 .tdp-nav-prev{left:12px}.tdp-nav-next{right:12px}
-@media(max-width:600px){.tdp-nav{width:36px;height:36px}.tdp-nav svg{width:15px;height:15px}}
+@media(max-width:600px){.tdp-nav{width:44px;height:44px}.tdp-nav svg{width:16px;height:16px}}
 .tdp-eyebrow{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:8px}
 .tdp-eyebrow::before{content:'';width:14px;height:1px;background:var(--gold);display:inline-block}
 .tdp-title{font-family:var(--serif);font-size:38px;font-weight:400;line-height:1.04;color:var(--ink);margin-bottom:6px}
@@ -81,9 +81,9 @@
 .tdp-var-stock{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#3A7A4A;margin-top:2px;text-align:right}
 .tdp-var-stock.out{color:var(--ink-faint)}
 .tdp-actions{display:flex;flex-direction:column;gap:8px;margin-bottom:22px}
-.tdp-btn-cart{width:100%;background:var(--ink);color:#fff;border:none;padding:15px;font-size:10px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;cursor:pointer;font-family:var(--sans);transition:background .2s}
+.tdp-btn-cart{width:100%;background:var(--ink);color:#fff;border:none;padding:15px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;font-family:var(--sans);transition:background .2s}
 .tdp-btn-cart:hover{background:var(--gold)}
-.tdp-btn-inq{width:100%;background:none;border:1.5px solid var(--border-warm);color:var(--ink-mid);padding:13px;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;font-family:var(--sans);transition:all .2s}
+.tdp-btn-inq{width:100%;background:none;border:1.5px solid var(--border-warm);color:var(--ink-mid);padding:14px;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;font-family:var(--sans);transition:all .2s}
 .tdp-btn-inq:hover{border-color:var(--ink);color:var(--ink)}
 /* Quote pages have no cart button, so the enquiry becomes the primary action.
    Keeps the .tdp-btn-inq class - the sticky bar anchors to it. */
@@ -100,7 +100,7 @@
 .tdp-perso{margin-bottom:14px}
 .tdp-perso-lbl{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-light);margin-bottom:6px;display:block}
 .tdp-perso-opt{font-weight:400;text-transform:none;letter-spacing:0;color:var(--ink-faint)}
-.tdp-perso-input{width:100%;background:var(--white);border:1.5px solid var(--border);color:var(--ink);padding:11px 13px;font-size:13px;font-family:var(--sans);outline:none;transition:border-color .2s}
+.tdp-perso-input{width:100%;background:var(--white);border:1.5px solid var(--border);color:var(--ink);padding:12px 13px;font-size:16px;font-family:var(--sans);outline:none;transition:border-color .2s}
 .tdp-perso-input:focus{border-color:var(--ink)}.tdp-perso-count{font-size:10px;color:var(--ink-faint);margin-top:4px;text-align:right;min-height:12px}.tdp-perso-count.max{color:#c0392b;font-weight:600}.tdp-perso-req{color:#c0392b}
 .tdp-table{border-top:1px solid var(--border)}
 .tdp-trow{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)}
@@ -263,7 +263,7 @@
 .tdp-cta-btns{display:flex;gap:9px;flex-shrink:0}
 .tdp-cta-btn1{background:var(--gold);color:#fff;border:none;padding:13px 26px;font-size:9.5px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;font-family:var(--sans);text-decoration:none;display:inline-block;transition:background .2s}
 .tdp-cta-btn1:hover{background:#D4AA4A}
-.tdp-cta-btn2{background:none;border:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.6);padding:12px 22px;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;font-family:var(--sans);text-decoration:none;display:inline-block;transition:all .2s}
+.tdp-cta-btn2{background:none;border:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.75);padding:14px 22px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;font-family:var(--sans);text-decoration:none;display:inline-block;transition:all .2s}
 .tdp-cta-btn2:hover{border-color:var(--gold);color:var(--gold)}
 /* MODAL */
 .tdp-ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9999;align-items:center;justify-content:center;padding:20px}
@@ -275,7 +275,7 @@
 .tdp-modal-sub{font-size:12px;color:var(--ink-light);margin-bottom:24px;line-height:1.6}
 .tdp-mf{margin-bottom:12px}
 .tdp-ml{font-size:9px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-light);margin-bottom:5px;display:block}
-.tdp-mi,.tdp-ms,.tdp-mta{width:100%;background:var(--bg);border:1px solid var(--border);color:var(--ink);padding:11px 13px;font-size:13px;font-family:var(--sans);outline:none;transition:border-color .2s}
+.tdp-mi,.tdp-ms,.tdp-mta{width:100%;background:var(--bg);border:1px solid var(--border);color:var(--ink);padding:12px 13px;font-size:16px;font-family:var(--sans);outline:none;transition:border-color .2s}
 .tdp-mi:focus,.tdp-ms:focus,.tdp-mta:focus{border-color:var(--ink)}
 .tdp-mta{min-height:84px;resize:vertical}
 .tdp-mrow{display:grid;grid-template-columns:1fr 1fr;gap:11px}
@@ -333,7 +333,7 @@
 .tdp-table{width:100%}
 .tdp-tv{font-size:11px;text-align:right}
 .tdp-variant{grid-template-columns:1fr auto}
-.tdp-btn-cart,.tdp-btn-inq{font-size:9px;letter-spacing:.1em;padding:14px 8px}
+.tdp-btn-cart,.tdp-btn-inq{font-size:13px;letter-spacing:.08em;padding:15px 10px}
 .tdp-eyebrow{flex-wrap:wrap}
 img,svg,video,iframe{max-width:100%}
 }
@@ -541,6 +541,7 @@ var tdpDir=1;function tdpPreloadGallery(){try{tdpMedia.forEach(function(m,i){if(
 function tdpGall(el,i){document.querySelectorAll('.tdp-thumb').forEach(function(t){t.classList.remove('on');});el.classList.add('on');var m=tdpMedia[i],w=document.getElementById('tdpMain');if(!m)return;if(m.type==='image'){w.style.setProperty('--tdp-dir',(tdpDir<0?'-20px':'20px'));w.innerHTML='<img src="'+m.src+'" alt="'+m.alt+'" class="tdp-anim" style="width:100%;height:auto;display:block;">';}else if(m.type==='video'){var h='<video poster="'+(m.poster||'')+'" autoplay muted loop playsinline preload="auto" style="width:100%;height:auto;display:block;">';if(Array.isArray(m.src))m.src.forEach(function(s){h+='<source src="'+s.url+'" type="'+s.mime_type+'">';});h+='</video>';w.innerHTML=h;var v=w.querySelector('video');if(v){v.load();v.play().catch(function(){v.muted=true;v.play();});}}else if(m.type==='external_video'){var src=m.host==='youtube'?'https://www.youtube.com/embed/'+m.eid+'?autoplay=1&mute=1':'https://player.vimeo.com/video/'+m.eid+'?autoplay=1&muted=1';w.innerHTML='<iframe src="'+src+'" allow="autoplay;encrypted-media;fullscreen" allowfullscreen style="width:100%;aspect-ratio:16/9;border:none;display:block;"></iframe>';}
 var _vl=document.getElementById('tdpViewLbl');if(_vl)_vl.textContent=m.alt?m.alt.toUpperCase():'VIEW '+(i+1);var _vc=document.getElementById('tdpCount');if(_vc)_vc.textContent='IMAGE '+(i+1)+' / '+tdpMedia.length;}
 function tdpNav(d){tdpDir=d;var th=document.querySelectorAll(".tdp-thumb");if(!th.length)return;var cur=0;for(var i=0;i<th.length;i++){if(th[i].classList.contains("on")){cur=i;break;}}var n=(cur+d+th.length)%th.length;tdpGall(th[n],n);}
+(function(){var el=document.getElementById('tdpMain');if(!el)return;var x0=null,y0=null;el.addEventListener('touchstart',function(e){var t=e.changedTouches[0];x0=t.clientX;y0=t.clientY;},{passive:true});el.addEventListener('touchend',function(e){if(x0===null||typeof tdpNav!=='function'){return;}var t=e.changedTouches[0],dx=t.clientX-x0,dy=t.clientY-y0;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)*1.5){tdpNav(dx<0?1:-1);}x0=null;y0=null;},{passive:true});})();
 function tdpPersoCount(el){var m=parseInt(el.getAttribute('maxlength')||'0',10);var c=el.nextElementSibling;if(!c||c.className.indexOf('tdp-perso-count')<0)return;var n=el.value.length;c.textContent=n+' / '+m+' characters';if(n>=m){c.classList.add('max');}else{c.classList.remove('max');}}function tdpVariant(el,vid,price,mi){document.querySelectorAll('.tdp-variant').forEach(function(v){v.classList.remove('on');});el.classList.add('on');document.getElementById('tdp-vid').value=vid;var _p=document.getElementById('tdpPrice');if(_p&&price){_p.textContent=price;}if(typeof mi==='number'&&mi>=0){var th=document.querySelectorAll('.tdp-thumb');if(th[mi]){tdpDir=1;tdpGall(th[mi],mi);}}}
 function tdpQty(d){var el=document.getElementById('tdp-qty-val');if(!el)return;var n=parseInt(el.value,10);if(isNaN(n)||n<1)n=1;n=n+d;if(n<1)n=1;el.value=n;}
 function tdpTab(el,pid){var wrap=document.getElementById('tdp-s5');wrap.querySelectorAll('.tdp-tab').forEach(function(t){t.classList.remove('on');});wrap.querySelectorAll('.tdp-panel').forEach(function(p){p.classList.remove('on');});el.classList.add('on');var p=document.getElementById(pid);if(p)p.classList.add('on');}
