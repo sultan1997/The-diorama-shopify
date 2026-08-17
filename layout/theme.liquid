@@ -43,9 +43,7 @@
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
 
-    {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
-      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
-    {%- endunless -%}
+    {%- comment -%} Theme fonts serve from the shop's own CDN, so the fonts.shopifycdn.com preconnect is unused (removed to stay under 4 preconnects). {%- endcomment -%}
 
     <title>
       {{ page_title }}
