@@ -32,10 +32,14 @@
       .tdp-gallery .tdp-thumbs::-webkit-scrollbar { display: none; }
       .tdp-gallery .tdp-thumb { flex: 0 0 auto; }
 
-      .tdp-gallery .tdp-main-img { max-height: 300px; }
+      .tdp-gallery .tdp-main-img { max-height: none; }
       .tdp-gallery .tdp-main-img img {
-        max-height: 300px;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        height: auto;
+        max-height: none;
         object-fit: contain;
+        background: var(--bg-warm);
       }
     }
   </style>
