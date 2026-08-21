@@ -1,0 +1,378 @@
+{%- comment -%}
+  Custom Awards & Trophies landing page (Google Ads).
+  Rendered ONLY via templates/collection.awards-trophies.json — does not affect
+  any other collection. Product images/prices/links are pulled live from
+  all_products[handle], so they stay in sync with the catalogue.
+{%- endcomment -%}
+
+{%- assign wa = 'https://wa.me/971508016369?text=Hi%20Diorama%2C%20I%27d%20like%20a%20quote%20for%20custom%20awards' -%}
+{%- assign wa_bulk = 'https://wa.me/971508016369?text=Hi%20Diorama%2C%20I%27m%20planning%20an%20awards%20programme%20%E2%80%94%20can%20you%20quote%20a%20full%20set%3F' -%}
+
+{%- assign p_key = all_products['gold-key-award-launch-recognition-trophy'] -%}
+{%- assign p_spiral = all_products['spiral-tower-award-bespoke-engraved-recognition-trophy'] -%}
+{%- assign p_light = all_products['3d-futuristic-logo-light-box-illuminated-recognition-plaque'] -%}
+{%- assign p_identity = all_products['be-courageous-award-personalised-values-recognition-trophy'] -%}
+
+{%- capture wa_icon -%}<svg class="awl-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.9 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>{%- endcapture -%}
+{%- capture trophy_svg -%}<svg viewBox="0 0 80 80" fill="none" stroke="#c9c9cf" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 20h32v10a16 16 0 01-32 0z"/><path d="M24 24h-6a6 6 0 006 8M56 24h6a6 6 0 01-6 8"/><path d="M40 46v8M31 60h18M35 60l1-6h8l1 6"/></svg>{%- endcapture -%}
+
+<style>
+  .awl{--awb:#2A0FBE;--awb2:#22099A;--wa:#25D366;--wa2:#1EB456;--ink:#18181b;--mut:#6b7280;--line:#e6e6ea;--soft:#f4f4f6;--gold:#F5B301;
+    font-family:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;}
+  .awl *{box-sizing:border-box}
+  .awl img{max-width:100%;display:block}
+  .awl a{color:inherit;text-decoration:none}
+  .awl-wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  .awl-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:600;font-size:16px;line-height:1;border-radius:8px;padding:16px 26px;cursor:pointer;border:1.6px solid transparent;transition:all .18s;min-height:52px}
+  .awl-ico{width:19px;height:19px;flex:0 0 auto}
+  .awl-btn-wa{background:var(--wa);color:#fff}.awl-btn-wa:hover{background:var(--wa2)}
+  .awl-btn-pri{background:var(--awb);color:#fff}.awl-btn-pri:hover{background:var(--awb2)}
+  .awl-btn-out{background:#fff;color:var(--ink);border-color:var(--line)}.awl-btn-out:hover{border-color:var(--ink)}
+  .awl-italic{font-style:italic;color:var(--awb)}
+  .awl-eyebrow{display:inline-block;background:#ece9fb;color:var(--awb);font-size:12px;font-weight:700;letter-spacing:.14em;padding:8px 14px;border-radius:20px;text-transform:uppercase}
+
+  /* HERO */
+  .awl-hero{padding:56px 0 40px}
+  .awl-hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+  .awl-h1{font-size:52px;line-height:1.05;font-weight:800;letter-spacing:-.02em;margin:20px 0 18px}
+  .awl-lead{font-size:18px;color:#3f3f46;max-width:520px;margin:0 0 26px}
+  .awl-cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
+  .awl-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;border-top:1px solid var(--line);padding-top:22px;max-width:560px}
+  .awl-stat-n{font-size:22px;font-weight:800}
+  .awl-stat-l{font-size:13px;color:var(--mut);margin-top:4px}
+  .awl-collage{position:relative;display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:1fr 1fr;gap:14px;aspect-ratio:1/1}
+  .awl-cell{border-radius:16px;overflow:hidden;background:var(--soft);border:1px solid var(--line)}
+  .awl-cell img{width:100%;height:100%;object-fit:contain;padding:10px}
+  .awl-cell-main{grid-row:1/3}
+  .awl-cbadge{position:absolute;right:-8px;bottom:26px;width:96px;height:96px;border-radius:50%;background:var(--awb);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;font-size:13px;font-weight:700;line-height:1.25;box-shadow:0 10px 24px rgba(42,15,190,.32)}
+
+  /* TRUST BAR */
+  .awl-trust{background:#1b1b20;color:#fff}
+  .awl-trust-in{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:20px 0}
+  .awl-trust-lbl{font-size:12px;letter-spacing:.14em;color:#9a9aa5;text-transform:uppercase;font-weight:600}
+  .awl-trust-logos{display:flex;gap:26px;flex-wrap:wrap;font-weight:700;font-size:17px}
+  .awl-trust-q{display:flex;align-items:center;gap:10px;font-size:14px;color:#d4d4dc}
+  .awl-stars{color:var(--gold);letter-spacing:2px;font-size:15px}
+
+  /* SECTION HEADS */
+  .awl-sec{padding:64px 0}
+  .awl-soft{background:var(--soft)}
+  .awl-center{text-align:center}
+  .awl-h2{font-size:38px;font-weight:800;letter-spacing:-.02em;line-height:1.12;margin:0 0 14px}
+  .awl-sub{font-size:17px;color:var(--mut);max-width:640px;margin:0 auto 40px}
+
+  /* PRODUCT GRID */
+  .awl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .awl-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .18s,transform .18s}
+  .awl-card:hover{box-shadow:0 14px 34px rgba(20,20,30,.10);transform:translateY(-3px)}
+  .awl-card-img{position:relative;background:var(--soft);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center}
+  .awl-card-img img{width:100%;height:100%;object-fit:contain;padding:16px}
+  .awl-card-badge{position:absolute;top:14px;left:14px;background:#fff;color:var(--ink);font-size:11px;font-weight:700;letter-spacing:.08em;padding:6px 12px;border-radius:16px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+  .awl-card-badge.is-best{background:var(--awb);color:#fff}
+  .awl-card-body{padding:18px 20px;border-top:1px solid var(--line)}
+  .awl-card-name{font-size:17px;font-weight:700}
+  .awl-card-price{font-size:15px;color:var(--mut);margin-top:4px}
+  .awl-card-price b{color:var(--ink)}
+  .awl-browse{text-align:center;margin-top:38px}
+  .awl-browse-note{font-size:14px;color:var(--mut);margin-top:14px}
+
+  /* STEPS */
+  .awl-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .awl-step{position:relative;background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:26px 24px}
+  .awl-step-n{position:absolute;top:16px;right:22px;font-size:46px;font-weight:800;color:#e4e4ea}
+  .awl-step-ic{width:46px;height:46px;border-radius:10px;background:var(--awb);color:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+  .awl-step-ic svg{width:24px;height:24px}
+  .awl-step-h{font-size:18px;font-weight:700;margin-bottom:8px}
+  .awl-step-p{font-size:15px;color:var(--mut)}
+  .awl-steps-note{text-align:center;font-size:14px;color:var(--mut);margin-top:28px}
+
+  /* IDENTITY */
+  .awl-identity{background:var(--awb);color:#fff;border-radius:22px;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr;gap:0;align-items:stretch}
+  .awl-identity-l{padding:48px}
+  .awl-identity h2{font-size:34px;font-weight:800;letter-spacing:-.02em;margin:0 0 16px;line-height:1.14}
+  .awl-identity h2 .awl-italic{color:#c7bdff;text-decoration:underline;text-underline-offset:4px}
+  .awl-identity p{font-size:16px;color:#dcd7fb;margin:0 0 22px;max-width:440px}
+  .awl-checks{list-style:none;padding:0;margin:0 0 28px;display:grid;gap:12px}
+  .awl-checks li{display:flex;align-items:center;gap:12px;font-size:16px}
+  .awl-check{width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .awl-check svg{width:13px;height:13px}
+  .awl-btn-onwhite{background:#fff;color:var(--awb)}.awl-btn-onwhite:hover{background:#f0eefe}
+  .awl-identity-r{background:var(--soft);position:relative;min-height:320px;display:flex;align-items:center;justify-content:center}
+  .awl-identity-r img{width:100%;height:100%;object-fit:contain;padding:26px}
+
+  /* TESTIMONIALS */
+  .awl-tgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .awl-tcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px}
+  .awl-tquote{font-size:18px;font-style:italic;color:#27272a;margin:12px 0 20px;line-height:1.5}
+  .awl-tperson{display:flex;align-items:center;gap:12px}
+  .awl-tavatar{width:44px;height:44px;border-radius:50%;background:var(--awb);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px}
+  .awl-tname{font-weight:700;font-size:15px}
+  .awl-trole{font-size:13px;color:var(--mut)}
+
+  /* FAQ */
+  .awl-faq{max-width:860px;margin:0 auto}
+  .awl-faq details{border-bottom:1px solid var(--line)}
+  .awl-faq summary{list-style:none;cursor:pointer;padding:22px 4px;font-size:18px;font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .awl-faq summary::-webkit-details-marker{display:none}
+  .awl-faq summary .awl-faq-ic{color:var(--awb);font-size:24px;font-weight:400;flex:0 0 auto;transition:transform .2s}
+  .awl-faq details[open] summary .awl-faq-ic{transform:rotate(45deg)}
+  .awl-faq-a{padding:0 4px 22px;font-size:16px;color:#3f3f46;max-width:760px}
+
+  /* FINAL CTA */
+  .awl-final{background:#1b1b20;color:#fff}
+  .awl-final-in{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:64px 0}
+  .awl-final h2{font-size:38px;font-weight:800;letter-spacing:-.02em;line-height:1.12;margin:0 0 18px}
+  .awl-final h2 .awl-italic{color:#a99cff}
+  .awl-final p{font-size:17px;color:#c4c4cc;max-width:440px;margin:0 0 26px}
+  .awl-final-mail{font-size:14px;color:#8f8f99;margin-top:18px}
+  .awl-formcard{background:#fff;color:var(--ink);border-radius:16px;padding:30px}
+  .awl-formcard h3{font-size:22px;font-weight:800;margin:0 0 4px}
+  .awl-formcard .awl-formsub{font-size:14px;color:var(--mut);margin:0 0 20px}
+  .awl-field{margin-bottom:16px}
+  .awl-field label{display:block;font-size:13px;font-weight:600;margin-bottom:6px}
+  .awl-field input,.awl-field textarea{width:100%;font:inherit;font-size:16px;padding:13px 14px;border:1px solid var(--line);border-radius:9px;background:#fafafa;color:var(--ink)}
+  .awl-field input:focus,.awl-field textarea:focus{outline:none;border-color:var(--awb);background:#fff}
+  .awl-field textarea{min-height:88px;resize:vertical}
+  .awl-form-btn{width:100%;background:var(--awb);color:#fff;border:none;border-radius:9px;padding:16px;font-size:16px;font-weight:700;cursor:pointer;min-height:54px}
+  .awl-form-btn:hover{background:var(--awb2)}
+  .awl-form-ok{background:#eaf7ee;border:1px solid #bfe6cb;border-radius:10px;padding:22px;text-align:center}
+  .awl-form-ok-h{font-size:18px;font-weight:800;color:#166534;margin-bottom:6px}
+  .awl-form-ok-p{font-size:14px;color:#3f6b4d}
+  .awl-form-err{background:#fdecec;border:1px solid #f5c2c2;color:#b00020;font-size:13px;border-radius:8px;padding:10px 12px;margin-bottom:14px}
+
+  @media (max-width:900px){
+    .awl-hero-in{grid-template-columns:1fr;gap:34px}
+    .awl-h1{font-size:40px}
+    .awl-grid,.awl-steps{grid-template-columns:1fr 1fr}
+    .awl-identity{grid-template-columns:1fr}
+    .awl-final-in{grid-template-columns:1fr;gap:32px;padding:48px 0}
+    .awl-tgrid{grid-template-columns:1fr}
+    .awl-trust-in{justify-content:flex-start}
+  }
+  @media (max-width:560px){
+    .awl-wrap{padding:0 18px}
+    .awl-hero{padding:36px 0 28px}
+    .awl-h1{font-size:32px}
+    .awl-lead{font-size:16px}
+    .awl-h2,.awl-final h2{font-size:28px}
+    .awl-identity h2{font-size:26px}
+    .awl-grid,.awl-steps{grid-template-columns:1fr}
+    .awl-stats{grid-template-columns:1fr 1fr;gap:16px}
+    .awl-btn{width:100%}
+    .awl-cta-row{flex-direction:column}
+    .awl-identity-l{padding:32px 26px}
+    .awl-cbadge{width:78px;height:78px;font-size:11px}
+  }
+</style>
+
+<div class="awl">
+
+  <!-- HERO -->
+  <section class="awl-hero">
+    <div class="awl-wrap awl-hero-in">
+      <div class="awl-hero-l">
+        <span class="awl-eyebrow">Designed &amp; 3D-printed in Dubai</span>
+        <h1 class="awl-h1">Custom Awards &amp; Trophies <span class="awl-italic">your brand deserves.</span></h1>
+        <p class="awl-lead">Your design or ours — sculpted, finished in your brand colours, and engraved for every winner. Single pieces or full award programmes, made on demand and delivered in 14&ndash;21 days.</p>
+        <div class="awl-cta-row">
+          <a class="awl-btn awl-btn-wa" href="{{ wa }}" target="_blank" rel="noopener">{{ wa_icon }} WhatsApp your brief</a>
+          <a class="awl-btn awl-btn-out" href="#awl-quote">Get a quote</a>
+        </div>
+        <div class="awl-stats">
+          <div class="awl-stat"><div class="awl-stat-n">25+</div><div class="awl-stat-l">Ready designs from AED 200</div></div>
+          <div class="awl-stat"><div class="awl-stat-n">14&ndash;21 days</div><div class="awl-stat-l">Made on demand &amp; delivered</div></div>
+          <div class="awl-stat"><div class="awl-stat-n">Bulk</div><div class="awl-stat-l">Full programme sets</div></div>
+        </div>
+      </div>
+      <div class="awl-hero-r">
+        <div class="awl-collage">
+          <a class="awl-cell awl-cell-main" href="{{ p_key.url | default: '/collections/awards-trophies' }}">{% if p_key.featured_image %}<img src="{{ p_key.featured_image | image_url: width: 760 }}" alt="Gold key launch award by The Diorama" loading="eager">{% else %}{{ trophy_svg }}{% endif %}</a>
+          <a class="awl-cell" href="{{ p_spiral.url | default: '/collections/awards-trophies' }}">{% if p_spiral.featured_image %}<img src="{{ p_spiral.featured_image | image_url: width: 460 }}" alt="Spiral tower engraved trophy" loading="lazy">{% else %}{{ trophy_svg }}{% endif %}</a>
+          <a class="awl-cell" href="{{ p_light.url | default: '/collections/awards-trophies' }}">{% if p_light.featured_image %}<img src="{{ p_light.featured_image | image_url: width: 460 }}" alt="Illuminated 3D logo light box award" loading="lazy">{% else %}{{ trophy_svg }}{% endif %}</a>
+          <span class="awl-cbadge">100%<br>Customisable</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="awl-trust">
+    <div class="awl-wrap awl-trust-in">
+      <span class="awl-trust-lbl">Trusted by teams at</span>
+      <div class="awl-trust-logos"><span>Marriott</span><span>GITEX</span><span>Dubai AI</span><span>Macoma Tech</span></div>
+      <div class="awl-trust-q"><span class="awl-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> &ldquo;Excellent product finishing&rdquo; — verified client</div>
+    </div>
+  </section>
+
+  <!-- READY DESIGNS -->
+  <section class="awl-sec awl-soft">
+    <div class="awl-wrap">
+      <div class="awl-center">
+        <h2 class="awl-h2">Start from a ready design, <span class="awl-italic">or from zero.</span></h2>
+        <p class="awl-sub">Every piece below can be re-coloured, re-branded and engraved for your event — or send us your own concept and we&rsquo;ll sculpt it from scratch.</p>
+      </div>
+      {%- assign grid_handles = 'sheikh-zayed-gold-trophy-uae-founder-equestrian-statue-award,custom-3d-logo-award-branded-recognition-trophy,3d-futuristic-logo-light-box-illuminated-recognition-plaque,spiral-tower-award-bespoke-engraved-recognition-trophy,themed-music-award-bespoke-entertainment-trophy,gold-tiger-sculpture-award-custom-figurine-trophy' | split: ',' -%}
+      {%- assign grid_names = 'Sheikh Zayed Gold Trophy,Custom 3D Logo Award,3D Logo Light Box,Spiral Tower Award,Themed Music Award,Gold Tiger Sculpture' | split: ',' -%}
+      {%- assign grid_badges = 'BEST SELLER,ENGRAVABLE,LED LIGHTING,ENGRAVABLE,EVENT FAVOURITE,SCULPTED' | split: ',' -%}
+      <div class="awl-grid">
+        {%- for h in grid_handles -%}
+          {%- assign gp = all_products[h] -%}
+          <a class="awl-card" href="{{ gp.url | default: '/collections/awards-trophies' }}">
+            <div class="awl-card-img">
+              {%- if gp.featured_image -%}<img src="{{ gp.featured_image | image_url: width: 620 }}" srcset="{{ gp.featured_image | image_url: width: 400 }} 400w, {{ gp.featured_image | image_url: width: 620 }} 620w" sizes="(max-width:900px) 50vw, 360px" alt="{{ grid_names[forloop.index0] }}" loading="lazy">{%- else -%}{{ trophy_svg }}{%- endif -%}
+              <span class="awl-card-badge{% if forloop.index0 == 0 %} is-best{% endif %}">{{ grid_badges[forloop.index0] }}</span>
+            </div>
+            <div class="awl-card-body">
+              <div class="awl-card-name">{{ grid_names[forloop.index0] }}</div>
+              {%- if gp.price -%}<div class="awl-card-price">From <b>AED {{ gp.price | money_without_currency | remove: '.00' }}</b></div>{%- endif -%}
+            </div>
+          </a>
+        {%- endfor -%}
+      </div>
+      <div class="awl-browse">
+        <a class="awl-btn awl-btn-pri" href="/collections/shop">Browse all 25 designs</a>
+        <div class="awl-browse-note">Every design ships engraved and finished to your brief — bulk pricing available on request.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="awl-sec">
+    <div class="awl-wrap">
+      <h2 class="awl-h2">From brief to trophy table <span class="awl-italic">in three steps.</span></h2>
+      <div class="awl-steps" style="margin-top:34px">
+        <div class="awl-step">
+          <div class="awl-step-n">01</div>
+          <div class="awl-step-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-8.5 8.5 8.5 8.5 0 01-3.8-.9L3 21l1.9-5.7A8.5 8.5 0 1121 11.5z"/></svg></div>
+          <div class="awl-step-h">Send your brief</div>
+          <div class="awl-step-p">WhatsApp or send the form with your idea, logo, quantity and date. We reply the same working day with options and a quote.</div>
+        </div>
+        <div class="awl-step">
+          <div class="awl-step-n">02</div>
+          <div class="awl-step-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <div class="awl-step-h">Approve the preview</div>
+          <div class="awl-step-p">We share a design preview in your brand colours before anything is produced — nothing goes to print without your sign-off.</div>
+        </div>
+        <div class="awl-step">
+          <div class="awl-step-n">03</div>
+          <div class="awl-step-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="1.8"/><circle cx="18.5" cy="18.5" r="1.8"/></svg></div>
+          <div class="awl-step-h">Delivered in 14&ndash;21 days</div>
+          <div class="awl-step-p">Made on demand in our Dubai studio, packed with care and shipped insured — engraved plaques and all, ready for the stage.</div>
+        </div>
+      </div>
+      <div class="awl-steps-note">Tight deadline? Tell us the event date — rush production is often possible.</div>
+    </div>
+  </section>
+
+  <!-- IDENTITY -->
+  <section class="awl-sec" style="padding-top:0">
+    <div class="awl-wrap">
+      <div class="awl-identity">
+        <div class="awl-identity-l">
+          <h2>One identity, <span class="awl-italic">many winners.</span></h2>
+          <p>Running an awards night or a values programme? We produce full sets — one consistent, branded design across every category, with each plaque engraved for its winner.</p>
+          <ul class="awl-checks">
+            <li><span class="awl-check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Bulk pricing on multi-piece orders</li>
+            <li><span class="awl-check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Consistent finish across the whole set</li>
+            <li><span class="awl-check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Per-winner engraving included</li>
+            <li><span class="awl-check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Delivered together, before your event</li>
+          </ul>
+          <a class="awl-btn awl-btn-onwhite" href="{{ wa_bulk }}" target="_blank" rel="noopener">{{ wa_icon }} Plan your programme on WhatsApp</a>
+        </div>
+        <div class="awl-identity-r">
+          {%- if p_identity.featured_image -%}<img src="{{ p_identity.featured_image | image_url: width: 640 }}" alt="Branded award set by The Diorama" loading="lazy">{%- else -%}{{ trophy_svg }}{%- endif -%}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="awl-sec awl-soft">
+    <div class="awl-wrap">
+      <h2 class="awl-h2 awl-center" style="margin-bottom:36px">Winners keep these <span class="awl-italic">on the shelf.</span></h2>
+      <div class="awl-tgrid">
+        <div class="awl-tcard">
+          <div class="awl-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="awl-tquote">&ldquo;Our whole awards night looked cohesive and premium. Winners genuinely treasure them.&rdquo;</div>
+          <div class="awl-tperson"><span class="awl-tavatar">J</span><div><div class="awl-tname">Justin</div><div class="awl-trole">Marriott Hotel Manager</div></div></div>
+        </div>
+        <div class="awl-tcard">
+          <div class="awl-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="awl-tquote">&ldquo;Highly qualified professionals, excellent product finishing.&rdquo;</div>
+          <div class="awl-tperson"><span class="awl-tavatar">O</span><div><div class="awl-tname">Ovin Quadros</div><div class="awl-trole">Verified client</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="awl-sec">
+    <div class="awl-wrap">
+      <h2 class="awl-h2" style="margin-bottom:26px">Before you ask &mdash;</h2>
+      <div class="awl-faq">
+        <details open><summary>Is there a minimum order quantity? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">No — we make single pieces and full programme sets alike. Bulk orders unlock better per-piece pricing; share your quantity and we&rsquo;ll quote both ways.</div></details>
+        <details><summary>Can you add our logo, brand colours and engraving? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">Yes — every piece is finished in your brand colours with your logo, and we engrave each award with the winner&rsquo;s name, category or date. Branding and engraving are part of the service, not an add-on.</div></details>
+        <details><summary>How long does production and delivery take? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">Most orders are made on demand and delivered within 14&ndash;21 days across the UAE. Working to a tight event date? Tell us — rush production is often possible.</div></details>
+        <details><summary>Do you deliver outside the UAE? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">Yes — we ship worldwide, insured. Share your destination and deadline and we&rsquo;ll confirm delivery options and timing with your quote.</div></details>
+        <details><summary>What if the award arrives damaged? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">Every piece is packed with care and shipped insured. In the rare event of transit damage, send us a photo and we&rsquo;ll remake and reship it at no cost.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA + FORM -->
+  <section class="awl-final" id="awl-quote">
+    <div class="awl-wrap awl-final-in">
+      <div class="awl-final-l">
+        <h2>Tell us about your event. <span class="awl-italic">We&rsquo;ll design the rest.</span></h2>
+        <p>Send a short brief — the occasion, quantity and date. You&rsquo;ll get design options and a quote within one working day.</p>
+        <a class="awl-btn awl-btn-wa" href="{{ wa }}" target="_blank" rel="noopener">{{ wa_icon }} WhatsApp +971 50 801 6369</a>
+        <div class="awl-final-mail">Prefer email? info@macomatech.com · Dubai, UAE</div>
+      </div>
+      <div class="awl-formcard">
+        {%- form 'contact', id: 'awl-form' -%}
+          {%- if form.posted_successfully? -%}
+            <div class="awl-form-ok">
+              <div class="awl-form-ok-h">Brief received &#10003;</div>
+              <div class="awl-form-ok-p">Thank you — we&rsquo;ll reply with design options and a quote within one working day.</div>
+            </div>
+          {%- else -%}
+            <h3>Get a quote</h3>
+            <div class="awl-formsub">No obligation — we reply within one working day.</div>
+            {%- if form.errors -%}<div class="awl-form-err">{{ form.errors | default_errors }}</div>{%- endif -%}
+            <div class="awl-field"><label for="awl-name">Name *</label><input id="awl-name" type="text" name="contact[Name]" required placeholder="Your name"></div>
+            <div class="awl-field"><label for="awl-wa">WhatsApp *</label><input id="awl-wa" type="tel" name="contact[WhatsApp]" required placeholder="+971 …"></div>
+            <div class="awl-field"><label for="awl-email">Email *</label><input id="awl-email" type="email" name="contact[email]" required placeholder="you@company.com"></div>
+            <div class="awl-field"><label for="awl-brief">Brief</label><textarea id="awl-brief" name="contact[Brief]" placeholder="e.g. 12 values awards for our annual night on 15 Oct — logo attached"></textarea></div>
+            <input type="hidden" name="contact[Source]" value="Custom Awards Landing Page">
+            <button type="submit" class="awl-form-btn">Send inquiry &rarr;</button>
+          {%- endif -%}
+        {%- endform -%}
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  (function(){
+    // Smooth-scroll the "Get a quote" anchors and offset for any fixed header.
+    document.querySelectorAll('.awl a[href="#awl-quote"]').forEach(function(a){
+      a.addEventListener('click',function(e){
+        var t=document.getElementById('awl-quote');
+        if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+      });
+    });
+    // If the contact form posted successfully, scroll to the confirmation.
+    try{
+      var q=new URLSearchParams(location.search);
+      if(q.get('contact_posted')==='true'){var el=document.getElementById('awl-quote');if(el)el.scrollIntoView();}
+    }catch(e){}
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Awards Landing",
+  "settings": []
+}
+{% endschema %}
