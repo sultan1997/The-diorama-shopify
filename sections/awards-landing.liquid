@@ -21,7 +21,7 @@
     font-family:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;}
   .awl *{box-sizing:border-box}
   .awl img{max-width:100%;display:block}
-  .awl a{color:inherit;text-decoration:none}
+  .awl a{text-decoration:none}
   .awl-wrap{max-width:1180px;margin:0 auto;padding:0 24px}
   .awl-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:600;font-size:16px;line-height:1;border-radius:8px;padding:16px 26px;cursor:pointer;border:1.6px solid transparent;transition:all .18s;min-height:52px}
   .awl-ico{width:19px;height:19px;flex:0 0 auto}
@@ -34,17 +34,17 @@
   /* HERO */
   .awl-hero{padding:56px 0 40px}
   .awl-hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
-  .awl-h1{font-size:52px;line-height:1.05;font-weight:800;letter-spacing:-.02em;margin:20px 0 18px}
+  .awl-h1{font-size:52px;line-height:1.05;font-weight:800;letter-spacing:-.02em;margin:20px 0 18px;color:var(--ink)}
   .awl-lead{font-size:18px;color:#3f3f46;max-width:520px;margin:0 0 26px}
   .awl-cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
   .awl-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;border-top:1px solid var(--line);padding-top:22px;max-width:560px}
   .awl-stat-n{font-size:22px;font-weight:800}
   .awl-stat-l{font-size:13px;color:var(--mut);margin-top:4px}
-  .awl-collage{position:relative;display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:1fr 1fr;gap:14px;aspect-ratio:1/1}
-  .awl-cell{border-radius:16px;overflow:hidden;background:var(--soft);border:1px solid var(--line)}
-  .awl-cell img{width:100%;height:100%;object-fit:contain;padding:10px}
-  .awl-cell-main{grid-row:1/3}
-  .awl-cbadge{position:absolute;right:-8px;bottom:26px;width:96px;height:96px;border-radius:50%;background:var(--awb);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;font-size:13px;font-weight:700;line-height:1.25;box-shadow:0 10px 24px rgba(42,15,190,.32)}
+  .awl-collage{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .awl-cell{border-radius:16px;overflow:hidden;background:var(--soft);border:1px solid var(--line);aspect-ratio:1/1}
+  .awl-cell img{width:100%;height:100%;object-fit:cover;display:block}
+  .awl-cell-main{grid-column:1/3;aspect-ratio:16/10}
+  .awl-cbadge{position:absolute;right:-10px;bottom:-10px;width:96px;height:96px;border-radius:50%;background:var(--awb);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;font-size:13px;font-weight:700;line-height:1.25;box-shadow:0 10px 24px rgba(42,15,190,.32)}
 
   /* TRUST BAR */
   .awl-trust{background:#1b1b20;color:#fff}
@@ -58,12 +58,12 @@
   .awl-sec{padding:64px 0}
   .awl-soft{background:var(--soft)}
   .awl-center{text-align:center}
-  .awl-h2{font-size:38px;font-weight:800;letter-spacing:-.02em;line-height:1.12;margin:0 0 14px}
+  .awl-h2{font-size:38px;font-weight:800;letter-spacing:-.02em;line-height:1.12;margin:0 0 14px;color:var(--ink)}
   .awl-sub{font-size:17px;color:var(--mut);max-width:640px;margin:0 auto 40px}
 
   /* PRODUCT GRID */
   .awl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-  .awl-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .18s,transform .18s}
+  .awl-card{background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .18s,transform .18s}
   .awl-card:hover{box-shadow:0 14px 34px rgba(20,20,30,.10);transform:translateY(-3px)}
   .awl-card-img{position:relative;background:var(--soft);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center}
   .awl-card-img img{width:100%;height:100%;object-fit:contain;padding:16px}
@@ -89,7 +89,7 @@
   /* IDENTITY */
   .awl-identity{background:var(--awb);color:#fff;border-radius:22px;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr;gap:0;align-items:stretch}
   .awl-identity-l{padding:48px}
-  .awl-identity h2{font-size:34px;font-weight:800;letter-spacing:-.02em;margin:0 0 16px;line-height:1.14}
+  .awl-identity h2{font-size:34px;font-weight:800;letter-spacing:-.02em;margin:0 0 16px;line-height:1.14;color:#fff}
   .awl-identity h2 .awl-italic{color:#c7bdff;text-decoration:underline;text-underline-offset:4px}
   .awl-identity p{font-size:16px;color:#dcd7fb;margin:0 0 22px;max-width:440px}
   .awl-checks{list-style:none;padding:0;margin:0 0 28px;display:grid;gap:12px}
@@ -121,7 +121,7 @@
   /* FINAL CTA */
   .awl-final{background:#1b1b20;color:#fff}
   .awl-final-in{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:64px 0}
-  .awl-final h2{font-size:38px;font-weight:800;letter-spacing:-.02em;line-height:1.12;margin:0 0 18px}
+  .awl-final h2{font-size:38px;font-weight:800;letter-spacing:-.02em;line-height:1.12;margin:0 0 18px;color:#fff}
   .awl-final h2 .awl-italic{color:#a99cff}
   .awl-final p{font-size:17px;color:#c4c4cc;max-width:440px;margin:0 0 26px}
   .awl-final-mail{font-size:14px;color:#8f8f99;margin-top:18px}
@@ -173,22 +173,22 @@
       <div class="awl-hero-l">
         <span class="awl-eyebrow">Designed &amp; 3D-printed in Dubai</span>
         <h1 class="awl-h1">Custom Awards &amp; Trophies <span class="awl-italic">your brand deserves.</span></h1>
-        <p class="awl-lead">Your design or ours — sculpted, finished in your brand colours, and engraved for every winner. Single pieces or full award programmes, made on demand and delivered in 14&ndash;21 days.</p>
+        <p class="awl-lead">Your design or ours — sculpted, finished in your brand colours, and engraved for every winner. Single pieces or full award programmes, made on demand and delivered in 7 days.</p>
         <div class="awl-cta-row">
           <a class="awl-btn awl-btn-wa" href="{{ wa }}" target="_blank" rel="noopener">{{ wa_icon }} WhatsApp your brief</a>
           <a class="awl-btn awl-btn-out" href="#awl-quote">Get a quote</a>
         </div>
         <div class="awl-stats">
           <div class="awl-stat"><div class="awl-stat-n">25+</div><div class="awl-stat-l">Ready designs from AED 200</div></div>
-          <div class="awl-stat"><div class="awl-stat-n">14&ndash;21 days</div><div class="awl-stat-l">Made on demand &amp; delivered</div></div>
+          <div class="awl-stat"><div class="awl-stat-n">7 days</div><div class="awl-stat-l">Made on demand &amp; delivered</div></div>
           <div class="awl-stat"><div class="awl-stat-n">Bulk</div><div class="awl-stat-l">Full programme sets</div></div>
         </div>
       </div>
       <div class="awl-hero-r">
         <div class="awl-collage">
-          <a class="awl-cell awl-cell-main" href="{{ p_key.url | default: '/collections/awards-trophies' }}">{% if p_key.featured_image %}<img src="{{ p_key.featured_image | image_url: width: 760 }}" alt="Gold key launch award by The Diorama" loading="eager">{% else %}{{ trophy_svg }}{% endif %}</a>
-          <a class="awl-cell" href="{{ p_spiral.url | default: '/collections/awards-trophies' }}">{% if p_spiral.featured_image %}<img src="{{ p_spiral.featured_image | image_url: width: 460 }}" alt="Spiral tower engraved trophy" loading="lazy">{% else %}{{ trophy_svg }}{% endif %}</a>
-          <a class="awl-cell" href="{{ p_light.url | default: '/collections/awards-trophies' }}">{% if p_light.featured_image %}<img src="{{ p_light.featured_image | image_url: width: 460 }}" alt="Illuminated 3D logo light box award" loading="lazy">{% else %}{{ trophy_svg }}{% endif %}</a>
+          <a class="awl-cell awl-cell-main" href="{{ p_key.url | default: '/collections/awards-trophies' }}">{% if p_key.featured_image %}<img src="{{ p_key.featured_image | image_url: width: 820 }}" srcset="{{ p_key.featured_image | image_url: width: 560 }} 560w, {{ p_key.featured_image | image_url: width: 820 }} 820w" sizes="(max-width:900px) 100vw, 470px" width="820" height="512" alt="Gold key launch award by The Diorama" loading="eager" fetchpriority="high" decoding="async">{% else %}{{ trophy_svg }}{% endif %}</a>
+          <a class="awl-cell awl-cell-sm" href="{{ p_spiral.url | default: '/collections/awards-trophies' }}">{% if p_spiral.featured_image %}<img src="{{ p_spiral.featured_image | image_url: width: 440 }}" width="440" height="440" alt="Spiral tower engraved trophy" loading="lazy" decoding="async">{% else %}{{ trophy_svg }}{% endif %}</a>
+          <a class="awl-cell awl-cell-sm" href="{{ p_light.url | default: '/collections/awards-trophies' }}">{% if p_light.featured_image %}<img src="{{ p_light.featured_image | image_url: width: 440 }}" width="440" height="440" alt="Illuminated 3D logo light box award" loading="lazy" decoding="async">{% else %}{{ trophy_svg }}{% endif %}</a>
           <span class="awl-cbadge">100%<br>Customisable</span>
         </div>
       </div>
@@ -199,8 +199,8 @@
   <section class="awl-trust">
     <div class="awl-wrap awl-trust-in">
       <span class="awl-trust-lbl">Trusted by teams at</span>
-      <div class="awl-trust-logos"><span>Marriott</span><span>GITEX</span><span>Dubai AI</span><span>Macoma Tech</span></div>
-      <div class="awl-trust-q"><span class="awl-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> &ldquo;Excellent product finishing&rdquo; — verified client</div>
+      <div class="awl-trust-logos"><span>Marriott</span><span>GITEX</span><span>Dubai AI</span><span>L&rsquo;Or&eacute;al</span></div>
+      <div class="awl-trust-q"><span class="awl-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> &ldquo;Excellent product finishing&rdquo; — Ovin Quadros</div>
     </div>
   </section>
 
@@ -256,7 +256,7 @@
         <div class="awl-step">
           <div class="awl-step-n">03</div>
           <div class="awl-step-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="1.8"/><circle cx="18.5" cy="18.5" r="1.8"/></svg></div>
-          <div class="awl-step-h">Delivered in 14&ndash;21 days</div>
+          <div class="awl-step-h">Delivered in 7 days</div>
           <div class="awl-step-p">Made on demand in our Dubai studio, packed with care and shipped insured — engraved plaques and all, ready for the stage.</div>
         </div>
       </div>
@@ -298,8 +298,18 @@
         </div>
         <div class="awl-tcard">
           <div class="awl-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="awl-tquote">&ldquo;A fantastic experience — incredibly fast and client-oriented. They turn ideas into reality with precision. Highly recommend for top-notch work.&rdquo;</div>
+          <div class="awl-tperson"><span class="awl-tavatar">Y</span><div><div class="awl-tname">Yuriy Rakhmatullin</div><div class="awl-trole">Google Local Guide</div></div></div>
+        </div>
+        <div class="awl-tcard">
+          <div class="awl-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="awl-tquote">&ldquo;An exceptional experience from the moment I walked in — warm, friendly service and a team eager to help with every question.&rdquo;</div>
+          <div class="awl-tperson"><span class="awl-tavatar">K</span><div><div class="awl-tname">Kamran</div><div class="awl-trole">Google review</div></div></div>
+        </div>
+        <div class="awl-tcard">
+          <div class="awl-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <div class="awl-tquote">&ldquo;Highly qualified professionals, excellent product finishing.&rdquo;</div>
-          <div class="awl-tperson"><span class="awl-tavatar">O</span><div><div class="awl-tname">Ovin Quadros</div><div class="awl-trole">Verified client</div></div></div>
+          <div class="awl-tperson"><span class="awl-tavatar">O</span><div><div class="awl-tname">Ovin Quadros</div><div class="awl-trole">Google review</div></div></div>
         </div>
       </div>
     </div>
@@ -312,7 +322,7 @@
       <div class="awl-faq">
         <details open><summary>Is there a minimum order quantity? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">No — we make single pieces and full programme sets alike. Bulk orders unlock better per-piece pricing; share your quantity and we&rsquo;ll quote both ways.</div></details>
         <details><summary>Can you add our logo, brand colours and engraving? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">Yes — every piece is finished in your brand colours with your logo, and we engrave each award with the winner&rsquo;s name, category or date. Branding and engraving are part of the service, not an add-on.</div></details>
-        <details><summary>How long does production and delivery take? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">Most orders are made on demand and delivered within 14&ndash;21 days across the UAE. Working to a tight event date? Tell us — rush production is often possible.</div></details>
+        <details><summary>How long does production and delivery take? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">Most orders are made on demand and delivered within 7 days across the UAE. Working to a tight event date? Tell us — even faster is often possible.</div></details>
         <details><summary>Do you deliver outside the UAE? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">Yes — we ship worldwide, insured. Share your destination and deadline and we&rsquo;ll confirm delivery options and timing with your quote.</div></details>
         <details><summary>What if the award arrives damaged? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">Every piece is packed with care and shipped insured. In the rare event of transit damage, send us a photo and we&rsquo;ll remake and reship it at no cost.</div></details>
       </div>
