@@ -75,6 +75,8 @@
   .awl-card-price b{color:var(--ink)}
   .awl-browse{text-align:center;margin-top:38px}
   .awl-browse-note{font-size:14px;color:var(--mut);margin-top:14px}
+  .awl-more{margin-top:26px}
+  .awl-more[hidden]{display:none}
 
   /* STEPS */
   .awl-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
@@ -229,8 +231,23 @@
           </a>
         {%- endfor -%}
       </div>
+      <div class="awl-grid awl-more" id="awl-more" hidden>
+        {%- for p in collection.products -%}
+          {%- unless grid_handles contains p.handle -%}
+          <a class="awl-card" href="{{ p.url }}">
+            <div class="awl-card-img">
+              {%- if p.featured_image -%}<img src="{{ p.featured_image | image_url: width: 620 }}" srcset="{{ p.featured_image | image_url: width: 400 }} 400w, {{ p.featured_image | image_url: width: 620 }} 620w" sizes="(max-width:900px) 50vw, 360px" alt="{{ p.title | escape }}" loading="lazy" decoding="async">{%- else -%}{{ trophy_svg }}{%- endif -%}
+            </div>
+            <div class="awl-card-body">
+              <div class="awl-card-name">{{ p.title | split: ' - ' | first }}</div>
+              {%- if p.price -%}<div class="awl-card-price">From <b>AED {{ p.price | money_without_currency | remove: '.00' }}</b></div>{%- endif -%}
+            </div>
+          </a>
+          {%- endunless -%}
+        {%- endfor -%}
+      </div>
       <div class="awl-browse">
-        <a class="awl-btn awl-btn-pri" href="/collections/shop">Browse all 25 designs</a>
+        <button type="button" class="awl-btn awl-btn-pri" id="awl-browse-btn">Browse all {{ collection.products_count }} designs</button>
         <div class="awl-browse-note">Every design ships engraved and finished to your brief — bulk pricing available on request.</div>
       </div>
     </div>
@@ -377,6 +394,12 @@
       var q=new URLSearchParams(location.search);
       if(q.get('contact_posted')==='true'){var el=document.getElementById('awl-quote');if(el)el.scrollIntoView();}
     }catch(e){}
+    // "Browse all designs" reveals the remaining products in-page (no navigation).
+    var bb=document.getElementById('awl-browse-btn');
+    if(bb){bb.addEventListener('click',function(){
+      var m=document.getElementById('awl-more');
+      if(m){m.hidden=false;bb.style.display='none';m.scrollIntoView({behavior:'smooth',block:'start'});}
+    });}
   })();
 </script>
 
