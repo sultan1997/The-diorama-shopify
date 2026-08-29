@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "diorama-product": {
@@ -152,7 +161,7 @@
         "vid_dur": "",
         "spec_h": "Model",
         "spec_hem": "Specification",
-        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_p": "Materials, measurements and finish, everything about this replica in one place.",
         "spec_dim_sub": "Measured at scale.",
         "spec_mat_sub": "Each piece is individually cast and finished",
         "build_time": "Approx. 40 hrs",
@@ -160,7 +169,7 @@
         "lead_artisan": "",
         "insurance_note": "",
         "faq_h": "Common questions.",
-        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "faq_p": "The questions that come up most often. A real person answers everything else, write to us any time.",
         "rev_h": "Customer Reviews",
         "rev_score": "4.8",
         "rev_count": "8",
