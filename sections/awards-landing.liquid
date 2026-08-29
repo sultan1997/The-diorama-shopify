@@ -202,6 +202,61 @@
     </div>
   </section>
 
+  <!-- MATERIAL COMPARISON -->
+  {%- capture cmp_check -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>{%- endcapture -%}
+  {%- capture cmp_x -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>{%- endcapture -%}
+  {%- capture cmp_minus -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/></svg>{%- endcapture -%}
+  {%- assign cmp_crit = "Any shape or design|Full brand colours + logo|Ultra-fine detail|Turnaround time|Texture options|Shatterproof + durable|Weight|Cost-effective" | split: "|" -%}
+  {%- assign cmp_resin = "y:Unlimited|y:Exact match|y:Yes|y:~7 days|y:Matt, gloss, chrome, metallic, marble, wood|y:Won't shatter|y:Adjustable|y:From AED 200" | split: "|" -%}
+  {%- assign cmp_crystal = "n:Standard cuts|n:Clear / etched|m:Moderate|y:3-7 days|n:Clear only|n:Fragile|n:Heavy, fragile|n:Premium" | split: "|" -%}
+  {%- assign cmp_wood = "m:Carved only|m:Engraving only|n:Grain-limited|m:Moderate|m:Wood shades only|m:Can warp|m:Moderate|m:Mid-range" | split: "|" -%}
+  {%- assign cmp_metal = "m:Cast shapes|m:Engraving only|m:Good, costly|n:Slow casting|m:Matt, metallic, chrome|y:Durable|n:Heaviest|n:Expensive" | split: "|" -%}
+  <style>
+    .awl-cmp{padding:58px 0 10px}
+    .awl-cmp-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .awl-cmp-t{border-collapse:separate;border-spacing:0;width:100%;min-width:660px;font-size:14px}
+    .awl-cmp-t th,.awl-cmp-t td{padding:13px 14px;text-align:left;border-bottom:1px solid #ececf0;vertical-align:top}
+    .awl-cmp-t thead th{font-size:13px;font-weight:700;color:#3f3f46;background:#f6f6f8;border-bottom:1px solid #e2e2e8}
+    .awl-cmp-crit{font-weight:600;color:var(--ink);width:26%}
+    .awl-cmp-resin{background:#f4f2fe}
+    .awl-cmp-t thead th.awl-cmp-resin{background:var(--awb);color:#fff;border-bottom:1px solid var(--awb);border-radius:8px 8px 0 0}
+    .awl-cmp-badge{display:inline-block;background:#fff;color:var(--awb);font-size:9px;font-weight:800;letter-spacing:.08em;padding:2px 7px;border-radius:10px;margin-left:6px;vertical-align:middle}
+    .awl-cmp-cell{display:flex;align-items:flex-start;gap:8px;line-height:1.35}
+    .awl-cmp-resin .awl-cmp-cell{font-weight:700}
+    .awl-ic{flex:0 0 auto;margin-top:1px}
+    .awl-ic svg{width:17px;height:17px;display:block}
+    .awl-ic-y{color:#16a34a}.awl-ic-n{color:#c25a3f}.awl-ic-m{color:#BA7517}
+    .awl-cmp-foot{font-size:14px;color:var(--mut);margin-top:18px;display:flex;gap:10px;align-items:flex-start}
+    .awl-cmp-foot b{color:var(--ink)}
+    .awl-cmp-foot > svg{flex:0 0 auto;color:var(--awb)}
+    @media(max-width:600px){.awl-cmp{padding:42px 0 4px}.awl-cmp-t{font-size:13px}}
+  </style>
+  <section class="awl-cmp">
+    <div class="awl-wrap">
+      <span class="awl-eyebrow">Why resin</span>
+      <h2 class="awl-h2" style="margin:14px 0 8px"><span style="color:var(--awb)">Resin</span> vs Crystal, Wood, Metal</h2>
+      <p class="awl-sub" style="margin:0 0 26px">The same trophy, four ways to make it. Here is how 3D-printed resin compares to crystal, wood and metal for custom, on-brand awards.</p>
+      <div class="awl-cmp-scroll">
+        <table class="awl-cmp-t">
+          <thead><tr><th class="awl-cmp-crit"></th><th class="awl-cmp-resin">3D-printed resin <span class="awl-cmp-badge">BEST</span></th><th>Crystal</th><th>Wood</th><th>Metal</th></tr></thead>
+          <tbody>
+            {%- for i in (0..7) -%}
+              {%- assign r = cmp_resin[i] | split: ':' -%}{%- assign cr = cmp_crystal[i] | split: ':' -%}{%- assign wd = cmp_wood[i] | split: ':' -%}{%- assign mt = cmp_metal[i] | split: ':' -%}
+              <tr>
+                <td class="awl-cmp-crit">{{ cmp_crit[i] }}</td>
+                <td class="awl-cmp-resin"><span class="awl-cmp-cell"><span class="awl-ic awl-ic-{{ r[0] }}">{%- case r[0] -%}{%- when 'y' -%}{{ cmp_check }}{%- when 'n' -%}{{ cmp_x }}{%- else -%}{{ cmp_minus }}{%- endcase -%}</span>{{ r[1] }}</span></td>
+                <td><span class="awl-cmp-cell"><span class="awl-ic awl-ic-{{ cr[0] }}">{%- case cr[0] -%}{%- when 'y' -%}{{ cmp_check }}{%- when 'n' -%}{{ cmp_x }}{%- else -%}{{ cmp_minus }}{%- endcase -%}</span>{{ cr[1] }}</span></td>
+                <td><span class="awl-cmp-cell"><span class="awl-ic awl-ic-{{ wd[0] }}">{%- case wd[0] -%}{%- when 'y' -%}{{ cmp_check }}{%- when 'n' -%}{{ cmp_x }}{%- else -%}{{ cmp_minus }}{%- endcase -%}</span>{{ wd[1] }}</span></td>
+                <td><span class="awl-cmp-cell"><span class="awl-ic awl-ic-{{ mt[0] }}">{%- case mt[0] -%}{%- when 'y' -%}{{ cmp_check }}{%- when 'n' -%}{{ cmp_x }}{%- else -%}{{ cmp_minus }}{%- endcase -%}</span>{{ mt[1] }}</span></td>
+              </tr>
+            {%- endfor -%}
+          </tbody>
+        </table>
+      </div>
+      <div class="awl-cmp-foot"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 01-10 0z"/><path d="M17 5h3v2a3 3 0 01-3 3M7 5H4v2a3 3 0 003 3"/></svg><div>Resin is the only material that is fully bespoke, on-brand, fast and affordable, with single pieces or full sets made on demand. <b>The clear choice for custom awards.</b></div></div>
+    </div>
+  </section>
+
   <!-- TRUST BAR -->
   <section class="awl-trust">
     <div class="awl-wrap awl-trust-in">
