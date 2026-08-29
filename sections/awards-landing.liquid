@@ -212,12 +212,17 @@
   {%- assign cmp_wood = "m:Carved only|m:Engraving only|n:Grain-limited|m:Moderate|m:Wood shades only|m:Can warp|m:Moderate|m:Mid-range" | split: "|" -%}
   {%- assign cmp_metal = "m:Cast shapes|m:Engraving only|m:Good, costly|n:Slow casting|m:Matt, metallic, chrome|y:Durable|n:Heaviest|n:Expensive" | split: "|" -%}
   <style>
-    .awl-cmp{padding:58px 0 10px}
+    .awl-cmp{padding:58px 0 10px;background:#fff}
+    .awl-cmp-tw{position:relative}
     .awl-cmp-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .awl-cmp-fade{position:absolute;top:0;right:0;bottom:0;width:34px;background:linear-gradient(90deg,rgba(255,255,255,0),#fff);pointer-events:none;opacity:0;transition:opacity .2s}
+    .awl-cmp-hint{display:none;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#8a8a95;background:var(--soft);padding:5px 11px;border-radius:14px;margin-bottom:12px}
+    .awl-cmp-hint svg{width:14px;height:14px;color:var(--awb);flex:0 0 auto}
     .awl-cmp-t{border-collapse:separate;border-spacing:0;width:100%;min-width:660px;font-size:14px}
     .awl-cmp-t th,.awl-cmp-t td{padding:13px 14px;text-align:left;border-bottom:1px solid #ececf0;vertical-align:top}
     .awl-cmp-t thead th{font-size:13px;font-weight:700;color:#3f3f46;background:#f6f6f8;border-bottom:1px solid #e2e2e8}
-    .awl-cmp-crit{font-weight:600;color:var(--ink);width:26%}
+    .awl-cmp-crit{font-weight:600;color:var(--ink);width:26%;position:sticky;left:0;z-index:2;background:#fff;box-shadow:1px 0 0 0 #e2e2e8}
+    .awl-cmp-t thead th.awl-cmp-crit{background:#f6f6f8;z-index:3}
     .awl-cmp-resin{background:#f4f2fe}
     .awl-cmp-t thead th.awl-cmp-resin{background:var(--awb);color:#fff;border-bottom:1px solid var(--awb);border-radius:8px 8px 0 0}
     .awl-cmp-badge{display:inline-block;background:#fff;color:var(--awb);font-size:9px;font-weight:800;letter-spacing:.08em;padding:2px 7px;border-radius:10px;margin-left:6px;vertical-align:middle}
@@ -229,6 +234,7 @@
     .awl-cmp-foot{font-size:14px;color:var(--mut);margin-top:18px;display:flex;gap:10px;align-items:flex-start}
     .awl-cmp-foot b{color:var(--ink)}
     .awl-cmp-foot > svg{flex:0 0 auto;color:var(--awb)}
+    @media(max-width:749px){.awl-cmp-hint{display:inline-flex}.awl-cmp-fade{opacity:1}}
     @media(max-width:600px){.awl-cmp{padding:42px 0 4px}.awl-cmp-t{font-size:13px}}
   </style>
   <section class="awl-cmp">
@@ -236,7 +242,9 @@
       <span class="awl-eyebrow">Why resin</span>
       <h2 class="awl-h2" style="margin:14px 0 8px"><span style="color:var(--awb)">Resin</span> vs Crystal, Wood, Metal</h2>
       <p class="awl-sub" style="margin:0 0 26px">The same trophy, four ways to make it. Here is how 3D-printed resin compares to crystal, wood and metal for custom, on-brand awards.</p>
-      <div class="awl-cmp-scroll">
+      <span class="awl-cmp-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="7 8 3 12 7 16"/><polyline points="17 8 21 12 17 16"/><line x1="3" y1="12" x2="21" y2="12"/></svg> Swipe to compare</span>
+      <div class="awl-cmp-tw">
+        <div class="awl-cmp-scroll" id="awl-cmp-scroll">
         <table class="awl-cmp-t">
           <thead><tr><th class="awl-cmp-crit"></th><th class="awl-cmp-resin">3D-printed resin <span class="awl-cmp-badge">BEST</span></th><th>Crystal</th><th>Wood</th><th>Metal</th></tr></thead>
           <tbody>
@@ -252,10 +260,15 @@
             {%- endfor -%}
           </tbody>
         </table>
+        </div>
+        <div class="awl-cmp-fade" id="awl-cmp-fade" aria-hidden="true"></div>
       </div>
       <div class="awl-cmp-foot"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 01-10 0z"/><path d="M17 5h3v2a3 3 0 01-3 3M7 5H4v2a3 3 0 003 3"/></svg><div>Resin is the only material that is fully bespoke, on-brand, fast and affordable, with single pieces or full sets made on demand. <b>The clear choice for custom awards.</b></div></div>
     </div>
   </section>
+  <script>
+    (function(){var s=document.getElementById('awl-cmp-scroll');if(!s){return;}var f=document.getElementById('awl-cmp-fade');var hint=document.querySelector('.awl-cmp-hint');function upd(){var sc=s.scrollWidth>s.clientWidth+4;var end=s.scrollLeft+s.clientWidth>=s.scrollWidth-4;if(f){f.style.opacity=(sc&&!end)?'1':'0';}if(hint){hint.style.display=(sc&&s.scrollLeft<8)?'':'none';}}s.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);window.addEventListener('load',upd);upd();})();
+  </script>
 
   <!-- TRUST BAR -->
   <section class="awl-trust">
