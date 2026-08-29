@@ -1,6 +1,6 @@
 {%- comment -%}
   Custom Awards & Trophies landing page (Google Ads).
-  Rendered ONLY via templates/collection.awards-trophies.json — does not affect
+  Rendered ONLY via templates/collection.awards-trophies.json. Does not affect
   any other collection. Product images/prices/links are pulled live from
   all_products[handle], so they stay in sync with the catalogue.
 {%- endcomment -%}
@@ -129,7 +129,9 @@
   .awl-final h2{font-size:38px;font-weight:800;letter-spacing:-.02em;line-height:1.12;margin:0 0 18px;color:#fff}
   .awl-final h2 .awl-italic{color:#a99cff}
   .awl-final p{font-size:17px;color:#c4c4cc;max-width:440px;margin:0 0 26px}
-  .awl-final-mail{font-size:14px;color:#8f8f99;margin-top:18px}
+  .awl-final-mail{font-size:15px;color:#c4c4cc;margin-top:20px;font-weight:500}
+  .awl-final-mail a{color:#fff;font-weight:700;font-size:18px;text-decoration:underline;text-underline-offset:3px;letter-spacing:.01em}
+  .awl-final-mail a:hover{color:#a99cff}
   .awl-formcard{background:#fff;color:var(--ink);border-radius:16px;padding:30px}
   .awl-formcard h3{font-size:22px;font-weight:800;margin:0 0 4px}
   .awl-formcard .awl-formsub{font-size:14px;color:var(--mut);margin:0 0 20px}
@@ -178,7 +180,7 @@
       <div class="awl-hero-l">
         <span class="awl-eyebrow">Designed &amp; 3D-printed in Dubai</span>
         <h1 class="awl-h1">Custom Awards &amp; Trophies <span class="awl-italic">your brand deserves.</span></h1>
-        <p class="awl-lead">Your design or ours — sculpted, finished in your brand colours, and engraved for every winner. Single pieces or full award programmes, made on demand and delivered in 7 days.</p>
+        <p class="awl-lead">Your design or ours, sculpted, finished in your brand colours, and engraved for every winner. Single pieces or full award programmes, made on demand and delivered in 7 days.</p>
         <div class="awl-cta-row">
           <a class="awl-btn awl-btn-wa" href="{{ wa }}" target="_blank" rel="noopener">{{ wa_icon }} WhatsApp your brief</a>
           <a class="awl-btn awl-btn-out" href="#awl-quote">Get a quote</a>
@@ -205,7 +207,7 @@
     <div class="awl-wrap awl-trust-in">
       <span class="awl-trust-lbl">Trusted by teams at</span>
       <div class="awl-trust-logos"><span>Marriott</span><span>GITEX</span><span>Dubai AI</span><span>L&rsquo;Or&eacute;al</span></div>
-      <div class="awl-trust-q"><span class="awl-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> &ldquo;Excellent product finishing&rdquo; — Ovin Quadros</div>
+      <div class="awl-trust-q"><span class="awl-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> &ldquo;Excellent product finishing&rdquo; &middot; Ovin Quadros</div>
     </div>
   </section>
 
@@ -214,7 +216,7 @@
     <div class="awl-wrap">
       <div class="awl-center">
         <h2 class="awl-h2">Start from a ready design, <span class="awl-italic">or from zero.</span></h2>
-        <p class="awl-sub">Every piece below can be re-coloured, re-branded and engraved for your event — or send us your own concept and we&rsquo;ll sculpt it from scratch.</p>
+        <p class="awl-sub">Every piece below can be re-coloured, re-branded and engraved for your event, or send us your own concept and we&rsquo;ll sculpt it from scratch.</p>
       </div>
       {%- assign grid_handles = 'sheikh-zayed-gold-trophy-uae-founder-equestrian-statue-award,custom-3d-logo-award-branded-recognition-trophy,3d-futuristic-logo-light-box-illuminated-recognition-plaque,spiral-tower-award-bespoke-engraved-recognition-trophy,themed-music-award-bespoke-entertainment-trophy,gold-tiger-sculpture-award-custom-figurine-trophy' | split: ',' -%}
       {%- assign grid_names = 'Sheikh Zayed Gold Trophy,Custom 3D Logo Award,3D Logo Light Box,Spiral Tower Award,Themed Music Award,Gold Tiger Sculpture' | split: ',' -%}
@@ -251,7 +253,7 @@
       </div>
       <div class="awl-browse">
         <button type="button" class="awl-btn awl-btn-pri" id="awl-browse-btn">Browse all {{ collection.products_count }} designs</button>
-        <div class="awl-browse-note">Every design ships engraved and finished to your brief — bulk pricing available on request.</div>
+        <div class="awl-browse-note">Every design ships engraved and finished to your brief. Bulk pricing available on request.</div>
       </div>
     </div>
   </section>
@@ -271,16 +273,16 @@
           <div class="awl-step-n">02</div>
           <div class="awl-step-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
           <div class="awl-step-h">Approve the preview</div>
-          <div class="awl-step-p">We share a design preview in your brand colours before anything is produced — nothing goes to print without your sign-off.</div>
+          <div class="awl-step-p">We share a design preview in your brand colours before anything is produced. Nothing goes to print without your sign-off.</div>
         </div>
         <div class="awl-step">
           <div class="awl-step-n">03</div>
           <div class="awl-step-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="1.8"/><circle cx="18.5" cy="18.5" r="1.8"/></svg></div>
           <div class="awl-step-h">Delivered in 7 days</div>
-          <div class="awl-step-p">Made on demand in our Dubai studio, packed with care and shipped insured — engraved plaques and all, ready for the stage.</div>
+          <div class="awl-step-p">Made on demand in our Dubai studio, packed with care and shipped insured, engraved plaques and all, ready for the stage.</div>
         </div>
       </div>
-      <div class="awl-steps-note">Tight deadline? Tell us the event date — rush production is often possible.</div>
+      <div class="awl-steps-note">Tight deadline? Tell us the event date. Rush production is often possible.</div>
     </div>
   </section>
 
@@ -290,7 +292,7 @@
       <div class="awl-identity">
         <div class="awl-identity-l">
           <h2>One identity, <span class="awl-italic">many winners.</span></h2>
-          <p>Running an awards night or a values programme? We produce full sets — one consistent, branded design across every category, with each plaque engraved for its winner.</p>
+          <p>Running an awards night or a values programme? We produce full sets, one consistent, branded design across every category, with each plaque engraved for its winner.</p>
           <ul class="awl-checks">
             <li><span class="awl-check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Bulk pricing on multi-piece orders</li>
             <li><span class="awl-check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Consistent finish across the whole set</li>
@@ -318,12 +320,12 @@
         </div>
         <div class="awl-tcard">
           <div class="awl-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <div class="awl-tquote">&ldquo;A fantastic experience — incredibly fast and client-oriented. They turn ideas into reality with precision. Highly recommend for top-notch work.&rdquo;</div>
+          <div class="awl-tquote">&ldquo;A fantastic experience. Incredibly fast and client-oriented. They turn ideas into reality with precision. Highly recommend for top-notch work.&rdquo;</div>
           <div class="awl-tperson"><span class="awl-tavatar">Y</span><div><div class="awl-tname">Yuriy Rakhmatullin</div><div class="awl-trole">Google Local Guide</div></div></div>
         </div>
         <div class="awl-tcard">
           <div class="awl-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <div class="awl-tquote">&ldquo;An exceptional experience from the moment I walked in — warm, friendly service and a team eager to help with every question.&rdquo;</div>
+          <div class="awl-tquote">&ldquo;An exceptional experience from the moment I walked in. Warm, friendly service and a team eager to help with every question.&rdquo;</div>
           <div class="awl-tperson"><span class="awl-tavatar">K</span><div><div class="awl-tname">Kamran</div><div class="awl-trole">Google review</div></div></div>
         </div>
         <div class="awl-tcard">
@@ -338,12 +340,12 @@
   <!-- FAQ -->
   <section class="awl-sec">
     <div class="awl-wrap">
-      <h2 class="awl-h2" style="margin-bottom:26px">Before you ask &mdash;</h2>
+      <h2 class="awl-h2" style="margin-bottom:26px">Before you ask</h2>
       <div class="awl-faq">
-        <details open><summary>Is there a minimum order quantity? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">No — we make single pieces and full programme sets alike. Bulk orders unlock better per-piece pricing; share your quantity and we&rsquo;ll quote both ways.</div></details>
-        <details><summary>Can you add our logo, brand colours and engraving? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">Yes — every piece is finished in your brand colours with your logo, and we engrave each award with the winner&rsquo;s name, category or date. Branding and engraving are part of the service, not an add-on.</div></details>
-        <details><summary>How long does production and delivery take? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">Most orders are made on demand and delivered within 7 days across the UAE. Working to a tight event date? Tell us — even faster is often possible.</div></details>
-        <details><summary>Do you deliver outside the UAE? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">Yes — we ship worldwide, insured. Share your destination and deadline and we&rsquo;ll confirm delivery options and timing with your quote.</div></details>
+        <details open><summary>Is there a minimum order quantity? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">No, we make single pieces and full programme sets alike. Bulk orders unlock better per-piece pricing; share your quantity and we&rsquo;ll quote both ways.</div></details>
+        <details><summary>Can you add our logo, brand colours and engraving? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">Yes, every piece is finished in your brand colours with your logo, and we engrave each award with the winner&rsquo;s name, category or date. Branding and engraving are part of the service, not an add-on.</div></details>
+        <details><summary>How long does production and delivery take? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">Most orders are made on demand and delivered within 7 days across the UAE. Working to a tight event date? Tell us, even faster is often possible.</div></details>
+        <details><summary>Do you deliver outside the UAE? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">Yes, we ship worldwide, insured. Share your destination and deadline and we&rsquo;ll confirm delivery options and timing with your quote.</div></details>
         <details><summary>What if the award arrives damaged? <span class="awl-faq-ic">+</span></summary><div class="awl-faq-a">Every piece is packed with care and shipped insured. In the rare event of transit damage, send us a photo and we&rsquo;ll remake and reship it at no cost.</div></details>
       </div>
     </div>
@@ -354,9 +356,9 @@
     <div class="awl-wrap awl-final-in">
       <div class="awl-final-l">
         <h2>Tell us about your event. <span class="awl-italic">We&rsquo;ll design the rest.</span></h2>
-        <p>Send a short brief — the occasion, quantity and date. You&rsquo;ll get design options and a quote within one working day.</p>
+        <p>Send a short brief with the occasion, quantity and date. You&rsquo;ll get design options and a quote within one working day.</p>
         <a class="awl-btn awl-btn-wa" href="{{ wa }}" target="_blank" rel="noopener">{{ wa_icon }} Send your Award Design</a>
-        <div class="awl-final-mail">Prefer email? info@macomatech.com · Dubai, UAE</div>
+        <div class="awl-final-mail">Prefer to email us? <a href="mailto:info@macomatech.com">info@macomatech.com</a> · Dubai, UAE</div>
       </div>
       <div class="awl-formcard">
         {%- form 'contact', id: 'awl-form' -%}
@@ -364,16 +366,16 @@
             <noscript><meta http-equiv="refresh" content="0;url=/pages/thank-you-inquiry"></noscript>
             <div class="awl-form-ok">
               <div class="awl-form-ok-h">Brief received &#10003;</div>
-              <div class="awl-form-ok-p">Thank you — taking you to your confirmation&hellip; <a href="/pages/thank-you-inquiry" style="color:var(--awb);font-weight:700">Continue &rarr;</a></div>
+              <div class="awl-form-ok-p">Thank you. Taking you to your confirmation&hellip; <a href="/pages/thank-you-inquiry" style="color:var(--awb);font-weight:700">Continue &rarr;</a></div>
             </div>
           {%- else -%}
             <h3>Get a quote</h3>
-            <div class="awl-formsub">No obligation — we reply within one working day.</div>
+            <div class="awl-formsub">No obligation. We reply within one working day.</div>
             {%- if form.errors -%}<div class="awl-form-err">{{ form.errors | default_errors }}</div>{%- endif -%}
             <div class="awl-field"><label for="awl-name">Name *</label><input id="awl-name" type="text" name="contact[Name]" required placeholder="Your name"></div>
             <div class="awl-field"><label for="awl-wa">WhatsApp *</label><input id="awl-wa" type="tel" name="contact[WhatsApp]" required placeholder="+971 …"></div>
             <div class="awl-field"><label for="awl-email">Email *</label><input id="awl-email" type="email" name="contact[email]" required placeholder="you@company.com"></div>
-            <div class="awl-field"><label for="awl-brief">Brief</label><textarea id="awl-brief" name="contact[Brief]" placeholder="e.g. 12 values awards for our annual night on 15 Oct — logo attached"></textarea></div>
+            <div class="awl-field"><label for="awl-brief">Brief</label><textarea id="awl-brief" name="contact[Brief]" placeholder="e.g. 12 values awards for our annual night on 15 Oct, logo attached"></textarea></div>
             <input type="hidden" name="contact[Source]" value="Custom Awards Landing Page">
             <button type="submit" class="awl-form-btn">Send inquiry &rarr;</button>
           {%- endif -%}
