@@ -41,9 +41,6 @@
   {%- assign tdp_quote_label = product.metafields.custom.sticky_cta_text.value
     | default: section.settings.quote_cta_text
     | default: 'Send commission inquiry' -%}
-  {%- if product.handle == 'custom-bearbrick-1000-designer-toy-branded-collectible-figure-set' -%}
-    {%- assign tdp_quote_label = 'Send WhatsApp Message' -%}
-  {%- endif -%}
   {%- assign tdp_quote_price = section.settings.quote_price_text
     | default: 'Price on request' -%}
 
