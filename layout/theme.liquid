@@ -47,9 +47,9 @@
 
     <title>
       {{ page_title }}
-      {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
-      {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
-      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+      {%- if current_tags %}-tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+      {%- if current_page != 1 %}-Page {{ current_page }}{% endif -%}
+      {%- unless page_title contains shop.name %}-{{ shop.name }}{% endunless -%}
     </title>
 
     {% if page_description %}
@@ -454,11 +454,11 @@
       <button class="tdpg-x" type="button" onclick="tdpgClose()" aria-label="Close">&times;</button>
       <div id="tdpg-wrap">
         <div class="tdpg-h">Commission inquiry</div>
-        <div class="tdpg-sub">Send your brief &mdash; We will get in touch with you soon.</div>
+        <div class="tdpg-sub">Send your brief, We will get in touch with you soon.</div>
         {%- form 'contact', id: 'tdpg-mform', class: 'tdps-form' -%}
           {%- if form.posted_successfully? -%}<span id="tdpg-ok" hidden></span>{%- endif -%}
           {%- if form.errors -%}<div class="tdpg-err">{{ form.errors | default_errors }}</div>{%- endif -%}
-          <input type="hidden" name="contact[Subject]" value="Diorama Website Lead &mdash; Commission (site)">
+          <input type="hidden" name="contact[Subject]" value="Diorama Website Lead, Commission (site)">
           <input type="hidden" name="contact[Lead source]" value="The Diorama website (site CTA)">
           <input type="hidden" name="contact[Page]" value="{{ canonical_url }}">
           <input type="hidden" name="contact[Project type]" value="Website inquiry">
@@ -524,7 +524,7 @@
   })();
   </script>
 
-  {%- comment -%} Stepped (SurveyMonkey-style) inquiry forms — one field per screen. Progressive enhancement: without JS all steps show as a normal form. {%- endcomment -%}
+  {%- comment -%} Stepped (SurveyMonkey-style) inquiry forms, one field per screen. Progressive enhancement: without JS all steps show as a normal form. {%- endcomment -%}
   <style>
     form.tdps-form.tdps-ready .tdps-step{display:none;}
     form.tdps-form.tdps-ready .tdps-step.tdps-on{display:block;animation:tdps-in .28s ease;}
@@ -612,7 +612,7 @@
       }catch(err){form.classList.remove('tdps-ready');}
     }
     window.tdpsResetAll=function(){[].slice.call(document.querySelectorAll('form.tdps-form')).forEach(function(f){if(f.tdpsReset){f.tdpsReset();}});};
-    /* Stepper disabled — commission forms now show ALL questions on one page (the .tdps-step divs render as a normal stacked form, native submit button and all). */
+    /* Stepper disabled, commission forms now show ALL questions on one page (the .tdps-step divs render as a normal stacked form, native submit button and all). */
     function init(){}
     if(document.readyState!=='loading'){init();}else{document.addEventListener('DOMContentLoaded',init);}
   })();

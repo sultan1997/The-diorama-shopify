@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "diorama-product": {
@@ -115,6 +124,8 @@
         "hspec2_v": "Resin, Acrylic",
         "hspec3_k": "Finish",
         "hspec3_v": "Any Finish",
+        "hspec4_k": "",
+        "hspec4_v": "",
         "usp1_label": "Worldwide Shipping",
         "usp2_label": "Handcrafted",
         "usp3_label": "Customized Text",
@@ -132,6 +143,7 @@
         "case_quote": "Visitors gathered around it all day. It explained the whole development in seconds.",
         "case_quote_attr": "Abdul Rehman - Rasikhoon Real Estate",
         "s3_image": "shopify://shop_images/custom-masterplan-model-6.jpg",
+        "s3_credit": "",
         "prov_h": "A Whole Scheme,",
         "prov_hem": "at a Glance",
         "prov_p": "A masterplan is hard to picture from drawings alone. As a model, it lets clients, investors and officials see the entire development at once - and believe in it.",
@@ -144,7 +156,7 @@
         "vid_dur": "",
         "spec_h": "Model",
         "spec_hem": "Specification",
-        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_p": "Materials, measurements and finish, everything about this replica in one place.",
         "spec_dim_sub": "Measured at scale.",
         "spec_mat_sub": "Each piece is individually cast and finished",
         "build_time": "Approx. ASAP",
@@ -152,7 +164,7 @@
         "lead_artisan": "",
         "insurance_note": "",
         "faq_h": "Common questions.",
-        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "faq_p": "The questions that come up most often. A real person answers everything else, write to us any time.",
         "rev_h": "Customer Reviews",
         "rev_score": "4.8",
         "rev_count": "27",
@@ -163,11 +175,7 @@
         "rev1": "0",
         "cta_ey": "Want your own custom piece?",
         "cta_heading": "Every great piece begins with",
-        "cta_heading_em": "one conversation.",
-        "service_mode": true,
-        "hspec4_k": "",
-        "hspec4_v": "",
-        "s3_credit": ""
+        "cta_heading_em": "one conversation."
       }
     }
   },

@@ -1,6 +1,6 @@
 {%- comment -%}
   ============================================================
-  THE DIORAMA — Section 01: "What you are paying for"
+  THE DIORAMA, Section 01: "What you are paying for"
   Fully editable product feature section.
 
   WHAT YOU CAN EDIT IN THE THEME EDITOR (no code needed):
@@ -194,7 +194,7 @@
     {%- if s.eyebrow_number != blank or s.eyebrow_label != blank -%}
       <div class="di-eyebrow">
         {%- if s.eyebrow_number != blank -%}<span class="di-num">{{ s.eyebrow_number }}</span>{%- endif -%}
-        {%- if s.eyebrow_number != blank and s.eyebrow_label != blank -%} &mdash; {%- endif -%}
+        {%- if s.eyebrow_number != blank and s.eyebrow_label != blank -%}, {%- endif -%}
         {%- if s.eyebrow_label != blank -%}<span>{{ s.eyebrow_label }}</span>{%- endif -%}
       </div>
     {%- endif -%}
@@ -260,10 +260,10 @@
   "class": "di-section-features",
   "settings": [
     { "type": "header", "content": "Header" },
-    { "type": "text", "id": "eyebrow_number", "label": "Eyebrow — number", "default": "Section 01" },
-    { "type": "text", "id": "eyebrow_label", "label": "Eyebrow — label", "default": "What you are paying for" },
+    { "type": "text", "id": "eyebrow_number", "label": "Eyebrow, number", "default": "Section 01" },
+    { "type": "text", "id": "eyebrow_label", "label": "Eyebrow, label", "default": "What you are paying for" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Precision at every fitting." },
-    { "type": "text", "id": "heading_accent", "label": "Heading — italic accent", "default": "Nothing missed." },
+    { "type": "text", "id": "heading_accent", "label": "Heading, italic accent", "default": "Nothing missed." },
     { "type": "richtext", "id": "body", "label": "Intro paragraph",
       "default": "<p>What is this? This is an offshore support vessel miniature made for Priya Blue Shipping Company. It is used as a corporate gift to their clients, so it stays as a memory for years.</p>" },
 

@@ -1,12 +1,12 @@
 {%- comment -%}
-  Lead mirror — copies every lead-generating form submission to the Google
+  Lead mirror, copies every lead-generating form submission to the Google
   Sheet pipeline (Apps Script endpoint set in Theme settings > Lead capture).
 
   Rendered once from theme.liquid so it covers all four forms wherever they
   appear: the product-page inquiry modal, the global commission form on the
   homepage and contact page, the contact page form, and the footer newsletter.
 
-  The native Shopify POST is never blocked or delayed — sendBeacon hands the
+  The native Shopify POST is never blocked or delayed, sendBeacon hands the
   copy to the browser and returns immediately. If the endpoint is down, the
   URL is blank, or this script throws, Shopify's own notification email still
   arrives exactly as before. The sheet is additive, never a point of failure.

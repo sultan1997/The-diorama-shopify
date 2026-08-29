@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "diorama-product": {
@@ -40,7 +49,7 @@
           "type": "faq",
           "settings": {
             "q": "Is this a custom-built model or ready-made?",
-            "a": "Each Black Pearl barge vessel is custom-built and hand-finished to order. Standard lead time is 14–21 business days from order confirmation."
+            "a": "Each Black Pearl barge vessel is custom-built and hand-finished to order. Standard lead time is 14-21 business days from order confirmation."
           }
         },
         "faq-2": {
@@ -54,7 +63,7 @@
           "type": "faq",
           "settings": {
             "q": "Does it come with a display case and base?",
-            "a": "Yes — the model is delivered on a finished wooden base with a clear protective cover to keep it pristine on a desk, reception or showroom."
+            "a": "Yes, the model is delivered on a finished wooden base with a clear protective cover to keep it pristine on a desk, reception or showroom."
           }
         },
         "faq-4": {
@@ -152,7 +161,7 @@
         "vid_dur": "",
         "spec_h": "Model",
         "spec_hem": "Specification",
-        "spec_p": "Materials, measurements and finish — everything about this replica in one place.",
+        "spec_p": "Materials, measurements and finish, everything about this replica in one place.",
         "spec_dim_sub": "Measured at scale.",
         "spec_mat_sub": "Each piece is individually cast and finished",
         "build_time": "Approx. Approx. 22 hours per piece",
@@ -160,7 +169,7 @@
         "lead_artisan": "",
         "insurance_note": "",
         "faq_h": "Common questions.",
-        "faq_p": "The questions that come up most often. A real person answers everything else — write to us any time.",
+        "faq_p": "The questions that come up most often. A real person answers everything else, write to us any time.",
         "rev_h": "Customer Reviews",
         "rev_score": "4.9",
         "rev_count": "21",

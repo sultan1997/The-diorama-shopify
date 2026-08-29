@@ -66,7 +66,7 @@
             "nm": "Moon 3D Print File - Lunar Half 1.stl",
             "size": "303.1 MB",
             "category": "3D Print",
-            "purpose": "Pre-cut half — print flat-face-down, no supports"
+            "purpose": "Pre-cut half, print flat-face-down, no supports"
           }
         },
         "man-3": {
@@ -77,7 +77,7 @@
             "nm": "Moon 3D Print File - Lunar Half 2.stl",
             "size": "299.5 MB",
             "category": "3D Print",
-            "purpose": "Pre-cut half — print flat-face-down, no supports"
+            "purpose": "Pre-cut half, print flat-face-down, no supports"
           }
         },
         "man-4": {
@@ -129,7 +129,7 @@
           "settings": {
             "glyph": "B",
             "app": "Blender",
-            "ver": "v3.6 — 4.x"
+            "ver": "v3.6, 4.x"
           }
         },
         "cmp-2": {
@@ -167,21 +167,21 @@
           "type": "faq",
           "settings": {
             "q": "Is the crater detail real geometry or a texture?",
-            "a": "Real geometry. The relief is modelled into the mesh across the whole surface, so it prints as physical depth rather than relying on a normal or bump map. That is why the mesh is dense — 12.6 million triangles."
+            "a": "Real geometry. The relief is modelled into the mesh across the whole surface, so it prints as physical depth rather than relying on a normal or bump map. That is why the mesh is dense, 12.6 million triangles."
           }
         },
         "faq-3": {
           "type": "faq",
           "settings": {
             "q": "Does the pack include textures or materials?",
-            "a": "No. This is an untextured mesh with no UV mapping and no material library. The surface detail is all modelled geometry, so it prints and renders on its own — but if you want a coloured render you will need to assign your own materials."
+            "a": "No. This is an untextured mesh with no UV mapping and no material library. The surface detail is all modelled geometry, so it prints and renders on its own, but if you want a coloured render you will need to assign your own materials."
           }
         },
         "faq-4": {
           "type": "faq",
           "settings": {
             "q": "Can I use this design for my own projects?",
-            "a": "Yes. These files are licensed for your personal projects — make it for yourself, your home, a study model, or a gift. The license is for personal, non-commercial use, so it isn't intended for reselling finished units or the file pack itself."
+            "a": "Yes. These files are licensed for your personal projects, make it for yourself, your home, a study model, or a gift. The license is for personal, non-commercial use, so it isn't intended for reselling finished units or the file pack itself."
           }
         },
         "faq-5": {
@@ -217,7 +217,7 @@
             "name": "Ravi T.",
             "when": "JUN 2026",
             "ttl": "Great model, heavy files",
-            "body": "No complaints about the geometry — sliced first time. Just be ready for the download size, the OBJ alone is over a gigabyte. Worth it, but do it on a decent connection.",
+            "body": "No complaints about the geometry, sliced first time. Just be ready for the download size, the OBJ alone is over a gigabyte. Worth it, but do it on a decent connection.",
             "tags": "Verified buyer, Personal license, Ender 3 V3"
           }
         }
@@ -306,7 +306,7 @@
         "qf3_k": "Difficulty",
         "qf3_v": "Beginner",
         "benefits_h": "Made for your own projects.",
-        "benefits_lede": "Whether you design for a living, build for clients, or make things for the love of it, this pack drops straight into your workflow — yours to print and finish for any personal project.",
+        "benefits_lede": "Whether you design for a living, build for clients, or make things for the love of it, this pack drops straight into your workflow, yours to print and finish for any personal project.",
         "bt1_k": "The designer spent",
         "bt1_v": "12 hours",
         "bt1_s": "modelling true crater and mare relief across the entire lunar surface",
@@ -318,13 +318,13 @@
         "ben2_h": "Architects",
         "ben2_p": "A real, fabricable object for your visualizations and study models. Use it to dress a scene, test scale, or 3D-print a maquette for your own work.",
         "ben3_h": "Hobbyists",
-        "ben3_p": "Everything you need to make a beautiful piece at home — slicer-ready meshes and pre-cut halves that print without supports. No CAD experience required.",
+        "ben3_p": "Everything you need to make a beautiful piece at home, slicer-ready meshes and pre-cut halves that print without supports. No CAD experience required.",
         "usp_h": "Finally a 3D Design File for Manufacturing",
         "usp_lede": "Most of the 3D design files online are not 3d printable and requires alot of post processing work. Since we are manufacturers ourself, All our design files are built for fabrication.",
         "uspc1_num": "USP-01",
         "uspc1_h": "3D-printable, end to end.",
         "uspc1_p": "A dense triangulated mesh split into support-free halves, so it slices cleanly the first time.",
-        "uspc1_c1": "STL, OBJ, FBX, GLB — various formats",
+        "uspc1_c1": "STL, OBJ, FBX, GLB, various formats",
         "uspc1_c2": "Tested on Prusa MK4, Bambu X1C, Ender 3",
         "uspc1_c3": "",
         "uspc1_c4": "12.6 M triangles of real relief",
@@ -340,10 +340,10 @@
         "uspc3_p": "The craters and mare are modelled into the geometry across the whole surface, so the detail survives printing at any scale instead of vanishing with the texture.",
         "uspc3_c1": "Modelled surface relief",
         "uspc3_c2": "Holds detail at SLA resolution",
-        "uspc3_c3": "Untextured — assign your own materials",
+        "uspc3_c3": "Untextured, assign your own materials",
         "uspc3_c4": "",
         "geom_h": "Some more file details",
-        "geom_lede": "Topology, dimensions and file sizes — everything you'd want to know before you hit slice.",
+        "geom_lede": "Topology, dimensions and file sizes, everything you'd want to know before you hit slice.",
         "geom1_k": "Polygons",
         "geom1_v": "12,637,628",
         "geom1_s": "Triangulated faces",
@@ -363,7 +363,7 @@
         "geom6_v": "Yes",
         "geom6_s": "Pre-split halves included",
         "manifest_h": "Every file, nothing hidden.",
-        "manifest_lede": "The full manifest of what lands in the zip when you download. Every file is named, sized, and explained — and tagged by what it's for.",
+        "manifest_lede": "The full manifest of what lands in the zip when you download. Every file is named, sized, and explained, and tagged by what it's for.",
         "man_col1": "Format",
         "man_col2": "Filename",
         "man_col3": "Size",
@@ -391,7 +391,7 @@
         "rev_c1": "2",
         "reviews_empty": "No reviews yet.",
         "related_h": "More 3D Design Files",
-        "related_lede": "More pieces from the same collection — pulled in automatically from this product's collection."
+        "related_lede": "More pieces from the same collection, pulled in automatically from this product's collection."
       }
     }
   },

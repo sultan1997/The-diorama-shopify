@@ -1,1 +1,533 @@
-{"sections":{"main":{"type":"design-file-product","blocks":{"fmt-1":{"type":"format","settings":{"ext":"STL","tag":"printable"}},"fmt-2":{"type":"format","settings":{"ext":"3MF","tag":"printable"}},"fmt-3":{"type":"format","settings":{"ext":"OBJ","tag":"printable"}},"fmt-4":{"type":"format","settings":{"ext":"DXF","tag":"laser"}},"fmt-5":{"type":"format","settings":{"ext":"SVG","tag":"laser"}},"fmt-6":{"type":"format","settings":{"ext":"AI","tag":"laser"}},"fmt-7":{"type":"format","settings":{"ext":"STEP","tag":"cnc"}},"fmt-8":{"type":"format","settings":{"ext":"IGES","tag":"cnc"}},"fmt-9":{"type":"format","settings":{"ext":"F3D","tag":"source"}},"fmt-10":{"type":"format","settings":{"ext":"BLEND","tag":"source"}},"fmt-11":{"type":"format","settings":{"ext":"PDF","tag":"source"}},"man-1":{"type":"manifest_row","settings":{"ext":"STL","tag":"printable","nm":"3BHK Villa Interior (20X20).stl","size":"28.8 MB","category":"3D Print","purpose":"Watertight solid mesh, ready to slice"}},"man-2":{"type":"manifest_row","settings":{"ext":"OBJ","tag":"printable","nm":"3BHK Villa Interior (20X20).obj","size":"58.1 MB","category":"3D Print","purpose":"Textured mesh with UV mapping"}},"man-3":{"type":"manifest_row","settings":{"ext":"MTL","tag":"source","nm":"3BHK Villa Interior (20X20).mtl","size":"25 KB","category":"Source","purpose":"Material library for the OBJ"}},"man-4":{"type":"manifest_row","settings":{"ext":"FBX","tag":"source","nm":"3BHK Villa Interior (20X20).fbx","size":"128.7 MB","category":"Source","purpose":"Scene-ready mesh for 3D apps"}},"man-5":{"type":"manifest_row","settings":{"ext":"SKP","tag":"source","nm":"3BHK Villa Interior (20X20).skp","size":"162.2 MB","category":"Source","purpose":"SketchUp editable model"}},"man-6":{"type":"manifest_row","settings":{"ext":"DWG","tag":"source","nm":"3BHK Villa Interior.dwg","size":"0.8 MB","category":"CAD","purpose":"AutoCAD editable drawing"}},"man-7":{"type":"manifest_row","settings":{"ext":"PDF","tag":"doc","nm":"3BHK Villa Interior 3Bed (no title block).pdf","size":"0.7 MB","category":"Document","purpose":"3-bedroom floor plan, print-ready"}},"man-8":{"type":"manifest_row","settings":{"ext":"PDF","tag":"doc","nm":"Other details.pdf","size":"25 KB","category":"Document","purpose":"Supplementary project notes"}},"cmp-1":{"type":"compat_app","settings":{"glyph":"F","app":"Fusion 360","ver":"v2.0.18+"}},"cmp-2":{"type":"compat_app","settings":{"glyph":"B","app":"Blender","ver":"v3.6 — 4.x"}},"cmp-3":{"type":"compat_app","settings":{"glyph":"R","app":"Rhino","ver":"v7+"}},"cmp-4":{"type":"compat_app","settings":{"glyph":"S","app":"SolidWorks","ver":"2022+"}},"cmp-5":{"type":"compat_app","settings":{"glyph":"C","app":"Cinema 4D","ver":"R23+"}},"cmp-6":{"type":"compat_app","settings":{"glyph":"P","app":"PrusaSlicer","ver":"v2.7+"}},"cmp-7":{"type":"compat_app","settings":{"glyph":"B","app":"Bambu Studio","ver":"v1.9+"}},"cmp-8":{"type":"compat_app","settings":{"glyph":"C","app":"Cura","ver":"v5+"}},"cmp-9":{"type":"compat_app","settings":{"glyph":"G","app":"Glowforge","ver":"—"}},"cmp-10":{"type":"compat_app","settings":{"glyph":"X","app":"xTool","ver":"—"}},"cmp-11":{"type":"compat_app","settings":{"glyph":"L","app":"LightBurn","ver":"v1.5+"}},"cmp-12":{"type":"compat_app","settings":{"glyph":"F","app":"Fabrica","ver":"v3+"}},"faq-1":{"type":"faq","settings":{"q":"Will these files print on a standard FDM machine?","a":"Yes. This design is printable with different slicing software lilk prusa and Cura. Based on the details and scale, you will have to decide to 3d print in FDM or SLA."}},"faq-2":{"type":"faq","settings":{"q":"What wall thicknesses have you considered?","a":"We use 2mm as the smallest thickness. Since that is the lowest thickness for 3d printing in resin without deforming."}},"faq-3":{"type":"faq","settings":{"q":"Can I use this design for my own projects?","a":"Yes. These files are licensed for your personal projects — make it for yourself, your home, a study model, or a gift. Print it, cut it, machine it, remix the parametric source however you like. The license is for personal, non-commercial use, so it isn't intended for reselling finished units or the file pack itself."}},"faq-4":{"type":"faq","settings":{"q":"Will you support if there are any problems with files?","a":"After-sales support is included if you get stuck. Just contact us through the contact page and we will try to help."}},"faq-5":{"type":"faq","settings":{"q":"Is there any Refund Policy?","a":"We usually dont offer Refunds for Digital Files. However, if you are not satisfied with it then our designer will help you to sort things out."}},"rev-1":{"type":"review","settings":{"name":"Daniela R.","when":"APR 2026","ttl":"Printed it twice, both came out perfect","body":"I run a small studio doing one-off lighting. The parametric source alone is worth it — I rebuilt this at 60 cm diameter, regenerated the cut files, and the laser-cut rings dropped right onto the printed petals without sanding.","tags":"Verified buyer, Commercial license, Bambu X1C"}},"rev-2":{"type":"review","settings":{"name":"Marcus W.","when":"MAR 2026","ttl":"Files are clean. That is rare.","body":"Twenty years as a machinist; most STEP files I download are a mess. This one opens, names every body, organizes them in folders, and the tolerances are realistic. Cut the hub on a Tormach in 90 minutes flat.","tags":"Verified buyer, Extended license, CNC \/ aluminum"}},"rev-3":{"type":"review","settings":{"name":"Priya S.","when":"FEB 2026","ttl":"Lovely result; guide could be a touch longer","body":"Loved the design and the result. As a first-time builder I wanted a few more close-ups in the wiring section — got there with a tutorial. Support replied within a day when I asked about an E14 socket.","tags":"Verified buyer, Personal license, Ender 3"}}},"block_order":["fmt-1","fmt-2","fmt-3","fmt-4","fmt-5","fmt-6","fmt-7","fmt-8","fmt-9","fmt-10","fmt-11","man-1","man-2","man-3","man-4","man-5","man-6","man-7","man-8","cmp-1","cmp-2","cmp-3","cmp-4","cmp-5","cmp-6","cmp-7","cmp-8","cmp-9","cmp-10","cmp-11","cmp-12","faq-1","faq-2","faq-3","faq-4","faq-5","rev-1","rev-2","rev-3"],"settings":{"show_announce":false,"show_crumbs":true,"show_benefits":true,"show_usp":true,"show_geom":true,"show_manifest":true,"show_compat":true,"show_faq":true,"show_reviews":true,"show_related":true,"ann1":"After sales support","ann2":"For personal projects only","ann3":"Used by 18,400+ makers","crumb1":"All files","crumb2":"Lighting","crumb3":"Pendant lamps","view_mode1":"Solid","view_mode2":"Wireframe","view_mode3":"X-ray","view_info1":"3D MODEL · 24,812 polys","view_info2":"22 PARTS","axis1":"3\/4","axis2":"FRONT","axis3":"SIDE","axis4":"TOP","designer_ava":"TD","designer_name":"The Diorama","designer_files":"248 files","verified_label":"Verified seller","title_override":"","subtitle":"This is a 3D Design file of 3 BHK Interior villa with a swimming pool. It is scaled down to 1:150. Files are solid body and easy to 3d print.","stat_rating":"4.9","stat_reviews":"328 reviews","stat_downloads":"712 downloads","stat_version":"v 2.3.0 · 4 days ago","badge1_ttl":"3D Printable","badge1_sub":"STL · 3MF · OBJ","badge2_ttl":"Water Tight Model","badge2_sub":"DXF · SVG · AI","badge3_ttl":"Manufacturing Friendly","badge3_sub":"STEP · IGES","usage_label":"Usage","usage_pick":"Personal projects only","usage_note":"These files are licensed for your own personal projects only — print, cut, and machine this design for yourself, your home, or as a gift. Not for resale or commercial production.","formats_label":"Included formats","formats_count":"9 files · 441 MB total","variant_label":"License","cta_label":"Buy & download","cta_sold":"Sold out","cta_meta":"Instant download · secure checkout","qf1_k":"Designer","qf1_v":"The Diorama · Dubai, UAE","qf2_k":"Compatibility","qf2_v":"Fusion 360, Blender, Rhino, PrusaSlicer, Bambu Studio (+12 more)","qf3_k":"","qf3_v":"","benefits_h":"Made for your own projects.","benefits_lede":"Whether you design for a living, build for clients, or make things for the love of it, this pack drops straight into your workflow — yours to print, cut, and machine for any personal project.","bt1_k":"The designer spent","bt1_v":"18 hours","bt1_s":"modeling this in parametric CAD — All visual details with texture included","bt2_k":"You get it in","bt2_v":"under 1 minute","bt2_s":"Buy, download the pack, and open it in your software. The hard part is already done.","ben1_h":"Designers","ben1_p":"Skip the blank canvas. Drop a finished, editable parametric model into your concepts and renders — then dial the parameters to fit your own projects.","ben2_h":"Architects","ben2_p":"A real, fabricable fixture for your visualizations and study models. Use it to dress a scene, test scale, or 3D-print a maquette for your own work.","ben3_h":"Hobbyists","ben3_p":"Everything you need to make a beautiful piece at home — slicer-ready meshes, kerf-compensated cut files, and an illustrated guide. No CAD experience required.","usp_h":"Finally a 3D Design File for Manufacturing","usp_lede":"Most of the 3D design files online are not 3d printable and requires alot of post processing work. Since we are manufacturers ourself, All our design files are water tight and free of defects.","uspc1_num":"USP-01","uspc1_h":"3D-printable, end to end.","uspc1_p":"Solid manifold meshes, watertight, support-free where possible, with a printability","uspc1_c1":"STL, FBX, OBJ — various formats","uspc1_c2":"Tested on Prusa MK4, Bambu X1C, Ender 3","uspc1_c3":"","uspc1_c4":"Watertight, manifold, support-aware","uspc2_num":"USP-02","uspc2_h":"Production Files Attached","uspc2_p":"Most of our files already have laser cutting, PDF drawings, sticker and texture files attached. So you spend less time in re-design. Just adjust your scale and start your machine.","uspc2_c1":"DXF, PDF","uspc2_c2":"Glowforge, xTool, LightBurn ready","uspc2_c3":"","uspc2_c4":"2mm Material thickness considered","uspc3_num":"USP-03","uspc3_h":"Manufacturing-grade output.","uspc3_p":"Our 3D designs are solid bodies, Free from defects and separated bodies. Making it easier to fabricate each component.","uspc3_c1":"Water Tight Model","uspc3_c2":"Manifolds Attached","uspc3_c3":"Separated Bodies","uspc3_c4":"","geom_h":"Some more file details","geom_lede":"Topology stats, mesh integrity, file sizes. Everything you'd want to know before you hit slice or send to the cutter.","geom1_k":"Polygons","geom1_v":"600,935","geom1_s":"Quad-dominant, sub-D ready","geom2_k":"Vertices","geom2_v":"26,440","geom2_s":"Watertight · 0 non-manifold","geom3_k":"Materials","geom3_v":"20","geom3_s":"PBR maps · 2K textures","geom4_k":"UV mapping","geom4_v":"Yes","geom4_s":"Non-overlapping","geom5_k":"Parts (assembly)","geom5_v":"80","geom5_s":"bodies","geom6_k":"Dimensions","geom6_v":"Ø200 × 200","geom6_s":"Millimeters","manifest_h":"Every file, nothing hidden.","manifest_lede":"The full manifest of what lands in the zip when you download. Every file is named, sized, and explained — and tagged by what it's for.","man_col1":"Format","man_col2":"Filename","man_col3":"Size","man_col4":"Category","man_col5":"Purpose","manifest_foot_l":"9 files · 441 MB total","manifest_foot_r":"2 printable · 4 source · 2 docs","compat_h":"Opens in your software.","compat_lede":"Tested against the most common CAD, slicer, and laser apps. If you're on something else, the pack still includes neutral STEP, OBJ, DXF, and SVG.","faq_h":"Most-asked.","faq_lede":"If yours isn't here, write to us. Real makers answer real questions, usually within four hours during the working week.","reviews_h":"Customer Reviews","reviews_lede":"All reviews are from verified buyers. We surface the ones that mention build experience first.","rev_big":"4.9","rev_of":"out of 5 · 328 verified reviews","rev_p5":"93","rev_c5":"305","rev_p4":"5","rev_c4":"16","rev_p3":"2","rev_c3":"5","rev_p2":"1","rev_c2":"1","rev_p1":"1","rev_c1":"1","reviews_empty":"No reviews yet.","related_h":"More 3D Design Files","related_lede":"More pieces from the same collection — pulled in automatically from this product's collection."}}},"order":["main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "design-file-product",
+      "blocks": {
+        "fmt-1": {
+          "type": "format",
+          "settings": {
+            "ext": "STL",
+            "tag": "printable"
+          }
+        },
+        "fmt-2": {
+          "type": "format",
+          "settings": {
+            "ext": "3MF",
+            "tag": "printable"
+          }
+        },
+        "fmt-3": {
+          "type": "format",
+          "settings": {
+            "ext": "OBJ",
+            "tag": "printable"
+          }
+        },
+        "fmt-4": {
+          "type": "format",
+          "settings": {
+            "ext": "DXF",
+            "tag": "laser"
+          }
+        },
+        "fmt-5": {
+          "type": "format",
+          "settings": {
+            "ext": "SVG",
+            "tag": "laser"
+          }
+        },
+        "fmt-6": {
+          "type": "format",
+          "settings": {
+            "ext": "AI",
+            "tag": "laser"
+          }
+        },
+        "fmt-7": {
+          "type": "format",
+          "settings": {
+            "ext": "STEP",
+            "tag": "cnc"
+          }
+        },
+        "fmt-8": {
+          "type": "format",
+          "settings": {
+            "ext": "IGES",
+            "tag": "cnc"
+          }
+        },
+        "fmt-9": {
+          "type": "format",
+          "settings": {
+            "ext": "F3D",
+            "tag": "source"
+          }
+        },
+        "fmt-10": {
+          "type": "format",
+          "settings": {
+            "ext": "BLEND",
+            "tag": "source"
+          }
+        },
+        "fmt-11": {
+          "type": "format",
+          "settings": {
+            "ext": "PDF",
+            "tag": "source"
+          }
+        },
+        "man-1": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "STL",
+            "tag": "printable",
+            "nm": "3BHK Villa Interior (20X20).stl",
+            "size": "28.8 MB",
+            "category": "3D Print",
+            "purpose": "Watertight solid mesh, ready to slice"
+          }
+        },
+        "man-2": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "OBJ",
+            "tag": "printable",
+            "nm": "3BHK Villa Interior (20X20).obj",
+            "size": "58.1 MB",
+            "category": "3D Print",
+            "purpose": "Textured mesh with UV mapping"
+          }
+        },
+        "man-3": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "MTL",
+            "tag": "source",
+            "nm": "3BHK Villa Interior (20X20).mtl",
+            "size": "25 KB",
+            "category": "Source",
+            "purpose": "Material library for the OBJ"
+          }
+        },
+        "man-4": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "FBX",
+            "tag": "source",
+            "nm": "3BHK Villa Interior (20X20).fbx",
+            "size": "128.7 MB",
+            "category": "Source",
+            "purpose": "Scene-ready mesh for 3D apps"
+          }
+        },
+        "man-5": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "SKP",
+            "tag": "source",
+            "nm": "3BHK Villa Interior (20X20).skp",
+            "size": "162.2 MB",
+            "category": "Source",
+            "purpose": "SketchUp editable model"
+          }
+        },
+        "man-6": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "DWG",
+            "tag": "source",
+            "nm": "3BHK Villa Interior.dwg",
+            "size": "0.8 MB",
+            "category": "CAD",
+            "purpose": "AutoCAD editable drawing"
+          }
+        },
+        "man-7": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "PDF",
+            "tag": "doc",
+            "nm": "3BHK Villa Interior 3Bed (no title block).pdf",
+            "size": "0.7 MB",
+            "category": "Document",
+            "purpose": "3-bedroom floor plan, print-ready"
+          }
+        },
+        "man-8": {
+          "type": "manifest_row",
+          "settings": {
+            "ext": "PDF",
+            "tag": "doc",
+            "nm": "Other details.pdf",
+            "size": "25 KB",
+            "category": "Document",
+            "purpose": "Supplementary project notes"
+          }
+        },
+        "cmp-1": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "F",
+            "app": "Fusion 360",
+            "ver": "v2.0.18+"
+          }
+        },
+        "cmp-2": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "B",
+            "app": "Blender",
+            "ver": "v3.6, 4.x"
+          }
+        },
+        "cmp-3": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "R",
+            "app": "Rhino",
+            "ver": "v7+"
+          }
+        },
+        "cmp-4": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "S",
+            "app": "SolidWorks",
+            "ver": "2022+"
+          }
+        },
+        "cmp-5": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "C",
+            "app": "Cinema 4D",
+            "ver": "R23+"
+          }
+        },
+        "cmp-6": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "P",
+            "app": "PrusaSlicer",
+            "ver": "v2.7+"
+          }
+        },
+        "cmp-7": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "B",
+            "app": "Bambu Studio",
+            "ver": "v1.9+"
+          }
+        },
+        "cmp-8": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "C",
+            "app": "Cura",
+            "ver": "v5+"
+          }
+        },
+        "cmp-9": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "G",
+            "app": "Glowforge",
+            "ver": ", "
+          }
+        },
+        "cmp-10": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "X",
+            "app": "xTool",
+            "ver": ", "
+          }
+        },
+        "cmp-11": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "L",
+            "app": "LightBurn",
+            "ver": "v1.5+"
+          }
+        },
+        "cmp-12": {
+          "type": "compat_app",
+          "settings": {
+            "glyph": "F",
+            "app": "Fabrica",
+            "ver": "v3+"
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "q": "Will these files print on a standard FDM machine?",
+            "a": "Yes. This design is printable with different slicing software lilk prusa and Cura. Based on the details and scale, you will have to decide to 3d print in FDM or SLA."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "q": "What wall thicknesses have you considered?",
+            "a": "We use 2mm as the smallest thickness. Since that is the lowest thickness for 3d printing in resin without deforming."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "q": "Can I use this design for my own projects?",
+            "a": "Yes. These files are licensed for your personal projects, make it for yourself, your home, a study model, or a gift. Print it, cut it, machine it, remix the parametric source however you like. The license is for personal, non-commercial use, so it isn't intended for reselling finished units or the file pack itself."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "q": "Will you support if there are any problems with files?",
+            "a": "After-sales support is included if you get stuck. Just contact us through the contact page and we will try to help."
+          }
+        },
+        "faq-5": {
+          "type": "faq",
+          "settings": {
+            "q": "Is there any Refund Policy?",
+            "a": "We usually dont offer Refunds for Digital Files. However, if you are not satisfied with it then our designer will help you to sort things out."
+          }
+        },
+        "rev-1": {
+          "type": "review",
+          "settings": {
+            "name": "Daniela R.",
+            "when": "APR 2026",
+            "ttl": "Printed it twice, both came out perfect",
+            "body": "I run a small studio doing one-off lighting. The parametric source alone is worth it, I rebuilt this at 60 cm diameter, regenerated the cut files, and the laser-cut rings dropped right onto the printed petals without sanding.",
+            "tags": "Verified buyer, Commercial license, Bambu X1C"
+          }
+        },
+        "rev-2": {
+          "type": "review",
+          "settings": {
+            "name": "Marcus W.",
+            "when": "MAR 2026",
+            "ttl": "Files are clean. That is rare.",
+            "body": "Twenty years as a machinist; most STEP files I download are a mess. This one opens, names every body, organizes them in folders, and the tolerances are realistic. Cut the hub on a Tormach in 90 minutes flat.",
+            "tags": "Verified buyer, Extended license, CNC / aluminum"
+          }
+        },
+        "rev-3": {
+          "type": "review",
+          "settings": {
+            "name": "Priya S.",
+            "when": "FEB 2026",
+            "ttl": "Lovely result; guide could be a touch longer",
+            "body": "Loved the design and the result. As a first-time builder I wanted a few more close-ups in the wiring section, got there with a tutorial. Support replied within a day when I asked about an E14 socket.",
+            "tags": "Verified buyer, Personal license, Ender 3"
+          }
+        }
+      },
+      "block_order": [
+        "fmt-1",
+        "fmt-2",
+        "fmt-3",
+        "fmt-4",
+        "fmt-5",
+        "fmt-6",
+        "fmt-7",
+        "fmt-8",
+        "fmt-9",
+        "fmt-10",
+        "fmt-11",
+        "man-1",
+        "man-2",
+        "man-3",
+        "man-4",
+        "man-5",
+        "man-6",
+        "man-7",
+        "man-8",
+        "cmp-1",
+        "cmp-2",
+        "cmp-3",
+        "cmp-4",
+        "cmp-5",
+        "cmp-6",
+        "cmp-7",
+        "cmp-8",
+        "cmp-9",
+        "cmp-10",
+        "cmp-11",
+        "cmp-12",
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "faq-5",
+        "rev-1",
+        "rev-2",
+        "rev-3"
+      ],
+      "settings": {
+        "show_announce": false,
+        "show_crumbs": true,
+        "show_benefits": true,
+        "show_usp": true,
+        "show_geom": true,
+        "show_manifest": true,
+        "show_compat": true,
+        "show_faq": true,
+        "show_reviews": true,
+        "show_related": true,
+        "ann1": "After sales support",
+        "ann2": "For personal projects only",
+        "ann3": "Used by 18,400+ makers",
+        "crumb1": "All files",
+        "crumb2": "Lighting",
+        "crumb3": "Pendant lamps",
+        "view_mode1": "Solid",
+        "view_mode2": "Wireframe",
+        "view_mode3": "X-ray",
+        "view_info1": "3D MODEL · 24,812 polys",
+        "view_info2": "22 PARTS",
+        "axis1": "3/4",
+        "axis2": "FRONT",
+        "axis3": "SIDE",
+        "axis4": "TOP",
+        "designer_ava": "TD",
+        "designer_name": "The Diorama",
+        "designer_files": "248 files",
+        "verified_label": "Verified seller",
+        "title_override": "",
+        "subtitle": "This is a 3D Design file of 3 BHK Interior villa with a swimming pool. It is scaled down to 1:150. Files are solid body and easy to 3d print.",
+        "stat_rating": "4.9",
+        "stat_reviews": "328 reviews",
+        "stat_downloads": "712 downloads",
+        "stat_version": "v 2.3.0 · 4 days ago",
+        "badge1_ttl": "3D Printable",
+        "badge1_sub": "STL · 3MF · OBJ",
+        "badge2_ttl": "Water Tight Model",
+        "badge2_sub": "DXF · SVG · AI",
+        "badge3_ttl": "Manufacturing Friendly",
+        "badge3_sub": "STEP · IGES",
+        "usage_label": "Usage",
+        "usage_pick": "Personal projects only",
+        "usage_note": "These files are licensed for your own personal projects only, print, cut, and machine this design for yourself, your home, or as a gift. Not for resale or commercial production.",
+        "formats_label": "Included formats",
+        "formats_count": "9 files · 441 MB total",
+        "variant_label": "License",
+        "cta_label": "Buy & download",
+        "cta_sold": "Sold out",
+        "cta_meta": "Instant download · secure checkout",
+        "qf1_k": "Designer",
+        "qf1_v": "The Diorama · Dubai, UAE",
+        "qf2_k": "Compatibility",
+        "qf2_v": "Fusion 360, Blender, Rhino, PrusaSlicer, Bambu Studio (+12 more)",
+        "qf3_k": "",
+        "qf3_v": "",
+        "benefits_h": "Made for your own projects.",
+        "benefits_lede": "Whether you design for a living, build for clients, or make things for the love of it, this pack drops straight into your workflow, yours to print, cut, and machine for any personal project.",
+        "bt1_k": "The designer spent",
+        "bt1_v": "18 hours",
+        "bt1_s": "modeling this in parametric CAD, All visual details with texture included",
+        "bt2_k": "You get it in",
+        "bt2_v": "under 1 minute",
+        "bt2_s": "Buy, download the pack, and open it in your software. The hard part is already done.",
+        "ben1_h": "Designers",
+        "ben1_p": "Skip the blank canvas. Drop a finished, editable parametric model into your concepts and renders, then dial the parameters to fit your own projects.",
+        "ben2_h": "Architects",
+        "ben2_p": "A real, fabricable fixture for your visualizations and study models. Use it to dress a scene, test scale, or 3D-print a maquette for your own work.",
+        "ben3_h": "Hobbyists",
+        "ben3_p": "Everything you need to make a beautiful piece at home, slicer-ready meshes, kerf-compensated cut files, and an illustrated guide. No CAD experience required.",
+        "usp_h": "Finally a 3D Design File for Manufacturing",
+        "usp_lede": "Most of the 3D design files online are not 3d printable and requires alot of post processing work. Since we are manufacturers ourself, All our design files are water tight and free of defects.",
+        "uspc1_num": "USP-01",
+        "uspc1_h": "3D-printable, end to end.",
+        "uspc1_p": "Solid manifold meshes, watertight, support-free where possible, with a printability",
+        "uspc1_c1": "STL, FBX, OBJ, various formats",
+        "uspc1_c2": "Tested on Prusa MK4, Bambu X1C, Ender 3",
+        "uspc1_c3": "",
+        "uspc1_c4": "Watertight, manifold, support-aware",
+        "uspc2_num": "USP-02",
+        "uspc2_h": "Production Files Attached",
+        "uspc2_p": "Most of our files already have laser cutting, PDF drawings, sticker and texture files attached. So you spend less time in re-design. Just adjust your scale and start your machine.",
+        "uspc2_c1": "DXF, PDF",
+        "uspc2_c2": "Glowforge, xTool, LightBurn ready",
+        "uspc2_c3": "",
+        "uspc2_c4": "2mm Material thickness considered",
+        "uspc3_num": "USP-03",
+        "uspc3_h": "Manufacturing-grade output.",
+        "uspc3_p": "Our 3D designs are solid bodies, Free from defects and separated bodies. Making it easier to fabricate each component.",
+        "uspc3_c1": "Water Tight Model",
+        "uspc3_c2": "Manifolds Attached",
+        "uspc3_c3": "Separated Bodies",
+        "uspc3_c4": "",
+        "geom_h": "Some more file details",
+        "geom_lede": "Topology stats, mesh integrity, file sizes. Everything you'd want to know before you hit slice or send to the cutter.",
+        "geom1_k": "Polygons",
+        "geom1_v": "600,935",
+        "geom1_s": "Quad-dominant, sub-D ready",
+        "geom2_k": "Vertices",
+        "geom2_v": "26,440",
+        "geom2_s": "Watertight · 0 non-manifold",
+        "geom3_k": "Materials",
+        "geom3_v": "20",
+        "geom3_s": "PBR maps · 2K textures",
+        "geom4_k": "UV mapping",
+        "geom4_v": "Yes",
+        "geom4_s": "Non-overlapping",
+        "geom5_k": "Parts (assembly)",
+        "geom5_v": "80",
+        "geom5_s": "bodies",
+        "geom6_k": "Dimensions",
+        "geom6_v": "Ø200 × 200",
+        "geom6_s": "Millimeters",
+        "manifest_h": "Every file, nothing hidden.",
+        "manifest_lede": "The full manifest of what lands in the zip when you download. Every file is named, sized, and explained, and tagged by what it's for.",
+        "man_col1": "Format",
+        "man_col2": "Filename",
+        "man_col3": "Size",
+        "man_col4": "Category",
+        "man_col5": "Purpose",
+        "manifest_foot_l": "9 files · 441 MB total",
+        "manifest_foot_r": "2 printable · 4 source · 2 docs",
+        "compat_h": "Opens in your software.",
+        "compat_lede": "Tested against the most common CAD, slicer, and laser apps. If you're on something else, the pack still includes neutral STEP, OBJ, DXF, and SVG.",
+        "faq_h": "Most-asked.",
+        "faq_lede": "If yours isn't here, write to us. Real makers answer real questions, usually within four hours during the working week.",
+        "reviews_h": "Customer Reviews",
+        "reviews_lede": "All reviews are from verified buyers. We surface the ones that mention build experience first.",
+        "rev_big": "4.9",
+        "rev_of": "out of 5 · 328 verified reviews",
+        "rev_p5": "93",
+        "rev_c5": "305",
+        "rev_p4": "5",
+        "rev_c4": "16",
+        "rev_p3": "2",
+        "rev_c3": "5",
+        "rev_p2": "1",
+        "rev_c2": "1",
+        "rev_p1": "1",
+        "rev_c1": "1",
+        "reviews_empty": "No reviews yet.",
+        "related_h": "More 3D Design Files",
+        "related_lede": "More pieces from the same collection, pulled in automatically from this product's collection."
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

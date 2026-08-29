@@ -1,4 +1,4 @@
-{% comment %}The Diorama — 3D Design File Product Page · blueprint/technical layout{% endcomment %}
+{% comment %}The Diorama, 3D Design File Product Page · blueprint/technical layout{% endcomment %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -262,7 +262,7 @@
   .dfp .field { border: 0 !important; background: transparent !important; padding: 0 !important; }
   .dfp .usage-note { border: 0 !important; background: transparent !important; }
   /* === ADJUSTMENTS · ROUND 2 === */
-  /* Product image fills its frame — no white space, no border */
+  /* Product image fills its frame, no white space, no border */
   .dfp .viewer{ aspect-ratio:auto !important; border:0 !important; }
   .dfp .viewer .stage{ position:relative !important; padding:0 !important; }
   .dfp .viewer .stage img{ width:100% !important; height:auto !important; }
@@ -275,7 +275,7 @@
   .dfp .field::before,
   .dfp .field::after{ content:none !important; display:none !important; }
   /* === ADJUSTMENTS · ROUND 3 === */
-  /* Colour the remaining format chips — and any future format */
+  /* Colour the remaining format chips, and any future format */
   .dfp .fmt.source{ border-color:#CFE4E2 !important; color:#1F5F5A !important; background:#E3F1EF !important; }
   /* Breadcrumb link hover */
   .dfp .crumbs a:hover{ text-decoration:underline; }
@@ -443,7 +443,7 @@
           <div class="field" style="margin-top:14px">
             <div class="field-label"><span>{{ section.settings.variant_label | default: 'License' }}</span></div>
             <select name="id" class="usage-note" style="width:100%;padding:12px 14px;border:1px solid var(--rule-2);border-radius:8px;background:var(--paper);font-family:var(--sans);font-size:14px;color:var(--ink)">
-              {%- for v in product.variants -%}<option value="{{ v.id }}"{% unless v.available %} disabled{% endunless %}>{{ v.title }} — {{ v.price | money }}</option>{%- endfor -%}
+              {%- for v in product.variants -%}<option value="{{ v.id }}"{% unless v.available %} disabled{% endunless %}>{{ v.title }}, {{ v.price | money }}</option>{%- endfor -%}
             </select>
           </div>
           {%- endif -%}
@@ -656,7 +656,7 @@
   window.dfpAxis=function(b){ var g=grp(b); if(!g)return; g.querySelectorAll('button').forEach(function(x){x.setAttribute('data-active','false');}); b.setAttribute('data-active','true'); };
   window.dfpSwap=function(b,src){ var st=document.getElementById('dfpStage'); if(!st)return; var mv=st.querySelector('model-viewer'); var img=st.querySelector('img.dfp-swap'); var vid=st.querySelector('video.dfp-vid'); var type=b.getAttribute('data-media-type'); if(mv)mv.classList.add('dfp-hide'); if(img)img.style.display='none'; if(vid){ try{vid.pause();}catch(e){} vid.style.display='none'; } if(type==='model'){ if(mv){ if(!mv.getAttribute('src') && mv.dataset.glb){ mv.setAttribute('src', mv.dataset.glb); } mv.classList.remove('dfp-hide'); } } else if(type==='video'){ var vs=b.getAttribute('data-video-src'); if(vs){ if(!vid){ vid=document.createElement('video'); vid.className='dfp-vid'; vid.setAttribute('playsinline',''); vid.setAttribute('controls',''); vid.setAttribute('loop',''); vid.muted=true; vid.setAttribute('preload','metadata'); st.appendChild(vid); } if(vid.getAttribute('src')!==vs){ vid.setAttribute('src', vs); } vid.style.display='block'; try{vid.play();}catch(e){} } else if(img){ img.src=src; img.style.display='block'; img.style.zIndex='2'; } } else { if(img){ img.src=src; img.style.display='block'; img.style.zIndex='2'; } } document.querySelectorAll('.dfp .thumb-rail .vt').forEach(function(x){x.setAttribute('data-active','false');}); b.setAttribute('data-active','true'); };
   window.dfpNav=function(d){ var th=document.querySelectorAll('.dfp .thumb-rail .vt'); if(!th.length)return; var cur=0; for(var i=0;i<th.length;i++){ if(th[i].getAttribute('data-active')==='true'){cur=i;break;} } var n=(cur+d+th.length)%th.length; th[n].click(); };
-  window.dfpFaq=function(item){ var open=item.classList.contains('open'); item.parentElement.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open'); var t=i.querySelector('.toggle'); if(t)t.textContent='+';}); if(!open){ item.classList.add('open'); var t=item.querySelector('.toggle'); if(t)t.textContent='–'; } };
+  window.dfpFaq=function(item){ var open=item.classList.contains('open'); item.parentElement.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open'); var t=i.querySelector('.toggle'); if(t)t.textContent='+';}); if(!open){ item.classList.add('open'); var t=item.querySelector('.toggle'); if(t)t.textContent='-'; } };
 })();
 </script>
 <script>
@@ -845,7 +845,7 @@
     },
     {
       "type": "header",
-      "content": "Buy box — seller & title"
+      "content": "Buy box, seller & title"
     },
     {
       "type": "text",
@@ -885,7 +885,7 @@
     },
     {
       "type": "header",
-      "content": "Buy box — stats row"
+      "content": "Buy box, stats row"
     },
     {
       "type": "text",
@@ -913,7 +913,7 @@
     },
     {
       "type": "header",
-      "content": "Buy box — capability badges"
+      "content": "Buy box, capability badges"
     },
     {
       "type": "text",
@@ -953,7 +953,7 @@
     },
     {
       "type": "header",
-      "content": "Buy box — usage & formats"
+      "content": "Buy box, usage & formats"
     },
     {
       "type": "text",
@@ -971,7 +971,7 @@
       "type": "textarea",
       "id": "usage_note",
       "label": "Usage note",
-      "default": "These files are licensed for your own personal projects only — print, cut, and machine this design for yourself, your home, or as a gift. Not for resale or commercial production."
+      "default": "These files are licensed for your own personal projects only, print, cut, and machine this design for yourself, your home, or as a gift. Not for resale or commercial production."
     },
     {
       "type": "text",
@@ -987,7 +987,7 @@
     },
     {
       "type": "header",
-      "content": "Buy box — buy button"
+      "content": "Buy box, buy button"
     },
     {
       "type": "text",
@@ -1061,7 +1061,7 @@
       "type": "textarea",
       "id": "benefits_lede",
       "label": "Lede",
-      "default": "Whether you design for a living, build for clients, or make things for the love of it, this pack drops straight into your workflow — yours to print, cut, and machine for any personal project."
+      "default": "Whether you design for a living, build for clients, or make things for the love of it, this pack drops straight into your workflow, yours to print, cut, and machine for any personal project."
     },
     {
       "type": "text",
@@ -1079,7 +1079,7 @@
       "type": "textarea",
       "id": "bt1_s",
       "label": "Timeline left note",
-      "default": "modeling this in parametric CAD — every petal, ring, and tolerance hand-tuned."
+      "default": "modeling this in parametric CAD, every petal, ring, and tolerance hand-tuned."
     },
     {
       "type": "text",
@@ -1109,7 +1109,7 @@
       "type": "textarea",
       "id": "ben1_p",
       "label": "Card 1 text",
-      "default": "Skip the blank canvas. Drop a finished, editable parametric model into your concepts and renders — then dial the parameters to fit your own projects."
+      "default": "Skip the blank canvas. Drop a finished, editable parametric model into your concepts and renders, then dial the parameters to fit your own projects."
     },
     {
       "type": "text",
@@ -1133,7 +1133,7 @@
       "type": "textarea",
       "id": "ben3_p",
       "label": "Card 3 text",
-      "default": "Everything you need to make a beautiful piece at home — slicer-ready meshes, kerf-compensated cut files, and an illustrated guide. No CAD experience required."
+      "default": "Everything you need to make a beautiful piece at home, slicer-ready meshes, kerf-compensated cut files, and an illustrated guide. No CAD experience required."
     },
     {
       "type": "header",
@@ -1149,7 +1149,7 @@
       "type": "textarea",
       "id": "usp_lede",
       "label": "Lede",
-      "default": "Every listing ships with the files needed to actually make the thing — not just the renderable mesh. Print it on a desktop machine, cut it on a laser, or hand the STEP to a CNC shop."
+      "default": "Every listing ships with the files needed to actually make the thing, not just the renderable mesh. Print it on a desktop machine, cut it on a laser, or hand the STEP to a CNC shop."
     },
     {
       "type": "text",
@@ -1173,7 +1173,7 @@
       "type": "text",
       "id": "uspc1_c1",
       "label": "USP-01 check 1",
-      "default": "STL, 3MF, OBJ — slicer-ready"
+      "default": "STL, 3MF, OBJ, slicer-ready"
     },
     {
       "type": "text",
@@ -1209,13 +1209,13 @@
       "type": "textarea",
       "id": "uspc2_p",
       "label": "USP-02 text",
-      "default": "Flat parts ship as DXF and SVG with a 0.18 mm kerf offset already applied. Open and send — no re-drawing, no compensation math."
+      "default": "Flat parts ship as DXF and SVG with a 0.18 mm kerf offset already applied. Open and send, no re-drawing, no compensation math."
     },
     {
       "type": "text",
       "id": "uspc2_c1",
       "label": "USP-02 check 1",
-      "default": "DXF, SVG, AI — vector-perfect"
+      "default": "DXF, SVG, AI, vector-perfect"
     },
     {
       "type": "text",
@@ -1251,13 +1251,13 @@
       "type": "textarea",
       "id": "uspc3_p",
       "label": "USP-03 text",
-      "default": "When you're ready to scale beyond the desk, the same pack ships parametric STEP and IGES — geometry your CNC shop or vendor can quote against today."
+      "default": "When you're ready to scale beyond the desk, the same pack ships parametric STEP and IGES, geometry your CNC shop or vendor can quote against today."
     },
     {
       "type": "text",
       "id": "uspc3_c1",
       "label": "USP-03 check 1",
-      "default": "STEP, IGES, F3D — named bodies"
+      "default": "STEP, IGES, F3D, named bodies"
     },
     {
       "type": "text",
@@ -1415,7 +1415,7 @@
       "type": "textarea",
       "id": "manifest_lede",
       "label": "Lede",
-      "default": "The full manifest of what lands in the zip when you download. Every file is named, sized, and explained — and tagged by what it's for."
+      "default": "The full manifest of what lands in the zip when you download. Every file is named, sized, and explained, and tagged by what it's for."
     },
     {
       "type": "text",
@@ -1599,7 +1599,7 @@
       "type": "textarea",
       "id": "related_lede",
       "label": "Lede",
-      "default": "More pieces from the same collection — pulled in automatically from this product's collection."
+      "default": "More pieces from the same collection, pulled in automatically from this product's collection."
     }
   ],
   "blocks": [
@@ -1960,7 +1960,7 @@
             "nm": "aperture_parametric.f3d",
             "size": "8.6 MB",
             "category": "Source",
-            "purpose": "Fusion 360 source — editable"
+            "purpose": "Fusion 360 source, editable"
           }
         },
         {
@@ -2009,7 +2009,7 @@
           "settings": {
             "glyph": "B",
             "app": "Blender",
-            "ver": "v3.6 — 4.x"
+            "ver": "v3.6, 4.x"
           }
         },
         {
@@ -2065,7 +2065,7 @@
           "settings": {
             "glyph": "G",
             "app": "Glowforge",
-            "ver": "—"
+            "ver": ", "
           }
         },
         {
@@ -2073,7 +2073,7 @@
           "settings": {
             "glyph": "X",
             "app": "xTool",
-            "ver": "—"
+            "ver": ", "
           }
         },
         {
@@ -2096,7 +2096,7 @@
           "type": "faq",
           "settings": {
             "q": "Will these files print on a standard FDM machine?",
-            "a": "Yes. Every printable part fits inside a 220 × 220 × 250 mm build volume — tested on a Prusa MK4, a Bambu X1C, and an Ender 3. The hub and socket are designed without supports; the petals print flat with a single brim. Recommended profile and slicer notes ship inside the PDF guide."
+            "a": "Yes. Every printable part fits inside a 220 × 220 × 250 mm build volume, tested on a Prusa MK4, a Bambu X1C, and an Ender 3. The hub and socket are designed without supports; the petals print flat with a single brim. Recommended profile and slicer notes ship inside the PDF guide."
           }
         },
         {
@@ -2110,21 +2110,21 @@
           "type": "faq",
           "settings": {
             "q": "Can I use this design for my own projects?",
-            "a": "Yes. These files are licensed for your personal projects — make it for yourself, your home, a study model, or a gift. Print it, cut it, machine it, remix the parametric source however you like. The license is for personal, non-commercial use, so it isn't intended for reselling finished units or the file pack itself."
+            "a": "Yes. These files are licensed for your personal projects, make it for yourself, your home, a study model, or a gift. Print it, cut it, machine it, remix the parametric source however you like. The license is for personal, non-commercial use, so it isn't intended for reselling finished units or the file pack itself."
           }
         },
         {
           "type": "faq",
           "settings": {
             "q": "How does the parametric source file work?",
-            "a": "The source file exposes nine driving parameters — height, diameter, petal count, ring spacing, socket diameter, kerf offset, wall thickness, fillet radius, and base thickness. Change any of them and the model and the export sheets update together. After-sales support is included if you get stuck."
+            "a": "The source file exposes nine driving parameters, height, diameter, petal count, ring spacing, socket diameter, kerf offset, wall thickness, fillet radius, and base thickness. Change any of them and the model and the export sheets update together. After-sales support is included if you get stuck."
           }
         },
         {
           "type": "faq",
           "settings": {
             "q": "What's included if I just want to 3D print this, nothing else?",
-            "a": "Plenty. You get every STL and 3MF, the assembly guide, and the bill of materials. Skip the STEP, DXF, and BLEND files — they're there if you grow into them, not required to make the piece."
+            "a": "Plenty. You get every STL and 3MF, the assembly guide, and the bill of materials. Skip the STEP, DXF, and BLEND files, they're there if you grow into them, not required to make the piece."
           }
         },
         {
@@ -2133,7 +2133,7 @@
             "name": "Daniela R.",
             "when": "APR 2026",
             "ttl": "Printed it twice, both came out perfect",
-            "body": "I run a small studio doing one-off lighting. The parametric source alone is worth it — I rebuilt this at 60 cm diameter, regenerated the cut files, and the laser-cut rings dropped right onto the printed petals without sanding.",
+            "body": "I run a small studio doing one-off lighting. The parametric source alone is worth it, I rebuilt this at 60 cm diameter, regenerated the cut files, and the laser-cut rings dropped right onto the printed petals without sanding.",
             "tags": "Verified buyer, Commercial license, Bambu X1C"
           }
         },
@@ -2153,7 +2153,7 @@
             "name": "Priya S.",
             "when": "FEB 2026",
             "ttl": "Lovely result; guide could be a touch longer",
-            "body": "Loved the design and the result. As a first-time builder I wanted a few more close-ups in the wiring section — got there with a tutorial. Support replied within a day when I asked about an E14 socket.",
+            "body": "Loved the design and the result. As a first-time builder I wanted a few more close-ups in the wiring section, got there with a tutorial. Support replied within a day when I asked about an E14 socket.",
             "tags": "Verified buyer, Personal license, Ender 3"
           }
         }
