@@ -222,12 +222,13 @@
   {%- assign cmp_metal = "m:Cast shapes|m:Engraving only|m:Good, costly|n:Slow casting|m:Matt, metallic, chrome|y:Durable|n:Heaviest|n:Expensive" | split: "|" -%}
   <style>
     .awl-cmp{padding:58px 0 10px;background:#fff}
+    .awl-cmp .awl-wrap{text-align:center}
     .awl-cmp-tw{position:relative}
     .awl-cmp-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
     .awl-cmp-fade{position:absolute;top:0;right:0;bottom:0;width:34px;background:linear-gradient(90deg,rgba(255,255,255,0),#fff);pointer-events:none;opacity:0;transition:opacity .2s}
     .awl-cmp-hint{display:none;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#8a8a95;background:var(--soft);padding:5px 11px;border-radius:14px;margin-bottom:12px}
     .awl-cmp-hint svg{width:14px;height:14px;color:var(--awb);flex:0 0 auto}
-    .awl-cmp-t{border-collapse:separate;border-spacing:0;width:100%;max-width:740px;min-width:640px;table-layout:fixed;font-size:14px}
+    .awl-cmp-t{border-collapse:separate;border-spacing:0;width:100%;max-width:740px;min-width:640px;margin:0 auto;table-layout:fixed;font-size:14px}
     .awl-cmp-t th,.awl-cmp-t td{padding:13px 14px;text-align:left;border-bottom:1px solid #ececf0;vertical-align:top}
     .awl-cmp-t thead th{font-size:13px;font-weight:700;color:#3f3f46;background:#f6f6f8;border-bottom:1px solid #e2e2e8}
     .awl-cmp-crit{font-weight:600;color:var(--ink);position:sticky;left:0;z-index:2;background:#fff;box-shadow:1px 0 0 0 #e2e2e8}
@@ -240,7 +241,7 @@
     .awl-ic{flex:0 0 auto;margin-top:1px}
     .awl-ic svg{width:17px;height:17px;display:block}
     .awl-ic-y{color:#16a34a}.awl-ic-n{color:#c25a3f}.awl-ic-m{color:#BA7517}
-    .awl-cmp-foot{font-size:14px;color:var(--mut);margin-top:18px;display:flex;gap:10px;align-items:flex-start}
+    .awl-cmp-foot{font-size:14px;color:var(--mut);margin:18px auto 0;max-width:740px;display:flex;gap:10px;align-items:flex-start;text-align:left}
     .awl-cmp-foot b{color:var(--ink)}
     .awl-cmp-foot > svg{flex:0 0 auto;color:var(--awb)}
     @media(max-width:749px){.awl-cmp-hint{display:inline-flex}.awl-cmp-fade{opacity:1}}
@@ -250,7 +251,7 @@
     <div class="awl-wrap">
       <span class="awl-eyebrow">Why resin</span>
       <h2 class="awl-h2" style="margin:14px 0 8px"><span style="color:var(--awb)">Resin</span> vs Crystal, Wood, Metal</h2>
-      <p class="awl-sub" style="margin:0 0 26px">The same trophy, four ways to make it. Here is how 3D-printed resin compares to crystal, wood and metal for custom, on-brand awards.</p>
+      <p class="awl-sub" style="margin:0 auto 26px">The same trophy, four ways to make it. Here is how 3D-printed resin compares to crystal, wood and metal for custom, on-brand awards.</p>
       <span class="awl-cmp-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="7 8 3 12 7 16"/><polyline points="17 8 21 12 17 16"/><line x1="3" y1="12" x2="21" y2="12"/></svg> Swipe to compare</span>
       <div class="awl-cmp-tw">
         <div class="awl-cmp-scroll" id="awl-cmp-scroll">
