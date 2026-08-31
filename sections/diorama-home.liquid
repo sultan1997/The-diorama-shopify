@@ -343,6 +343,19 @@
         btns.forEach(function(b,i){ b.setAttribute('aria-current', i === idx ? 'true' : 'false'); });
       });
     }, { passive: true });
+    // autoplay every 2s, pause on interaction
+    var timer;
+    function advance(){ var i = current() + 1; if(i > btns.length - 1) i = 0; to(i); }
+    function play(){ stop(); if(btns.length > 1) timer = setInterval(advance, 2000); }
+    function stop(){ if(timer){ clearInterval(timer); timer = null; } }
+    hero.addEventListener('mouseenter', stop);
+    hero.addEventListener('mouseleave', play);
+    hero.addEventListener('touchstart', stop, { passive: true });
+    if(prev) prev.addEventListener('click', stop);
+    if(next) next.addEventListener('click', stop);
+    btns.forEach(function(b){ b.addEventListener('click', stop); });
+    document.addEventListener('visibilitychange', function(){ if(document.hidden){ stop(); } else { play(); } });
+    play();
   }
   function boot(){ document.querySelectorAll('.dh .hero').forEach(init); }
   if(document.readyState !== 'loading'){ boot(); } else { document.addEventListener('DOMContentLoaded', boot); }
