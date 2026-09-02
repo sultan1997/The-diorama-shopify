@@ -126,6 +126,7 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
+    "tdp_lead_endpoint": "https://script.google.com/macros/s/AKfycby-nOi5yxHONUWKbSvaq5CzIZXbO46mylOpgJGrxrRQdMFrzG9slkZYWj5K8j5L68Vb/exec",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -144,6 +145,11 @@
     "blocks": {
       "7539343560218715217": {
         "type": "shopify://apps/lucky-orange-heatmaps-replay/blocks/lucky_orange_tracking/019b2899-e426-7dbd-b9e7-ff9f0bb0d0f3",
+        "disabled": false,
+        "settings": {}
+      },
+      "776302416715791028": {
+        "type": "shopify://apps/bucks/blocks/app-embed/4f0a9b06-9da4-4a49-b378-2de9d23a3af3",
         "disabled": false,
         "settings": {}
       }
@@ -226,8 +232,7 @@
           "shadow": "#121212"
         }
       }
-    },
-    "tdp_lead_endpoint": "https://script.google.com/macros/s/AKfycby-nOi5yxHONUWKbSvaq5CzIZXbO46mylOpgJGrxrRQdMFrzG9slkZYWj5K8j5L68Vb/exec"
+    }
   },
   "presets": {
     "Dawn": {
